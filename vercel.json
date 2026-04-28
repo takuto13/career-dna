@@ -6,19 +6,7 @@
       "use": "@vercel/node"
     },
     {
-      "src": "*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "style.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "diagnosis.js",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "images/**",
+      "src": "public/**",
       "use": "@vercel/static"
     }
   ],
@@ -28,24 +16,8 @@
       "dest": "/api/diagnose.js"
     },
     {
-      "src": "/images/(.*)",
-      "dest": "/images/$1"
-    },
-    {
-      "src": "/(.*\\.css)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/(.*\\.js)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/result.html",
-      "dest": "/result.html"
-    },
-    {
-      "src": "/",
-      "dest": "/index.html"
+      "src": "/(.*)",
+      "dest": "/public/$1"
     }
   ]
 }
