@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>キャリアDNA｜25問で仕事タイプがわかる無料診断</title>
+  <meta name="description" content="自分でも気づいていなかった強みと本当に向いている仕事が見つかる。完全無料のキャリア診断。" />
+  <meta property="og:title" content="キャリアDNA｜25問で仕事タイプがわかる無料診断" />
+  <meta property="og:description" content="自分でも気づいていなかった強みと本当に向いている仕事が見つかる。完全無料のキャリア診断。" />
+  <meta property="og:image" content="images/ogp.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="images/CareerDNA_logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-index">
+  <nav class="top-nav" id="top-nav">
+    <div class="top-nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/CareerDNA_hlogo.png" alt="CareerDNA" class="logo-image" loading="eager" />
+      </a>
+      <button type="button" class="nav-start-btn" data-start-trigger>無料診断開始</button>
+    </div>
+  </nav>
+
+  <main class="landing-main">
+    <div id="hero-section">
+      <section class="hero hero-section">
+        <div class="hero-left">
+          <span class="hero-badge">Free Career Diagnosis</span>
+          <h1 class="hero-title">あなたの<span>キャリアDNA</span>を解き明かせ</h1>
+          <p class="hero-subcopy">たった25問で、自分でも気づいていなかった強みと本当に向いている仕事が見つかる。</p>
+          <button type="button" id="start-btn" class="hero-cta">診断スタートする →</button>
+          <p class="hero-time">所要時間：約5分</p>
+          <div class="hero-stats">
+            <p><strong>25問</strong><span>質問数</span></p>
+            <p><strong>8タイプ</strong><span>診断タイプ</span></p>
+            <p><strong>無料</strong><span>登録不要</span></p>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-image">
+            <img src="images/hero-dna.png" alt="キャリアDNAヒーローイメージ" loading="eager" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+            <span class="hero-emoji-fallback">🧬</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section type-section">
+        <h2 class="section-heading">あなたはどのタイプ？</h2>
+        <div class="type-slider" id="type-slider" aria-label="キャラクタータイプスライダー">
+          <div class="type-slider-track" id="type-slider-track">
+            <div class="type-slide"><div class="type-card tc-purple t1"><div class="type-card-inner"><div class="type-icon-wrap"><img src="images/type-strategist.png" alt="戦略家タイプ" class="type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"><span class="type-emoji" style="display:none">🧭</span></div><div class="type-name">戦略家タイプ</div><div class="type-desc">全体を見て動く司令塔</div><p class="type-note">全体像を把握し、ゴールから逆算して動ける人。<br>チームや組織の方向性を決め、<br>成果へと導くリーダー気質の持ち主。</p></div></div></div>
+            <div class="type-slide"><div class="type-card tc-purple t2"><div class="type-card-inner"><div class="type-icon-wrap"><img src="images/type-craftsman.png" alt="職人タイプ" class="type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"><span class="type-emoji" style="display:none">🔨</span></div><div class="type-name">職人タイプ</div><div class="type-desc">深く極める専門家</div><p class="type-note">興味を持ったことを徹底的に深掘りし、誰にも負けないスキルを磨き続ける人。<br>クオリティへのこだわりが<br>最大の武器。</p></div></div></div>
+            <div class="type-slide"><div class="type-card tc-purple t3"><div class="type-card-inner"><div class="type-icon-wrap"><img src="images/type-mediator.png" alt="調整役タイプ" class="type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"><span class="type-emoji" style="display:none">🤝</span></div><div class="type-name">調整役タイプ</div><div class="type-desc">人をつなぐ潤滑油</div><p class="type-note">場の空気を読み、対立を和らげ、<br>全員が動きやすい環境を自然と作れる人。<br>チームの信頼を一身に集める存在。</p></div></div></div>
+            <div class="type-slide"><div class="type-card tc-purple t4"><div class="type-card-inner"><div class="type-icon-wrap"><img src="images/type-challenger.png" alt="挑戦者タイプ" class="type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"><span class="type-emoji" style="display:none">🚀</span></div><div class="type-name">挑戦者タイプ</div><div class="type-desc">変化を楽しむ開拓者</div><p class="type-note">変化を恐れず、誰もやっていないことに真っ先に飛び込んでいく行動派。<br>スピードと直感で道なき道を切り開く人。</p></div></div></div>
+            <div class="type-slide"><div class="type-card tc-purple t5"><div class="type-card-inner"><div class="type-icon-wrap"><img src="images/type-analyst.png" alt="分析者タイプ" class="type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"><span class="type-emoji" style="display:none">📊</span></div><div class="type-name">分析者タイプ</div><div class="type-desc">データで動く論理派</div><p class="type-note">感情より根拠、経験より数字を重視する論理派。<br>複雑な情報を整理し、冷静に最適解を導き出す<br>データドリブンな思考の持ち主。</p></div></div></div>
+            <div class="type-slide"><div class="type-card tc-purple t6"><div class="type-card-inner"><div class="type-icon-wrap"><img src="images/type-creator.png" alt="表現者タイプ" class="type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"><span class="type-emoji" style="display:none">🎨</span></div><div class="type-name">表現者タイプ</div><div class="type-desc">アイデアを形にする創造者</div><p class="type-note">頭の中のアイデアやイメージを、<br>言葉・デザイン・企画などの形で表現するのが得意。<br>ゼロから何かを生み出すことに喜びを感じる人。</p></div></div></div>
+            <div class="type-slide"><div class="type-card tc-purple t7"><div class="type-card-inner"><div class="type-icon-wrap"><img src="images/type-guardian.png" alt="守護者タイプ" class="type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"><span class="type-emoji" style="display:none">🛡️</span></div><div class="type-name">守護者タイプ</div><div class="type-desc">組織を支える縁の下の力持ち</div><p class="type-note">正確さ・誠実さ・責任感を兼ね備え、<br>組織のルールやルーティンをしっかり守る人。<br>縁の下でチームの土台を支える頼れる存在。</p></div></div></div>
+            <div class="type-slide"><div class="type-card tc-purple t8"><div class="type-card-inner"><div class="type-icon-wrap"><img src="images/type-nurturer.png" alt="育成者タイプ" class="type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"><span class="type-emoji" style="display:none">🌱</span></div><div class="type-name">育成者タイプ</div><div class="type-desc">人を育てることに喜びを感じる</div><p class="type-note">人の可能性を信じ、成長を見守ることに情熱を注げる人。<br>教えること・導くことが自然とできる、周りから慕われるメンター気質。</p></div></div></div>
+          </div>
+          <div class="type-slider-controls">
+            <button type="button" class="type-slider-btn" id="type-prev" aria-label="前のタイプ">←</button>
+            <div class="type-slider-dots" id="type-slider-dots" aria-label="スライド位置"></div>
+            <button type="button" class="type-slider-btn" id="type-next" aria-label="次のタイプ">→</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section feature-section">
+        <div class="feature-grid">
+          <article class="feature-card"><img class="feature-icon" src="images/feature_ai.png" alt="AI分析アイコン" loading="lazy"><h3>AIが一人ひとりに最適な結果を生成</h3><p>同じタイプでも違う文章が届きます</p></article>
+          <article class="feature-card"><img class="feature-icon" src="images/feature_career.png" alt="キャリア提案アイコン" loading="lazy"><h3>転職・就活に直結する実践的なアドバイス</h3><p>向いている職種まで具体的に提案</p></article>
+          <article class="feature-card"><img class="feature-icon" src="images/feature_sns.png" alt="SNSシェアアイコン" loading="lazy"><h3>結果をそのままSNSでシェア</h3><p>友達と比べてさらに盛り上がる</p></article>
+        </div>
+      </section>
+
+      <section class="section cta-section">
+        <h2>あなたのキャリアDNAを今すぐ診断</h2>
+        <button type="button" class="hero-cta" data-start-trigger>無料で診断スタート →</button>
+      </section>
+    </div>
+
+    <section id="quiz-section" class="diagnosis-panel hidden" aria-live="polite">
+      <div id="diagnosis-section" class="diagnosis-inner" style="display:none;">
+        <div class="quiz-actions-top"><button type="button" id="back-btn" class="btn-back" disabled>← 前の質問</button></div>
+        <div class="quiz-top">
+          <div class="quiz-progress-head">
+            <p class="progress-label" id="progress-label">Q1 / 25問</p>
+            <p class="progress-percent" id="progress-percent">4%</p>
+          </div>
+          <div class="progress-bar" role="progressbar" aria-valuemin="1" aria-valuemax="25" aria-valuenow="1" id="progress-bar">
+            <div class="progress-bar-fill" id="progress-bar-fill"></div>
+          </div>
+        </div>
+        <div class="question-card">
+          <h2 class="question-title" id="question-title">質問</h2>
+          <p class="question-text" id="question-text"></p>
+          <div class="choices" id="choices" role="group" aria-label="選択肢"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="diagnosis.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var nav = document.getElementById("top-nav");
+      window.addEventListener("scroll", function () {
+        if (!nav) return;
+        nav.classList.toggle("is-scrolled", window.scrollY > 12);
+      });
+      var startBtn = document.getElementById("start-btn");
+      document.querySelectorAll("[data-start-trigger]").forEach(function (btn) {
+        btn.addEventListener("click", function () { if (startBtn) startBtn.click(); });
+      });
+
+      var slider = document.getElementById("type-slider");
+      var track = document.getElementById("type-slider-track");
+      var prevBtn = document.getElementById("type-prev");
+      var nextBtn = document.getElementById("type-next");
+      var dotsWrap = document.getElementById("type-slider-dots");
+      if (!slider || !track || !prevBtn || !nextBtn || !dotsWrap) return;
+
+      var slides = Array.prototype.slice.call(track.querySelectorAll(".type-slide"));
+      var current = 0;
+      var timer = null;
+      var intervalMs = 3500;
+
+      slides.forEach(function (_, idx) {
+        var dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = "type-dot";
+        dot.setAttribute("aria-label", (idx + 1) + "枚目へ");
+        dot.addEventListener("click", function () {
+          current = idx;
+          render();
+          restartAuto();
+        });
+        dotsWrap.appendChild(dot);
+      });
+
+      var dots = Array.prototype.slice.call(dotsWrap.querySelectorAll(".type-dot"));
+
+      function render() {
+        track.style.transform = "translateX(-" + (current * 100) + "%)";
+        dots.forEach(function (dot, idx) {
+          dot.classList.toggle("is-active", idx === current);
+        });
+      }
+
+      function nextSlide() {
+        current = (current + 1) % slides.length;
+        render();
+      }
+
+      function prevSlide() {
+        current = (current - 1 + slides.length) % slides.length;
+        render();
+      }
+
+      function startAuto() {
+        stopAuto();
+        timer = window.setInterval(nextSlide, intervalMs);
+      }
+
+      function stopAuto() {
+        if (timer) {
+          window.clearInterval(timer);
+          timer = null;
+        }
+      }
+
+      function restartAuto() {
+        startAuto();
+      }
+
+      prevBtn.addEventListener("click", function () {
+        prevSlide();
+        restartAuto();
+      });
+      nextBtn.addEventListener("click", function () {
+        nextSlide();
+        restartAuto();
+      });
+      slider.addEventListener("mouseenter", stopAuto);
+      slider.addEventListener("mouseleave", startAuto);
+      slider.addEventListener("focusin", stopAuto);
+      slider.addEventListener("focusout", startAuto);
+
+      render();
+      startAuto();
+    });
+  </script>
+</body>
+</html>

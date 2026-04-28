@@ -1,0 +1,10 @@
+{
+  "name": "career-dna",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1"
+  }
+}

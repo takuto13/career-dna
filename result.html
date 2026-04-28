@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>診断結果 | キャリアDNA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-result">
+  <div class="app-shell result-page">
+    <section id="loading-section" class="loading-screen">
+      <div class="loading-inner">
+        <div class="spinner"></div>
+        <p class="loading-text">あなたのキャリアDNAを解析中...</p>
+      </div>
+    </section>
+
+    <section id="result-section" class="hidden">
+      <div id="result-header" class="result-hero">
+        <p class="result-diagnosis-heading">あなたのキャリアDNA</p>
+        <div class="result-hero-body">
+          <div class="result-type-image-wrap">
+            <img id="type-image" src="" alt="" />
+            <span id="type-icon" class="result-type-emoji"></span>
+          </div>
+          <div class="result-hero-copy">
+            <span id="type-name" class="result-type-main"></span>
+            <span id="sub-type-name" class="result-sub-type"></span>
+            <p id="sub-type-catch" class="result-sub-catch"></p>
+            <p id="type-catch" class="result-catch"></p>
+          </div>
+        </div>
+      </div>
+
+      <article class="result-card"><h2 class="section-title">概要</h2><p class="body-text" id="summary">—</p></article>
+      <article class="result-card"><h2 class="section-title">あなたの強み</h2><ul class="strength-list" id="strengths"></ul></article>
+      <article class="result-card caution-card"><h2 class="section-title">注意点</h2><p class="body-text" id="weakness">—</p></article>
+      <article class="result-card"><h2 class="section-title">向いている職種</h2><ul class="job-list job-chips" id="suitable-jobs"></ul></article>
+      <article class="result-card"><h2 class="section-title">あなたへのメッセージ</h2><p class="message-box body-text message-text" id="career-message">—</p></article>
+      <section class="button-area">
+        <a id="share-x" class="btn btn-secondary" href="#" target="_blank" rel="noopener noreferrer">𝕏 結果をシェアする</a>
+        <button type="button" id="affiliate-btn" class="btn btn-primary">このタイプに合う求人を見る →</button>
+        <a href="index.html" class="retry-link">もう一度診断する</a>
+      </section>
+    </section>
+  </div>
+
+  <script>
+    function inferTypeName(raw) {
+      const text = String(raw || "");
+      const map = [
+        { keys: ["戦略", "俯瞰"], name: "戦略家タイプ" },
+        { keys: ["職人", "専門", "深化"], name: "職人タイプ" },
+        { keys: ["調整", "協調", "調和", "橋渡し"], name: "調整役タイプ" },
+        { keys: ["挑戦", "行動"], name: "挑戦者タイプ" },
+        { keys: ["分析", "論理", "データ"], name: "分析者タイプ" },
+        { keys: ["表現", "創造"], name: "表現者タイプ" },
+        { keys: ["守護", "規律", "堅守"], name: "守護者タイプ" },
+        { keys: ["育成", "共感", "支援"], name: "育成者タイプ" }
+      ];
+      const found = map.find(m => m.keys.some(k => text.includes(k)));
+      return found ? found.name : "戦略家タイプ";
+    }
+
+    function setTypeVisual(typeName, hintText) {
+      const image = document.getElementById("type-image");
+      const icon = document.getElementById("type-icon");
+      const map = [
+        { keys: ["戦略", "俯瞰"], img: "images/type-strategist.png", emoji: "🧭", alt: "戦略家タイプのキャラクター" },
+        { keys: ["職人", "専門", "深化"], img: "images/type-craftsman.png", emoji: "🔨", alt: "職人タイプのキャラクター" },
+        { keys: ["調整", "協調", "調和", "橋渡し"], img: "images/type-mediator.png", emoji: "🤝", alt: "調整役タイプのキャラクター" },
+        { keys: ["挑戦", "行動"], img: "images/type-challenger.png", emoji: "🚀", alt: "挑戦者タイプのキャラクター" },
+        { keys: ["分析", "論理", "データ"], img: "images/type-analyst.png", emoji: "📊" },
+        { keys: ["表現", "創造", "クリエイティブ"], img: "images/type-creator.png", emoji: "🎨" },
+        { keys: ["守護", "安定", "堅実", "誠実"], img: "images/type-guardian.png", emoji: "🛡️" },
+        { keys: ["育成", "支援", "共感", "成長"], img: "images/type-nurturer.png", emoji: "🌱" }
+      ];
+      const mainSource = String(typeName || "");
+      const hintSource = String(hintText || "");
+      const foundByMain = map.find(m => m.keys.some(k => mainSource.includes(k)));
+      const foundByHint = map.find(m => m.keys.some(k => hintSource.includes(k)));
+      const found = foundByMain || foundByHint || map[0];
+      image.style.display = "block";
+      icon.style.display = "none";
+      image.onerror = function () {
+        image.style.display = "none";
+        icon.style.display = "flex";
+      };
+      image.src = found.img;
+      image.alt = found.alt || "診断タイプアイコン";
+      icon.textContent = found.emoji;
+    }
+
+    function showResult(data) {
+      const normalized = data || {};
+      const typeName = normalized.type_name || inferTypeName([normalized.type_catch, normalized.summary].join(" "));
+      document.getElementById("loading-section").classList.add("hidden");
+      document.getElementById("result-section").classList.remove("hidden");
+      document.getElementById("type-name").textContent = typeName;
+      document.getElementById("sub-type-name").textContent = normalized.sub_type || "";
+      document.getElementById("sub-type-catch").textContent = normalized.sub_type_catch || "";
+      document.getElementById("type-catch").textContent = normalized.type_catch || "";
+      document.getElementById("summary").textContent = normalized.summary || "診断結果の生成中です。";
+      document.getElementById("weakness").textContent = normalized.weakness || "強みを活かしつつ、苦手領域は周囲と補完し合うのがおすすめです。";
+      document.getElementById("career-message").textContent = normalized.career_message || "あなたらしいキャリアの選択を応援しています。";
+      setTypeVisual(
+        typeName,
+        [normalized.sub_type, normalized.sub_type_catch, normalized.type_catch, normalized.summary].filter(Boolean).join(" ")
+      );
+
+      const strengths = document.getElementById("strengths");
+      strengths.innerHTML = "";
+      (normalized.strengths || []).forEach(s => {
+        const li = document.createElement("li");
+        li.textContent = s;
+        strengths.appendChild(li);
+      });
+
+      const jobs = document.getElementById("suitable-jobs");
+      jobs.innerHTML = "";
+      (normalized.suitable_jobs || []).forEach(j => {
+        const li = document.createElement("li");
+        li.textContent = j;
+        jobs.appendChild(li);
+      });
+
+      const tweet = normalized.share_text || "#キャリアDNA診断";
+      document.getElementById("share-x").href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweet);
+    }
+
+    function runWithFallback(seed) {
+      const fallbackResult = {
+        type_name: (seed && seed.main_type) || "戦略家タイプ",
+        sub_type: (seed && seed.sub_type) || "",
+        sub_type_catch: "あなたらしい強みが活きるスタイルです",
+        type_catch: "あなたの個性が活きるタイプです",
+        summary: "診断結果を生成中のため、暫定表示しています。再読み込みで最新結果を反映できます。",
+        strengths: ["強みを活かせる環境適応力", "前向きな行動力", "継続的な成長意欲"],
+        weakness: "状況によっては視点が偏ることがあるため、周囲との対話で補完するとさらに伸びます。",
+        suitable_jobs: ["企画職", "プロジェクト推進", "課題解決型の職種"],
+        career_message: "あなたの特性は価値になります。焦らず、得意が活きる選択を重ねることがキャリアの前進につながります。",
+        share_text: "#キャリアDNA診断"
+      };
+      showResult(fallbackResult);
+    }
+
+    async function generateAndShowResult(resultSeed) {
+      if (!resultSeed || !resultSeed.main_type || !resultSeed.sub_type || !resultSeed.counts) {
+        throw new Error("診断データが不足しています");
+      }
+      const res = await fetch("/api/diagnose", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          main_type: resultSeed.main_type,
+          sub_type: resultSeed.sub_type,
+          counts: resultSeed.counts
+        })
+      });
+      if (!res.ok) throw new Error("API error");
+      const payload = await res.json();
+      showResult(payload.parsed || payload);
+    }
+
+    window.addEventListener("DOMContentLoaded", async () => {
+      const savedData = localStorage.getItem("diagnosisResult");
+      console.log("取得したデータ:", savedData);
+      if (!savedData) {
+        console.log("診断データなし → index.htmlに戻る");
+        runWithFallback();
+        return;
+      }
+      try {
+        const resultSeed = JSON.parse(savedData);
+        await generateAndShowResult(resultSeed);
+      } catch (e) {
+        console.error("エラー:", e);
+        try {
+          const parsedSeed = JSON.parse(savedData);
+          runWithFallback(parsedSeed);
+        } catch (_) {
+          runWithFallback();
+        }
+      }
+    });
+  </script>
+</body>
+</html>
