@@ -428,13 +428,13 @@
         sub_type: subType,
         answers: answers
       }));
-      console.log("[diagnosis] 診断完了。result.htmlへ遷移します", {
+      console.log("[diagnosis] 診断完了。./result.htmlへ遷移します", {
         key: STORAGE_KEY,
         main_type: mainType,
         sub_type: subType,
         counts: counts
       });
-      window.location.href = "result.html";
+      window.location.href = "./result.html";
       return;
     }
 

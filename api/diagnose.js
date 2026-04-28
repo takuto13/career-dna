@@ -39,60 +39,59 @@ function parseModelJson(text) {
   return JSON.parse(trimmed);
 }
 
-/**
- * @param {any} req
- * @param {any} res
- */
+function buildUserPromptFromPayload(body) {
+  var mainType = body && body.main_type;
+  var subType = body && body.sub_type;
+  var counts = body && body.counts;
+  if (!mainType || !subType || !counts) return null;
+  if (
+    typeof counts.A !== "number" ||
+    typeof counts.B !== "number" ||
+    typeof counts.C !== "number" ||
+    typeof counts.D !== "number"
+  ) {
+    return null;
+  }
+  return (
+    "以下はユーザーの診断回答結果です。\n\n" +
+    "【メインタイプ】" + mainType + "\n" +
+    "【サブ型】" + subType + "\n" +
+    "【回答集計】\n" +
+    "A（戦略・分析）：" + counts.A + "回\n" +
+    "B（専門・職人）：" + counts.B + "回\n" +
+    "C（調整・育成）：" + counts.C + "回\n" +
+    "D（挑戦・創造）：" + counts.D + "回\n\n" +
+    "上記のmain_typeとsub_typeを必ずそのまま使用して\n" +
+    "診断結果を生成してください。"
+  );
+}
+
 module.exports = async function handler(req, res) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
   try {
     if (req.method === "OPTIONS") {
-      res.setHeader("Access-Control-Allow-Origin", "*");
-      res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
-      res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-      return res.status(204).end();
+      return res.status(200).end();
     }
 
     if (req.method !== "POST") {
-      res.setHeader("Allow", "POST, OPTIONS");
-      return res.status(405).json({ error: "Method Not Allowed" });
+      return res.status(405).json({ error: "Method not allowed" });
     }
 
     var apiKey = process.env.ANTHROPIC_API_KEY;
     if (!apiKey) {
-      console.error("[api/diagnose] ANTHROPIC_API_KEY が未設定です。");
       return res.status(500).json({ error: "ANTHROPIC_API_KEY is missing" });
     }
 
-    var mainType = req.body && req.body.main_type;
-    var subType = req.body && req.body.sub_type;
-    var counts = req.body && req.body.counts;
-    if (!mainType || !subType || !counts) {
-      console.error("[api/diagnose] 診断データが不正です。", req.body);
-      return res.status(500).json({ error: "Missing diagnosis payload" });
-    }
-    if (
-      typeof counts.A !== "number" ||
-      typeof counts.B !== "number" ||
-      typeof counts.C !== "number" ||
-      typeof counts.D !== "number"
-    ) {
-      console.error("[api/diagnose] counts が不正です。", counts);
-      return res.status(500).json({ error: "Invalid counts payload" });
-    }
-    const userPrompt = `
-以下はユーザーの診断回答結果です。
+    var userPrompt = req.body && typeof req.body.user === "string"
+      ? req.body.user
+      : buildUserPromptFromPayload(req.body);
 
-【メインタイプ】${mainType}
-【サブ型】${subType}
-【回答集計】
-A（戦略・分析）：${counts.A}回
-B（専門・職人）：${counts.B}回
-C（調整・育成）：${counts.C}回
-D（挑戦・創造）：${counts.D}回
-
-上記のmain_typeとsub_typeを必ずそのまま使用して
-診断結果を生成してください。
-`;
+    if (!userPrompt) {
+      return res.status(400).json({ error: "Missing user prompt" });
+    }
 
     var response = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
@@ -110,31 +109,26 @@ D（挑戦・創造）：${counts.D}回
       }),
     });
 
+    var data = await response.json();
     if (!response.ok) {
-      var errText = await response.text();
-      console.error("[api/diagnose] Anthropic API エラー:", response.status, errText);
-      return res.status(500).json({ error: "Upstream error", detail: errText });
+      console.error("Anthropic APIエラー:", response.status, JSON.stringify(data));
+      return res.status(500).json({ error: "API error", detail: data });
     }
 
-    var data = await response.json();
-    var text =
-      data &&
-      data.content &&
-      data.content[0] &&
-      data.content[0].type === "text"
-        ? data.content[0].text
-        : "";
+    var text = Array.isArray(data.content)
+      ? data.content.map(function (i) { return i && i.text ? i.text : ""; }).join("")
+      : "";
 
     try {
-      var parsed = parseModelJson(text);
-      res.setHeader("Access-Control-Allow-Origin", "*");
-      return res.status(200).json({ parsed: parsed, rawText: text });
+      var jsonMatch = text.match(/\{[\s\S]*\}/);
+      var parsed = jsonMatch ? JSON.parse(jsonMatch[0]) : parseModelJson(text);
+      return res.status(200).json({ parsed: parsed });
     } catch (pe) {
-      console.error("[api/diagnose] JSON パース失敗:", pe, text);
+      console.error("[api/diagnose] JSON パース失敗:", pe);
       return res.status(500).json({ error: "Invalid JSON from model", rawText: text });
     }
   } catch (e) {
-    console.error("[api/diagnose] 予期しないエラー:", e);
-    return res.status(500).json({ error: "Internal Server Error", detail: String(e) });
+    console.error("サーバーエラー:", e);
+    return res.status(500).json({ error: e.message || String(e) });
   }
 };

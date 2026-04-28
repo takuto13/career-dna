@@ -259,7 +259,7 @@
 
     if (window.location.hostname !== "localhost") {
       setLoadingVisible(false);
-      showFallbackBanner("この環境ではAPIを呼び出せません。`node server.js` で確認してください。");
+      showFallbackBanner("この環境ではAPIを呼び出せません。`node server.js.bak` で確認してください。");
       renderResult(DUMMY_RESULT);
       return;
     }
