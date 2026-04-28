@@ -3909,10 +3909,21 @@ body {
 /* Result hero: left image, right texts */
 .page-result #result-header.result-hero {
   text-align: left;
+  border-radius: 0;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  max-width: 100vw;
 }
 
 .page-result #result-header .result-diagnosis-heading {
   text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.24);
+  margin-bottom: 12px;
 }
 
 .page-result #result-header .result-hero-body {
@@ -3924,7 +3935,7 @@ body {
 .page-result #result-header .result-type-image-wrap {
   width: 100%;
   height: 100%;
-  min-height: 140px;
+  min-height: 180px;
   margin: 0;
   display: flex;
   align-items: center;
@@ -3932,8 +3943,8 @@ body {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.14);
   border: 1px solid rgba(255, 255, 255, 0.24);
-  max-width: 220px;
-  max-height: 220px;
+  max-width: 280px;
+  max-height: 280px;
   aspect-ratio: 1 / 1;
 }
 
@@ -3968,9 +3979,9 @@ body {
   }
 
   .page-result #result-header .result-type-image-wrap {
-    min-height: 120px;
-    max-width: 120px;
-    max-height: 120px;
+    min-height: 148px;
+    max-width: 148px;
+    max-height: 148px;
   }
 
   .page-result #result-header .result-hero-copy {
@@ -4001,6 +4012,10 @@ body {
     padding: 24px 14px 20px;
   }
 
+  .page-result #result-header .result-diagnosis-heading {
+    font-size: 16px;
+  }
+
   .page-result #result-header .result-hero-body {
     grid-template-columns: 4fr 7fr;
     gap: 8px;
@@ -4008,9 +4023,9 @@ body {
   }
 
   .page-result #result-header .result-type-image-wrap {
-    min-height: 96px;
-    max-width: 96px;
-    max-height: 96px;
+    min-height: 116px;
+    max-width: 116px;
+    max-height: 116px;
   }
 
   .page-result #result-header .result-hero-copy {
