@@ -4003,6 +4003,8 @@ body {
     min-height: 148px;
     max-width: 148px;
     max-height: 148px;
+    justify-self: center;
+    align-self: center;
   }
 
   .page-result #result-header .result-hero-copy {
@@ -4047,6 +4049,8 @@ body {
     min-height: 116px;
     max-width: 116px;
     max-height: 116px;
+    justify-self: center;
+    align-self: center;
   }
 
   .page-result #result-header .result-hero-copy {
