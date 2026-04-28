@@ -3962,20 +3962,20 @@ body {
 
 @media (max-width: 768px) {
   .page-result #result-header .result-hero-body {
-    grid-template-columns: 112px 1fr;
+    grid-template-columns: 4fr 7fr;
     gap: 10px;
     align-items: center;
   }
 
   .page-result #result-header .result-type-image-wrap {
-    min-height: 112px;
-    max-width: 112px;
-    max-height: 112px;
+    min-height: 120px;
+    max-width: 120px;
+    max-height: 120px;
   }
 
   .page-result #result-header .result-hero-copy {
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
   }
 
   .page-result #result-header .result-type-main {
@@ -4002,14 +4002,20 @@ body {
   }
 
   .page-result #result-header .result-hero-body {
-    grid-template-columns: 88px 1fr;
+    grid-template-columns: 4fr 7fr;
     gap: 8px;
+    align-items: center;
   }
 
   .page-result #result-header .result-type-image-wrap {
-    min-height: 88px;
-    max-width: 88px;
-    max-height: 88px;
+    min-height: 96px;
+    max-width: 96px;
+    max-height: 96px;
+  }
+
+  .page-result #result-header .result-hero-copy {
+    align-items: center;
+    text-align: center;
   }
 
   .page-result #result-header .result-type-main {

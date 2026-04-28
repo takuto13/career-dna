@@ -140,7 +140,14 @@
         jobs.appendChild(li);
       });
 
-      const tweet = normalized.share_text || "#キャリアDNA診断";
+      const shareUrl = "https://career-dna.jp";
+      const fallbackShare =
+        "私は「" +
+        typeName +
+        (normalized.sub_type ? "×" + normalized.sub_type : "") +
+        "」でした！ #キャリアDNA診断";
+      const shareBase = normalized.share_text || fallbackShare;
+      const tweet = shareBase.includes(shareUrl) ? shareBase : (shareBase + " " + shareUrl);
       document.getElementById("share-x").href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweet);
     }
 
