@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>免責事項 | キャリアDNA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    .static-wrap { max-width: 860px; margin: 88px auto 36px; padding: 0 16px; }
+    .static-card { background: #fff; border: 1px solid #ece9ff; border-radius: 14px; padding: 20px; }
+    .static-title { margin: 0 0 14px; font-size: 24px; color: #5b21b6; }
+    .static-section + .static-section { margin-top: 18px; }
+    .static-section h2 { margin: 0 0 8px; font-size: 16px; }
+    .static-section p { margin: 0; line-height: 1.8; }
+    .sub-nav, .sub-footer { display: flex; gap: 10px; flex-wrap: wrap; }
+    .sub-nav a, .sub-footer a { color: #5b21b6; text-decoration: none; font-size: 13px; }
+    .sub-nav a:hover, .sub-footer a:hover { text-decoration: underline; }
+    .sub-footer-wrap { margin-top: 20px; padding-top: 14px; border-top: 1px solid #ece9ff; }
+  </style>
+</head>
+<body>
+  <nav class="top-nav" id="top-nav">
+    <div class="top-nav-inner">
+      <a href="./index.html" class="logo">
+        <img src="images/CareerDNA_hlogo.png" alt="CareerDNA" class="logo-image" loading="eager" />
+      </a>
+      <div class="nav-menu-group">
+        <button type="button" class="menu-toggle-btn" aria-label="メニューを開く" aria-expanded="false">☰</button>
+        <div class="site-menu-links">
+          <a href="./privacy.html">プライバシーポリシー</a>
+          <a href="./about.html">運営者情報</a>
+          <a href="./contact.html">お問い合わせ</a>
+          <a href="./disclaimer.html">免責事項</a>
+        </div>
+        <a href="./index.html" class="nav-start-btn">無料診断開始</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="static-wrap">
+    <article class="static-card">
+      <h1 class="static-title">免責事項</h1>
+
+      <section class="static-section">
+        <h2>1. 診断結果について</h2>
+        <p>当サイトで提供する診断結果は、AIを用いて生成された参考情報であり、その内容の正確性、完全性、有用性、ならびに個人の適性やキャリアの方向性について、いかなる保証も行うものではありません。</p>
+      </section>
+
+      <section class="static-section">
+        <h2>2. 進路・転職結果の保証について</h2>
+        <p>当サイトの情報を利用したことにより生じた転職・就職活動の結果について、運営者は一切の保証を行いません。</p>
+      </section>
+
+      <section class="static-section">
+        <h2>3. アフィリエイトリンクについて</h2>
+        <p>当サイトには、アフィリエイトリンクが含まれる場合があります。リンク先で商品申込やサービス利用が発生した際、運営者が報酬を受け取ることがあります。</p>
+      </section>
+
+      <div class="sub-footer-wrap">
+        <div class="sub-footer">
+          <a href="./privacy.html">プライバシーポリシー</a>
+          <a href="./about.html">運営者情報</a>
+          <a href="./contact.html">お問い合わせ</a>
+          <a href="./disclaimer.html">免責事項</a>
+        </div>
+      </div>
+    </article>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var toggleBtn = document.querySelector(".menu-toggle-btn");
+      var menuLinks = document.querySelector(".site-menu-links");
+      if (!toggleBtn || !menuLinks) return;
+
+      toggleBtn.addEventListener("click", function () {
+        var isOpen = menuLinks.classList.toggle("is-open");
+        toggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!menuLinks.classList.contains("is-open")) return;
+        if (event.target.closest(".nav-menu-group")) return;
+        menuLinks.classList.remove("is-open");
+        toggleBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>運営者情報 | キャリアDNA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    .static-wrap { max-width: 860px; margin: 88px auto 36px; padding: 0 16px; }
+    .static-card { background: #fff; border: 1px solid #ece9ff; border-radius: 14px; padding: 20px; }
+    .static-title { margin: 0 0 14px; font-size: 24px; color: #5b21b6; }
+    .profile-list { margin: 0; padding: 0; list-style: none; }
+    .profile-list li { padding: 10px 0; border-bottom: 1px solid #f1edff; }
+    .profile-list li:last-child { border-bottom: 0; }
+    .label { font-weight: 700; color: #433f65; margin-right: 8px; }
+    .sub-nav, .sub-footer { display: flex; gap: 10px; flex-wrap: wrap; }
+    .sub-nav a, .sub-footer a { color: #5b21b6; text-decoration: none; font-size: 13px; }
+    .sub-nav a:hover, .sub-footer a:hover { text-decoration: underline; }
+    .sub-footer-wrap { margin-top: 20px; padding-top: 14px; border-top: 1px solid #ece9ff; }
+  </style>
+</head>
+<body>
+  <nav class="top-nav" id="top-nav">
+    <div class="top-nav-inner">
+      <a href="./index.html" class="logo">
+        <img src="images/CareerDNA_hlogo.png" alt="CareerDNA" class="logo-image" loading="eager" />
+      </a>
+      <div class="nav-menu-group">
+        <button type="button" class="menu-toggle-btn" aria-label="メニューを開く" aria-expanded="false">☰</button>
+        <div class="site-menu-links">
+          <a href="./privacy.html">プライバシーポリシー</a>
+          <a href="./about.html">運営者情報</a>
+          <a href="./contact.html">お問い合わせ</a>
+          <a href="./disclaimer.html">免責事項</a>
+        </div>
+        <a href="./index.html" class="nav-start-btn">無料診断開始</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="static-wrap">
+    <article class="static-card">
+      <h1 class="static-title">運営者情報</h1>
+      <ul class="profile-list">
+        <li><span class="label">サイト名：</span>キャリアDNA</li>
+        <li><span class="label">サイトURL：</span>https://career-dna.jp</li>
+        <li><span class="label">運営者：</span>幕内 拓人（個人運営）</li>
+        <li><span class="label">所在地：</span>東京</li>
+        <li><span class="label">連絡先メール：</span>careerdna@outlook.com</li>
+        <li><span class="label">設立：</span>2026年4月29日</li>
+        <li><span class="label">目的：</span>就活生・転職者向けキャリア診断の提供</li>
+      </ul>
+
+      <div class="sub-footer-wrap">
+        <div class="sub-footer">
+          <a href="./privacy.html">プライバシーポリシー</a>
+          <a href="./about.html">運営者情報</a>
+          <a href="./contact.html">お問い合わせ</a>
+          <a href="./disclaimer.html">免責事項</a>
+        </div>
+      </div>
+    </article>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var toggleBtn = document.querySelector(".menu-toggle-btn");
+      var menuLinks = document.querySelector(".site-menu-links");
+      if (!toggleBtn || !menuLinks) return;
+
+      toggleBtn.addEventListener("click", function () {
+        var isOpen = menuLinks.classList.toggle("is-open");
+        toggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!menuLinks.classList.contains("is-open")) return;
+        if (event.target.closest(".nav-menu-group")) return;
+        menuLinks.classList.remove("is-open");
+        toggleBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+</body>
+</html>

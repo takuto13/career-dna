@@ -31,6 +31,24 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body class="page-result">
+  <nav class="top-nav" id="top-nav">
+    <div class="top-nav-inner">
+      <a href="./index.html" class="logo">
+        <img src="images/CareerDNA_hlogo.png" alt="CareerDNA" class="logo-image" loading="eager" />
+      </a>
+      <div class="nav-menu-group">
+        <button type="button" class="menu-toggle-btn" aria-label="メニューを開く" aria-expanded="false">☰</button>
+        <div class="site-menu-links">
+          <a href="./privacy.html">プライバシーポリシー</a>
+          <a href="./about.html">運営者情報</a>
+          <a href="./contact.html">お問い合わせ</a>
+          <a href="./disclaimer.html">免責事項</a>
+        </div>
+        <a href="./index.html" class="nav-start-btn">無料診断開始</a>
+      </div>
+    </div>
+  </nav>
+
   <div class="app-shell result-page">
     <section id="loading-section" class="loading-screen">
       <div class="loading-inner">
@@ -62,13 +80,13 @@
       <article class="result-card"><h2 class="section-title">向いている職種</h2><ul class="job-list job-chips" id="suitable-jobs"></ul></article>
       <article class="result-card"><h2 class="section-title">あなたへのメッセージ</h2><p class="message-box body-text message-text" id="career-message">—</p></article>
       <section class="button-area">
-        <a id="share-x" class="btn btn-secondary" href="#" target="_blank" rel="noopener noreferrer">𝕏 結果をシェアする</a>
         <button type="button" id="affiliate-btn" class="btn btn-primary">このタイプに合う求人を見る →</button>
-        <a href="./index.html" class="retry-link">もう一度診断する</a>
+        <a id="share-x" class="btn btn-secondary" href="#" target="_blank" rel="noopener noreferrer">𝕏 結果をシェアする</a>
       </section>
     </section>
   </div>
 
+  <script src="affiliate-config.js"></script>
   <script>
     function inferTypeName(raw) {
       const text = String(raw || "");
@@ -157,6 +175,15 @@
       const shareBase = normalized.share_text || fallbackShare;
       const tweet = shareBase.includes(shareUrl) ? shareBase : (shareBase + " " + shareUrl);
       document.getElementById("share-x").href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweet);
+      document.getElementById("affiliate-btn")
+        .onclick = () => {
+          const typeName =
+            document.getElementById("type-name")
+            .textContent;
+          window.location.href =
+            "jobs.html?type=" +
+            encodeURIComponent(typeName);
+        };
     }
 
     function runWithFallback(seed) {
@@ -175,6 +202,12 @@
       showResult(fallbackResult);
     }
 
+    function isSameSeed(a, b) {
+      if (!a || !b) return false;
+      if (a.main_type !== b.main_type || a.sub_type !== b.sub_type) return false;
+      return JSON.stringify(a.counts || {}) === JSON.stringify(b.counts || {});
+    }
+
     async function generateAndShowResult(resultSeed) {
       if (!resultSeed || !resultSeed.main_type || !resultSeed.sub_type || !resultSeed.counts) {
         throw new Error("診断データが不足しています");
@@ -190,10 +223,41 @@
       });
       if (!res.ok) throw new Error("API error");
       const payload = await res.json();
-      showResult(payload.parsed || payload);
+      const parsedPayload = payload.parsed || payload;
+      localStorage.setItem(
+        "diagnosisRenderedResult",
+        JSON.stringify({
+          seed: resultSeed,
+          payload: parsedPayload
+        })
+      );
+      showResult(parsedPayload);
     }
 
     window.addEventListener("DOMContentLoaded", async () => {
+      const syncResultTopOffset = () => {
+        const nav = document.getElementById("top-nav");
+        if (!nav) return;
+        document.body.style.setProperty("--result-nav-offset", nav.offsetHeight + "px");
+      };
+      syncResultTopOffset();
+      window.addEventListener("resize", syncResultTopOffset);
+
+      const menuToggleBtn = document.querySelector(".menu-toggle-btn");
+      const menuLinks = document.querySelector(".site-menu-links");
+      if (menuToggleBtn && menuLinks) {
+        menuToggleBtn.addEventListener("click", () => {
+          const isOpen = menuLinks.classList.toggle("is-open");
+          menuToggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+        document.addEventListener("click", (event) => {
+          if (!menuLinks.classList.contains("is-open")) return;
+          if (event.target.closest(".nav-menu-group")) return;
+          menuLinks.classList.remove("is-open");
+          menuToggleBtn.setAttribute("aria-expanded", "false");
+        });
+      }
+
       const savedData = localStorage.getItem("diagnosisResult");
       console.log("取得したデータ:", savedData);
       if (!savedData) {
@@ -203,6 +267,14 @@
       }
       try {
         const resultSeed = JSON.parse(savedData);
+        const cachedRendered = localStorage.getItem("diagnosisRenderedResult");
+        if (cachedRendered) {
+          const cached = JSON.parse(cachedRendered);
+          if (cached && cached.payload && isSameSeed(cached.seed, resultSeed)) {
+            showResult(cached.payload);
+            return;
+          }
+        }
         await generateAndShowResult(resultSeed);
       } catch (e) {
         console.error("エラー:", e);

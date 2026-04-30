@@ -453,6 +453,8 @@
       .forEach(function (el) { el.style.display = "none"; });
     var nav = document.querySelector("nav");
     if (nav) nav.style.display = "none";
+    var landingMain = document.querySelector(".landing-main");
+    if (landingMain) landingMain.style.paddingTop = "0";
     document.body.style.background = "#f8f9ff";
     var diagnosisSection = document.getElementById("diagnosis-section");
     if (diagnosisSection) diagnosisSection.style.display = "block";

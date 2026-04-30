@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>お問い合わせ | キャリアDNA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    .static-wrap { max-width: 860px; margin: 88px auto 36px; padding: 0 16px; }
+    .static-card { background: #fff; border: 1px solid #ece9ff; border-radius: 14px; padding: 20px; }
+    .static-title { margin: 0 0 14px; font-size: 24px; color: #5b21b6; }
+    .guide { margin: 0 0 14px; color: #635d81; }
+    .contact-form { display: grid; gap: 12px; }
+    .contact-form label { font-size: 13px; font-weight: 700; color: #433f65; }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      border: 1px solid #d9d4ef;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font: inherit;
+    }
+    .contact-form textarea { min-height: 120px; resize: vertical; }
+    .form-link-wrap { margin-top: 14px; }
+    .sub-nav, .sub-footer { display: flex; gap: 10px; flex-wrap: wrap; }
+    .sub-nav a, .sub-footer a { color: #5b21b6; text-decoration: none; font-size: 13px; }
+    .sub-nav a:hover, .sub-footer a:hover { text-decoration: underline; }
+    .sub-footer-wrap { margin-top: 20px; padding-top: 14px; border-top: 1px solid #ece9ff; }
+  </style>
+</head>
+<body>
+  <nav class="top-nav" id="top-nav">
+    <div class="top-nav-inner">
+      <a href="./index.html" class="logo">
+        <img src="images/CareerDNA_hlogo.png" alt="CareerDNA" class="logo-image" loading="eager" />
+      </a>
+      <div class="nav-menu-group">
+        <button type="button" class="menu-toggle-btn" aria-label="メニューを開く" aria-expanded="false">☰</button>
+        <div class="site-menu-links">
+          <a href="./privacy.html">プライバシーポリシー</a>
+          <a href="./about.html">運営者情報</a>
+          <a href="./contact.html">お問い合わせ</a>
+          <a href="./disclaimer.html">免責事項</a>
+        </div>
+        <a href="./index.html" class="nav-start-btn">無料診断開始</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="static-wrap">
+    <article class="static-card">
+      <h1 class="static-title">お問い合わせ</h1>
+      <p class="guide">お問い合わせは下記フォームから送信してください。送信先メールは careerdna@outlook.com です。</p>
+
+      <form class="contact-form" action="mailto:careerdna@outlook.com" method="post" enctype="text/plain">
+        <div>
+          <label for="name">氏名</label>
+          <input id="name" name="name" type="text" placeholder="山田 太郎" />
+        </div>
+        <div>
+          <label for="email">メールアドレス</label>
+          <input id="email" name="email" type="email" placeholder="example@email.com" />
+        </div>
+        <div>
+          <label for="message">お問い合わせ内容</label>
+          <textarea id="message" name="message" placeholder="お問い合わせ内容をご記入ください"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">メールで送信する</button>
+      </form>
+
+      <div class="form-link-wrap">
+        <a class="btn btn-secondary" href="mailto:careerdna@outlook.com" target="_blank" rel="noopener noreferrer">
+          直接メールを作成する
+        </a>
+      </div>
+
+      <div class="sub-footer-wrap">
+        <div class="sub-footer">
+          <a href="./privacy.html">プライバシーポリシー</a>
+          <a href="./about.html">運営者情報</a>
+          <a href="./contact.html">お問い合わせ</a>
+          <a href="./disclaimer.html">免責事項</a>
+        </div>
+      </div>
+    </article>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var toggleBtn = document.querySelector(".menu-toggle-btn");
+      var menuLinks = document.querySelector(".site-menu-links");
+      if (!toggleBtn || !menuLinks) return;
+
+      toggleBtn.addEventListener("click", function () {
+        var isOpen = menuLinks.classList.toggle("is-open");
+        toggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!menuLinks.classList.contains("is-open")) return;
+        if (event.target.closest(".nav-menu-group")) return;
+        menuLinks.classList.remove("is-open");
+        toggleBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+</body>
+</html>
