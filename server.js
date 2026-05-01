@@ -4,6 +4,7 @@ const path = require("path");
 require("dotenv").config();
 
 const diagnoseHandler = require("./api/diagnose");
+const contactHandler = require("./api/contact");
 const PUBLIC_DIR = path.join(__dirname, "public");
 
 const MIME_TYPES = {
@@ -78,6 +79,17 @@ const server = http.createServer(async (req, res) => {
     try {
       req.body = await parseBody(req);
       await diagnoseHandler(req, createResAdapter(res));
+    } catch (e) {
+      res.writeHead(500, { "Content-Type": "application/json" });
+      res.end(JSON.stringify({ error: "Internal Server Error", detail: String(e) }));
+    }
+    return;
+  }
+
+  if (urlPath === "/api/contact" && req.method === "POST") {
+    try {
+      req.body = await parseBody(req);
+      await contactHandler(req, createResAdapter(res));
     } catch (e) {
       res.writeHead(500, { "Content-Type": "application/json" });
       res.end(JSON.stringify({ error: "Internal Server Error", detail: String(e) }));

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>キャリア図鑑 | キャリアDNA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    .static-wrap { max-width: 980px; margin: 0 auto 36px; padding: var(--glossary-nav-offset, 76px) 16px 0; }
+    .static-card { background: transparent; border: 0; border-radius: 0; padding: 0; }
+    .glossary-hero {
+      position: relative;
+      overflow: hidden;
+      width: 100vw;
+      margin: 0 calc(50% - 50vw) 20px;
+      padding: 54px 24px;
+      border-radius: 0;
+      background: linear-gradient(135deg, #0f0c29 0%, #302b63 55%, #24243e 100%);
+      text-align: center;
+      color: #ffffff;
+    }
+    .glossary-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.04) 0px,
+        rgba(255, 255, 255, 0.04) 1px,
+        transparent 1px,
+        transparent 22px
+      );
+      pointer-events: none;
+    }
+    .static-title { position: relative; z-index: 1; margin: 0 0 10px; font-size: 24px; color: #ffffff; }
+    .glossary-intro { position: relative; z-index: 1; margin: 0; color: rgba(255, 255, 255, 0.78); line-height: 1.8; }
+    .glossary-definition {
+      margin: 0 0 16px;
+      border: 1px solid #ece9ff;
+      border-radius: 12px;
+      padding: 16px;
+      background: #fcfbff;
+    }
+    .glossary-definition h2 {
+      margin: 0 0 8px;
+      font-size: 24px;
+      color: #3f2f86;
+      text-align: center;
+    }
+    .glossary-definition p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.95;
+      color: #2f2f2f;
+    }
+    .glossary-type-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      padding: 14px;
+    }
+    .glossary-type-card {
+      width: 80%;
+      min-height: 280px;
+      border-radius: 14px;
+      overflow: hidden;
+      color: #ffffff;
+      box-shadow: none;
+      border: 0;
+    }
+    .glossary-type-card:nth-child(odd) {
+      margin-right: auto;
+    }
+    .glossary-type-card:nth-child(even) {
+      margin-left: auto;
+    }
+    .glossary-type-inner {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto 1fr;
+      text-align: left;
+    }
+    .glossary-type-icon-wrap {
+      grid-column: 1;
+      grid-row: 1 / 4;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .glossary-type-img,
+    .glossary-type-emoji {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      object-fit: cover;
+      display: block;
+    }
+    .glossary-type-emoji {
+      display: none;
+      font-size: 66px;
+      line-height: 1;
+    }
+    .glossary-type-name {
+      grid-column: 2;
+      margin: 0;
+      padding: 16px 10px 0 10px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.35;
+      text-align: center;
+    }
+    .glossary-type-desc {
+      grid-column: 2;
+      margin: 2px 0 0;
+      padding: 0 10px;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.5;
+      text-align: center;
+    }
+    .glossary-type-note {
+      grid-column: 2;
+      margin: 10px 0 0;
+      padding: 0 10px 16px 10px;
+    }
+    .glossary-type-point {
+      margin: 0 auto 10px;
+      width: 100%;
+      max-width: 37ch;
+    }
+    .glossary-type-term {
+      margin: 0 0 4px;
+      width: 100%;
+      font-size: 15px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.98);
+      line-height: 1.4;
+      text-align: left;
+    }
+    .glossary-type-text {
+      margin: 0;
+      width: 100%;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.95);
+      line-height: 1.85;
+      text-align: left;
+    }
+    .glossary-type-point:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 1200px) {
+      .glossary-type-card {
+        width: 88%;
+        min-height: 260px;
+      }
+      .glossary-type-name {
+        font-size: 22px;
+      }
+      .glossary-type-desc {
+        font-size: 15px;
+      }
+      .glossary-type-text {
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 900px) {
+      .glossary-type-grid {
+        padding: 8px 0;
+      }
+      .glossary-type-card {
+        width: 100%;
+        min-height: 0;
+        padding: 4px;
+      }
+      .glossary-type-card:nth-child(odd),
+      .glossary-type-card:nth-child(even) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .glossary-type-inner {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .glossary-type-card.t1 .glossary-type-inner { background: #7c3aed; }
+      .glossary-type-card.t1 { background: linear-gradient(135deg, #5b21b6, #a78bfa); }
+      .glossary-type-card.t2 .glossary-type-inner { background: #2563eb; }
+      .glossary-type-card.t2 { background: linear-gradient(135deg, #1d4ed8, #7dd3fc); }
+      .glossary-type-card.t3 .glossary-type-inner { background: #0d9488; }
+      .glossary-type-card.t3 { background: linear-gradient(135deg, #0f766e, #5eead4); }
+      .glossary-type-card.t4 .glossary-type-inner { background: #d97706; }
+      .glossary-type-card.t4 { background: linear-gradient(135deg, #b45309, #fdba74); }
+      .glossary-type-card.t5 .glossary-type-inner { background: #4f46e5; }
+      .glossary-type-card.t5 { background: linear-gradient(135deg, #3730a3, #a5b4fc); }
+      .glossary-type-card.t6 .glossary-type-inner { background: #db2777; }
+      .glossary-type-card.t6 { background: linear-gradient(135deg, #be185d, #f9a8d4); }
+      .glossary-type-card.t7 .glossary-type-inner { background: #475569; }
+      .glossary-type-card.t7 { background: linear-gradient(135deg, #334155, #cbd5e1); }
+      .glossary-type-card.t8 .glossary-type-inner { background: #16a34a; }
+      .glossary-type-card.t8 { background: linear-gradient(135deg, #15803d, #86efac); }
+      .glossary-type-icon-wrap {
+        grid-column: 1;
+        grid-row: 1;
+        min-height: 180px;
+        padding: 10px;
+      }
+      .glossary-type-img,
+      .glossary-type-emoji {
+        width: clamp(120px, 38vw, 180px);
+        height: clamp(120px, 38vw, 180px);
+        max-width: none;
+        max-height: none;
+        border-radius: 50%;
+        object-fit: contain;
+      }
+      .glossary-type-emoji {
+        font-size: 54px;
+      }
+      .glossary-type-name {
+        grid-column: 1;
+        font-size: 20px;
+        padding: 12px 22px 0 22px;
+      }
+      .glossary-type-desc {
+        grid-column: 1;
+        font-size: 14px;
+        padding: 0 22px;
+      }
+      .glossary-type-note {
+        grid-column: 1;
+        margin-top: 8px;
+        padding: 0 22px 16px 22px;
+      }
+      .glossary-type-point {
+        max-width: 100%;
+      }
+      .glossary-type-point {
+        font-size: 14px;
+        line-height: 1.75;
+      }
+      .glossary-type-term {
+        font-size: 14px;
+      }
+      .glossary-type-text {
+        font-size: 14px;
+        line-height: 1.75;
+      }
+    }
+    @media (max-width: 600px) {
+      .static-wrap {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      .glossary-hero {
+        padding: 42px 18px;
+      }
+      .glossary-definition {
+        padding: 14px;
+      }
+      .glossary-definition h2 {
+        font-size: 21px;
+      }
+      .glossary-definition p {
+        font-size: 15px;
+        line-height: 1.85;
+      }
+      .glossary-type-name {
+        font-size: 18px;
+      }
+      .glossary-type-icon-wrap {
+        min-height: 160px;
+      }
+      .glossary-type-img,
+      .glossary-type-emoji {
+        width: clamp(110px, 42vw, 160px);
+        height: clamp(110px, 42vw, 160px);
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DefinedTermSet",
+      "name": "キャリアDNA キャリア図鑑",
+      "description": "キャリアDNA診断で使用する主要概念と8タイプの詳細解説",
+      "hasDefinedTerm": [
+        {
+          "@type": "DefinedTerm",
+          "name": "キャリアDNAとは",
+          "description": "キャリアDNAは、回答者の思考傾向・意思決定・対人行動を横断的に分析し、仕事上で再現性高く成果を出せる行動特性を可視化する診断概念です。単なる性格分類ではなく、職務適性、環境適合、成長戦略まで接続することを目的とし、8タイプ×16型の枠組みで自己理解とキャリア選択の精度向上を支援します。"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "戦略家タイプ",
+          "description": "戦略家タイプは、情報を俯瞰し、目的から逆算して優先順位を設計する力に優れたタイプです。強みは構造化思考、意思決定速度、組織視点で、複雑な課題でも道筋を示せます。一方で、現場の感情や細部運用への配慮が不足すると孤立しやすい側面があります。適職は事業企画、経営企画、プロダクトマネジメントなど全体最適を担う職種です。"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "職人タイプ",
+          "description": "職人タイプは、専門領域を深掘りし、品質を高め続ける集中力を持つタイプです。強みは継続学習、精度への執着、再現性ある成果創出で、難易度の高い実務を安定して遂行できます。反面、完璧主義が意思決定の遅れにつながる場合があり、広報的な自己発信が弱い傾向もあります。適職はエンジニア、研究開発、設計、データ分析など専門性が価値になる領域です。"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "調整役タイプ",
+          "description": "調整役タイプは、利害の異なる人々をつなぎ、合意形成を進める対人調整力を持つタイプです。強みは傾聴力、関係構築力、摩擦の緩和で、チーム全体の推進効率を高めます。弱みは自己主張の後回しによる疲弊や、衝突回避による決断遅延が起こりやすい点です。適職は人事、カスタマーサクセス、プロジェクト推進、営業企画など協働を基盤にした職種です。"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "挑戦者タイプ",
+          "description": "挑戦者タイプは、新規性や変化に対して高い適応力を持ち、まず行動して学習を進めるタイプです。強みは実行速度、仮説検証力、状況変化への柔軟さで、不確実性の高い環境で成果を出しやすい特徴があります。反面、計画精度や運用安定性が不足すると継続性が下がることがあります。適職は新規事業、ベンチャー企画、グロース領域、事業開発などです。"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "分析者タイプ",
+          "description": "分析者タイプは、データと論理を軸に意思決定を行い、再現可能な改善を積み上げるタイプです。強みは因果関係の把握、指標設計、問題分解で、感覚に依存しない精密な判断が可能です。弱みは情報収集の過多による着手遅れや、周囲との温度差が生じる点です。適職はデータアナリスト、戦略コンサル、マーケ分析、業務改善など定量性の高い職務です。"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "表現者タイプ",
+          "description": "表現者タイプは、抽象的な価値をわかりやすく言語化・視覚化し、人を動かす発信力に優れたタイプです。強みは企画力、ストーリー構築、共感喚起で、ブランドやサービスの魅力を伝える場面で高い効果を発揮します。弱みは運用ルールへの適応や細部管理の負荷が高くなりやすい点です。適職はクリエイティブ職、広報、コンテンツ企画、UX設計などです。"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "守護者タイプ",
+          "description": "守護者タイプは、ルール運用と品質維持に強く、組織の土台を安定させるタイプです。強みは責任感、正確性、継続運用力で、業務の再現性と安全性を確保しながら信頼を積み上げます。弱みは変化の速い意思決定環境で慎重さが過剰になりやすい点です。適職はバックオフィス、経理、法務、品質管理、情報管理など安定運用が重要な職域です。"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "育成者タイプ",
+          "description": "育成者タイプは、人の成長可能性を見極め、支援設計を通じて成果へ導くタイプです。強みは共感力、伴走力、長期視点で、個人やチームの潜在能力を引き出す役割で力を発揮します。弱みは他者優先による自己負荷の増大や、期待過多による失望が生じやすい点です。適職はマネジメント、教育、人材開発、キャリア支援、コミュニティ運営などです。"
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+  <nav class="top-nav" id="top-nav">
+    <div class="top-nav-inner">
+      <a href="./index.html" class="logo">
+        <img src="images/CareerDNA_hlogo.png" alt="CareerDNA" class="logo-image" loading="eager" />
+      </a>
+      <div class="nav-menu-group">
+        <button type="button" class="menu-toggle-btn" aria-label="メニューを開く" aria-expanded="false">☰</button>
+        <div class="site-menu-links">
+          <a href="./glossary.html">キャリア図鑑</a>
+          <a href="./faq.html">よくある質問</a>
+          <a href="./contact.html">お問い合わせ</a>
+        </div>
+        <a href="./index.html" class="nav-start-btn">無料診断開始</a>
+      </div>
+    </div>
+  </nav>
+  <main class="static-wrap">
+    <section class="glossary-hero">
+      <h1 class="static-title">キャリア図鑑</h1>
+      <p class="glossary-intro">キャリアDNAで登場する概念とタイプを整理しています。仕事選び・職場選び・自己PRに活かすための基礎情報としてご活用ください。</p>
+    </section>
+    <article class="static-card">
+      <section class="glossary-definition">
+        <h2>キャリアDNAとは</h2>
+        <p>キャリアDNAは、回答者の思考傾向・意思決定・対人行動を横断的に分析し、仕事上で再現性高く成果を出せる行動特性を可視化する診断概念です。単なる性格分類ではなく、職務適性、環境適合、成長戦略まで接続することを目的とし、8タイプ×16型の枠組みで自己理解とキャリア選択の精度向上を支援します。</p>
+      </section>
+      <div class="glossary-type-grid">
+        <article class="glossary-type-card t1">
+          <div class="glossary-type-inner">
+            <div class="glossary-type-icon-wrap">
+              <img src="images/type-strategist.png" alt="戦略家タイプ" class="glossary-type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+              <span class="glossary-type-emoji">🧭</span>
+            </div>
+            <h3 class="glossary-type-name">戦略家タイプ</h3>
+            <p class="glossary-type-desc">全体を見て動く司令塔</p>
+            <div class="glossary-type-note">
+              <div class="glossary-type-point"><p class="glossary-type-term">強み</p><p class="glossary-type-text">情報を俯瞰して構造化し、目的から逆算して優先順位を設計できます。複雑な課題でも意思決定が速く、組織全体の方向性を示せます。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">弱み</p><p class="glossary-type-text">現場感情や運用細部への配慮が不足すると、独走して見られることがあります。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">適職</p><p class="glossary-type-text">事業企画、経営企画、プロダクトマネジメント、戦略推進など全体最適を担う職種。</p></div>
+            </div>
+          </div>
+        </article>
+        <article class="glossary-type-card t2 is-center-copy">
+          <div class="glossary-type-inner">
+            <div class="glossary-type-icon-wrap">
+              <img src="images/type-craftsman.png" alt="職人タイプ" class="glossary-type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+              <span class="glossary-type-emoji">🔨</span>
+            </div>
+            <h3 class="glossary-type-name">職人タイプ</h3>
+            <p class="glossary-type-desc">深く極める専門家</p>
+            <div class="glossary-type-note">
+              <div class="glossary-type-point"><p class="glossary-type-term">強み</p><p class="glossary-type-text">一つの領域を深掘りし、精度と品質を継続的に高める力があります。難易度の高い実務でも再現性ある成果を積み上げられます。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">弱み</p><p class="glossary-type-text">完璧主義が強まると意思決定が遅れたり、自己発信が後回しになりがちです。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">適職</p><p class="glossary-type-text">エンジニア、研究開発、設計、データ分析、品質改善など専門性が価値になる職種。</p></div>
+            </div>
+          </div>
+        </article>
+        <article class="glossary-type-card t3">
+          <div class="glossary-type-inner">
+            <div class="glossary-type-icon-wrap">
+              <img src="images/type-mediator.png" alt="調整役タイプ" class="glossary-type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+              <span class="glossary-type-emoji">🤝</span>
+            </div>
+            <h3 class="glossary-type-name">調整役タイプ</h3>
+            <p class="glossary-type-desc">人をつなぐ潤滑油</p>
+            <div class="glossary-type-note">
+              <div class="glossary-type-point"><p class="glossary-type-term">強み</p><p class="glossary-type-text">傾聴力と関係構築力に優れ、利害の異なるメンバーの合意形成を進めることが得意です。チーム全体の摩擦を減らし、推進効率を高めます。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">弱み</p><p class="glossary-type-text">衝突回避を優先しすぎると決断が遅れたり、自分の意見を抑え込み疲弊しやすくなります。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">適職</p><p class="glossary-type-text">人事、営業企画、プロジェクト推進、カスタマーサクセスなど協働中心の職種。</p></div>
+            </div>
+          </div>
+        </article>
+        <article class="glossary-type-card t4">
+          <div class="glossary-type-inner">
+            <div class="glossary-type-icon-wrap">
+              <img src="images/type-challenger.png" alt="挑戦者タイプ" class="glossary-type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+              <span class="glossary-type-emoji">🚀</span>
+            </div>
+            <h3 class="glossary-type-name">挑戦者タイプ</h3>
+            <p class="glossary-type-desc">変化を楽しむ開拓者</p>
+            <div class="glossary-type-note">
+              <div class="glossary-type-point"><p class="glossary-type-term">強み</p><p class="glossary-type-text">変化への適応が速く、まず行動して学習しながら前進できます。仮説検証の回転が早く、不確実性が高い場面で成果を出しやすいタイプです。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">弱み</p><p class="glossary-type-text">計画精度や運用安定性が不足すると、継続面でムラが出る場合があります。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">適職</p><p class="glossary-type-text">新規事業、事業開発、スタートアップ、グロース領域、変革プロジェクトなどスピード重視の職種。</p></div>
+            </div>
+          </div>
+        </article>
+        <article class="glossary-type-card t5">
+          <div class="glossary-type-inner">
+            <div class="glossary-type-icon-wrap">
+              <img src="images/type-analyst.png" alt="分析者タイプ" class="glossary-type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+              <span class="glossary-type-emoji">📊</span>
+            </div>
+            <h3 class="glossary-type-name">分析者タイプ</h3>
+            <p class="glossary-type-desc">データで動く論理派</p>
+            <div class="glossary-type-note">
+              <div class="glossary-type-point"><p class="glossary-type-term">強み</p><p class="glossary-type-text">データと論理を軸に因果関係を捉え、再現可能な改善を設計できます。複雑な問題を分解し、根拠ある判断で成果に結び付ける力があります。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">弱み</p><p class="glossary-type-text">情報収集が過多になると着手が遅れたり、周囲と温度差が生まれることがあります。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">適職</p><p class="glossary-type-text">データアナリスト、戦略コンサル、マーケ分析、業務改善、リサーチ系職種。</p></div>
+            </div>
+          </div>
+        </article>
+        <article class="glossary-type-card t6">
+          <div class="glossary-type-inner">
+            <div class="glossary-type-icon-wrap">
+              <img src="images/type-creator.png" alt="表現者タイプ" class="glossary-type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+              <span class="glossary-type-emoji">🎨</span>
+            </div>
+            <h3 class="glossary-type-name">表現者タイプ</h3>
+            <p class="glossary-type-desc">アイデアを形にする創造者</p>
+            <div class="glossary-type-note">
+              <div class="glossary-type-point"><p class="glossary-type-term">強み</p><p class="glossary-type-text">抽象的な価値を言語化・視覚化し、共感を生むストーリーとして届ける力があります。企画力と発信力で、サービスやブランドの魅力を高められます。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">弱み</p><p class="glossary-type-text">細かな運用ルールや事務的管理に負荷を感じやすく、継続オペレーションが課題になりがちです。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">適職</p><p class="glossary-type-text">クリエイティブ職、広報、コンテンツ企画、ブランディング、UX設計。</p></div>
+            </div>
+          </div>
+        </article>
+        <article class="glossary-type-card t7">
+          <div class="glossary-type-inner">
+            <div class="glossary-type-icon-wrap">
+              <img src="images/type-guardian.png" alt="守護者タイプ" class="glossary-type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+              <span class="glossary-type-emoji">🛡️</span>
+            </div>
+            <h3 class="glossary-type-name">守護者タイプ</h3>
+            <p class="glossary-type-desc">組織を支える力持ち</p>
+            <div class="glossary-type-note">
+              <div class="glossary-type-point"><p class="glossary-type-term">強み</p><p class="glossary-type-text">責任感と正確性が高く、ルール運用や品質維持を安定して担えます。組織の土台を守り、再現性と安全性を確保する信頼の要です。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">弱み</p><p class="glossary-type-text">変化が速い環境では慎重さが強く出て、意思決定スピードで不利になる場合があります。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">適職</p><p class="glossary-type-text">バックオフィス、経理、法務、品質管理、情報管理など安定運用が重要な職種。</p></div>
+            </div>
+          </div>
+        </article>
+        <article class="glossary-type-card t8">
+          <div class="glossary-type-inner">
+            <div class="glossary-type-icon-wrap">
+              <img src="images/type-nurturer.png" alt="育成者タイプ" class="glossary-type-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+              <span class="glossary-type-emoji">🌱</span>
+            </div>
+            <h3 class="glossary-type-name">育成者タイプ</h3>
+            <p class="glossary-type-desc">人の成長を支える伴走者</p>
+            <div class="glossary-type-note">
+              <div class="glossary-type-point"><p class="glossary-type-term">強み</p><p class="glossary-type-text">相手の可能性を見抜き、伴走しながら成長を引き出す支援設計が得意です。共感力と長期視点で、個人とチームの成果向上に貢献できます。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">弱み</p><p class="glossary-type-text">他者優先が続くと自己負荷が高まり、期待過多による失望を抱えやすくなります。</p></div>
+              <div class="glossary-type-point"><p class="glossary-type-term">適職</p><p class="glossary-type-text">マネジメント、教育、人材開発、キャリア支援、コミュニティ運営など育成系職種。</p></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+  </main>
+  <footer class="global-footer" aria-label="サイトマップ">
+    <div class="global-footer-inner global-footer-split">
+      <div class="footer-left">
+        <a href="./index.html" class="footer-logo-link" aria-label="トップへ戻る">
+          <img src="images/CareerDNA_hlogo.png" alt="CareerDNA" class="footer-logo-image" loading="lazy" />
+        </a>
+        <div class="global-footer-links">
+          <a href="./index.html">トップ</a>
+          <a href="./jobs.html?type=戦略家タイプ">求人ページ</a>
+          <a href="./glossary.html">キャリア図鑑</a>
+          <a href="./faq.html">よくあるご質問</a>
+          <a href="./privacy.html">プライバシーポリシー</a>
+          <a href="./about.html">運営者情報</a>
+          <a href="./contact.html">お問い合わせ</a>
+          <a href="./disclaimer.html">免責事項</a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <h2 class="footer-cta-title">あなたのキャリアDNAを今すぐ診断</h2>
+        <a href="./index.html" class="hero-cta footer-cta-btn">無料で診断スタート →</a>
+        <div class="footer-socials" aria-label="SNSリンク">
+          <a href="#" class="footer-social-link js-share-link" data-share-platform="x" aria-label="Xで共有">
+            <svg class="footer-x-icon" viewBox="0 0 1200 1227" aria-hidden="true" focusable="false"><path fill="currentColor" d="M714.2 519.3 1160.9 0H1055L667.1 450.9 357.4 0H0l468.5 681.8L0 1226.4h105.9l409.6-476.2 327.1 476.2H1200L714.2 519.3Zm-145 168.7-47.5-67.9L154 94.3h162.6l296.7 424.5 47.5 67.9 385.6 551.7H884.8L569.2 688Z"/></svg>
+          </a>
+          <a href="#" class="footer-social-link js-share-link" data-share-platform="instagram" aria-label="Instagramで共有">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5-3.25a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17 6.25Z"/></svg>
+          </a>
+          <a href="#" class="footer-social-link js-share-link" data-share-platform="note" aria-label="noteで共有"><span class="footer-note-icon" aria-hidden="true">note</span></a>
+          <a href="#" class="footer-social-link js-share-link" data-share-platform="facebook" aria-label="Facebookで共有">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.5 22v-8h2.9l.6-3h-3.5V9.2c0-.9.4-1.7 1.9-1.7H17V4.8c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.2V11H8v3h2.6v8h2.9Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="global-footer-copy">© 2026 キャリアDNA All Rights Reserved.</p>
+  </footer>
+  <button type="button" class="back-to-top-btn" aria-label="ページ上部へ戻る">▲</button>
+  <script src="./back-to-top.js"></script>
+  <script src="./social-share.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var nav = document.getElementById("top-nav");
+      var syncGlossaryTopOffset = function () {
+        if (!nav) return;
+        document.body.style.setProperty("--glossary-nav-offset", nav.offsetHeight + "px");
+      };
+      syncGlossaryTopOffset();
+      window.addEventListener("resize", syncGlossaryTopOffset);
+
+      var toggleBtn = document.querySelector(".menu-toggle-btn");
+      var menuLinks = document.querySelector(".site-menu-links");
+      if (!toggleBtn || !menuLinks) return;
+      toggleBtn.addEventListener("click", function () {
+        var isOpen = menuLinks.classList.toggle("is-open");
+        toggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+      document.addEventListener("click", function (event) {
+        if (!menuLinks.classList.contains("is-open")) return;
+        if (event.target.closest(".nav-menu-group")) return;
+        menuLinks.classList.remove("is-open");
+        toggleBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+</body>
+</html>

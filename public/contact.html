@@ -8,29 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
-  <style>
-    .static-wrap { max-width: 860px; margin: 88px auto 36px; padding: 0 16px; }
-    .static-card { background: #fff; border: 1px solid #ece9ff; border-radius: 14px; padding: 20px; }
-    .static-title { margin: 0 0 14px; font-size: 24px; color: #5b21b6; }
-    .guide { margin: 0 0 14px; color: #635d81; }
-    .contact-form { display: grid; gap: 12px; }
-    .contact-form label { font-size: 13px; font-weight: 700; color: #433f65; }
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      border: 1px solid #d9d4ef;
-      border-radius: 10px;
-      padding: 10px 12px;
-      font: inherit;
-    }
-    .contact-form textarea { min-height: 120px; resize: vertical; }
-    .form-link-wrap { margin-top: 14px; }
-    .sub-nav, .sub-footer { display: flex; gap: 10px; flex-wrap: wrap; }
-    .sub-nav a, .sub-footer a { color: #5b21b6; text-decoration: none; font-size: 13px; }
-    .sub-nav a:hover, .sub-footer a:hover { text-decoration: underline; }
-    .sub-footer-wrap { margin-top: 20px; padding-top: 14px; border-top: 1px solid #ece9ff; }
-  </style>
 </head>
-<body>
+<body class="page-contact">
   <nav class="top-nav" id="top-nav">
     <div class="top-nav-inner">
       <a href="./index.html" class="logo">
@@ -39,54 +18,129 @@
       <div class="nav-menu-group">
         <button type="button" class="menu-toggle-btn" aria-label="メニューを開く" aria-expanded="false">☰</button>
         <div class="site-menu-links">
-          <a href="./privacy.html">プライバシーポリシー</a>
-          <a href="./about.html">運営者情報</a>
+          <a href="./glossary.html">キャリア図鑑</a>
+          <a href="./faq.html">よくある質問</a>
           <a href="./contact.html">お問い合わせ</a>
-          <a href="./disclaimer.html">免責事項</a>
         </div>
         <a href="./index.html" class="nav-start-btn">無料診断開始</a>
       </div>
     </div>
   </nav>
-  <main class="static-wrap">
-    <article class="static-card">
-      <h1 class="static-title">お問い合わせ</h1>
-      <p class="guide">お問い合わせは下記フォームから送信してください。送信先メールは careerdna@outlook.com です。</p>
+  <main class="contact-main">
+    <div class="contact-container">
+      <section class="contact-hero">
+        <h1 class="contact-hero-title">お問い合わせ</h1>
+        <p class="contact-hero-sub">ご質問・ご相談は下記フォームよりお気軽にお送りください。内容を確認のうえ、順次ご案内いたします。</p>
+      </section>
 
-      <form class="contact-form" action="mailto:careerdna@outlook.com" method="post" enctype="text/plain">
-        <div>
-          <label for="name">氏名</label>
-          <input id="name" name="name" type="text" placeholder="山田 太郎" />
+      <section class="contact-topics" aria-label="お問い合わせカテゴリ">
+        <h2 class="contact-section-title">何についてのお問い合わせですか？</h2>
+        <div class="contact-topic-grid">
+          <article class="contact-topic-card">
+            <h3>診断結果について</h3>
+            <p>結果の見方や活用方法、表示内容に関するご質問はこちら。</p>
+          </article>
+          <article class="contact-topic-card">
+            <h3>法人・メディアの方</h3>
+            <p>取材、提携、監修、掲載などのご相談はこちら。</p>
+          </article>
+          <article class="contact-topic-card">
+            <h3>その他・不具合報告</h3>
+            <p>表示崩れ、動作不良、改善要望などはこちらからご連絡ください。</p>
+          </article>
         </div>
-        <div>
-          <label for="email">メールアドレス</label>
-          <input id="email" name="email" type="email" placeholder="example@email.com" />
-        </div>
-        <div>
-          <label for="message">お問い合わせ内容</label>
-          <textarea id="message" name="message" placeholder="お問い合わせ内容をご記入ください"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">メールで送信する</button>
-      </form>
+      </section>
 
-      <div class="form-link-wrap">
-        <a class="btn btn-secondary" href="mailto:careerdna@outlook.com" target="_blank" rel="noopener noreferrer">
-          直接メールを作成する
+      <section class="contact-form-section" aria-label="お問い合わせフォーム">
+        <h2 class="contact-section-title">お問い合わせフォーム</h2>
+        <form class="contact-form" action="https://docs.google.com/forms/" method="post" target="_blank">
+          <div class="contact-field">
+            <label for="name">お名前</label>
+            <input id="name" name="name" type="text" placeholder="山田 太郎" required />
+          </div>
+          <div class="contact-field">
+            <label for="email">メールアドレス</label>
+            <input id="email" name="email" type="email" placeholder="example@email.com" required />
+          </div>
+          <div class="contact-field">
+            <label for="topic">お問い合わせの種類</label>
+            <select id="topic" name="topic" required>
+              <option value="">選択してください</option>
+              <option value="診断結果について">診断結果について</option>
+              <option value="法人・メディアの方">法人・メディアの方</option>
+              <option value="その他・不具合報告">その他・不具合報告</option>
+            </select>
+          </div>
+          <div class="contact-field">
+            <label for="message">内容</label>
+            <textarea id="message" name="message" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+          </div>
+          <button type="submit" class="contact-submit-btn">送信する</button>
+        </form>
+      </section>
+
+      <section class="contact-faq-guide">
+        <a href="./faq.html" class="btn btn-secondary">よくある質問はこちら</a>
+      </section>
+    </div>
+  </main>
+  <footer class="global-footer" aria-label="サイトマップ">
+    <div class="global-footer-inner global-footer-split">
+      <div class="footer-left">
+        <a href="./index.html" class="footer-logo-link" aria-label="トップへ戻る">
+          <img src="images/CareerDNA_hlogo.png" alt="CareerDNA" class="footer-logo-image" loading="lazy" />
         </a>
-      </div>
-
-      <div class="sub-footer-wrap">
-        <div class="sub-footer">
+        <div class="global-footer-links">
+          <a href="./index.html">トップ</a>
+          <a href="./jobs.html?type=戦略家タイプ">求人ページ</a>
+          <a href="./glossary.html">キャリア図鑑</a>
+          <a href="./faq.html">よくあるご質問</a>
           <a href="./privacy.html">プライバシーポリシー</a>
           <a href="./about.html">運営者情報</a>
           <a href="./contact.html">お問い合わせ</a>
           <a href="./disclaimer.html">免責事項</a>
         </div>
       </div>
-    </article>
-  </main>
+      <div class="footer-right">
+        <h2 class="footer-cta-title">あなたのキャリアDNAを今すぐ診断</h2>
+        <a href="./index.html" class="hero-cta footer-cta-btn">無料で診断スタート →</a>
+        <div class="footer-socials" aria-label="SNSリンク">
+          <a href="#" class="footer-social-link js-share-link" data-share-platform="x" aria-label="Xで共有">
+            <svg class="footer-x-icon" viewBox="0 0 1200 1227" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M714.2 519.3 1160.9 0H1055L667.1 450.9 357.4 0H0l468.5 681.8L0 1226.4h105.9l409.6-476.2 327.1 476.2H1200L714.2 519.3Zm-145 168.7-47.5-67.9L154 94.3h162.6l296.7 424.5 47.5 67.9 385.6 551.7H884.8L569.2 688Z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-link js-share-link" data-share-platform="instagram" aria-label="Instagramで共有">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5-3.25a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17 6.25Z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-link js-share-link" data-share-platform="note" aria-label="noteで共有">
+            <span class="footer-note-icon" aria-hidden="true">note</span>
+          </a>
+          <a href="#" class="footer-social-link js-share-link" data-share-platform="facebook" aria-label="Facebookで共有">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M13.5 22v-8h2.9l.6-3h-3.5V9.2c0-.9.4-1.7 1.9-1.7H17V4.8c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.2V11H8v3h2.6v8h2.9Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="global-footer-copy">© 2026 キャリアDNA All Rights Reserved.</p>
+  </footer>
+  <button type="button" class="back-to-top-btn" aria-label="ページ上部へ戻る">▲</button>
+  <script src="./back-to-top.js"></script>
+  <script src="./social-share.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
+      var nav = document.getElementById("top-nav");
+      var syncContactTopOffset = function () {
+        if (!nav) return;
+        document.body.style.setProperty("--contact-nav-offset", nav.offsetHeight + "px");
+      };
+      syncContactTopOffset();
+      window.addEventListener("resize", syncContactTopOffset);
+
       var toggleBtn = document.querySelector(".menu-toggle-btn");
       var menuLinks = document.querySelector(".site-menu-links");
       if (!toggleBtn || !menuLinks) return;

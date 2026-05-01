@@ -37,7 +37,7 @@ const MIRAIF_SAAS_BANNER = `<a href="https://px.a8.net/svt/ejp?a8mat=4B1XDY+AG9Z
 // タイプ別広告カードデータ
 const TYPE_AD_CONFIG = {
   "戦略": {
-    label: "🧭 戦略家タイプにおすすめのサービス",
+    label: "戦略家タイプにおすすめのサービス",
     cards: [
       {
         id: "miraif-saas",
@@ -75,7 +75,7 @@ const TYPE_AD_CONFIG = {
     ]
   },
   "職人": {
-    label: "🔨 職人タイプにおすすめのサービス",
+    label: "職人タイプにおすすめのサービス",
     cards: [
       {
         id: "meiko",
@@ -113,7 +113,7 @@ const TYPE_AD_CONFIG = {
     ]
   },
   "調整": {
-    label: "🤝 調整役タイプにおすすめのサービス",
+    label: "調整役タイプにおすすめのサービス",
     cards: [
       {
         id: "miraif-hr",
@@ -151,7 +151,7 @@ const TYPE_AD_CONFIG = {
     ]
   },
   "挑戦": {
-    label: "🚀 挑戦者タイプにおすすめのサービス",
+    label: "挑戦者タイプにおすすめのサービス",
     cards: [
       {
         id: "uzuz-it",
@@ -189,7 +189,7 @@ const TYPE_AD_CONFIG = {
     ]
   },
   "分析": {
-    label: "📊 分析者タイプにおすすめのサービス",
+    label: "分析者タイプにおすすめのサービス",
     cards: [
       {
         id: "miraif-saas",
@@ -227,7 +227,7 @@ const TYPE_AD_CONFIG = {
     ]
   },
   "表現": {
-    label: "🎨 表現者タイプにおすすめのサービス",
+    label: "表現者タイプにおすすめのサービス",
     cards: [
       {
         id: "uzuz-it",
@@ -265,7 +265,7 @@ const TYPE_AD_CONFIG = {
     ]
   },
   "守護": {
-    label: "🛡️ 守護者タイプにおすすめのサービス",
+    label: "守護者タイプにおすすめのサービス",
     cards: [
       {
         id: "pharma",
@@ -303,7 +303,7 @@ const TYPE_AD_CONFIG = {
     ]
   },
   "育成": {
-    label: "🌱 育成者タイプにおすすめのサービス",
+    label: "育成者タイプにおすすめのサービス",
     cards: [
       {
         id: "pharma",
