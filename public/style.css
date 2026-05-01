@@ -4504,7 +4504,7 @@ body {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
-  font-size: 12px;
+  font-size: clamp(13px, 0.35vw + 12px, 15px);
   font-weight: 500;
   white-space: nowrap;
 }
@@ -4646,7 +4646,7 @@ body {
   .top-nav .nav-start-btn {
     min-height: 40px;
     padding: 8px clamp(10px, 2.8vw, 14px);
-    font-size: clamp(11px, 2.9vw, 13px);
+    font-size: clamp(13px, 2.6vw, 15px);
     line-height: 1.2;
     white-space: nowrap;
     flex-shrink: 0;
@@ -5233,7 +5233,7 @@ footer {
 
 .top-nav .nav-start-btn {
   padding: clamp(9px, 0.7vw, 13px) clamp(14px, 1.2vw, 22px);
-  font-size: clamp(12px, 0.82vw, 15px);
+  font-size: clamp(13px, 0.9vw, 16px);
 }
 
 @media (min-width: 1200px) and (min-aspect-ratio: 16/9) {
@@ -5601,7 +5601,7 @@ body {
   width: 100%;
   max-width: 900px;
   box-sizing: border-box;
-  margin: 88px auto 36px;
+  margin: calc(var(--faq-nav-offset, 76px) + 20px) auto 36px;
   padding: 0 16px;
 }
 
@@ -5609,7 +5609,8 @@ body {
   background: #ffffff;
   border: 1px solid #ece9ff;
   border-radius: 14px;
-  padding: 20px;
+  /* vw は画面幅で変わるため縦横比で余白がぶれる。文字サイズ基準で一定にする */
+  padding: 1.75rem 20px 20px;
 }
 
 .page-faq .faq-page-title {

@@ -193,6 +193,14 @@
   <script src="./social-share.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
+      var nav = document.getElementById("top-nav");
+      var syncFaqTopOffset = function () {
+        if (!nav) return;
+        document.body.style.setProperty("--faq-nav-offset", nav.offsetHeight + "px");
+      };
+      syncFaqTopOffset();
+      window.addEventListener("resize", syncFaqTopOffset);
+
       var toggleBtn = document.querySelector(".menu-toggle-btn");
       var menuLinks = document.querySelector(".site-menu-links");
       if (toggleBtn && menuLinks) {
