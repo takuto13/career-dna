@@ -4808,3 +4808,173 @@ body {
     margin-top: 0;
   }
 }
+
+/* Wide aspect ratio tuning (resolution/aspect based, not monitor size based) */
+@media (min-width: 1200px) and (min-aspect-ratio: 16/9) {
+  body {
+    font-size: clamp(15px, 0.18vw + 12px, 17px);
+  }
+
+  .top-nav-inner {
+    max-width: min(92vw, 1480px);
+    padding-left: clamp(20px, 2.2vw, 40px);
+    padding-right: clamp(20px, 2.2vw, 40px);
+  }
+
+  .page-index .hero-section {
+    padding-left: clamp(36px, 4vw, 110px);
+    padding-right: clamp(36px, 4vw, 110px);
+  }
+
+  .page-index .section {
+    padding-left: clamp(24px, 3vw, 80px);
+    padding-right: clamp(24px, 3vw, 80px);
+  }
+
+  .page-index .type-slider {
+    max-width: min(88vw, 820px);
+  }
+
+  .page-index .feature-grid {
+    max-width: min(92vw, 1320px);
+  }
+
+  .jobs-page {
+    max-width: min(92vw, 1080px);
+    padding-left: clamp(14px, 1.8vw, 26px);
+    padding-right: clamp(14px, 1.8vw, 26px);
+  }
+
+  .ad-container {
+    max-width: min(90vw, 900px);
+  }
+
+  .static-wrap {
+    max-width: min(90vw, 1160px);
+    padding-left: clamp(14px, 1.6vw, 24px);
+    padding-right: clamp(14px, 1.6vw, 24px);
+  }
+
+  .page-result .result-page {
+    max-width: min(92vw, 1040px);
+  }
+}
+
+/* Fluid header/nav positioning across wide ratios */
+.top-nav-inner {
+  padding-top: clamp(14px, 1vw, 20px);
+  padding-bottom: clamp(14px, 1vw, 20px);
+  padding-left: clamp(14px, 1.6vw, 28px);
+  padding-right: clamp(14px, 1.6vw, 28px);
+}
+
+.logo-image {
+  height: clamp(28px, 1.7vw, 38px);
+}
+
+.nav-menu-group {
+  gap: clamp(8px, 0.9vw, 14px);
+}
+
+.top-nav .nav-start-btn {
+  padding: clamp(9px, 0.7vw, 13px) clamp(14px, 1.2vw, 22px);
+  font-size: clamp(12px, 0.82vw, 15px);
+}
+
+@media (min-width: 1200px) and (min-aspect-ratio: 16/9) {
+  .page-index .hero-image {
+    width: min(42vw, 560px);
+    max-width: 560px;
+  }
+
+  .page-index .hero-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: min(52vh, 520px);
+  }
+}
+
+/* =========================================================
+   Global fluid layout layer
+   - Keep design tone, make spacing/typography/container fluid
+   ========================================================= */
+:root {
+  --fluid-page-gutter: clamp(12px, 2.2vw, 34px);
+  --fluid-content-max: min(94vw, 1360px);
+  --fluid-text-base: clamp(14px, 0.22vw + 13px, 17px);
+}
+
+html {
+  font-size: var(--fluid-text-base);
+}
+
+body {
+  font-size: 1rem;
+}
+
+.top-nav-inner {
+  max-width: var(--fluid-content-max);
+  padding-left: var(--fluid-page-gutter);
+  padding-right: var(--fluid-page-gutter);
+}
+
+.landing-main,
+.jobs-page,
+.result-page,
+.static-wrap,
+.app-shell {
+  width: min(100%, var(--fluid-content-max));
+}
+
+/* Keep TOP hero background full-bleed */
+.page-index .landing-main {
+  width: 100%;
+  max-width: none;
+}
+
+.section,
+.page-index .section {
+  padding-left: var(--fluid-page-gutter);
+  padding-right: var(--fluid-page-gutter);
+}
+
+.page-index .hero-section {
+  padding-left: clamp(20px, 4vw, 120px);
+  padding-right: clamp(20px, 4vw, 120px);
+}
+
+.page-index .hero-title {
+  font-size: clamp(1.9rem, 2.9vw, 3.1rem);
+}
+
+.section-heading {
+  font-size: clamp(1.25rem, 1.35vw, 1.9rem);
+}
+
+.ad-card-title,
+.static-title {
+  font-size: clamp(1.05rem, 1.05vw, 1.45rem);
+}
+
+.body-text,
+.ad-card-desc,
+.ad-card-points li,
+.jobs-subcopy,
+.result-catch {
+  font-size: clamp(0.9rem, 0.35vw, 1rem);
+}
+
+.ad-container {
+  max-width: min(92vw, 980px);
+  padding-left: clamp(12px, 1.6vw, 20px);
+  padding-right: clamp(12px, 1.6vw, 20px);
+}
+
+@media (max-aspect-ratio: 4/3) and (min-width: 901px) {
+  .page-index .hero-section {
+    padding-left: clamp(24px, 2.6vw, 64px);
+    padding-right: clamp(24px, 2.6vw, 64px);
+  }
+}
+
