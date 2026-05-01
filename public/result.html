@@ -222,9 +222,7 @@
       const tweet = shareBase.includes(shareUrl) ? shareBase : (shareBase + " " + shareUrl);
       document.getElementById("share-x").href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweet);
       const affiliateBtn = document.getElementById("affiliate-btn");
-      affiliateBtn.textContent = normalized.affiliate_copy || "このタイプに合う求人を見る →";
-      affiliateBtn
-        .onclick = () => {
+      affiliateBtn.onclick = () => {
           const typeName =
             document.getElementById("type-name")
             .textContent;
@@ -245,7 +243,6 @@
         strengths: ["強みを活かせる環境適応力", "前向きな行動力", "継続的な成長意欲"],
         weakness: "状況によっては視点が偏ることがあるため、周囲との対話で補完するとさらに伸びます。",
         suitable_jobs: ["企画職", "プロジェクト推進"],
-        affiliate_copy: "このタイプの方に今最も選ばれている、キャリアアップに強い求人サービスはこちらです。",
         career_message: "あなたのこの才能は、組織において強みを実行に変え、組織成果へ着実に接続するという唯一無二の価値を生みます。焦らず、得意が活きる選択を重ねることがキャリアの前進につながります。",
         share_text: "#キャリアDNA"
       };

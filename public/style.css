@@ -4660,6 +4660,21 @@ body {
   background: linear-gradient(135deg, #0f0c29 0%, #302b63 55%, #24243e 100%);
 }
 
+/* Keep footer pinned to viewport bottom on short pages (.page-faq は下で個別指定) */
+body:has(> .global-footer):not(.page-faq) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+body:has(> .global-footer):not(.page-faq) > main,
+body:has(> .global-footer):not(.page-faq) > .landing-main,
+body:has(> .global-footer):not(.page-faq) > .jobs-page,
+body:has(> .global-footer):not(.page-faq) > .app-shell,
+body:has(> .global-footer):not(.page-faq) > .static-wrap {
+  flex: 1 0 auto;
+}
+
 .global-footer-inner {
   max-width: min(94vw, 1320px);
   margin: 0 auto;
@@ -5576,10 +5591,16 @@ body {
 /* FAQ page accordion */
 .page-faq {
   background: #f8f9ff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
 
 .page-faq .faq-main {
+  flex: 1 0 auto;
+  width: 100%;
   max-width: 900px;
+  box-sizing: border-box;
   margin: 88px auto 36px;
   padding: 0 16px;
 }
