@@ -8,6 +8,11 @@ function requireEnv(name) {
   return value;
 }
 
+var NAME_MAX = 100;
+var EMAIL_MAX = 254;
+var MESSAGE_MAX = 2000;
+var EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 function sanitize(input) {
   return String(input || "").trim();
 }
@@ -18,12 +23,16 @@ module.exports = async function contactHandler(req, res) {
   }
 
   try {
-    const name = sanitize(req.body?.name);
-    const email = sanitize(req.body?.email);
-    const message = sanitize(req.body?.message);
+    const name = sanitize(req.body?.name).slice(0, NAME_MAX);
+    const email = sanitize(req.body?.email).slice(0, EMAIL_MAX);
+    const message = sanitize(req.body?.message).slice(0, MESSAGE_MAX);
 
     if (!name || !email || !message) {
       return res.status(400).json({ error: "必須項目が未入力です。" });
+    }
+
+    if (!EMAIL_REGEX.test(email)) {
+      return res.status(400).json({ error: "メールアドレスの形式が正しくありません。" });
     }
 
     const smtpHost = requireEnv("SMTP_HOST");
@@ -61,9 +70,9 @@ module.exports = async function contactHandler(req, res) {
 
     return res.status(200).json({ ok: true });
   } catch (error) {
+    console.error("contactHandler エラー:", error);
     return res.status(500).json({
-      error: "送信に失敗しました。時間をおいて再度お試しください。",
-      detail: String(error)
+      error: "送信に失敗しました。時間をおいて再度お試しください。"
     });
   }
 };

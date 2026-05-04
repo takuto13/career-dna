@@ -163,10 +163,30 @@ function normalizeParsed(parsed, seed) {
   };
 }
 
-module.exports = async function handler(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+var ALLOWED_ORIGINS = ["https://career-dna.jp", "http://localhost:3000", "http://localhost:5000"];
+var USER_PROMPT_MAX_LEN = 2000;
+var COUNTS_MAX = 25;
+
+function setCorsHeaders(req, res) {
+  var origin = req.headers && req.headers.origin;
+  if (origin && ALLOWED_ORIGINS.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  res.setHeader("Vary", "Origin");
+}
+
+function validateCounts(counts) {
+  if (!counts || typeof counts !== "object") return false;
+  return ["A", "B", "C", "D"].every(function (k) {
+    var v = counts[k];
+    return typeof v === "number" && Number.isInteger(v) && v >= 0 && v <= COUNTS_MAX;
+  });
+}
+
+module.exports = async function handler(req, res) {
+  setCorsHeaders(req, res);
 
   try {
     if (req.method === "OPTIONS") {
@@ -179,12 +199,21 @@ module.exports = async function handler(req, res) {
 
     var apiKey = process.env.ANTHROPIC_API_KEY;
     if (!apiKey) {
-      return res.status(500).json({ error: "ANTHROPIC_API_KEY is missing" });
+      return res.status(500).json({ error: "サーバー設定エラーが発生しました" });
     }
 
-    var userPrompt = req.body && typeof req.body.user === "string"
-      ? req.body.user
-      : buildUserPromptFromPayload(req.body);
+    var userPrompt;
+    if (req.body && typeof req.body.user === "string") {
+      if (req.body.user.length > USER_PROMPT_MAX_LEN) {
+        return res.status(400).json({ error: "入力が長すぎます" });
+      }
+      userPrompt = req.body.user;
+    } else {
+      if (req.body && req.body.counts && !validateCounts(req.body.counts)) {
+        return res.status(400).json({ error: "回答データが不正です" });
+      }
+      userPrompt = buildUserPromptFromPayload(req.body);
+    }
 
     if (!userPrompt) {
       return res.status(400).json({ error: "Missing user prompt" });
@@ -209,7 +238,7 @@ module.exports = async function handler(req, res) {
     var data = await response.json();
     if (!response.ok) {
       console.error("Anthropic APIエラー:", response.status, JSON.stringify(data));
-      return res.status(500).json({ error: "API error", detail: data });
+      return res.status(500).json({ error: "診断結果の生成に失敗しました" });
     }
 
     var text = Array.isArray(data.content)
@@ -227,6 +256,6 @@ module.exports = async function handler(req, res) {
     }
   } catch (e) {
     console.error("サーバーエラー:", e);
-    return res.status(500).json({ error: e.message || String(e) });
+    return res.status(500).json({ error: "サーバーエラーが発生しました" });
   }
 };
