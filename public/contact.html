@@ -161,18 +161,25 @@
         submitBtn.disabled = true;
         submitBtn.textContent = "送信中...";
 
-        fetch("/api/contact", {
+        fetch("https://formsubmit.co/ajax/careerdna@outlook.com", {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name: name, email: email, topic: topic, message: message })
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            topic: topic,
+            message: message,
+            _subject: "【お問い合わせ】" + (topic || "") + " / " + name + "さんより",
+            _replyto: email
+          })
         })
           .then(function (res) { return res.json().then(function (data) { return { ok: res.ok, data: data }; }); })
           .then(function (result) {
-            if (result.ok) {
+            if (result.ok && result.data.success) {
               form.style.display = "none";
               successBox.style.display = "block";
             } else {
-              errorBox.textContent = result.data.error || "送信に失敗しました。時間をおいて再度お試しください。";
+              errorBox.textContent = "送信に失敗しました。時間をおいて再度お試しください。";
               errorBox.style.display = "block";
               submitBtn.disabled = false;
               submitBtn.textContent = "送信する";
