@@ -1,13 +1,3 @@
-const nodemailer = require("nodemailer");
-
-function requireEnv(name) {
-  const value = process.env[name];
-  if (!value) {
-    throw new Error(`${name} is not set`);
-  }
-  return value;
-}
-
 var NAME_MAX = 100;
 var EMAIL_MAX = 254;
 var MESSAGE_MAX = 2000;
@@ -36,39 +26,42 @@ module.exports = async function contactHandler(req, res) {
       return res.status(400).json({ error: "メールアドレスの形式が正しくありません。" });
     }
 
-    const smtpHost = requireEnv("SMTP_HOST");
-    const smtpPort = Number(process.env.SMTP_PORT || 587);
-    const smtpUser = requireEnv("SMTP_USER");
-    const smtpPass = requireEnv("SMTP_PASS");
-    const fromEmail = process.env.FROM_EMAIL || smtpUser;
-    const contactToEmail = requireEnv("CONTACT_TO_EMAIL");
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+      return res.status(500).json({ error: "サーバー設定エラーが発生しました" });
+    }
 
-    const transporter = nodemailer.createTransport({
-      host: smtpHost,
-      port: smtpPort,
-      secure: smtpPort === 465,
-      auth: {
-        user: smtpUser,
-        pass: smtpPass
-      }
+    const toEmail = process.env.CONTACT_TO_EMAIL || "careerdna@outlook.com";
+
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${apiKey}`,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        from: "キャリアDNA <onboarding@resend.dev>",
+        to: [toEmail],
+        reply_to: email,
+        subject: `【お問い合わせ】${topic ? topic + " / " : ""}${name}さんより`,
+        text: [
+          "CareerDNAお問い合わせフォームから送信されました。",
+          "",
+          `氏名: ${name}`,
+          `メールアドレス: ${email}`,
+          `種類: ${topic || "未選択"}`,
+          "",
+          "お問い合わせ内容:",
+          message
+        ].join("\n")
+      })
     });
 
-    await transporter.sendMail({
-      from: fromEmail,
-      to: contactToEmail,
-      replyTo: email,
-      subject: `【CareerDNAお問い合わせ】${topic ? topic + " / " : ""}${name}さんより`,
-      text: [
-        "CareerDNAお問い合わせフォームから送信されました。",
-        "",
-        `氏名: ${name}`,
-        `メールアドレス: ${email}`,
-        `種類: ${topic || "未選択"}`,
-        "",
-        "お問い合わせ内容:",
-        message
-      ].join("\n")
-    });
+    if (!response.ok) {
+      const detail = await response.json().catch(() => ({}));
+      console.error("Resend APIエラー:", response.status, detail);
+      return res.status(500).json({ error: "送信に失敗しました。時間をおいて再度お試しください。" });
+    }
 
     return res.status(200).json({ ok: true });
   } catch (error) {
