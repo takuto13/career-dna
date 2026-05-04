@@ -25,6 +25,7 @@ module.exports = async function contactHandler(req, res) {
   try {
     const name = sanitize(req.body?.name).slice(0, NAME_MAX);
     const email = sanitize(req.body?.email).slice(0, EMAIL_MAX);
+    const topic = sanitize(req.body?.topic).slice(0, 100);
     const message = sanitize(req.body?.message).slice(0, MESSAGE_MAX);
 
     if (!name || !email || !message) {
@@ -56,12 +57,13 @@ module.exports = async function contactHandler(req, res) {
       from: fromEmail,
       to: contactToEmail,
       replyTo: email,
-      subject: `【CareerDNAお問い合わせ】${name}さんより`,
+      subject: `【CareerDNAお問い合わせ】${topic ? topic + " / " : ""}${name}さんより`,
       text: [
         "CareerDNAお問い合わせフォームから送信されました。",
         "",
         `氏名: ${name}`,
         `メールアドレス: ${email}`,
+        `種類: ${topic || "未選択"}`,
         "",
         "お問い合わせ内容:",
         message

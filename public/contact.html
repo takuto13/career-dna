@@ -53,7 +53,12 @@
 
       <section class="contact-form-section" aria-label="お問い合わせフォーム">
         <h2 class="contact-section-title">お問い合わせフォーム</h2>
-        <form class="contact-form" action="https://docs.google.com/forms/" method="post" target="_blank">
+        <div id="contact-success" style="display:none;padding:24px;background:#f0fdf4;border-radius:8px;color:#166534;text-align:center;">
+          <p style="font-size:1.1rem;font-weight:700;margin-bottom:8px;">送信が完了しました</p>
+          <p>内容を確認のうえ、順次ご連絡いたします。</p>
+        </div>
+        <div id="contact-error" style="display:none;padding:16px;background:#fef2f2;border-radius:8px;color:#991b1b;margin-bottom:16px;"></div>
+        <form class="contact-form" id="contact-form" novalidate>
           <div class="contact-field">
             <label for="name">お名前</label>
             <input id="name" name="name" type="text" placeholder="山田 太郎" required />
@@ -75,7 +80,7 @@
             <label for="message">内容</label>
             <textarea id="message" name="message" placeholder="お問い合わせ内容をご記入ください" required></textarea>
           </div>
-          <button type="submit" class="contact-submit-btn">送信する</button>
+          <button type="submit" class="contact-submit-btn" id="contact-submit-btn">送信する</button>
         </form>
       </section>
 
@@ -131,6 +136,57 @@
   <button type="button" class="back-to-top-btn" aria-label="ページ上部へ戻る">▲</button>
   <script src="./back-to-top.js"></script>
   <script src="./social-share.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var form = document.getElementById("contact-form");
+      var submitBtn = document.getElementById("contact-submit-btn");
+      var successBox = document.getElementById("contact-success");
+      var errorBox = document.getElementById("contact-error");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        errorBox.style.display = "none";
+
+        var name = document.getElementById("name").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var topic = document.getElementById("topic").value;
+        var message = document.getElementById("message").value.trim();
+
+        if (!name || !email || !topic || !message) {
+          errorBox.textContent = "すべての項目を入力してください。";
+          errorBox.style.display = "block";
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = "送信中...";
+
+        fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name: name, email: email, topic: topic, message: message })
+        })
+          .then(function (res) { return res.json().then(function (data) { return { ok: res.ok, data: data }; }); })
+          .then(function (result) {
+            if (result.ok) {
+              form.style.display = "none";
+              successBox.style.display = "block";
+            } else {
+              errorBox.textContent = result.data.error || "送信に失敗しました。時間をおいて再度お試しください。";
+              errorBox.style.display = "block";
+              submitBtn.disabled = false;
+              submitBtn.textContent = "送信する";
+            }
+          })
+          .catch(function () {
+            errorBox.textContent = "通信エラーが発生しました。時間をおいて再度お試しください。";
+            errorBox.style.display = "block";
+            submitBtn.disabled = false;
+            submitBtn.textContent = "送信する";
+          });
+      });
+    });
+  </script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var nav = document.getElementById("top-nav");
