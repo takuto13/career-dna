@@ -111,25 +111,25 @@
 
 ### reports/ — エージェント作業レポート（日付別）
 
-`reports/YYYY-MM-DD_[担当].md` の形式で保存
+`reports/YYYY-MM-DD_[N]_[担当].md` の形式で保存（N = 当日の実行順：1〜5）
 
 | ファイル | 内容 |
 |---|---|
-| `reports/2026-05-07_CEO.md` | CEO定例レポート |
-| `reports/2026-05-07_CTO.md` | CTO定例レポート |
-| `reports/2026-05-07_CTO_proposal.md` | CTOからの提案書 |
-| `reports/2026-05-07_CTO_typepage_proposal.md` | タイプページ制作提案 |
-| `reports/2026-05-07_SNS.md` | SNS担当レポート |
+| `reports/2026-05-07_1_CEO.md` | CEO定例レポート（当日1回目） |
+| `reports/2026-05-07_2_CTO.md` | CTO定例レポート（当日2回目） |
+| `reports/2026-05-07_3_SNS.md` | SNS担当レポート（当日3回目） |
+
+※ 既存ファイル（番号なし）は過去の命名規則によるもの
 
 ### requests/ — エージェントへの依頼書
 
-`requests/[担当]_YYYY-MM-DD.md` の形式で保存
+`requests/[担当]_YYYY-MM-DD_[N].md` の形式で保存（N = 当日の実行順：1〜5）
 
 | ファイル | 内容 |
 |---|---|
-| `requests/request_2026-05-07.md` | 全体への依頼 |
-| `requests/CTO_2026-05-07.md` | CTO向け依頼 |
-| `requests/SNS_2026-05-07.md` | SNS担当向け依頼 |
+| `requests/request_2026-05-07_1.md` | 全体への依頼（当日1回目） |
+| `requests/CTO_2026-05-07_1.md` | CTO向け依頼（当日1回目） |
+| `requests/SNS_2026-05-07_1.md` | SNS担当向け依頼（当日1回目） |
 
 ### その他
 

@@ -34,10 +34,10 @@
 
 1. `company/shared/` の全ファイルを読んで現状把握
 2. `company/BACKLOG.md` を確認して今日のタスクを選定
-3. CTOへの指示書を `company/requests/CTO_YYYY-MM-DD.md` に作成
-4. SNS担当への指示書を `company/requests/SNS_YYYY-MM-DD.md` に作成
-5. たくとへの権限作業依頼があれば `company/requests/request_YYYY-MM-DD.md` に作成
-6. 本日の報告書を `company/reports/YYYY-MM-DD_CEO.md` に作成
+3. CTOへの指示書を `company/requests/CTO_YYYY-MM-DD_[N].md` に作成
+4. SNS担当への指示書を `company/requests/SNS_YYYY-MM-DD_[N].md` に作成
+5. たくとへの権限作業依頼があれば `company/requests/request_YYYY-MM-DD_[N].md` に作成
+6. 本日の報告書を `company/reports/YYYY-MM-DD_[N]_CEO.md` に作成
 7. コミット・プッシュ
 
 ---
