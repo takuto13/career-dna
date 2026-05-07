@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CY9DKC6DZ6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CY9DKC6DZ6');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>タイプ別おすすめ求人・転職サービス｜キャリアDNA</title>
@@ -117,7 +125,7 @@
       const bc = badgeColors[card.badgeColor] ||
         badgeColors.blue;
       return `
-        <div class="ad-card">
+        <div class="ad-card" data-card-id="${card.id}">
           <div class="ad-card-header">
             <span class="card-pr-badge">PR</span>
             <span class="ad-target-badge"
@@ -147,6 +155,21 @@
         </div>
       `;
     }).join('');
+
+    // GA4アフィリエイトクリック計測
+    container.addEventListener('click', function(e) {
+      const link = e.target.closest('a');
+      if (!link) return;
+      const card = link.closest('.ad-card');
+      if (!card) return;
+      const serviceId = card.dataset.cardId || '';
+      const linkType = link.closest('.ad-banner-wrap') ? 'banner' : 'text';
+      gtag('event', 'affiliate_click', {
+        service_id: serviceId,
+        career_type: typeKey,
+        link_type: linkType
+      });
+    });
 
     const scrollTopBtn = document.getElementById('scroll-top-btn');
     window.addEventListener('scroll', () => {
