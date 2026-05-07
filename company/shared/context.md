@@ -50,7 +50,7 @@
 ## その他メモ
 
 - 副業として運営。本業と並行しているため時間は限られている
-- X予約投稿は2026-05-13まで設定済み
+- X予約投稿は2026-05-13まで設定済み（それ以降の原稿はSNS担当が作成中）
 - Googleアナリティクス設置済み（GA4: G-CY9DKC6DZ6）
-- Search Console設定中（TXTレコード未設定）
+- Search Console設定完了済み（TXTレコード設定・sitemap送信 完了）
 - サイトURL: career-dna.jp（Vercelでホスティング）
