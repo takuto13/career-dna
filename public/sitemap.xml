@@ -41,15 +41,43 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://career-dna.jp/type-strategy.html</loc>
+    <loc>https://career-dna.jp/type-craftsman.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-07</lastmod>
+  </url>
+  <url>
+    <loc>https://career-dna.jp/type-strategist.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://career-dna.jp/type-mediator.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://career-dna.jp/type-challenger.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://career-dna.jp/type-analyst.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-08</lastmod>
+  </url>
+  <url>
+    <loc>https://career-dna.jp/type-creator.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://career-dna.jp/type-guardian.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://career-dna.jp/type-nurturer.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
