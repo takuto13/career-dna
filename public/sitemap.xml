@@ -40,4 +40,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://career-dna.jp/type-strategy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-07</lastmod>
+  </url>
+  <url>
+    <loc>https://career-dna.jp/type-analyst.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-08</lastmod>
+  </url>
 </urlset>
