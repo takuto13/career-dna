@@ -4769,6 +4769,13 @@ a.type-card:hover {
     transform: translateX(0);
   }
 
+  /* ドロワー表示中は背后（document）のスクロールを止める（JS と併用・無 JS 時の補助） */
+  html:has(.site-menu-links.is-open),
+  body:has(.site-menu-links.is-open) {
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+
   .menu-toggle-btn {
     display: inline-flex;
     order: 2;
