@@ -61,8 +61,8 @@
     .type-hero { background: linear-gradient(160deg, #4c1d95, #7c3aed); border-radius: 20px; padding: 40px 32px 36px; color: #fff; text-align: center; margin-bottom: 32px; position: relative; overflow: hidden; }
     .type-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.08) 0%, transparent 60%); }
     .type-hero-badge { display: inline-block; background: rgba(255,255,255,0.16); color: #c4b5fd; border-radius: 999px; padding: 4px 14px; font-size: 12px; margin-bottom: 14px; letter-spacing: 0.04em; }
-    .type-hero-img-wrap { width: 100px; height: 100px; background: rgba(255,255,255,0.14); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
-    .type-hero-img { width: 70px; height: 70px; object-fit: contain; }
+    .type-hero-img-wrap { width: 100px; height: 100px; background: rgba(255,255,255,0.14); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; overflow: hidden; }
+    .type-hero-img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
     .type-hero-title { font-size: clamp(1.6rem, 5vw, 2.2rem); font-weight: 700; margin: 0 0 8px; color: #fff; }
     .type-hero-sub { font-size: 14px; color: rgba(255,255,255,0.75); margin: 0 0 6px; }
     .type-hero-catch { font-size: 16px; color: #c4b5fd; font-weight: 500; margin: 0; }
