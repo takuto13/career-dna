@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(update-config)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(curl *)",
+      "WebSearch",
+      "Skill(schedule)",
+      "Bash(git fetch *)",
+      "Bash(git pull *)",
+      "Bash(git commit *)",
+      "Bash(git stash *)",
+      "Bash(git *)"
+    ]
+  }
+}
