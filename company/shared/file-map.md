@@ -34,7 +34,6 @@
 | `contact.html` | お問い合わせ |
 | `privacy.html` | プライバシーポリシー |
 | `disclaimer.html` | 免責事項 |
-| `glossary.html` | 用語集 |
 | `type-strategy.html` | タイプ別戦略ページ（全タイプ共通テンプレート） |
 | `type-craftsman.html` | 職人タイプ専用ページ（個別SEO用） |
 

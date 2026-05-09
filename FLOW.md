@@ -45,7 +45,6 @@ flowchart TD
     end
 
     subgraph INFO["情報ページ"]
-        GL[glossary.html\nキャリア図鑑]
         FAQ[faq.html\nよくある質問]
         JB[jobs.html\n求人情報]
         AB[about.html\nサービス概要]

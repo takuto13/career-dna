@@ -1,5 +1,12 @@
 {
   "version": 2,
+  "redirects": [
+    {
+      "source": "/glossary.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "builds": [
     {
       "src": "api/diagnose.js",
