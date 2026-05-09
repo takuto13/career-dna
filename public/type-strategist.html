@@ -74,19 +74,21 @@
     .type-overview { line-height: 1.88; color: #2d2a45; margin: 0; font-size: 17px; }
     .feature-items { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
     .feature-item {
-      display: grid;
-      grid-template-columns: 32px minmax(0, 1fr);
-      grid-template-rows: auto auto;
-      column-gap: 14px;
-      row-gap: 8px;
-      align-items: start;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
       background: #f5f3ff;
       border-radius: 12px;
       padding: 14px 16px;
     }
+    .feature-item-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-height: 32px;
+    }
     .feature-item-num {
-      grid-column: 1;
-      grid-row: 1;
+      flex-shrink: 0;
       width: 32px;
       height: 32px;
       box-sizing: border-box;
@@ -100,11 +102,10 @@
       font-weight: 700;
       font-variant-numeric: tabular-nums;
       line-height: 1;
-      margin-top: 0.12em;
     }
     .feature-item-label {
-      grid-column: 2;
-      grid-row: 1;
+      flex: 1;
+      min-width: 0;
       font-weight: 700;
       color: #4c1d95;
       margin: 0;
@@ -112,23 +113,75 @@
       line-height: 1.45;
     }
     .feature-item-text {
-      grid-column: 2;
-      grid-row: 2;
       color: #4b5563;
       font-size: 14px;
       line-height: 1.65;
       margin: 0;
+      padding-left: calc(32px + 14px);
     }
-    .strength-items { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-    .strength-item { display: flex; align-items: flex-start; gap: 10px; padding: 10px 0; border-bottom: 1px solid #ede9fe; }
+    .strength-items { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+    .strength-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 0;
+      border-bottom: 1px solid #ede9fe;
+    }
     .strength-item:last-child { border-bottom: none; }
-    .strength-check { flex-shrink: 0; color: #7c3aed; font-size: 18px; line-height: 1.4; }
-    .strength-text { color: #2d2a45; font-size: 15px; line-height: 1.65; }
+    .strength-check {
+      flex-shrink: 0;
+      align-self: center;
+      width: 1.15em;
+      height: 1.15em;
+      margin-top: 0.1em;
+      border-radius: 50%;
+      border: 2px solid #7c3aed;
+      box-sizing: border-box;
+      position: relative;
+      color: #7c3aed;
+      font-size: 18px;
+      line-height: 1;
+    }
+    .strength-check::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      width: 4px;
+      height: 8px;
+      border: solid currentColor;
+      border-width: 0 2px 2px 0;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .strength-text { color: #2d2a45; font-size: 15px; line-height: 1.65; margin: 0; }
     .strength-text strong { color: #4c1d95; }
     .caution-items { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
     .caution-item { background: #fff7ed; border-left: 3px solid #f97316; border-radius: 0 10px 10px 0; padding: 12px 16px; }
-    .caution-item-label { font-weight: 700; color: #c2410c; font-size: 15px; margin-bottom: 6px; }
+    .caution-item-label {
+      font-weight: 700;
+      color: #c2410c;
+      font-size: 15px;
+      line-height: 1.45;
+      margin: 0 0 10px;
+    }
     .caution-item-text { color: #6b4c37; font-size: 14px; line-height: 1.65; margin: 0; }
+    .caution-item-segments { display: flex; flex-direction: column; margin: 0; padding: 0; }
+    .caution-item-segment {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 14px 0;
+      box-sizing: border-box;
+      color: #6b4c37;
+      font-size: 14px;
+      line-height: 1.65;
+      border-top: 1px solid rgba(249, 115, 22, 0.22);
+    }
+    .caution-item-segment:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+    .caution-item-segment:last-child { padding-bottom: 0; }
     .job-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
     .job-card { background: linear-gradient(135deg, #f5f3ff, #ede9fe); border: 1px solid #c4b5fd; border-radius: 12px; padding: 14px 12px; text-align: center; }
     .job-card-icon { font-size: 24px; margin-bottom: 6px; }
@@ -256,18 +309,24 @@
       <h2 class="type-section-title" id="sec-features"><span class="icon"></span>戦略家タイプの3つの特徴</h2>
       <ul class="feature-items" role="list">
         <li class="feature-item">
-          <div class="feature-item-num" aria-hidden="true">1</div>
-          <p class="feature-item-label">俯瞰視点・全体最適思考</p>
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">1</div>
+            <p class="feature-item-label">俯瞰視点・全体最適思考</p>
+          </div>
           <p class="feature-item-text">木を見て森も見る思考が自然にできる。目の前の課題だけでなく、全体の文脈・目的・影響範囲を同時に考えられます。「この判断がチーム全体・会社全体にどう影響するか」を自然と意識します。</p>
         </li>
         <li class="feature-item">
-          <div class="feature-item-num" aria-hidden="true">2</div>
-          <p class="feature-item-label">論理・データ優先の意思決定</p>
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">2</div>
+            <p class="feature-item-label">論理・データ優先の意思決定</p>
+          </div>
           <p class="feature-item-text">感情や空気感ではなく、事実とデータに基づいた意思決定が得意です。「なぜ？」「根拠は？」を問い続ける習慣が問題解決力を高め、会議や議論でも論理的な議論をリードします。</p>
         </li>
         <li class="feature-item">
-          <div class="feature-item-num" aria-hidden="true">3</div>
-          <p class="feature-item-label">中長期の戦略的思考</p>
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">3</div>
+            <p class="feature-item-label">中長期の戦略的思考</p>
+          </div>
           <p class="feature-item-text">目先の利益より5年後・10年後を考える。目標から逆算して今やるべきことを決める「バックキャスト思考」が自然に身についており、短期の犠牲を厭わず長期的な成果を追い求めます。</p>
         </li>
       </ul>
@@ -289,7 +348,10 @@
       <ul class="caution-items" role="list">
         <li class="caution-item">
           <p class="caution-item-label">分析麻痺に陥ることがある</p>
-          <p class="caution-item-text">「もっと情報が必要」「まだ分析が足りない」という思考パターンで行動が遅れることも。完璧な戦略より「70点で動いてフィードバックをもらう」思考を意識的に取り入れることが大切です。</p>
+          <div class="caution-item-segments">
+            <p class="caution-item-segment">「もっと情報が必要」「まだ分析が足りない」という思考パターンで行動が遅れることも。</p>
+            <p class="caution-item-segment">完璧な戦略より「70点で動いてフィードバックをもらう」思考を意識的に取り入れることが大切です。</p>
+          </div>
         </li>
         <li class="caution-item">
           <p class="caution-item-label">感情的なコミュニケーションが苦手になりやすい</p>
