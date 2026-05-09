@@ -4721,6 +4721,7 @@ a.type-card:hover {
     right: 0;
     width: min(320px, 86vw);
     height: 100dvh;
+    max-height: 100dvh;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -4728,13 +4729,17 @@ a.type-card:hover {
     background: rgba(15, 12, 41, 0.98);
     border-left: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 0;
-    padding: 148px 18px 28px;
+    padding: 148px 18px max(28px, env(safe-area-inset-bottom, 0px));
     z-index: 260;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transform: translateX(100%);
     transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
   }
 
   .site-menu-links a {
