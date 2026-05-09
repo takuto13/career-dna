@@ -4496,7 +4496,8 @@ body {
   justify-content: flex-end;
 }
 
-.site-menu-links a {
+/* ヘッダー直下のリンクのみ（ドロップダウン内 a と区別するため子セレクタ） */
+.site-menu-links > a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -4509,7 +4510,7 @@ body {
   white-space: nowrap;
 }
 
-.site-menu-links a:focus-visible {
+.site-menu-links > a:focus-visible {
   outline: 2px solid rgba(196, 181, 253, 0.9);
   outline-offset: 2px;
 }
@@ -4587,7 +4588,11 @@ body {
 }
 
 .nav-dropdown-menu a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
   padding: 9px 20px;
   color: #ffffff;
   text-decoration: none;
@@ -5240,7 +5245,7 @@ footer {
     justify-content: end;
   }
 
-  .site-menu-links a {
+  .site-menu-links > a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
