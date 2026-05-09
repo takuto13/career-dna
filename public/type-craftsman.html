@@ -69,7 +69,7 @@
 
     /* パンくずリスト */
     .breadcrumb {
-      font-size: 12px;
+      font-size: 13px;
       color: #9290a8;
       margin-bottom: 20px;
       display: flex;
@@ -121,8 +121,8 @@
       background: rgba(255,255,255,0.16);
       color: #bfdbfe;
       border-radius: 999px;
-      padding: 4px 14px;
-      font-size: 12px;
+      padding: 6px 16px;
+      font-size: 13px;
       margin-bottom: 14px;
       letter-spacing: 0.04em;
     }
@@ -146,21 +146,24 @@
       display: block;
     }
     .type-hero-title {
-      font-size: clamp(1.6rem, 5vw, 2.2rem);
+      font-size: clamp(1.85rem, 5.5vw, 2.55rem);
       font-weight: 700;
-      margin: 0 0 8px;
+      margin: 0 0 10px;
       color: #fff;
+      line-height: 1.25;
     }
     .type-hero-sub {
-      font-size: 14px;
-      color: rgba(255,255,255,0.75);
-      margin: 0 0 6px;
+      font-size: 16px;
+      color: rgba(255,255,255,0.85);
+      margin: 0 0 8px;
+      line-height: 1.5;
     }
     .type-hero-catch {
-      font-size: 16px;
+      font-size: 18px;
       color: #bfdbfe;
       font-weight: 500;
       margin: 0;
+      line-height: 1.55;
     }
 
     /* 各セクション共通カード */
@@ -172,10 +175,10 @@
       margin-bottom: 20px;
     }
     .type-section-title {
-      font-size: 18px;
+      font-size: 21px;
       font-weight: 700;
       color: #2563eb;
-      margin: 0 0 16px;
+      margin: 0 0 18px;
       padding-bottom: 10px;
       border-bottom: 2px solid #dbeafe;
       display: flex;
@@ -183,15 +186,15 @@
       gap: 8px;
     }
     .type-section-title .icon {
-      font-size: 20px;
+      font-size: 22px;
     }
 
     /* 概要テキスト */
     .type-overview {
-      line-height: 1.85;
+      line-height: 1.88;
       color: #2d2a45;
       margin: 0;
-      font-size: 15px;
+      font-size: 17px;
     }
 
     /* 特徴・強み・弱みのリスト */
@@ -227,13 +230,13 @@
     .feature-item-label {
       font-weight: 700;
       color: #1e3a8a;
-      margin-bottom: 4px;
-      font-size: 14px;
+      margin-bottom: 6px;
+      font-size: 15px;
     }
     .feature-item-text {
       color: #4b5563;
-      font-size: 13px;
-      line-height: 1.6;
+      font-size: 14px;
+      line-height: 1.65;
       margin: 0;
     }
 
@@ -261,8 +264,8 @@
     }
     .strength-text {
       color: #2d2a45;
-      font-size: 14px;
-      line-height: 1.6;
+      font-size: 15px;
+      line-height: 1.65;
     }
     .strength-text strong { color: #1e3a8a; }
 
@@ -283,13 +286,13 @@
     .caution-item-label {
       font-weight: 700;
       color: #c2410c;
-      font-size: 14px;
-      margin-bottom: 4px;
+      font-size: 15px;
+      margin-bottom: 6px;
     }
     .caution-item-text {
       color: #6b4c37;
-      font-size: 13px;
-      line-height: 1.6;
+      font-size: 14px;
+      line-height: 1.65;
       margin: 0;
     }
 
@@ -310,13 +313,13 @@
     .job-card-name {
       font-weight: 700;
       color: #1e3a8a;
-      font-size: 13px;
-      margin-bottom: 4px;
+      font-size: 14px;
+      margin-bottom: 6px;
     }
     .job-card-desc {
       color: #4b5580;
-      font-size: 11px;
-      line-height: 1.5;
+      font-size: 13px;
+      line-height: 1.55;
     }
 
     /* 有名人 */
@@ -336,13 +339,13 @@
     .celeb-name {
       font-weight: 700;
       color: #1e3a8a;
-      font-size: 13px;
-      margin-bottom: 4px;
+      font-size: 14px;
+      margin-bottom: 6px;
     }
     .celeb-reason {
       color: #625e7f;
-      font-size: 11px;
-      line-height: 1.5;
+      font-size: 13px;
+      line-height: 1.55;
     }
 
     /* 相性 */
@@ -365,7 +368,7 @@
     }
     .compat-card-title {
       font-weight: 700;
-      font-size: 13px;
+      font-size: 15px;
       margin-bottom: 10px;
       display: flex;
       align-items: center;
@@ -381,11 +384,11 @@
       gap: 6px;
     }
     .compat-type-list li {
-      font-size: 13px;
+      font-size: 14px;
       color: #374151;
-      padding: 6px 10px;
+      padding: 8px 10px;
       border-radius: 8px;
-      line-height: 1.5;
+      line-height: 1.55;
     }
     .compat-card.good .compat-type-list li { background: #dcfce7; }
     .compat-card.caution-compat .compat-type-list li { background: #ffedd5; }
@@ -400,9 +403,9 @@
       margin: 0;
     }
     .advice-box p {
-      margin: 0 0 12px;
+      margin: 0 0 14px;
       color: #1e3a8a;
-      font-size: 15px;
+      font-size: 17px;
       line-height: 1.85;
     }
     .advice-box p:last-child { margin-bottom: 0; }
@@ -559,12 +562,6 @@
     <!-- ヒーローバナー -->
     <header class="type-hero" aria-label="職人タイプ紹介">
       <div class="type-hero-inner">
-        <div class="type-hero-text">
-          <p class="type-hero-badge">キャリアDNA タイプ診断 — 職人・専門深化タイプ</p>
-          <h1 class="type-hero-title">職人タイプ</h1>
-          <p class="type-hero-sub">職人・専門深化タイプ</p>
-          <p class="type-hero-catch">「深く極めることが、最大の武器になる」</p>
-        </div>
         <div class="type-hero-img-wrap">
           <img
             src="images/type-craftsman.png"
@@ -574,6 +571,12 @@
             onerror="this.style.display='none'; document.getElementById('craftsman-emoji').style.display='block';"
           />
           <span id="craftsman-emoji" style="display:none; font-size:52px;"></span>
+        </div>
+        <div class="type-hero-text">
+          <p class="type-hero-badge">キャリアDNA タイプ診断 — 職人・専門深化タイプ</p>
+          <h1 class="type-hero-title">職人タイプ</h1>
+          <p class="type-hero-sub">職人・専門深化タイプ</p>
+          <p class="type-hero-catch">「深く極めることが、最大の武器になる」</p>
         </div>
       </div>
     </header>

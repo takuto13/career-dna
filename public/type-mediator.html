@@ -29,63 +29,63 @@
   <link rel="stylesheet" href="./style.css" />
   <style>
     .type-page-wrap{max-width:860px;margin:80px auto 48px;padding:0 16px;}
-    .breadcrumb{font-size:12px;color:#9290a8;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding-top:12px;}
+    .breadcrumb{font-size:13px;color:#9290a8;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding-top:12px;}
     .breadcrumb a{color:#0d9488;text-decoration:none;}.breadcrumb a:hover{text-decoration:underline;}
     .breadcrumb-sep{color:#99f6e4;}
     .type-hero{background:linear-gradient(160deg,#134e4a,#0d9488);border-radius:20px;padding:40px 32px 36px;color:#fff;margin-bottom:32px;position:relative;overflow:hidden;}
     .type-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(255,255,255,0.08) 0%,transparent 60%);}
     .type-hero-inner{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:clamp(16px,4vw,36px);position:relative;z-index:1;}
     .type-hero-text{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
-    .type-hero-badge{display:inline-block;background:rgba(255,255,255,0.16);color:#99f6e4;border-radius:999px;padding:4px 14px;font-size:12px;margin-bottom:14px;letter-spacing:0.04em;}
+    .type-hero-badge{display:inline-block;background:rgba(255,255,255,0.16);color:#99f6e4;border-radius:999px;padding:6px 16px;font-size:13px;margin-bottom:14px;letter-spacing:0.04em;}
     .type-hero-img-wrap{flex-shrink:0;width:min(280px,42vw);height:min(280px,42vw);background:rgba(255,255,255,0.14);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0;overflow:hidden;}
     .type-hero-img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;}
-    .type-hero-title{font-size:clamp(1.6rem,5vw,2.2rem);font-weight:700;margin:0 0 8px;color:#fff;}
-    .type-hero-sub{font-size:14px;color:rgba(255,255,255,0.75);margin:0 0 6px;}
-    .type-hero-catch{font-size:16px;color:#99f6e4;font-weight:500;margin:0;}
+    .type-hero-title{font-size:clamp(1.85rem,5.5vw,2.55rem);font-weight:700;margin:0 0 10px;color:#fff;line-height:1.25;}
+    .type-hero-sub{font-size:16px;color:rgba(255,255,255,0.85);margin:0 0 8px;line-height:1.5;}
+    .type-hero-catch{font-size:18px;color:#99f6e4;font-weight:500;margin:0;line-height:1.55;}
     .type-section-card{background:#fff;border:1px solid #ccfbf1;border-radius:16px;padding:28px 24px;margin-bottom:20px;}
-    .type-section-title{font-size:18px;font-weight:700;color:#0d9488;margin:0 0 16px;padding-bottom:10px;border-bottom:2px solid #ccfbf1;display:flex;align-items:center;gap:8px;}
-    .type-section-title .icon{font-size:20px;}
-    .type-overview{line-height:1.85;color:#2d2a45;margin:0;font-size:15px;}
+    .type-section-title{font-size:21px;font-weight:700;color:#0d9488;margin:0 0 18px;padding-bottom:10px;border-bottom:2px solid #ccfbf1;display:flex;align-items:center;gap:8px;}
+    .type-section-title .icon{font-size:22px;}
+    .type-overview{line-height:1.88;color:#2d2a45;margin:0;font-size:17px;}
     .feature-items{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
     .feature-item{display:flex;align-items:flex-start;gap:12px;background:#f0fdfa;border-radius:12px;padding:14px 16px;}
     .feature-item-num{flex-shrink:0;width:28px;height:28px;background:linear-gradient(135deg,#134e4a,#0d9488);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;}
     .feature-item-body{flex:1;}
-    .feature-item-label{font-weight:700;color:#134e4a;margin-bottom:4px;font-size:14px;}
-    .feature-item-text{color:#4b5563;font-size:13px;line-height:1.6;margin:0;}
+    .feature-item-label{font-weight:700;color:#134e4a;margin-bottom:6px;font-size:15px;}
+    .feature-item-text{color:#4b5563;font-size:14px;line-height:1.65;margin:0;}
     .strength-items{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
     .strength-item{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #ccfbf1;}
     .strength-item:last-child{border-bottom:none;}
     .strength-check{flex-shrink:0;color:#0d9488;font-size:18px;line-height:1.4;}
-    .strength-text{color:#2d2a45;font-size:14px;line-height:1.6;}
+    .strength-text{color:#2d2a45;font-size:15px;line-height:1.65;}
     .strength-text strong{color:#134e4a;}
     .caution-items{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
     .caution-item{background:#fff7ed;border-left:3px solid #f97316;border-radius:0 10px 10px 0;padding:12px 16px;}
-    .caution-item-label{font-weight:700;color:#c2410c;font-size:14px;margin-bottom:4px;}
-    .caution-item-text{color:#6b4c37;font-size:13px;line-height:1.6;margin:0;}
+    .caution-item-label{font-weight:700;color:#c2410c;font-size:15px;margin-bottom:6px;}
+    .caution-item-text{color:#6b4c37;font-size:14px;line-height:1.65;margin:0;}
     .job-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;}
     .job-card{background:linear-gradient(135deg,#f0fdfa,#ccfbf1);border:1px solid #99f6e4;border-radius:12px;padding:14px 12px;text-align:center;}
     .job-card-icon{font-size:24px;margin-bottom:6px;}
-    .job-card-name{font-weight:700;color:#134e4a;font-size:13px;margin-bottom:4px;}
-    .job-card-desc{color:#4b5580;font-size:11px;line-height:1.5;}
+    .job-card-name{font-weight:700;color:#134e4a;font-size:14px;margin-bottom:6px;}
+    .job-card-desc{color:#4b5580;font-size:13px;line-height:1.55;}
     .celeb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;}
     .celeb-card{background:#f8f9ff;border:1px solid #ccfbf1;border-radius:12px;padding:14px 12px;text-align:center;}
     .celeb-icon{font-size:28px;margin-bottom:6px;}
-    .celeb-name{font-weight:700;color:#134e4a;font-size:13px;margin-bottom:4px;}
-    .celeb-reason{color:#625e7f;font-size:11px;line-height:1.5;}
+    .celeb-name{font-weight:700;color:#134e4a;font-size:14px;margin-bottom:6px;}
+    .celeb-reason{color:#625e7f;font-size:13px;line-height:1.55;}
     .compat-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
     .compat-card{border-radius:12px;padding:16px;}
     .compat-card.good{background:#f0fdf4;border:1px solid #86efac;}
     .compat-card.caution-compat{background:#fff7ed;border:1px solid #fdba74;}
-    .compat-card-title{font-weight:700;font-size:13px;margin-bottom:10px;display:flex;align-items:center;gap:6px;}
+    .compat-card-title{font-weight:700;font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:6px;}
     .compat-card.good .compat-card-title{color:#15803d;}
     .compat-card.caution-compat .compat-card-title{color:#c2410c;}
     .compat-type-list{list-style:none;margin:0;padding:0;display:grid;gap:6px;}
-    .compat-type-list li{font-size:13px;color:#374151;padding:6px 10px;border-radius:8px;line-height:1.5;}
+    .compat-type-list li{font-size:14px;color:#374151;padding:8px 10px;border-radius:8px;line-height:1.55;}
     .compat-card.good .compat-type-list li{background:#dcfce7;}
     .compat-card.caution-compat .compat-type-list li{background:#ffedd5;}
     .compat-type-name{font-weight:700;}
     .advice-box{background:linear-gradient(135deg,#f0fdfa,#f0fdf4);border:1px solid #99f6e4;border-radius:16px;padding:24px 20px;margin:0;}
-    .advice-box p{margin:0 0 12px;color:#134e4a;font-size:15px;line-height:1.85;}
+    .advice-box p{margin:0 0 14px;color:#134e4a;font-size:17px;line-height:1.85;}
     .advice-box p:last-child{margin-bottom:0;}
     .advice-box strong{color:#0d9488;}
     .ad-cards-wrap{display:flex;flex-direction:column;gap:24px;margin-top:8px;}
@@ -146,16 +146,16 @@
 
     <header class="type-hero" aria-label="調整役タイプ紹介">
       <div class="type-hero-inner">
+        <div class="type-hero-img-wrap">
+          <img src="images/type-mediator.png" alt="調整役タイプのアイコン" class="type-hero-img" loading="eager"
+            onerror="this.style.display='none';document.getElementById('mediator-emoji').style.display='block';" />
+          <span id="mediator-emoji" style="display:none;font-size:52px;"></span>
+        </div>
         <div class="type-hero-text">
           <p class="type-hero-badge">キャリアDNA タイプ診断 — 調整・コミュニケーションタイプ</p>
           <h1 class="type-hero-title">調整役タイプ</h1>
           <p class="type-hero-sub">人をつなぐ・調整力タイプ</p>
           <p class="type-hero-catch">「あなたが間にいるだけで、チームが前に進む」</p>
-        </div>
-        <div class="type-hero-img-wrap">
-          <img src="images/type-mediator.png" alt="調整役タイプのアイコン" class="type-hero-img" loading="eager"
-            onerror="this.style.display='none';document.getElementById('mediator-emoji').style.display='block';" />
-          <span id="mediator-emoji" style="display:none;font-size:52px;"></span>
         </div>
       </div>
     </header>
