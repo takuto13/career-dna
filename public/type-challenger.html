@@ -47,21 +47,26 @@
     .type-section-title .icon{font-size:22px;}
     .type-overview{line-height:1.88;color:#2d2a45;margin:0;font-size:17px;}
     .feature-items{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
-    .feature-item{display:flex;align-items:flex-start;gap:12px;background:#fff7ed;border-radius:12px;padding:14px 16px;}
-    .feature-item-num{flex-shrink:0;width:28px;height:28px;background:linear-gradient(135deg,#7c2d12,#ea580c);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;}
-    .feature-item-body{flex:1;}
-    .feature-item-label{font-weight:700;color:#7c2d12;margin-bottom:6px;font-size:15px;}
-    .feature-item-text{color:#4b5563;font-size:14px;line-height:1.65;margin:0;}
-    .strength-items{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
-    .strength-item{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #fed7aa;}
+    .feature-item{display:flex;flex-direction:column;gap:8px;background:#fff7ed;border-radius:12px;padding:14px 16px;}
+    .feature-item-head{display:flex;align-items:center;gap:14px;min-height:32px;}
+    .feature-item-num{flex-shrink:0;width:32px;height:32px;box-sizing:border-box;background:linear-gradient(135deg,#7c2d12,#ea580c);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1;}
+    .feature-item-label{flex:1;min-width:0;font-weight:700;color:#7c2d12;margin:0;font-size:15px;line-height:1.45;}
+    .feature-item-text{color:#4b5563;font-size:14px;line-height:1.65;margin:0;padding-left:calc(32px + 14px);}
+    .strength-items{list-style:none;margin:0;padding:0;display:grid;gap:0;}
+    .strength-item{display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #fed7aa;}
     .strength-item:last-child{border-bottom:none;}
-    .strength-check{flex-shrink:0;color:#ea580c;font-size:18px;line-height:1.4;}
-    .strength-text{color:#2d2a45;font-size:15px;line-height:1.65;}
+    .strength-check{flex-shrink:0;align-self:center;width:1.15em;height:1.15em;margin-top:0.1em;border-radius:50%;border:2px solid #ea580c;box-sizing:border-box;position:relative;color:#ea580c;font-size:18px;line-height:1;}
+    .strength-check::after{content:"";position:absolute;left:50%;top:45%;width:4px;height:8px;border:solid currentColor;border-width:0 2px 2px 0;transform:translate(-50%,-50%) rotate(45deg);}
+    .strength-text{color:#2d2a45;font-size:15px;line-height:1.65;margin:0;}
     .strength-text strong{color:#7c2d12;}
     .caution-items{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
     .caution-item{background:#fff7ed;border-left:3px solid #f97316;border-radius:0 10px 10px 0;padding:12px 16px;}
-    .caution-item-label{font-weight:700;color:#c2410c;font-size:15px;margin-bottom:6px;}
+    .caution-item-label{font-weight:700;color:#c2410c;font-size:15px;line-height:1.45;margin:0 0 10px;}
     .caution-item-text{color:#6b4c37;font-size:14px;line-height:1.65;margin:0;}
+    .caution-item-segments{display:flex;flex-direction:column;margin:0;padding:0;}
+    .caution-item-segment{display:flex;align-items:center;margin:0;padding:14px 0;box-sizing:border-box;color:#6b4c37;font-size:14px;line-height:1.65;border-top:1px solid rgba(249,115,22,0.22);}
+    .caution-item-segment:first-child{border-top:none;padding-top:0;}
+    .caution-item-segment:last-child{padding-bottom:0;}
     .job-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;}
     .job-card{background:linear-gradient(135deg,#fff7ed,#ffedd5);border:1px solid #fed7aa;border-radius:12px;padding:14px 12px;text-align:center;}
     .job-card-icon{font-size:24px;margin-bottom:6px;}
@@ -174,25 +179,25 @@
       <h2 class="type-section-title" id="sec-features"><span class="icon"></span>挑戦者タイプの3つの特徴</h2>
       <ul class="feature-items" role="list">
         <li class="feature-item">
-          <div class="feature-item-num">1</div>
-          <div class="feature-item-body">
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">1</div>
             <p class="feature-item-label">圧倒的な行動力とスピード感</p>
-            <p class="feature-item-text">「考えてから動く」より「動きながら考える」タイプ。完璧な準備より早期の実行を好み、フィードバックを素早くキャッチして方向を修正する俊敏さが強みです。</p>
           </div>
+          <p class="feature-item-text">「考えてから動く」より「動きながら考える」タイプ。完璧な準備より早期の実行を好み、フィードバックを素早くキャッチして方向を修正する俊敏さが強みです。</p>
         </li>
         <li class="feature-item">
-          <div class="feature-item-num">2</div>
-          <div class="feature-item-body">
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">2</div>
             <p class="feature-item-label">変化・リスクを楽しむ思考</p>
-            <p class="feature-item-text">他の人が「怖い」と感じる環境変化や新規事業、未知の領域に対して、挑戦者タイプはむしろ「チャンス」と感じます。安定より成長を選ぶ価値観が、キャリアの差別化につながります。</p>
           </div>
+          <p class="feature-item-text">他の人が「怖い」と感じる環境変化や新規事業、未知の領域に対して、挑戦者タイプはむしろ「チャンス」と感じます。安定より成長を選ぶ価値観が、キャリアの差別化につながります。</p>
         </li>
         <li class="feature-item">
-          <div class="feature-item-num">3</div>
-          <div class="feature-item-body">
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">3</div>
             <p class="feature-item-label">目標達成への強い情熱</p>
-            <p class="feature-item-text">高い目標を掲げ、それを達成することに強い内発的動機を持ちます。逆境や困難があるほど燃える性質があり、「無理だ」と言われたことを「やってやる」というエネルギーに変えます。</p>
           </div>
+          <p class="feature-item-text">高い目標を掲げ、それを達成することに強い内発的動機を持ちます。逆境や困難があるほど燃える性質があり、「無理だ」と言われたことを「やってやる」というエネルギーに変えます。</p>
         </li>
       </ul>
     </section>
@@ -213,15 +218,24 @@
       <ul class="caution-items" role="list">
         <li class="caution-item">
           <p class="caution-item-label">飽きやすい・継続が苦手になることがある</p>
-          <p class="caution-item-text">新しいことへの熱量は高いが、ルーティン化した段階で興味が薄れやすい面も。意識的に「なぜこれを続けるか」の理由を持ち、成果の節目で振り返る習慣が継続力を高めます。</p>
+          <div class="caution-item-segments">
+            <p class="caution-item-segment">新しいことへの熱量は高いが、ルーティン化した段階で興味が薄れやすい面も。</p>
+            <p class="caution-item-segment">意識的に「なぜこれを続けるか」の理由を持ち、成果の節目で振り返る習慣が継続力を高めます。</p>
+          </div>
         </li>
         <li class="caution-item">
           <p class="caution-item-label">詰めが甘くなりやすい・リスク管理が課題</p>
-          <p class="caution-item-text">「まず動く」姿勢は強みでもあるが、事前調査や計画が不十分で同じ失敗を繰り返すことも。チームに慎重派を置くか、意識的に「実行前確認リスト」を持つと防げます。</p>
+          <div class="caution-item-segments">
+            <p class="caution-item-segment">「まず動く」姿勢は強みでもあるが、事前調査や計画が不十分で同じ失敗を繰り返すことも。</p>
+            <p class="caution-item-segment">チームに慎重派を置くか、意識的に「実行前確認リスト」を持つと防げます。</p>
+          </div>
         </li>
         <li class="caution-item">
           <p class="caution-item-label">周囲とのテンポのズレ</p>
-          <p class="caution-item-text">「なぜもっと早くやらないのか」と感じる場面が多く、慎重派の人との摩擦が生まれやすい。スピード感の違いは個性の違いです。巻き込む前に説明する一手間が信頼につながります。</p>
+          <div class="caution-item-segments">
+            <p class="caution-item-segment">「なぜもっと早くやらないのか」と感じる場面が多く、慎重派の人との摩擦が生まれやすい。</p>
+            <p class="caution-item-segment">スピード感の違いは個性の違いです。巻き込む前に説明する一手間が信頼につながります。</p>
+          </div>
         </li>
       </ul>
     </section>

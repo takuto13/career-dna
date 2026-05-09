@@ -47,21 +47,26 @@
     .type-section-title .icon{font-size:22px;}
     .type-overview{line-height:1.88;color:#2d2a45;margin:0;font-size:17px;}
     .feature-items{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
-    .feature-item{display:flex;align-items:flex-start;gap:12px;background:#f0fdf4;border-radius:12px;padding:14px 16px;}
-    .feature-item-num{flex-shrink:0;width:28px;height:28px;background:linear-gradient(135deg,#14532d,#16a34a);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;}
-    .feature-item-body{flex:1;}
-    .feature-item-label{font-weight:700;color:#14532d;margin-bottom:6px;font-size:15px;}
-    .feature-item-text{color:#4b5563;font-size:14px;line-height:1.65;margin:0;}
-    .strength-items{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
-    .strength-item{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #bbf7d0;}
+    .feature-item{display:flex;flex-direction:column;gap:8px;background:#f0fdf4;border-radius:12px;padding:14px 16px;}
+    .feature-item-head{display:flex;align-items:center;gap:14px;min-height:32px;}
+    .feature-item-num{flex-shrink:0;width:32px;height:32px;box-sizing:border-box;background:linear-gradient(135deg,#14532d,#16a34a);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1;}
+    .feature-item-label{flex:1;min-width:0;font-weight:700;color:#14532d;margin:0;font-size:15px;line-height:1.45;}
+    .feature-item-text{color:#4b5563;font-size:14px;line-height:1.65;margin:0;padding-left:calc(32px + 14px);}
+    .strength-items{list-style:none;margin:0;padding:0;display:grid;gap:0;}
+    .strength-item{display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #bbf7d0;}
     .strength-item:last-child{border-bottom:none;}
-    .strength-check{flex-shrink:0;color:#16a34a;font-size:18px;line-height:1.4;}
-    .strength-text{color:#2d2a45;font-size:15px;line-height:1.65;}
+    .strength-check{flex-shrink:0;align-self:center;width:1.15em;height:1.15em;margin-top:0.1em;border-radius:50%;border:2px solid #16a34a;box-sizing:border-box;position:relative;color:#16a34a;font-size:18px;line-height:1;}
+    .strength-check::after{content:"";position:absolute;left:50%;top:45%;width:4px;height:8px;border:solid currentColor;border-width:0 2px 2px 0;transform:translate(-50%,-50%) rotate(45deg);}
+    .strength-text{color:#2d2a45;font-size:15px;line-height:1.65;margin:0;}
     .strength-text strong{color:#14532d;}
     .caution-items{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
     .caution-item{background:#fff7ed;border-left:3px solid #f97316;border-radius:0 10px 10px 0;padding:12px 16px;}
-    .caution-item-label{font-weight:700;color:#c2410c;font-size:15px;margin-bottom:6px;}
+    .caution-item-label{font-weight:700;color:#c2410c;font-size:15px;line-height:1.45;margin:0 0 10px;}
     .caution-item-text{color:#6b4c37;font-size:14px;line-height:1.65;margin:0;}
+    .caution-item-segments{display:flex;flex-direction:column;margin:0;padding:0;}
+    .caution-item-segment{display:flex;align-items:center;margin:0;padding:14px 0;box-sizing:border-box;color:#6b4c37;font-size:14px;line-height:1.65;border-top:1px solid rgba(249,115,22,0.22);}
+    .caution-item-segment:first-child{border-top:none;padding-top:0;}
+    .caution-item-segment:last-child{padding-bottom:0;}
     .job-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;}
     .job-card{background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:1px solid #86efac;border-radius:12px;padding:14px 12px;text-align:center;}
     .job-card-icon{font-size:24px;margin-bottom:6px;}
@@ -174,25 +179,25 @@
       <h2 class="type-section-title" id="sec-features"><span class="icon"></span>守護者タイプの3つの特徴</h2>
       <ul class="feature-items" role="list">
         <li class="feature-item">
-          <div class="feature-item-num">1</div>
-          <div class="feature-item-body">
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">1</div>
             <p class="feature-item-label">高い責任感と誠実さ</p>
-            <p class="feature-item-text">一度引き受けた仕事は必ずやり遂げる。締切・品質・約束を守ることへの強いコミットメントが、周囲からの信頼を積み上げます。「言ったことをやる」「やると言ったら必ずやる」が行動の核心です。</p>
           </div>
+          <p class="feature-item-text">一度引き受けた仕事は必ずやり遂げる。締切・品質・約束を守ることへの強いコミットメントが、周囲からの信頼を積み上げます。「言ったことをやる」「やると言ったら必ずやる」が行動の核心です。</p>
         </li>
         <li class="feature-item">
-          <div class="feature-item-num">2</div>
-          <div class="feature-item-body">
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">2</div>
             <p class="feature-item-label">ルール・プロセスを大切にする安定感</p>
-            <p class="feature-item-text">定められたルールや手順の意味を理解し、それを守ることで品質と安全を保つ姿勢があります。組織のコンプライアンスや品質管理において、この安定感は組織の健全性を守る根幹です。</p>
           </div>
+          <p class="feature-item-text">定められたルールや手順の意味を理解し、それを守ることで品質と安全を保つ姿勢があります。組織のコンプライアンスや品質管理において、この安定感は組織の健全性を守る根幹です。</p>
         </li>
         <li class="feature-item">
-          <div class="feature-item-num">3</div>
-          <div class="feature-item-body">
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">3</div>
             <p class="feature-item-label">周囲への気配りと配慮</p>
-            <p class="feature-item-text">チームメンバーの状態・困りごとを察知し、さりげなくサポートする能力があります。「あの人が困っているな」「ここを手当てしておかないと後でトラブルになる」という先読み力が際立ちます。</p>
           </div>
+          <p class="feature-item-text">チームメンバーの状態・困りごとを察知し、さりげなくサポートする能力があります。「あの人が困っているな」「ここを手当てしておかないと後でトラブルになる」という先読み力が際立ちます。</p>
         </li>
       </ul>
     </section>
@@ -213,15 +218,24 @@
       <ul class="caution-items" role="list">
         <li class="caution-item">
           <p class="caution-item-label">変化への抵抗感が出やすい</p>
-          <p class="caution-item-text">「今まで通りで問題ない」という思考パターンが、変化・新しい試みへの抵抗感につながることも。変化のリスクより「変化しないリスク」を意識することで、適応力が上がります。</p>
+          <div class="caution-item-segments">
+            <p class="caution-item-segment">「今まで通りで問題ない」という思考パターンが、変化・新しい試みへの抵抗感につながることも。</p>
+            <p class="caution-item-segment">変化のリスクより「変化しないリスク」を意識することで、適応力が上がります。</p>
+          </div>
         </li>
         <li class="caution-item">
           <p class="caution-item-label">自己犠牲になりやすい</p>
-          <p class="caution-item-text">責任感の強さゆえに「自分が引き受けなければ」と過度に抱え込む傾向があります。「断ることも組織への貢献」という視点と、適切な委譲・相談の習慣が持続的なパフォーマンスに必要です。</p>
+          <div class="caution-item-segments">
+            <p class="caution-item-segment">責任感の強さゆえに「自分が引き受けなければ」と過度に抱え込む傾向があります。</p>
+            <p class="caution-item-segment">「断ることも組織への貢献」という視点と、適切な委譲・相談の習慣が持続的なパフォーマンスに必要です。</p>
+          </div>
         </li>
         <li class="caution-item">
           <p class="caution-item-label">主張・自己アピールが苦手になりやすい</p>
-          <p class="caution-item-text">仕事の成果を「当たり前」として表に出さない謙虚さが、評価・昇進での不利につながることも。「自分の貢献を可視化する」習慣を意識的に作ることが大切です。</p>
+          <div class="caution-item-segments">
+            <p class="caution-item-segment">仕事の成果を「当たり前」として表に出さない謙虚さが、評価・昇進での不利につながることも。</p>
+            <p class="caution-item-segment">「自分の貢献を可視化する」習慣を意識的に作ることが大切です。</p>
+          </div>
         </li>
       </ul>
     </section>

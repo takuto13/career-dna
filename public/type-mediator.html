@@ -47,21 +47,26 @@
     .type-section-title .icon{font-size:22px;}
     .type-overview{line-height:1.88;color:#2d2a45;margin:0;font-size:17px;}
     .feature-items{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
-    .feature-item{display:flex;align-items:flex-start;gap:12px;background:#f0fdfa;border-radius:12px;padding:14px 16px;}
-    .feature-item-num{flex-shrink:0;width:28px;height:28px;background:linear-gradient(135deg,#134e4a,#0d9488);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;}
-    .feature-item-body{flex:1;}
-    .feature-item-label{font-weight:700;color:#134e4a;margin-bottom:6px;font-size:15px;}
-    .feature-item-text{color:#4b5563;font-size:14px;line-height:1.65;margin:0;}
-    .strength-items{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
-    .strength-item{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #ccfbf1;}
+    .feature-item{display:flex;flex-direction:column;gap:8px;background:#f0fdfa;border-radius:12px;padding:14px 16px;}
+    .feature-item-head{display:flex;align-items:center;gap:14px;min-height:32px;}
+    .feature-item-num{flex-shrink:0;width:32px;height:32px;box-sizing:border-box;background:linear-gradient(135deg,#134e4a,#0d9488);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1;}
+    .feature-item-label{flex:1;min-width:0;font-weight:700;color:#134e4a;margin:0;font-size:15px;line-height:1.45;}
+    .feature-item-text{color:#4b5563;font-size:14px;line-height:1.65;margin:0;padding-left:calc(32px + 14px);}
+    .strength-items{list-style:none;margin:0;padding:0;display:grid;gap:0;}
+    .strength-item{display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #ccfbf1;}
     .strength-item:last-child{border-bottom:none;}
-    .strength-check{flex-shrink:0;color:#0d9488;font-size:18px;line-height:1.4;}
-    .strength-text{color:#2d2a45;font-size:15px;line-height:1.65;}
+    .strength-check{flex-shrink:0;align-self:center;width:1.15em;height:1.15em;margin-top:0.1em;border-radius:50%;border:2px solid #0d9488;box-sizing:border-box;position:relative;color:#0d9488;font-size:18px;line-height:1;}
+    .strength-check::after{content:"";position:absolute;left:50%;top:45%;width:4px;height:8px;border:solid currentColor;border-width:0 2px 2px 0;transform:translate(-50%,-50%) rotate(45deg);}
+    .strength-text{color:#2d2a45;font-size:15px;line-height:1.65;margin:0;}
     .strength-text strong{color:#134e4a;}
     .caution-items{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
     .caution-item{background:#fff7ed;border-left:3px solid #f97316;border-radius:0 10px 10px 0;padding:12px 16px;}
-    .caution-item-label{font-weight:700;color:#c2410c;font-size:15px;margin-bottom:6px;}
+    .caution-item-label{font-weight:700;color:#c2410c;font-size:15px;line-height:1.45;margin:0 0 10px;}
     .caution-item-text{color:#6b4c37;font-size:14px;line-height:1.65;margin:0;}
+    .caution-item-segments{display:flex;flex-direction:column;margin:0;padding:0;}
+    .caution-item-segment{display:flex;align-items:center;margin:0;padding:14px 0;box-sizing:border-box;color:#6b4c37;font-size:14px;line-height:1.65;border-top:1px solid rgba(249,115,22,0.22);}
+    .caution-item-segment:first-child{border-top:none;padding-top:0;}
+    .caution-item-segment:last-child{padding-bottom:0;}
     .job-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;}
     .job-card{background:linear-gradient(135deg,#f0fdfa,#ccfbf1);border:1px solid #99f6e4;border-radius:12px;padding:14px 12px;text-align:center;}
     .job-card-icon{font-size:24px;margin-bottom:6px;}
@@ -174,25 +179,25 @@
       <h2 class="type-section-title" id="sec-features"><span class="icon"></span>調整役タイプの3つの特徴</h2>
       <ul class="feature-items" role="list">
         <li class="feature-item">
-          <div class="feature-item-num">1</div>
-          <div class="feature-item-body">
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">1</div>
             <p class="feature-item-label">高い共感力と傾聴スキル</p>
-            <p class="feature-item-text">相手の話を最後まで聞き、感情と事実を正確に受け取ることができます。「この人は何に困っているのか」「本当に言いたいことは何か」を感じ取る力が、信頼関係の基盤になります。</p>
           </div>
+          <p class="feature-item-text">相手の話を最後まで聞き、感情と事実を正確に受け取ることができます。「この人は何に困っているのか」「本当に言いたいことは何か」を感じ取る力が、信頼関係の基盤になります。</p>
         </li>
         <li class="feature-item">
-          <div class="feature-item-num">2</div>
-          <div class="feature-item-body">
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">2</div>
             <p class="feature-item-label">関係構築・信頼形成の巧みさ</p>
-            <p class="feature-item-text">初対面の人とも自然に距離を縮め、長期的な信頼関係を構築するのが得意です。利害関係が複雑な場面でも、双方の立場を尊重しながら「Win-Win」の着地点を見つける力があります。</p>
           </div>
+          <p class="feature-item-text">初対面の人とも自然に距離を縮め、長期的な信頼関係を構築するのが得意です。利害関係が複雑な場面でも、双方の立場を尊重しながら「Win-Win」の着地点を見つける力があります。</p>
         </li>
         <li class="feature-item">
-          <div class="feature-item-num">3</div>
-          <div class="feature-item-body">
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">3</div>
             <p class="feature-item-label">対立を解消する調整力</p>
-            <p class="feature-item-text">意見が衝突しやすい状況でも、感情的にならず冷静に双方の意見を整理できます。「どちらが正しいか」より「どうすれば前に進めるか」に焦点を当てた問題解決で、チームを動かします。</p>
           </div>
+          <p class="feature-item-text">意見が衝突しやすい状況でも、感情的にならず冷静に双方の意見を整理できます。「どちらが正しいか」より「どうすれば前に進めるか」に焦点を当てた問題解決で、チームを動かします。</p>
         </li>
       </ul>
     </section>
@@ -213,15 +218,24 @@
       <ul class="caution-items" role="list">
         <li class="caution-item">
           <p class="caution-item-label">自己主張が苦手になりやすい</p>
-          <p class="caution-item-text">人に合わせることが得意な反面、自分の意見や要求を明確に伝えることを後回しにしがちです。「YES」と言い過ぎて抱えすぎることも。定期的に自分の本音を確認する習慣が大切です。</p>
+          <div class="caution-item-segments">
+            <p class="caution-item-segment">人に合わせることが得意な反面、自分の意見や要求を明確に伝えることを後回しにしがちです。「YES」と言い過ぎて抱えすぎることも。</p>
+            <p class="caution-item-segment">定期的に自分の本音を確認する習慣が大切です。</p>
+          </div>
         </li>
         <li class="caution-item">
           <p class="caution-item-label">ストレスを溜め込みやすい</p>
-          <p class="caution-item-text">人間関係のストレスを外に出さず内側に抱えてしまう傾向があります。信頼できる人に話す場を意識的に作り、適切な感情のアウトプットがパフォーマンス維持に欠かせません。</p>
+          <div class="caution-item-segments">
+            <p class="caution-item-segment">人間関係のストレスを外に出さず内側に抱えてしまう傾向があります。</p>
+            <p class="caution-item-segment">信頼できる人に話す場を意識的に作り、適切な感情のアウトプットがパフォーマンス維持に欠かせません。</p>
+          </div>
         </li>
         <li class="caution-item">
           <p class="caution-item-label">優先順位付けが難しくなることがある</p>
-          <p class="caution-item-text">人の依頼を断れずに何でも引き受けてしまうと、本当に重要なことに集中できなくなります。「今最も大切なことは何か」を定期的に確認し、勇気を持って優先順位をつけましょう。</p>
+          <div class="caution-item-segments">
+            <p class="caution-item-segment">人の依頼を断れずに何でも引き受けてしまうと、本当に重要なことに集中できなくなります。</p>
+            <p class="caution-item-segment">「今最も大切なことは何か」を定期的に確認し、勇気を持って優先順位をつけましょう。</p>
+          </div>
         </li>
       </ul>
     </section>

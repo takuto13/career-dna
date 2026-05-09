@@ -207,37 +207,49 @@
     }
     .feature-item {
       display: flex;
-      align-items: flex-start;
-      gap: 12px;
+      flex-direction: column;
+      gap: 8px;
       background: #f0f7ff;
       border-radius: 12px;
       padding: 14px 16px;
     }
+    .feature-item-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-height: 32px;
+    }
     .feature-item-num {
       flex-shrink: 0;
-      width: 28px;
-      height: 28px;
+      width: 32px;
+      height: 32px;
+      box-sizing: border-box;
       background: linear-gradient(135deg, #1e3a8a, #2563eb);
       color: #fff;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
     }
-    .feature-item-body { flex: 1; }
     .feature-item-label {
+      flex: 1;
+      min-width: 0;
       font-weight: 700;
       color: #1e3a8a;
-      margin-bottom: 6px;
+      margin: 0;
       font-size: 15px;
+      line-height: 1.45;
     }
     .feature-item-text {
       color: #4b5563;
       font-size: 14px;
       line-height: 1.65;
       margin: 0;
+      padding-left: calc(32px + 14px);
     }
 
     /* 強みリスト */
@@ -246,26 +258,46 @@
       margin: 0;
       padding: 0;
       display: grid;
-      gap: 10px;
+      gap: 0;
     }
     .strength-item {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 10px;
-      padding: 10px 0;
+      padding: 12px 0;
       border-bottom: 1px solid #ece9ff;
     }
     .strength-item:last-child { border-bottom: none; }
     .strength-check {
       flex-shrink: 0;
+      align-self: center;
+      width: 1.15em;
+      height: 1.15em;
+      margin-top: 0.1em;
+      border-radius: 50%;
+      border: 2px solid #2563eb;
+      box-sizing: border-box;
+      position: relative;
       color: #2563eb;
       font-size: 18px;
-      line-height: 1.4;
+      line-height: 1;
+    }
+    .strength-check::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      width: 4px;
+      height: 8px;
+      border: solid currentColor;
+      border-width: 0 2px 2px 0;
+      transform: translate(-50%, -50%) rotate(45deg);
     }
     .strength-text {
       color: #2d2a45;
       font-size: 15px;
       line-height: 1.65;
+      margin: 0;
     }
     .strength-text strong { color: #1e3a8a; }
 
@@ -287,7 +319,8 @@
       font-weight: 700;
       color: #c2410c;
       font-size: 15px;
-      margin-bottom: 6px;
+      line-height: 1.45;
+      margin: 0 0 10px;
     }
     .caution-item-text {
       color: #6b4c37;
@@ -295,6 +328,28 @@
       line-height: 1.65;
       margin: 0;
     }
+    .caution-item-segments {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+    .caution-item-segment {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 14px 0;
+      box-sizing: border-box;
+      color: #6b4c37;
+      font-size: 14px;
+      line-height: 1.65;
+      border-top: 1px solid rgba(249, 115, 22, 0.22);
+    }
+    .caution-item-segment:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+    .caution-item-segment:last-child { padding-bottom: 0; }
 
     /* 職種リスト */
     .job-grid {
@@ -601,35 +656,35 @@
       </h2>
       <ul class="feature-items" role="list">
         <li class="feature-item">
-          <div class="feature-item-num">1</div>
-          <div class="feature-item-body">
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">1</div>
             <p class="feature-item-label">圧倒的な集中力と没頭力</p>
-            <p class="feature-item-text">
-              好きなことや興味を持ったテーマには、時間を忘れて没入できます。
-              「もう少し磨きたい」「完璧にしたい」という内発的動機が非常に強く、
-              外部からの評価よりも自分の納得感を大切にします。
-            </p>
           </div>
+          <p class="feature-item-text">
+            好きなことや興味を持ったテーマには、時間を忘れて没入できます。
+            「もう少し磨きたい」「完璧にしたい」という内発的動機が非常に強く、
+            外部からの評価よりも自分の納得感を大切にします。
+          </p>
         </li>
         <li class="feature-item">
-          <div class="feature-item-num">2</div>
-          <div class="feature-item-body">
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">2</div>
             <p class="feature-item-label">クオリティへの強いこだわり</p>
-            <p class="feature-item-text">
-              「それなりで出す」という感覚が苦手で、クオリティラインを下回るアウトプットに強い違和感を覚えます。
-              職人タイプ特有の品質意識は、高い完成度の仕事を生み出す原動力になります。
-            </p>
           </div>
+          <p class="feature-item-text">
+            「それなりで出す」という感覚が苦手で、クオリティラインを下回るアウトプットに強い違和感を覚えます。
+            職人タイプ特有の品質意識は、高い完成度の仕事を生み出す原動力になります。
+          </p>
         </li>
         <li class="feature-item">
-          <div class="feature-item-num">3</div>
-          <div class="feature-item-body">
+          <div class="feature-item-head">
+            <div class="feature-item-num" aria-hidden="true">3</div>
             <p class="feature-item-label">継続的な自己研鑽への意欲</p>
-            <p class="feature-item-text">
-              学ぶこと・上達すること自体が楽しいため、スキルアップへの継続的な投資を厭いません。
-              資格取得・独学・副業プロジェクトなど、自発的に学び続ける姿勢がキャリアの大きな差別化になります。
-            </p>
           </div>
+          <p class="feature-item-text">
+            学ぶこと・上達すること自体が楽しいため、スキルアップへの継続的な投資を厭いません。
+            資格取得・独学・副業プロジェクトなど、自発的に学び続ける姿勢がキャリアの大きな差別化になります。
+          </p>
         </li>
       </ul>
     </section>
@@ -671,24 +726,24 @@
       <ul class="caution-items" role="list">
         <li class="caution-item">
           <p class="caution-item-label">完璧主義で進行が遅れることがある</p>
-          <p class="caution-item-text">
-            クオリティへのこだわりが強すぎると、リリース・提出・共有のタイミングを逃すことも。
-            「80点で出してフィードバックをもらう」思考を意識的に取り入れることで、成長スピードが上がります。
-          </p>
+          <div class="caution-item-segments">
+            <p class="caution-item-segment">クオリティへのこだわりが強すぎると、リリース・提出・共有のタイミングを逃すことも。</p>
+            <p class="caution-item-segment">「80点で出してフィードバックをもらう」思考を意識的に取り入れることで、成長スピードが上がります。</p>
+          </div>
         </li>
         <li class="caution-item">
           <p class="caution-item-label">自分の専門外に関心が向きにくい</p>
-          <p class="caution-item-text">
-            深掘りを好む反面、横断的なコミュニケーションや他部署との連携が苦手に感じることがあります。
-            ビジネス全体像を把握する意識を持つと、キャリアの選択肢が広がります。
-          </p>
+          <div class="caution-item-segments">
+            <p class="caution-item-segment">深掘りを好む反面、横断的なコミュニケーションや他部署との連携が苦手に感じることがあります。</p>
+            <p class="caution-item-segment">ビジネス全体像を把握する意識を持つと、キャリアの選択肢が広がります。</p>
+          </div>
         </li>
         <li class="caution-item">
           <p class="caution-item-label">評価・自己アピールが苦手になりやすい</p>
-          <p class="caution-item-text">
-            「実力で認められるべき」という信念から、自己発信や上司へのアピールを控えがちです。
-            実力と同じくらい「見せる力」も意識すると、昇進・転職でより有利になります。
-          </p>
+          <div class="caution-item-segments">
+            <p class="caution-item-segment">「実力で認められるべき」という信念から、自己発信や上司へのアピールを控えがちです。</p>
+            <p class="caution-item-segment">実力と同じくらい「見せる力」も意識すると、昇進・転職でより有利になります。</p>
+          </div>
         </li>
       </ul>
     </section>
