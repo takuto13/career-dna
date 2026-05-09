@@ -35,7 +35,7 @@
 
 ## SEOメディア型競合（記事でアフィリエイト）
 
-### パーソナルファイル（https://per-sonal.co.jp/personalfile/media/）★最重要競合
+### パーソナルファイル（https://per-sonal.co.jp/personalfile/media/）最重要競合
 - 16タイプ別記事を大量生産してSEO支配中
   - 「ENFJ 適職」「INTJ 仕事」「16タイプ 相性」など全16タイプ完全網羅
   - 「モテるランキング」「変人ランキング」などバイラル記事も量産

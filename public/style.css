@@ -4671,13 +4671,26 @@ a.type-card:hover {
 }
 
 .menu-toggle-btn::before {
-  content: "☰";
+  content: "";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  box-shadow: 0 -6px 0 currentColor, 0 6px 0 currentColor;
   font-size: 18px;
   line-height: 1;
 }
 
 .menu-toggle-btn[aria-expanded="true"]::before {
-  content: "✕";
+  content: "\00D7";
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 22px;
+  line-height: 1;
 }
 
 .page-result .result-page {

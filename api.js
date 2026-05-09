@@ -71,11 +71,11 @@
 
   function getTypeIconFromName(typeName) {
     var name = String(typeName || "");
-    if (name.indexOf("戦略") !== -1 || name.indexOf("俯瞰") !== -1) return "🧭";
-    if (name.indexOf("専門") !== -1 || name.indexOf("深化") !== -1) return "🔨";
-    if (name.indexOf("協調") !== -1 || name.indexOf("調整") !== -1) return "🤝";
-    if (name.indexOf("行動") !== -1 || name.indexOf("挑戦") !== -1) return "🚀";
-    return "🧬";
+    if (name.indexOf("戦略") !== -1 || name.indexOf("俯瞰") !== -1) return "";
+    if (name.indexOf("専門") !== -1 || name.indexOf("深化") !== -1) return "";
+    if (name.indexOf("協調") !== -1 || name.indexOf("調整") !== -1) return "";
+    if (name.indexOf("行動") !== -1 || name.indexOf("挑戦") !== -1) return "";
+    return "";
   }
 
   function setTypeImage(typeName) {
