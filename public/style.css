@@ -4545,7 +4545,21 @@ body {
 
 .dropdown-arrow {
   display: inline-block;
-  font-size: 10px;
+  width: 14px;
+  height: 10px;
+  margin-left: 4px;
+  flex-shrink: 0;
+  vertical-align: middle;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -9999px;
+  /* 線で構成した下向きシェブロン（ヘッダー上の白文字に合わせたストローク SVG） */
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 10'%3E%3Cpath d='M1.5 2.5 L7 8.5 L12.5 2.5' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   transition: transform 0.2s ease;
 }
 
@@ -4580,7 +4594,7 @@ body {
   font-size: 14px;
   white-space: nowrap;
   min-width: unset;
-  text-align: left;
+  text-align: center;
   transition: background 0.15s;
 }
 
