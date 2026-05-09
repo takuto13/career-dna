@@ -88,7 +88,6 @@
       border-radius: 20px;
       padding: 40px 32px 36px;
       color: #fff;
-      text-align: center;
       margin-bottom: 32px;
       position: relative;
       overflow: hidden;
@@ -98,6 +97,24 @@
       position: absolute;
       inset: 0;
       background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.08) 0%, transparent 60%);
+    }
+    .type-hero-inner {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(16px, 4vw, 36px);
+      position: relative;
+      z-index: 1;
+    }
+    .type-hero-text {
+      flex: 1 1 0;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
     .type-hero-badge {
       display: inline-block;
@@ -110,14 +127,15 @@
       letter-spacing: 0.04em;
     }
     .type-hero-img-wrap {
-      width: 100px;
-      height: 100px;
+      flex-shrink: 0;
+      width: min(280px, 42vw);
+      height: min(280px, 42vw);
       background: rgba(255,255,255,0.14);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 16px;
+      margin: 0;
       overflow: hidden;
     }
     .type-hero-img {
@@ -484,6 +502,8 @@
     @media (max-width: 640px) {
       .type-page-wrap { margin-top: 72px; }
       .type-hero { padding: 28px 16px 24px; border-radius: 14px; }
+      .type-hero-inner { flex-direction: column; gap: 20px; }
+      .type-hero-img-wrap { width: min(260px, 72vw); height: min(260px, 72vw); }
       .type-section-card { padding: 20px 16px; }
       .compat-grid { grid-template-columns: 1fr; }
       .job-grid { grid-template-columns: repeat(2, 1fr); }
@@ -538,20 +558,24 @@
 
     <!-- ヒーローバナー -->
     <header class="type-hero" aria-label="職人タイプ紹介">
-      <p class="type-hero-badge">キャリアDNA タイプ診断 — 職人・専門深化タイプ</p>
-      <div class="type-hero-img-wrap">
-        <img
-          src="images/type-craftsman.png"
-          alt="職人タイプのアイコン"
-          class="type-hero-img"
-          loading="eager"
-          onerror="this.style.display='none'; document.getElementById('craftsman-emoji').style.display='block';"
-        />
-        <span id="craftsman-emoji" style="display:none; font-size:52px;"></span>
+      <div class="type-hero-inner">
+        <div class="type-hero-text">
+          <p class="type-hero-badge">キャリアDNA タイプ診断 — 職人・専門深化タイプ</p>
+          <h1 class="type-hero-title">職人タイプ</h1>
+          <p class="type-hero-sub">職人・専門深化タイプ</p>
+          <p class="type-hero-catch">「深く極めることが、最大の武器になる」</p>
+        </div>
+        <div class="type-hero-img-wrap">
+          <img
+            src="images/type-craftsman.png"
+            alt="職人タイプのアイコン"
+            class="type-hero-img"
+            loading="eager"
+            onerror="this.style.display='none'; document.getElementById('craftsman-emoji').style.display='block';"
+          />
+          <span id="craftsman-emoji" style="display:none; font-size:52px;"></span>
+        </div>
       </div>
-      <h1 class="type-hero-title">職人タイプ</h1>
-      <p class="type-hero-sub">職人・専門深化タイプ</p>
-      <p class="type-hero-catch">「深く極めることが、最大の武器になる」</p>
     </header>
 
     <!-- 1. 職人タイプとは -->
