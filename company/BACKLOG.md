@@ -23,32 +23,26 @@
   -  **たくとの承認待ち** → `company/reports/2026-05-07_CTO_proposal.md` を確認の上、承認してください
   - 承認後：CTO即日実装
 
-- [→] **タイプ別詳細ページ作成（8ページ）** `CTO・継続中`
-  - 2/8草稿完成：戦略家タイプ（type-strategy.html）・分析者タイプ（type-analyst.html）
-  -  **たくとの承認待ち（2件）** → `company/reports/2026-05-07_CTO_typepage_proposal.md`（戦略家） / `company/requests/design_提案_2026-05-08.md`（分析者）
-  - 職人タイプページ（type-craftsman.html）→ CTO本日着手
-  - 調整役タイプページ（type-coordinator.html）→ CTO本日着手
-  - 残り4ページ：挑戦者・表現者・守護者・育成者（週次で継続）
-  - SEO戦略：タイプ名KW＋属性KW複合 ＋ MBTIマッピングボックスを全ページ追加
+- [x] **タイプ別詳細ページ作成（8ページ）** `CTO完了 2026-05-09`
+  - 8/8完成：type-craftsman / type-strategist / type-mediator / type-challenger / type-analyst / type-creator / type-guardian / type-nurturer
+  - 各ページ：タイプ固有カラー・アフィリエイトカード3枚・MBTIマッピングボックス・GA4計測・JSON-LD実装済み
+  - ⚠️ **たくとのデプロイ承認待ち** → `company/requests/request_2026-05-09.md` を確認
 
-- [→] **Xアカウント継続投稿（05/21〜以降の原稿作成）** `SNS担当`
-  - 05/14〜05/20の原稿7本完成済み・05/21〜05/23の原稿3本完成済み（2026-05-08）
-  -  **たくとが05/21〜05/23の予約投稿設定が必要**（2026-05-19ごろ）
-  - 05/24〜05/27の原稿：SNS担当が本日作成予定
+- [→] **Xアカウント継続投稿（05/27〜以降の原稿作成）** `SNS担当`
+  - 05/14〜05/20の原稿7本完成済み・05/21〜05/26の原稿6本完成済み（2026-05-08）
+  - ⚠️ **たくとが05/21〜05/26の予約投稿設定が必要**（2026-05-19〜2026-05-21ごろ）
+  - 05/27〜05/31の原稿：SNS担当が本日作成予定
 
 ###  高優先（今月中）
 
-- [ ] **職人タイプ詳細ページ作成**（type-craftsman.html） `CTO`
-  - 3番目のSEOコンテンツ
-  - SEO設計：「コツコツできる仕事 転職」「手に職 向いている人」をメインKW、MBTIマッピング（ISTJ/ISTP）
-  - CTO指示書発行済み（2026-05-08）
+- [x] **職人タイプ詳細ページ作成**（type-craftsman.html） `CTO完了 2026-05-09`
+  - アフィリエイトカード・GA4・MBTIマッピング（ISTJ/ISTP）実装済み
 
-- [ ] **調整役タイプ詳細ページ作成**（type-coordinator.html） `CTO`
-  - 4番目のSEOコンテンツ
-  - SEO設計：「コミュニケーション力 向いている仕事」「人と関わる仕事」をメインKW、MBTIマッピング（ESFJ/ENFJ）
-  - CTO指示書発行済み（2026-05-08）
+- [x] **調整役タイプ詳細ページ作成**（type-mediator.html） `CTO完了 2026-05-09`
+  - ファイル名：type-coordinator.html → type-mediator.html（変更あり・要リンク確認）
+  - アフィリエイトカード・GA4・MBTIマッピング（ESFJ/ENFJ）実装済み
 
-- [ ] **Xリプライ戦略の整備** `SNS担当`
+- [→] **Xリプライ戦略の整備** `SNS担当`
   - 毎日10リプライで拡散促進（strategy.md に記載）
   - リプライ対象アカウントリストを作成（転職/就活界隈のフォロワー1000〜10000人のアカウント）
   - SNS指示書発行済み（2026-05-07）
@@ -93,6 +87,6 @@
 - [x] GAコンバージョン計測設定：jobs.htmlにaffiliate_clickイベント実装（2026-05-07・CTO実装）
 - [x] Xアカウント継続投稿原稿作成：05/14〜05/20分7本完成（2026-05-07・SNS担当）
 - [x] 全ページGA4タグ設置確認・漏れ修正：全10ページ設置完了（2026-05-08・CTO実装）
-- [x] sitemap.xmlへのタイプページURL追加（2026-05-08・CTO実装）
-- [x] 分析者タイプ詳細ページ草稿作成：type-analyst.html完成（2026-05-08・CTO・承認待ちデプロイ）
-- [x] Xアカウント継続投稿原稿作成：05/21〜05/23分3本完成（2026-05-08・SNS担当）
+- [x] sitemap.xmlへのタイプページURL追加（2026-05-08 / 2026-05-09更新・CTO実装）
+- [x] 全8タイプ詳細ページ完成：type-craftsman / type-strategist / type-mediator / type-challenger / type-analyst / type-creator / type-guardian / type-nurturer（2026-05-09・CTO実装・デプロイ承認待ち）
+- [x] Xアカウント継続投稿原稿作成：05/21〜05/26分6本完成（2026-05-08・SNS担当）
