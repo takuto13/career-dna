@@ -1,22 +1,55 @@
 # ファイルマップ — キャリアDNA
 
-プロジェクトルート: `career-diagnosis/`
+最終更新：2026-05-09
 
 ---
 
-## ルート設定ファイル
+## company/ — 組織・エージェント管理
+
+### agents/ — エージェント定義（書き換え禁止）
 
 | ファイル | 役割 |
-|---|---|
-| `vercel.json` | Vercelデプロイ設定（ルーティング・関数設定） |
-| `package.json` | Node.js依存関係・スクリプト |
-| `package-lock.json` | 依存関係ロックファイル |
-| `server.js` | ローカル開発用サーバー |
-| `server.js.bak` | server.jsのバックアップ |
-| `api.js` | API共通処理 |
-| `.env` | 環境変数（APIキー等・Git管理外） |
-| `.env.example` | 環境変数のサンプル（Git管理対象） |
-| `.gitignore` | Git除外設定 |
+|----------|------|
+| `agents/RULES.md` | 全エージェント共通ルール・権限・報告フォーマット |
+| `agents/CEO.md` | CEO定義（経営・報告・バックログ管理） |
+| `agents/CTO.md` | CTO定義（技術実装・SEO・権限判断基準） |
+| `agents/SNS.md` | SNS担当定義（投稿原稿・日次調査） |
+
+### shared/ — 全エージェントが毎日読む共有情報
+
+| ファイル | 内容 | 更新者 |
+|----------|------|--------|
+| `shared/strategy.md` | 現在の方針・やること/やらないこと | CEO・たくと |
+| `shared/decisions.md` | 意思決定ログ（方針変更の根拠） | CEO・たくと |
+| `shared/context.md` | プロジェクト背景・現状 | CEO |
+| `shared/vision.md` | ビジョン・ミッション | CEO・たくと |
+| `shared/competitive-intel.md` | 競合調査レポート（7日ルール） | CEO |
+| `shared/sns-intel.md` | SNSトレンド調査（毎日上書き更新） | SNS担当 |
+| `shared/handoff.md` | セッション途中終了時の引き継ぎ（次回セッションが最初に読む） | 各エージェント |
+| `shared/file-map.md` | このファイル | CEO |
+
+### reports/ — CEOの日次統合報告書（1日1本のみ）
+
+| 命名規則 | 内容 |
+|----------|------|
+| `reports/YYYY-MM-DD.md` | CEO統合報告書（CTO・SNS実行内容・X投稿原稿・エスカレーション） |
+
+### x-posts/ — X投稿原稿（SNS担当が作成・たくとが投稿）
+
+| 命名規則 | 内容 |
+|----------|------|
+| `x-posts/YYYY-MM-DD_原稿.md` | その日作成した投稿原稿（たくとが確認して予約投稿） |
+
+### archive/ — 完了済み・旧フォーマットのファイル
+
+過去の reports・requests・提案書・指示書を保管。参照のみ。
+
+### その他
+
+| ファイル | 役割 |
+|----------|------|
+| `BACKLOG.md` | タスク一覧・進捗管理（全エージェントが更新） |
+| `finance/summary.md` | 収益サマリー |
 
 ---
 
@@ -25,7 +58,7 @@
 ### HTMLページ
 
 | ファイル | 内容 |
-|---|---|
+|----------|------|
 | `index.html` | トップページ |
 | `result.html` | 診断結果ページ |
 | `jobs.html` | 求人・転職サービス一覧（アフィリエイト） |
@@ -34,127 +67,49 @@
 | `contact.html` | お問い合わせ |
 | `privacy.html` | プライバシーポリシー |
 | `disclaimer.html` | 免責事項 |
-| `type-strategy.html` | タイプ別戦略ページ（全タイプ共通テンプレート） |
-| `type-craftsman.html` | 職人タイプ専用ページ（個別SEO用） |
+| `type-craftsman.html` | 職人タイプ詳細ページ |
+| `type-strategist.html` | 戦略家タイプ詳細ページ |
+| `type-mediator.html` | 調整役タイプ詳細ページ |
+| `type-challenger.html` | 挑戦者タイプ詳細ページ |
+| `type-analyst.html` | 分析者タイプ詳細ページ |
+| `type-creator.html` | 表現者タイプ詳細ページ |
+| `type-guardian.html` | 守護者タイプ詳細ページ |
+| `type-nurturer.html` | 育成者タイプ詳細ページ |
 
 ### JavaScript
 
 | ファイル | 役割 |
-|---|---|
+|----------|------|
 | `diagnosis.js` | 診断ロジック（質問・スコアリング・タイプ判定） |
-| `affiliate-config.js` | アフィリエイトリンク設定（ASP・案件管理） |
+| `affiliate-config.js` | アフィリエイトリンク設定 |
 | `social-share.js` | SNSシェア機能 |
 | `back-to-top.js` | ページトップへ戻るボタン |
 
 ### CSS・その他
 
 | ファイル | 役割 |
-|---|---|
+|----------|------|
 | `style.css` | 全ページ共通スタイル |
 | `sitemap.xml` | SEO用サイトマップ |
 | `robots.txt` | クローラー制御 |
 
-### images/ — 画像素材
-
-| ファイル | 内容 |
-|---|---|
-| `CareerDNA_logo.png` | ロゴ（縦） |
-| `CareerDNA_hlogo.png` | ロゴ（横） |
-| `ogp.png` | OGP画像（SNSシェア用） |
-| `hero-dna.png` | トップページヒーロー画像 |
-| `feature_ai.png` | 特徴セクション：AI診断 |
-| `feature_career.png` | 特徴セクション：キャリア |
-| `feature_sns.png` | 特徴セクション：SNS |
-| `type-analyst.png` | タイプ画像：分析家 |
-| `type-challenger.png` | タイプ画像：挑戦者 |
-| `type-craftsman.png` | タイプ画像：職人 |
-| `type-creator.png` | タイプ画像：創造者 |
-| `type-guardian.png` | タイプ画像：守護者 |
-| `type-mediator.png` | タイプ画像：調停者 |
-| `type-nurturer.png` | タイプ画像：育成者 |
-| `type-strategist.png` | タイプ画像：戦略家 |
-
 ---
 
-## api/ — サーバーレス関数（Vercel Functions）
+## api/ — サーバーレス関数
 
 | ファイル | 役割 |
-|---|---|
+|----------|------|
 | `api/diagnose.js` | Claude API呼び出し・診断結果生成 |
-| `api/contact.js` | お問い合わせフォーム送信（nodemailer） |
+| `api/contact.js` | お問い合わせフォーム送信 |
 
 ---
 
-## company/ — 組織・エージェント管理
-
-### agents/ — 各エージェントの指示書
+## ルート設定ファイル
 
 | ファイル | 役割 |
-|---|---|
-| `agents/RULES.md` | エージェント共通ルール |
-| `agents/CEO.md` | CEOエージェント指示書（戦略・意思決定） |
-| `agents/CFO.md` | CFOエージェント指示書（財務・収益管理） |
-| `agents/CTO.md` | CTOエージェント指示書（技術・開発） |
-| `agents/marketing/SNS.md` | SNS担当エージェント指示書 |
-
-### shared/ — 全エージェント共有ドキュメント
-
-| ファイル | 内容 |
-|---|---|
-| `shared/context.md` | プロジェクト現状・背景 |
-| `shared/vision.md` | ビジョン・ミッション |
-| `shared/strategy.md` | 事業戦略 |
-| `shared/decisions.md` | 意思決定ログ |
-| `shared/competitive-intel.md` | 競合調査レポート |
-| `shared/file-map.md` | このファイル（ファイル位置マップ） |
-
-### reports/ — エージェント作業レポート（日付別）
-
-`reports/YYYY-MM-DD_[N]_[担当].md` の形式で保存（N = 当日の実行順：1〜5）
-
-| ファイル | 内容 |
-|---|---|
-| `reports/2026-05-07_1_CEO.md` | CEO定例レポート（当日1回目） |
-| `reports/2026-05-07_2_CTO.md` | CTO定例レポート（当日2回目） |
-| `reports/2026-05-07_3_SNS.md` | SNS担当レポート（当日3回目） |
-
-※ 既存ファイル（番号なし）は過去の命名規則によるもの
-
-### requests/ — エージェントへの依頼書
-
-`requests/[担当]_YYYY-MM-DD_[N].md` の形式で保存（N = 当日の実行順：1〜5）
-
-| ファイル | 内容 |
-|---|---|
-| `requests/request_2026-05-07_1.md` | 全体への依頼（当日1回目） |
-| `requests/CTO_2026-05-07_1.md` | CTO向け依頼（当日1回目） |
-| `requests/SNS_2026-05-07_1.md` | SNS担当向け依頼（当日1回目） |
-
-### その他
-
-| ファイル | 役割 |
-|---|---|
-| `BACKLOG.md` | 機能バックログ・タスク一覧 |
-| `finance/summary.md` | 収益サマリー |
-| `archive/` | 完了済み指示書・計画書の保管場所 |
-
----
-
-## .claude/ — Claude Code設定
-
-| ファイル | 役割 |
-|---|---|
-| `.claude/settings.local.json` | Claude Codeローカル設定（権限等） |
-| `.claude/scheduled_tasks.lock` | スケジュールタスクのロックファイル |
-
----
-
-## .vercel/ — Vercel設定
-
-| ファイル | 役割 |
-|---|---|
-| `.vercel/project.json` | VercelプロジェクトID・組織ID |
-
----
-
-*最終更新: 2026-05-07*
+|----------|------|
+| `vercel.json` | Vercelデプロイ設定 |
+| `package.json` | Node.js依存関係 |
+| `.env` | 環境変数（Git管理外） |
+| `.env.example` | 環境変数のサンプル |
+| `.gitignore` | Git除外設定 |
