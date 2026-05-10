@@ -34,6 +34,13 @@
 
 ###  高優先（今月中）
 
+- [x] **SEO・LLMOコンテンツ強化（2026-05-10・CTO実装）**
+  - index.htmlのtitle・meta最適化（「AIキャリア診断」「AI自己分析」ブルーオーシャンKW導入）
+  - sitemap.xmlにlastmod日付追加（全15URL）
+  - 全8タイプページのmeta description更新（MBTI言及をコンプライアンス対応で除去、SEOキーワード改善）
+  - 全8タイプページにFAQPage JSON-LD構造化データ追加（Googleリッチスニペット・LLMO対策）
+  - 全8タイプページにFAQセクション追加（5Q×8ページ=40個のQ&A、長尾KW自然挿入）
+
 - [x] **職人タイプ詳細ページ作成**（type-craftsman.html） `CTO完了 2026-05-09`
   - アフィリエイトカード・GA4実装済み
 
