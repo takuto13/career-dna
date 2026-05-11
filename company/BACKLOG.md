@@ -54,16 +54,16 @@
   - type-strategy.htmlのcanonical → type-strategist.htmlに修正（重複コンテンツ回避）
   - sitemap.xml index/faq/about のlastmod更新（2026-05-11）
 
-- [ ] **全タイプページ BreadcrumbList JSON-LD追加** `CTO・2026-05-11指示済み`
+- [x] **全タイプページ BreadcrumbList JSON-LD追加** `CTO完了 2026-05-11`
   - 全8タイプページのheadにBreadcrumbList構造化データを追加
   - Googleリッチスニペット獲得・LLMO対策
 
-- [ ] **vercel.json リダイレクト設定（301）** `CTO・2026-05-11指示済み`
+- [x] **vercel.json リダイレクト設定（301）** `CTO完了 2026-05-11`
   - /type-strategy.html → /type-strategist.html の永続リダイレクト
   - 重複コンテンツ完全解消
 
-- [ ] **sitemap.xml priority・changefreq最適化** `CTO・2026-05-11指示済み`
-  - 各ページのクロール優先度を明示
+- [x] **sitemap.xml priority・changefreq最適化** `CTO完了 2026-05-11`
+  - faq.html 0.7 / about.html 0.6 / jobs.html 0.7 に修正・jobs.htmlのlastmodを2026-05-11に更新
 
 - [x] **職人タイプ詳細ページ作成**（type-craftsman.html） `CTO完了 2026-05-09`
   - アフィリエイトカード・GA4実装済み
