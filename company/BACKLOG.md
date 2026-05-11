@@ -41,6 +41,16 @@
   - 全8タイプページにFAQPage JSON-LD構造化データ追加（Googleリッチスニペット・LLMO対策）
   - 全8タイプページにFAQセクション追加（5Q×8ページ=40個のQ&A、長尾KW自然挿入）
 
+- [x] **LLMO・SEO基盤追加整備（2026-05-11・CTO実装）**
+  - index.htmlにFAQPage JSON-LD追加（「AIキャリア診断とは」「AI自己分析とは」KW対応）
+  - index.htmlにSpeakable JSON-LD追加（AI検索エンジン参照獲得対策）
+  - about.htmlにOrganization JSON-LD・canonical・faviconリンク追加（E-E-A-T強化）
+  - faq.htmlにcanonical・faviconリンク追加、AI系FAQを2問追加（JSON-LD・HTML本文）
+  - robots.txtにAI botクロール明示許可（GPTBot・PerplexityBot・anthropic-ai等）
+  - robots.txtにtype-strategy.html（旧ページ）のDisallow追加
+  - type-strategy.htmlのcanonical → type-strategist.htmlに修正（重複コンテンツ回避）
+  - sitemap.xml index/faq/about のlastmod更新（2026-05-11）
+
 - [x] **職人タイプ詳細ページ作成**（type-craftsman.html） `CTO完了 2026-05-09`
   - アフィリエイトカード・GA4実装済み
 

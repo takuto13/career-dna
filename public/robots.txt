@@ -1,4 +1,27 @@
 User-agent: *
 Allow: /
 
+# AI検索エンジン・LLMクローラーへの明示的許可（LLMO対策）
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# 重複コンテンツの防止（旧ページ）
+User-agent: *
+Disallow: /type-strategy.html
+
 Sitemap: https://career-dna.jp/sitemap.xml
