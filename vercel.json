@@ -1,5 +1,17 @@
 {
   "version": 2,
+  "redirects": [
+    {
+      "source": "/glossary.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/type-strategy.html",
+      "destination": "/type-strategist.html",
+      "permanent": true
+    }
+  ],
   "builds": [
     {
       "src": "api/diagnose.js",

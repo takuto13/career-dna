@@ -1,6 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CY9DKC6DZ6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CY9DKC6DZ6');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>よくある質問｜キャリア診断の疑問を解決</title>
@@ -12,6 +20,8 @@
   <meta property="og:image" content="https://career-dna.jp/images/ogp.png" />
   <meta property="og:site_name" content="キャリアDNA" />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://career-dna.jp/faq.html" />
+  <link rel="icon" type="image/png" href="images/CareerDNA_logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -50,7 +60,7 @@
           "name": "各タイプの意味を詳しく知るには？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "用語解説ページの「キャリア図鑑」に、各タイプの強み・弱み・適職の詳細を掲載しています。"
+            "text": "画面上部の「タイプ図鑑」メニューから各タイプの詳細ページを開くと、強み・弱み・向いている職種などをご覧いただけます。トップページのタイプ一覧からもお進みいただけます。"
           }
         },
         {
@@ -68,6 +78,22 @@
             "@type": "Answer",
             "text": "お問い合わせページに記載の窓口メールアドレスより順次ご案内いたします。"
           }
+        },
+        {
+          "@type": "Question",
+          "name": "AIキャリア診断とは何ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AIキャリア診断とは、AIが回答傾向を分析して仕事タイプ・強み・適職を提示するキャリア自己分析ツールです。キャリアDNAでは25問に答えるだけで、AIが8種類のキャリアタイプのうちどれに最も近いかを判定し、向いている職種・強み・転職のヒントを提示します。登録不要・完全無料でご利用いただけます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AI自己分析はどのように活用できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI自己分析の結果は、転職・就活の方向性を決める際の参考材料として活用できます。自分では気づきにくい強み・価値観・向いている職種をAIが客観的に提示するため、面接準備や職種選びに役立ちます。キャリアDNAの結果ページには各タイプの詳細ページへのリンクがあり、向いている職種・転職サービスの情報まで一連で確認できます。"
+          }
         }
       ]
     }
@@ -80,9 +106,22 @@
         <img src="images/CareerDNA_hlogo.png" alt="CareerDNA" class="logo-image" loading="eager" />
       </a>
       <div class="nav-menu-group">
-        <button type="button" class="menu-toggle-btn" aria-label="メニューを開く" aria-expanded="false">☰</button>
+        <button type="button" class="menu-toggle-btn" aria-label="メニューを開く" aria-expanded="false"></button>
         <div class="site-menu-links">
-          <a href="./glossary.html">キャリア図鑑</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">タイプ図鑑 <span class="dropdown-arrow" aria-hidden="true">▾</span></button>
+            <div class="nav-dropdown-menu">
+
+              <a href="./type-strategist.html">戦略家タイプ</a>
+              <a href="./type-craftsman.html">職人タイプ</a>
+              <a href="./type-mediator.html">調整役タイプ</a>
+              <a href="./type-challenger.html">挑戦者タイプ</a>
+              <a href="./type-analyst.html">分析者タイプ</a>
+              <a href="./type-creator.html">表現者タイプ</a>
+              <a href="./type-guardian.html">守護者タイプ</a>
+              <a href="./type-nurturer.html">育成者タイプ</a>
+            </div>
+          </div>
           <a href="./faq.html">よくある質問</a>
           <a href="./contact.html">お問い合わせ</a>
         </div>
@@ -133,7 +172,7 @@
             <span>各タイプの意味を詳しく知るには？</span>
           </button>
           <div class="faq-answer" hidden>
-            <p><span class="faq-a-icon">A</span>用語解説ページの「キャリア図鑑」に、各タイプの強み・弱み・適職の詳細を掲載しています。</p>
+            <p><span class="faq-a-icon">A</span>画面上部の「タイプ図鑑」メニューから各タイプの詳細ページを開くと、強み・弱み・向いている職種などをご覧いただけます。トップページのタイプ一覧からもお進みいただけます。</p>
           </div>
         </article>
 
@@ -156,6 +195,26 @@
             <p><span class="faq-a-icon">A</span>お問い合わせページに記載の窓口メールアドレスより順次ご案内いたします。</p>
           </div>
         </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span class="faq-q-icon">Q</span>
+            <span>AIキャリア診断とは何ですか？</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p><span class="faq-a-icon">A</span>AIキャリア診断とは、AIが回答傾向を分析して仕事タイプ・強み・適職を提示するキャリア自己分析ツールです。キャリアDNAでは25問に答えるだけで、AIが8種類のキャリアタイプのうちどれに最も近いかを判定し、向いている職種・強み・転職のヒントを提示します。登録不要・完全無料でご利用いただけます。</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span class="faq-q-icon">Q</span>
+            <span>AI自己分析はどのように活用できますか？</span>
+          </button>
+          <div class="faq-answer" hidden>
+            <p><span class="faq-a-icon">A</span>AI自己分析の結果は、転職・就活の方向性を決める際の参考材料として活用できます。自分では気づきにくい強み・価値観・向いている職種をAIが客観的に提示するため、面接準備や職種選びに役立ちます。キャリアDNAの結果ページには各タイプの詳細ページへのリンクがあり、向いている職種・転職サービスの情報まで一連で確認できます。</p>
+          </div>
+        </article>
       </div>
     </section>
   </main>
@@ -169,7 +228,6 @@
         <div class="global-footer-links">
           <a href="./index.html">トップ</a>
           <a href="./jobs.html?type=戦略家タイプ">求人ページ</a>
-          <a href="./glossary.html">キャリア図鑑</a>
           <a href="./faq.html">よくあるご質問</a>
           <a href="./privacy.html">プライバシーポリシー</a>
           <a href="./about.html">運営者情報</a>
@@ -194,10 +252,11 @@
         </div>
       </div>
     </div>
-    <p class="global-footer-copy">© 2026 キャリアDNA All Rights Reserved.</p>
+    <p class="global-footer-copy">&copy; 2026 キャリアDNA All Rights Reserved.</p>
   </footer>
   <button type="button" class="back-to-top-btn" aria-label="ページ上部へ戻る">▲</button>
   <script src="./back-to-top.js"></script>
+  <script src="./nav-dropdown.js"></script>
   <script src="./social-share.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {

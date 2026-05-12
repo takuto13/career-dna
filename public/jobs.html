@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
   <!-- Google tag (gtag.js) -->
@@ -20,6 +20,29 @@
   <meta property="og:image" content="https://career-dna.jp/images/ogp.png" />
   <meta property="og:site_name" content="キャリアDNA" />
   <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "タイプ別おすすめ転職サービス｜キャリアDNA",
+    "description": "キャリアDNA診断結果に基づいて、あなたの仕事タイプに合う転職サービスを厳選してご紹介。戦略家・職人・調整役・挑戦者・分析者・表現者・守護者・育成者の8タイプ別に最適なエージェントをご案内します。",
+    "url": "https://career-dna.jp/jobs.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "キャリアDNA",
+      "url": "https://career-dna.jp"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "トップ", "item": "https://career-dna.jp/" },
+        { "@type": "ListItem", "position": 2, "name": "タイプ別おすすめ転職サービス", "item": "https://career-dna.jp/jobs.html" }
+      ]
+    }
+  }
+  </script>
+  <link rel="icon" type="image/png" href="images/CareerDNA_logo.png" />
+  <link rel="canonical" href="https://career-dna.jp/jobs.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -48,7 +71,6 @@
         <div class="global-footer-links">
           <a href="./index.html">トップ</a>
           <a href="./jobs.html?type=戦略家タイプ">求人ページ</a>
-          <a href="./glossary.html">キャリア図鑑</a>
           <a href="./faq.html">よくあるご質問</a>
           <a href="./privacy.html">プライバシーポリシー</a>
           <a href="./about.html">運営者情報</a>
@@ -81,7 +103,7 @@
         </div>
       </div>
     </div>
-    <p class="global-footer-copy">© 2026 キャリアDNA All Rights Reserved.</p>
+    <p class="global-footer-copy">&copy; 2026 キャリアDNA All Rights Reserved.</p>
   </footer>
   <button type="button" id="scroll-top-btn" class="scroll-top-btn" aria-label="ページ上部へ戻る"></button>
 
@@ -125,7 +147,7 @@
       const bc = badgeColors[card.badgeColor] ||
         badgeColors.blue;
       return `
-        <div class="ad-card">
+        <div class="ad-card" data-card-id="${card.id}">
           <div class="ad-card-header">
             <span class="card-pr-badge">PR</span>
             <span class="ad-target-badge"
@@ -156,18 +178,18 @@
       `;
     }).join('');
 
-    // アフィリエイトリンクのクリックをGA4で計測
-    container.querySelectorAll('a[href*="a8.net"]').forEach(link => {
-      link.addEventListener('click', () => {
-        const cardEl = link.closest('.ad-card');
-        const cardTitle = cardEl ? cardEl.querySelector('.ad-card-title')?.textContent?.trim() : '';
-        if (typeof gtag === 'function') {
-          gtag('event', 'affiliate_click', {
-            link_id: link.href,
-            affiliate_service: cardTitle,
-            type_name: typeName
-          });
-        }
+    // GA4アフィリエイトクリック計測
+    container.addEventListener('click', function(e) {
+      const link = e.target.closest('a');
+      if (!link) return;
+      const card = link.closest('.ad-card');
+      if (!card) return;
+      const serviceId = card.dataset.cardId || '';
+      const linkType = link.closest('.ad-banner-wrap') ? 'banner' : 'text';
+      gtag('event', 'affiliate_click', {
+        service_id: serviceId,
+        career_type: typeKey,
+        link_type: linkType
       });
     });
 

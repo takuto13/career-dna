@@ -4496,7 +4496,8 @@ body {
   justify-content: flex-end;
 }
 
-.site-menu-links a {
+/* ヘッダー直下のリンクのみ（ドロップダウン内 a と区別するため子セレクタ） */
+.site-menu-links > a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -4509,11 +4510,167 @@ body {
   white-space: nowrap;
 }
 
-.site-menu-links a:focus-visible {
+.site-menu-links > a:focus-visible {
   outline: 2px solid rgba(196, 181, 253, 0.9);
   outline-offset: 2px;
 }
 
+/* ===== Navigation Dropdown ===== */
+.nav-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-dropdown-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: clamp(13px, 0.35vw + 12px, 15px);
+  font-weight: 500;
+  white-space: nowrap;
+  min-width: clamp(130px, 10vw, 176px);
+  justify-content: center;
+  padding: 0;
+  font-family: inherit;
+}
+
+.nav-dropdown-btn:focus-visible {
+  outline: 2px solid rgba(196, 181, 253, 0.9);
+  outline-offset: 2px;
+}
+
+.dropdown-arrow {
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  margin-left: 4px;
+  flex-shrink: 0;
+  vertical-align: middle;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -9999px;
+  /* 線で構成した下向きシェブロン（ヘッダー上の白文字に合わせたストローク SVG） */
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 10'%3E%3Cpath d='M1.5 2.5 L7 8.5 L12.5 2.5' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: transform 0.2s ease;
+}
+
+.nav-dropdown-btn[aria-expanded="true"] .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 12, 41, 0.97);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 8px 0;
+  min-width: 200px;
+  z-index: 400;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.nav-dropdown-menu.is-open {
+  display: block;
+}
+
+.nav-dropdown-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+  min-width: unset;
+  text-align: center;
+  transition: background 0.15s;
+}
+
+.nav-dropdown-menu a:hover,
+.nav-dropdown-menu a:focus-visible {
+  background: rgba(255, 255, 255, 0.09);
+  outline: none;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  margin: 6px 0;
+}
+
+/* ===== Mobile dropdown ===== */
+@media (max-width: 900px) {
+  .nav-dropdown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-dropdown-btn {
+    width: 100%;
+    min-width: unset;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .nav-dropdown-menu {
+    position: static;
+    transform: none;
+    background: rgba(255, 255, 255, 0.04);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .nav-dropdown-menu a {
+    padding: 12px 40px;
+    font-size: 15px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+  }
+
+  .dropdown-divider {
+    display: none;
+  }
+}
+
+/* type-card as anchor */
+a.type-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a.type-card:hover {
+  opacity: 0.92;
+  transform: translateY(-2px);
+  transition: opacity 0.2s, transform 0.2s;
+}
 
 .menu-toggle-btn {
   display: none;
@@ -4533,13 +4690,26 @@ body {
 }
 
 .menu-toggle-btn::before {
-  content: "☰";
+  content: "";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  box-shadow: 0 -6px 0 currentColor, 0 6px 0 currentColor;
   font-size: 18px;
   line-height: 1;
 }
 
 .menu-toggle-btn[aria-expanded="true"]::before {
-  content: "✕";
+  content: "\00D7";
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 22px;
+  line-height: 1;
 }
 
 .page-result .result-page {
@@ -4570,6 +4740,7 @@ body {
     right: 0;
     width: min(320px, 86vw);
     height: 100dvh;
+    max-height: 100dvh;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -4577,13 +4748,17 @@ body {
     background: rgba(15, 12, 41, 0.98);
     border-left: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 0;
-    padding: 148px 18px 28px;
+    padding: 148px 18px max(28px, env(safe-area-inset-bottom, 0px));
     z-index: 260;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transform: translateX(100%);
     transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
   }
 
   .site-menu-links a {
@@ -4611,6 +4786,13 @@ body {
     visibility: visible;
     pointer-events: auto;
     transform: translateX(0);
+  }
+
+  /* ドロワー表示中は背后（document）のスクロールを止める（JS と併用・無 JS 時の補助） */
+  html:has(.site-menu-links.is-open),
+  body:has(.site-menu-links.is-open) {
+    overflow: hidden;
+    overscroll-behavior: none;
   }
 
   .menu-toggle-btn {
@@ -5063,7 +5245,7 @@ footer {
     justify-content: end;
   }
 
-  .site-menu-links a {
+  .site-menu-links > a {
     display: inline-flex;
     align-items: center;
     justify-content: center;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
   <!-- Google tag (gtag.js) -->
@@ -20,6 +20,9 @@
   <meta property="og:image" content="https://career-dna.jp/images/ogp.png" />
   <meta property="og:site_name" content="キャリアDNA" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" type="image/png" href="images/CareerDNA_logo.png" />
+  <link rel="canonical" href="https://career-dna.jp/result.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -32,9 +35,22 @@
         <img src="images/CareerDNA_hlogo.png" alt="CareerDNA" class="logo-image" loading="eager" />
       </a>
       <div class="nav-menu-group">
-        <button type="button" class="menu-toggle-btn" aria-label="メニューを開く" aria-expanded="false">☰</button>
+        <button type="button" class="menu-toggle-btn" aria-label="メニューを開く" aria-expanded="false"></button>
         <div class="site-menu-links">
-          <a href="./glossary.html">キャリア図鑑</a>
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">タイプ図鑑 <span class="dropdown-arrow" aria-hidden="true">▾</span></button>
+            <div class="nav-dropdown-menu">
+
+              <a href="./type-strategist.html">戦略家タイプ</a>
+              <a href="./type-craftsman.html">職人タイプ</a>
+              <a href="./type-mediator.html">調整役タイプ</a>
+              <a href="./type-challenger.html">挑戦者タイプ</a>
+              <a href="./type-analyst.html">分析者タイプ</a>
+              <a href="./type-creator.html">表現者タイプ</a>
+              <a href="./type-guardian.html">守護者タイプ</a>
+              <a href="./type-nurturer.html">育成者タイプ</a>
+            </div>
+          </div>
           <a href="./faq.html">よくある質問</a>
           <a href="./contact.html">お問い合わせ</a>
         </div>
@@ -88,7 +104,6 @@
         <div class="global-footer-links">
           <a href="./index.html">トップ</a>
           <a href="./jobs.html?type=戦略家タイプ">求人ページ</a>
-          <a href="./glossary.html">キャリア図鑑</a>
           <a href="./faq.html">よくあるご質問</a>
           <a href="./privacy.html">プライバシーポリシー</a>
           <a href="./about.html">運営者情報</a>
@@ -121,10 +136,11 @@
         </div>
       </div>
     </div>
-    <p class="global-footer-copy">© 2026 キャリアDNA All Rights Reserved.</p>
+    <p class="global-footer-copy">&copy; 2026 キャリアDNA All Rights Reserved.</p>
   </footer>
   <button type="button" class="back-to-top-btn" aria-label="ページ上部へ戻る">▲</button>
   <script src="./back-to-top.js"></script>
+  <script src="./nav-dropdown.js"></script>
 
   <script src="./social-share.js"></script>
   <script src="affiliate-config.js"></script>
@@ -149,14 +165,14 @@
       const image = document.getElementById("type-image");
       const icon = document.getElementById("type-icon");
       const map = [
-        { keys: ["戦略", "俯瞰"], img: "images/type-strategist.png", emoji: "🧭", alt: "戦略家タイプのキャラクター" },
-        { keys: ["職人", "専門", "深化"], img: "images/type-craftsman.png", emoji: "🔨", alt: "職人タイプのキャラクター" },
-        { keys: ["調整", "協調", "調和", "橋渡し"], img: "images/type-mediator.png", emoji: "🤝", alt: "調整役タイプのキャラクター" },
-        { keys: ["挑戦", "行動"], img: "images/type-challenger.png", emoji: "🚀", alt: "挑戦者タイプのキャラクター" },
-        { keys: ["分析", "論理", "データ"], img: "images/type-analyst.png", emoji: "📊" },
-        { keys: ["表現", "創造", "クリエイティブ"], img: "images/type-creator.png", emoji: "🎨" },
-        { keys: ["守護", "安定", "堅実", "誠実"], img: "images/type-guardian.png", emoji: "🛡️" },
-        { keys: ["育成", "支援", "共感", "成長"], img: "images/type-nurturer.png", emoji: "🌱" }
+        { keys: ["戦略", "俯瞰"], img: "images/type-strategist.png", emoji: "", alt: "戦略家タイプのキャラクター" },
+        { keys: ["職人", "専門", "深化"], img: "images/type-craftsman.png", emoji: "", alt: "職人タイプのキャラクター" },
+        { keys: ["調整", "協調", "調和", "橋渡し"], img: "images/type-mediator.png", emoji: "", alt: "調整役タイプのキャラクター" },
+        { keys: ["挑戦", "行動"], img: "images/type-challenger.png", emoji: "", alt: "挑戦者タイプのキャラクター" },
+        { keys: ["分析", "論理", "データ"], img: "images/type-analyst.png", emoji: "" },
+        { keys: ["表現", "創造", "クリエイティブ"], img: "images/type-creator.png", emoji: "" },
+        { keys: ["守護", "安定", "堅実", "誠実"], img: "images/type-guardian.png", emoji: "" },
+        { keys: ["育成", "支援", "共感", "成長"], img: "images/type-nurturer.png", emoji: "" }
       ];
       const mainSource = String(typeName || "");
       const hintSource = String(hintText || "");
