@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CY9DKC6DZ6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CY9DKC6DZ6');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>タイプ別おすすめ求人・転職サービス｜キャリアDNA</title>
@@ -147,6 +155,21 @@
         </div>
       `;
     }).join('');
+
+    // アフィリエイトリンクのクリックをGA4で計測
+    container.querySelectorAll('a[href*="a8.net"]').forEach(link => {
+      link.addEventListener('click', () => {
+        const cardEl = link.closest('.ad-card');
+        const cardTitle = cardEl ? cardEl.querySelector('.ad-card-title')?.textContent?.trim() : '';
+        if (typeof gtag === 'function') {
+          gtag('event', 'affiliate_click', {
+            link_id: link.href,
+            affiliate_service: cardTitle,
+            type_name: typeName
+          });
+        }
+      });
+    });
 
     const scrollTopBtn = document.getElementById('scroll-top-btn');
     window.addEventListener('scroll', () => {
