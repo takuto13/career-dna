@@ -56,6 +56,13 @@
   - 全8タイプページにFAQPage JSON-LD構造化データ追加（Googleリッチスニペット・LLMO対策）
   - 全8タイプページにFAQセクション追加（5Q×8ページ=40個のQ&A、長尾KW自然挿入）
 
+- [x] **技術SEO・GA4計測強化（2026-05-12・CTO実装完了）**
+  - jobs.html: canonical・favicon・WebPage JSON-LD追加（SEO補強）
+  - result.html: noindex・canonical・favicon追加（動的ページのクロール予算最適化）
+  - analytics-events.js 新規作成：スクロール深度（25/50/75/100%）・ページ滞在時間（30/60/120秒）GA4計測
+  - 全8タイプページ・index.htmlにanalytics-events.js追加（10ページ）
+  - sitemap.xml lastmod全更新（2026-05-12）
+
 - [x] **LLMO・SEO基盤追加整備（2026-05-11・CTO実装完了）**
   - index.htmlにFAQPage JSON-LD追加（「AIキャリア診断とは」「AI自己分析とは」KW対応）
   - index.htmlにSpeakable JSON-LD追加（AI検索エンジン参照獲得対策）
