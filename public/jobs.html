@@ -11,15 +11,38 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>タイプ別おすすめ求人・転職サービス｜キャリアDNA</title>
-  <meta name="description" content="キャリア診断の結果をもとに、あなたのタイプに合う求人・転職サービスを厳選してご紹介。22〜28歳の就活・転職に役立ちます。" />
-  <meta property="og:title" content="タイプ別おすすめ求人・転職サービス｜キャリアDNA" />
-  <meta property="og:description" content="キャリア診断の結果をもとに、あなたのタイプに合う求人・転職サービスを厳選してご紹介。22〜28歳の就活・転職に役立ちます。" />
+  <title>診断結果別おすすめ転職・就活サービス一覧 | キャリアDNA</title>
+  <meta name="description" content="キャリアDNA診断結果に基づく、おすすめ転職エージェント・就活サービス一覧。あなたのキャリアタイプに合ったサービスで理想の転職・就活を実現しよう。無料・登録不要で診断可能。" />
+  <meta property="og:title" content="診断結果別おすすめ転職・就活サービス一覧 | キャリアDNA" />
+  <meta property="og:description" content="キャリアDNA診断結果に基づく、おすすめ転職エージェント・就活サービス一覧。あなたのキャリアタイプに合ったサービスで理想の転職・就活を実現しよう。" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://career-dna.jp/jobs.html" />
   <meta property="og:image" content="https://career-dna.jp/images/ogp.png" />
   <meta property="og:site_name" content="キャリアDNA" />
   <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "タイプ別おすすめ転職サービス｜キャリアDNA",
+    "description": "キャリアDNA診断結果に基づいて、あなたの仕事タイプに合う転職サービスを厳選してご紹介。戦略家・職人・調整役・挑戦者・分析者・表現者・守護者・育成者の8タイプ別に最適なエージェントをご案内します。",
+    "url": "https://career-dna.jp/jobs.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "キャリアDNA",
+      "url": "https://career-dna.jp"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "トップ", "item": "https://career-dna.jp/" },
+        { "@type": "ListItem", "position": 2, "name": "タイプ別おすすめ転職サービス", "item": "https://career-dna.jp/jobs.html" }
+      ]
+    }
+  }
+  </script>
+  <link rel="icon" type="image/png" href="images/CareerDNA_logo.png" />
+  <link rel="canonical" href="https://career-dna.jp/jobs.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -28,8 +51,8 @@
 <body class="page-jobs">
   <main class="jobs-page">
     <section class="jobs-hero">
-      <h1 id="page-title">戦略家タイプに合う転職サービス</h1>
-      <p class="jobs-subcopy">あなたの強みを活かせるサービスをまとめました</p>
+      <h1 id="page-title">あなたのキャリアタイプに合った転職・就活サービス</h1>
+      <p class="jobs-subcopy" id="jobs-subcopy">あなたの強みを活かせる転職エージェント・就活サービスをタイプ別に厳選しました</p>
       <a class="back-link" href="javascript:history.back()">← 診断結果に戻る</a>
     </section>
     <div class="pr-notice">
@@ -38,6 +61,12 @@
     </div>
 
     <div id="ad-container" class="ad-container"></div>
+
+    <!-- 全タイプ共通：診断CTAリンク -->
+    <div style="text-align:center; margin: 8px 0 20px; padding: 16px; background: #f5f3ff; border-radius: 12px;">
+      <p style="margin: 0 0 10px; font-size: 13px; color: #5b21b6;">診断をまだ受けていない方はこちら</p>
+      <a href="./index.html" style="color: #7c3aed; font-weight: 700; text-decoration: none; font-size: 14px;">無料でキャリアDNA診断を受ける（25問・登録不要）→</a>
+    </div>
   </main>
   <footer class="global-footer" aria-label="サイトマップ">
     <div class="global-footer-inner global-footer-split">
@@ -98,11 +127,11 @@
       .find(k => typeName.includes(k)) || '戦略';
     const config = TYPE_AD_CONFIG[typeKey];
 
-    // ページタイトル更新
-    document.title =
-      typeName + 'におすすめの求人・転職サービス | キャリアDNA';
-    document.getElementById('page-title').textContent =
-      config.label;
+    // ページタイトル・見出し更新
+    document.title = typeName + 'におすすめの転職エージェント・就活サービス | キャリアDNA';
+    document.getElementById('page-title').textContent = typeName + 'に合った転職・就活サービス';
+    const subcopy = document.getElementById('jobs-subcopy');
+    if (subcopy) subcopy.textContent = typeName + 'の強みを活かせる転職エージェント・就活サービスを厳選しました';
     // バッジカラーマップ
     const badgeColors = {
       gold: { bg: '#fef3c7', color: '#92400e',

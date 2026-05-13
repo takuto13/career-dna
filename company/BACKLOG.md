@@ -25,14 +25,63 @@
   - 8/8完成・たくとがデプロイ済み：type-craftsman / type-strategist / type-mediator / type-challenger / type-analyst / type-creator / type-guardian / type-nurturer
   - 各ページ：タイプ固有カラー・アフィリエイトカード3枚・GA4計測・JSON-LD実装済み
 
-- [→] **Xアカウント継続投稿（06/14〜以降の原稿作成）** `SNS担当`
+- [→] **Xアカウント継続投稿（07/06〜以降の原稿作成）** `SNS担当`
   - 05/14〜05/20の原稿7本：予約設定済み
-  - 05/21〜05/26の原稿6本：完成済み・たくとの予約設定待ち（request_2026-05-10.md）
+  - 05/21〜05/26の原稿6本：完成済み・たくとの予約設定待ち（x-posts/2026-05-08_原稿.md）
   - 05/27〜05/31の原稿5本：完成済み（x-posts/2026-05-09_原稿.md）・たくとの予約設定待ち
   - 06/01〜06/06の原稿3本：完成済み（x-posts/2026-05-10_原稿.md）・たくとの予約設定待ち
   - 06/07〜06/13の原稿3本：完成済み（x-posts/2026-05-10_原稿.md）・たくとの予約設定待ち
+  - 06/14〜06/21の原稿6本：完成済み（x-posts/2026-05-11_原稿.md）・たくとの予約設定待ち
+  - 06/22〜06/28の原稿4本：完成済み（x-posts/2026-05-11_原稿.md）・たくとの予約設定待ち
+  - 06/29〜07/05の原稿4本：完成済み（x-posts/2026-05-12_原稿.md）・たくとの予約設定待ち
+  - 07/06〜07/12の原稿3本：完成済み（x-posts/2026-05-12_原稿.md）・たくとの予約設定待ち
+  - 07/13〜以降の原稿：未作成・次回SNS担当が作成
 
 ###  高優先（今月中）
+
+- [x] **全タイプページ 内部クロスリンク追加** `CTO完了 2026-05-12`
+  - 全8タイプページに「他のタイプを見る」グリッドセクション実装済み
+  - タイプ間のSEOリンクジュース分配・回遊率向上
+
+- [x] **jobs.html SEO強化** `CTO完了 2026-05-12`
+  - title「診断結果別おすすめ転職・就活サービス一覧」・meta description最適化
+  - H1「あなたのキャリアタイプに合った転職・就活サービス」に変更
+  - 診断CTAリンク追加・GA4クリック計測実装
+
+- [x] **SEO・LLMOコンテンツ強化（2026-05-10・CTO実装）**
+  - index.htmlのtitle・meta最適化（「AIキャリア診断」「AI自己分析」ブルーオーシャンKW導入）
+  - sitemap.xmlにlastmod日付追加（全15URL）
+  - 全8タイプページのmeta description更新（MBTI言及をコンプライアンス対応で除去、SEOキーワード改善）
+  - 全8タイプページにFAQPage JSON-LD構造化データ追加（Googleリッチスニペット・LLMO対策）
+  - 全8タイプページにFAQセクション追加（5Q×8ページ=40個のQ&A、長尾KW自然挿入）
+
+- [x] **技術SEO・GA4計測強化（2026-05-12・CTO実装完了）**
+  - jobs.html: canonical・favicon・WebPage JSON-LD追加（SEO補強）
+  - result.html: noindex・canonical・favicon追加（動的ページのクロール予算最適化）
+  - analytics-events.js 新規作成：スクロール深度（25/50/75/100%）・ページ滞在時間（30/60/120秒）GA4計測
+  - 全8タイプページ・index.htmlにanalytics-events.js追加（10ページ）
+  - sitemap.xml lastmod全更新（2026-05-12）
+
+- [x] **LLMO・SEO基盤追加整備（2026-05-11・CTO実装完了）**
+  - index.htmlにFAQPage JSON-LD追加（「AIキャリア診断とは」「AI自己分析とは」KW対応）
+  - index.htmlにSpeakable JSON-LD追加（AI検索エンジン参照獲得対策）
+  - about.htmlにOrganization JSON-LD・canonical・faviconリンク追加（E-E-A-T強化）
+  - faq.htmlにcanonical・faviconリンク追加、AI系FAQを2問追加（JSON-LD・HTML本文）
+  - robots.txtにAI botクロール明示許可（GPTBot・PerplexityBot・anthropic-ai等）
+  - robots.txtにtype-strategy.html（旧ページ）のDisallow追加
+  - type-strategy.htmlのcanonical → type-strategist.htmlに修正（重複コンテンツ回避）
+  - sitemap.xml index/faq/about のlastmod更新（2026-05-11）
+
+- [x] **全タイプページ BreadcrumbList JSON-LD追加** `CTO完了 2026-05-11`
+  - 全8タイプページのheadにBreadcrumbList構造化データを追加
+  - Googleリッチスニペット獲得・LLMO対策
+
+- [x] **vercel.json リダイレクト設定（301）** `CTO完了 2026-05-11`
+  - /type-strategy.html → /type-strategist.html の永続リダイレクト
+  - 重複コンテンツ完全解消
+
+- [x] **sitemap.xml priority・changefreq最適化** `CTO完了 2026-05-11`
+  - faq.html 0.7 / about.html 0.6 / jobs.html 0.7 に修正・jobs.htmlのlastmodを2026-05-11に更新
 
 - [x] **職人タイプ詳細ページ作成**（type-craftsman.html） `CTO完了 2026-05-09`
   - アフィリエイトカード・GA4実装済み
@@ -49,7 +98,8 @@
 - [→] **週次パフォーマンスレポート作成** `CEO`
   - 毎週月曜にGA・X・アフィリエイト成果をまとめてたくとへ報告
   - `company/reports/` に保存
-  - 第1回：2026-05-11（月）に作成予定（デプロイ直後のためベースライン確認レポート）
+  - 第1回：2026-05-11（月）作成完了（ベースライン確認レポート・2026-05-11_CEO.md 内に収録）
+  - 第2回：2026-05-18（月）予定
 
 ###  中優先（来月以降）
 
