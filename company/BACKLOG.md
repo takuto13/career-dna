@@ -39,6 +39,17 @@
 
 ###  高優先（今月中）
 
+- [x] **contact/privacy/disclaimer SEO基盤整備** `CTO完了 2026-05-13`
+  - 3ページ全てにcanonical・favicon・JSON-LD（ContactPage/WebPage + BreadcrumbList）追加
+  - contact.htmlにanalytics-events.js追加（スクロール深度GA4計測）
+
+- [x] **faq.html SEO・LLMOコンテンツ強化** `CTO完了 2026-05-13`
+  - title・meta description 最適化（「AIキャリア診断」「転職自己分析」KW追加）
+  - FAQ 5問追加（転職自己分析やり方・適職診断おすすめ・就活自己分析ツール・転職エージェント選び方・診断結果活用法）
+  - JSON-LD FAQPage に新規5問追加（LLMO・リッチスニペット対策）
+  - analytics-events.js 追加（スクロール深度GA4計測）
+  - sitemap.xml lastmod 2026-05-13 に更新（faq/contact/privacy/disclaimer）
+
 - [x] **全タイプページ 内部クロスリンク追加** `CTO完了 2026-05-12`
   - 全8タイプページに「他のタイプを見る」グリッドセクション実装済み
   - タイプ間のSEOリンクジュース分配・回遊率向上
