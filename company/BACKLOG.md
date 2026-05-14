@@ -41,6 +41,17 @@
 
 ###  高優先（今月中）
 
+- [x] **index.html LLMO・SEOコンテンツ追加（2026-05-14・CTO実装完了）**
+  - 「キャリアDNA診断とは？」「こんな人に使ってほしい」「診断結果でできること」コンテンツセクション3つ追加
+  - FAQセクション（HTML本文）追加（JSON-LDと整合）
+  - sitemap.xml index.html lastmod → 2026-05-14
+
+- [x] **about.html analytics-events.js追加・E-E-A-Tコンテンツ充実（2026-05-14・CTO実装完了）**
+  - analytics-events.js 追加（GA4計測統一）
+  - サービス概要・運営方針セクション追加（E-E-A-T強化）
+  - プライバシーポリシー・免責事項・お問い合わせへの内部リンク追加
+  - sitemap.xml about.html lastmod → 2026-05-14
+
 - [x] **contact/privacy/disclaimer SEO基盤整備** `CTO完了 2026-05-13`
   - 3ページ全てにcanonical・favicon・JSON-LD（ContactPage/WebPage + BreadcrumbList）追加
   - contact.htmlにanalytics-events.js追加（スクロール深度GA4計測）
