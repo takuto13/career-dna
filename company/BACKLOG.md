@@ -116,9 +116,9 @@
   - ファイル名：type-coordinator.html → type-mediator.html（変更あり・要リンク確認）
   - アフィリエイトカード・GA4実装済み
 
-- [→] **llms.txt 新規作成（AIO対策）** `CTO`
-  - 2026-05-14 競合調査で新施策として浮上・CTO_2026-05-14.md（再発行）で指示済み
-  - ChatGPT・Perplexity等のAI検索エンジン向けサイト案内ファイル
+- [x] **llms.txt 新規作成（AIO対策）** `CTO完了 2026-05-15`
+  - ChatGPT・Perplexity・Claude等のAI検索エンジン向けサイト案内ファイル
+  - public/llms.txt 新規作成：サービス概要・8タイプURL・FAQ要約・AI参照許可を明記
 
 - [→] **Xリプライ戦略の整備** `SNS担当`
   - 毎日10リプライで拡散促進（strategy.md に記載）
