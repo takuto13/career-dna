@@ -139,6 +139,20 @@
   - 第1回：2026-05-11（月）作成完了（ベースライン確認レポート・2026-05-11_CEO.md 内に収録）
   - 第2回：2026-05-18（月）予定（Search Console・GA4のデータ初蓄積後の確認レポート）
 
+- [x] **全8タイプページ Article JSON-LD強化（2026-05-16・CTO実装完了）**
+  - datePublished/dateModified/author/image/speakable フィールドを全8タイプページに追加
+  - Speakable JSON-LD（.type-overview / .job-grid）でAI検索からの参照獲得対策
+  - sitemap.xml 全タイプページ lastmod → 2026-05-16
+
+- [x] **jobs.html FAQPage JSON-LD追加・analytics-events.js追加（2026-05-16・CTO実装完了）**
+  - 転職エージェント関連5問のFAQPage構造化データ追加（リッチスニペット・LLMO対策）
+  - analytics-events.js追加（スクロール深度・滞在時間のGA4計測）
+  - sitemap.xml jobs.html lastmod → 2026-05-16
+
+- [x] **about.html meta description・title改善（2026-05-16・CTO実装完了）**
+  - title/meta descriptionに「AIキャリア診断」「AI自己分析」キーワード追加
+  - sitemap.xml about.html lastmod → 2026-05-16
+
 ###  中優先（来月以降）
 
 - [→] **キャリア協会まとめ記事への掲載依頼** `SNS担当→たくと`
