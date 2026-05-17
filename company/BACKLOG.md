@@ -155,15 +155,15 @@
   - title/meta descriptionに「AIキャリア診断」「AI自己分析」キーワード追加
   - sitemap.xml about.html lastmod → 2026-05-16
 
-- [→] **全8タイプページ 内部ナビリンク追加（CTO_2026-05-17.md タスク1）** `CTO`
+- [x] **全8タイプページ 内部ナビリンク追加（CTO_2026-05-17.md タスク1）** `CTO完了 2026-05-17`
   - faq/about/jobs/index への4リンクのナビブロックを各タイプページ末尾に追加
   - faq→タイプページ（実装済）との双方向リンク完成でPageRank循環強化
 
-- [→] **jobs.html ItemList JSON-LD 追加（CTO_2026-05-17.md タスク2）** `CTO`
-  - 掲載サービス一覧を ItemList スキーマで構造化
+- [x] **jobs.html ItemList JSON-LD 追加（CTO_2026-05-17.md タスク2）** `CTO完了 2026-05-17`
+  - 掲載8サービスを ItemList スキーマで構造化（numberOfItems: 8）
   - Googleリッチスニペット（リスト表示）獲得→アフィリエイト流入増加
 
-- [→] **index.html Organization JSON-LD 追加（CTO_2026-05-17.md タスク3）** `CTO`
+- [x] **index.html Organization JSON-LD 追加（CTO_2026-05-17.md タスク3）** `CTO完了 2026-05-17`
   - sameAs（Xアカウント）・contactPoint含む Organization スキーマ追加
   - エンティティ認識強化・ナレッジパネル表示促進
 
