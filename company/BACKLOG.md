@@ -169,17 +169,18 @@
   - sameAs（Xアカウント）・contactPoint含む Organization スキーマ追加
   - エンティティ認識強化・ナレッジパネル表示促進
 
-- [→] **about.html に 8タイプ内部リンクセクション追加（CTO_2026-05-18.md タスク1）** `CTO`
+- [x] **about.html に 8タイプ内部リンクセクション追加（CTO_2026-05-18.md タスク1）** `CTO完了 2026-05-18`
   - about.htmlから全8タイプページへのリンクグリッド追加
   - about.htmlのPageRankをタイプページへ分配・E-E-A-T強化
 
-- [→] **contact/privacy/disclaimer ページに診断TOPへのCTAリンク追加（CTO_2026-05-18.md タスク2）** `CTO`
-  - 各リーフページのフッター近辺に「AIキャリア診断を始める」CTAリンク追加
+- [x] **contact/privacy/disclaimer ページに診断TOPへのCTAリンク追加（CTO_2026-05-18.md タスク2）** `CTO完了 2026-05-18`
+  - 各リーフページのmainセクション末尾に「AIキャリア診断を始める（無料）」CTAリンク追加
   - クロール深度改善・直帰率改善
 
-- [→] **全8タイプページ title/H1 SEOキーワード最適化（CTO_2026-05-18.md タスク3）** `CTO`
-  - 各タイプページのtitle・H1・meta descriptionに属性KW（「コツコツできる仕事 転職」等）を追加
-  - 競合サイトと同等KW配置でインプレッション増加を狙う
+- [x] **全8タイプページ title/H1 SEOキーワード最適化（CTO_2026-05-18.md タスク3）** `CTO完了 2026-05-18`
+  - 7タイプページのtitle更新（属性KW：「コツコツできる仕事」「行動力がある人」「責任感が強い人」等を追加）
+  - 全8タイプページのH1テキストを「[タイプ名]の特徴と向いてる仕事」形式に更新（テキスト変更のみ）
+  - sitemap.xml 全タイプページ・about/contact/privacy/disclaimer lastmod → 2026-05-18
 
 ###  中優先（来月以降）
 
