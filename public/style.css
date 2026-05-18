@@ -5932,3 +5932,249 @@ body {
   }
 }
 
+/* ── TOPページ コンテンツセクション ── */
+
+.content-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* キャリアDNA診断とは？ */
+.about-section {
+  background: #f8f7ff;
+}
+
+.about-lead {
+  max-width: 760px;
+  margin: 0 auto 32px;
+  line-height: 1.85;
+  color: #3a3755;
+  text-align: center;
+  font-size: 15px;
+}
+
+.about-stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.about-stat-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 16px 24px;
+  min-width: 110px;
+  gap: 4px;
+}
+
+.about-stat-pill strong {
+  font-size: 22px;
+  font-weight: 700;
+  color: #35334f;
+  line-height: 1.2;
+}
+
+.about-stat-pill span {
+  font-size: 12px;
+  color: #7c7a9a;
+}
+
+/* こんな人に使ってほしい */
+.target-section {
+  background: #fff;
+}
+
+.target-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.target-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.target-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.target-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a2e;
+}
+
+.target-card p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: #5f5b78;
+  margin: 0;
+}
+
+/* 診断結果でできること */
+.result-features-section {
+  background: #f8f7ff;
+}
+
+.result-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.result-feature-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rf-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #e8e1fb;
+  line-height: 1;
+  font-family: "Georgia", serif;
+}
+
+.result-feature-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a2e;
+}
+
+.result-feature-card p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: #5f5b78;
+  margin: 0;
+}
+
+/* よくある質問 */
+.index-faq-section {
+  background: #fff;
+}
+
+.index-faq-list {
+  display: grid;
+  gap: 12px;
+  max-width: 800px;
+  margin: 0 auto 24px;
+}
+
+.index-faq-item {
+  background: #fff;
+  border: 1px solid #e8e1fb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.index-faq-q,
+.index-faq-a {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 18px;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.index-faq-q {
+  font-weight: 700;
+  color: #1a1a2e;
+  border-bottom: 1px solid #f0ebff;
+  background: #faf8ff;
+}
+
+.index-faq-a {
+  color: #3a3755;
+}
+
+.ifaq-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.ifaq-badge-q {
+  background: #5a587e;
+  color: #fff;
+}
+
+.ifaq-badge-a {
+  background: #e8e1fb;
+  color: #35334f;
+}
+
+.faq-more-link {
+  text-align: center;
+  margin: 0;
+}
+
+.faq-more-link a {
+  color: #5a587e;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.faq-more-link a:hover {
+  text-decoration: underline;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  .target-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats-row {
+    gap: 10px;
+  }
+
+  .about-stat-pill {
+    min-width: 80px;
+    padding: 12px 16px;
+  }
+
+  .about-stat-pill strong {
+    font-size: 18px;
+  }
+}
+
