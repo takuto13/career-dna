@@ -34,6 +34,10 @@ const MIRAIF_HR_BANNER = `<a href="https://px.a8.net/svt/ejp?a8mat=4B1XDY+AF33W2
 const MIRAIF_SAAS_TEXT = `<a href="https://px.a8.net/svt/ejp?a8mat=4B1XDY+AG9Z3M+5S0C+BWVTE" rel="nofollow" target="_blank">SaaS・AI業界のキャリア相談【ミライフ】</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B1XDY+AG9Z3M+5S0C+BWVTE" alt="">`;
 const MIRAIF_SAAS_BANNER = `<a href="https://px.a8.net/svt/ejp?a8mat=4B1XDY+AG9Z3M+5S0C+BXQOH" rel="nofollow" target="_blank"><img border="0" width="300" height="250" alt="ミライフSaaS/AI" src="https://www26.a8.net/svt/bgt?aid=260430406632&wid=001&eno=01&mid=s00000026958002005000&mc=1"></a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B1XDY+AG9Z3M+5S0C+BXQOH" alt="">`;
 
+// ⑨ 国試黒本治療家エージェント（株式会社エス・エム・エス）
+const KUROHON_TEXT = `<a href="https://px.a8.net/svt/ejp?a8mat=4B3OQV+PLNSI+9MO+4ASX02" rel="nofollow">治療家専門20年の実績！治療家特化の転職支援サービス【国試黒本治療家エージェント】</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B3OQV+PLNSI+9MO+4ASX02" alt="">`;
+const KUROHON_BANNER = `<a href="https://px.a8.net/svt/ejp?a8mat=4B3OQV+PLNSI+9MO+4ATK5D" rel="nofollow"><img border="0" width="300" height="250" alt="国試黒本治療家エージェント" src="https://www21.a8.net/svt/bgt?aid=260512519043&wid=001&eno=01&mid=s00000001248026004000&mc=1"></a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B3OQV+PLNSI+9MO+4ATK5D" alt="">`;
+
 // タイプ別広告カードデータ
 const TYPE_AD_CONFIG = {
   "戦略": {
@@ -279,6 +283,17 @@ const TYPE_AD_CONFIG = {
         banner: PHARMA_BANNER
       },
       {
+        id: "kurohon",
+        badge: "治療家専門",
+        badgeColor: "gold",
+        target: "対象：柔道整復師・鍼灸師・あん摩マッサージ指圧師の資格保有者（49歳以下・1都3県・大阪・兵庫・愛知在住）",
+        title: "国試黒本治療家エージェント",
+        desc: "治療家の転職支援に特化したサービスです。20年の実績を持ち、柔道整復師・鍼灸師・あん摩マッサージ指圧師の転職を徹底サポートします。",
+        points: ["治療家専門20年の実績", "1都3県・大阪・兵庫・愛知の求人が豊富", "無料でキャリア相談可能"],
+        text: KUROHON_TEXT,
+        banner: KUROHON_BANNER
+      },
+      {
         id: "miraif-hr",
         badge: "人材業界特化",
         badgeColor: "purple",
@@ -288,17 +303,6 @@ const TYPE_AD_CONFIG = {
         points: ["大手出身のコンサルタントが多数", "ゴリ押し・無理な提案は一切なし", "Google口コミ4.9の高評価"],
         text: MIRAIF_HR_TEXT,
         banner: MIRAIF_HR_BANNER
-      },
-      {
-        id: "onecareer",
-        badge: "無料登録",
-        badgeColor: "blue",
-        target: "対象：正社員経験のある方",
-        title: "ワンキャリア転職",
-        desc: "転職時の年収・クチコミ・選考対策情報が集まるサービスです。",
-        points: ["3万件以上の選考体験談", "企業の年収・キャリアパス情報が豊富", "転職エージェントサービスも利用可能"],
-        text: ONECAREER_TEXT,
-        banner: ONECAREER_BANNER
       }
     ]
   },
@@ -317,15 +321,15 @@ const TYPE_AD_CONFIG = {
         banner: PHARMA_BANNER
       },
       {
-        id: "uzuz-daini",
-        badge: "20代特化",
-        badgeColor: "green",
-        target: "対象：18〜29歳・第二新卒・既卒・フリーターの方",
-        title: "UZUZ第二新卒",
-        desc: "20代の第二新卒・既卒・フリーターの転職サポートを完全無料で提供しています。",
-        points: ["就職支援実績68,374名", "入社後の定着率93.6%", "一人ひとりに合わせた丁寧なサポート"],
-        text: UZUZ_DAINI_TEXT,
-        banner: UZUZ_DAINI_BANNER
+        id: "kurohon",
+        badge: "治療家専門",
+        badgeColor: "gold",
+        target: "対象：柔道整復師・鍼灸師・あん摩マッサージ指圧師の資格保有者（49歳以下・1都3県・大阪・兵庫・愛知在住）",
+        title: "国試黒本治療家エージェント",
+        desc: "人を治し支える治療家の転職を専門に支援するサービスです。20年の実績を持ち、あなたの強みを活かせる職場探しを徹底サポートします。",
+        points: ["治療家専門20年の実績", "1都3県・大阪・兵庫・愛知の求人が豊富", "無料でキャリア相談可能"],
+        text: KUROHON_TEXT,
+        banner: KUROHON_BANNER
       },
       {
         id: "miraif-hr",
