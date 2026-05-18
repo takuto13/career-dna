@@ -199,7 +199,7 @@
         </a>
         <div class="global-footer-links">
           <a href="./index.html">トップ</a>
-          <a href="./jobs.html?type=戦略家タイプ">求人ページ</a>
+          <a href="./jobs.html">求人ページ</a>
           <a href="./faq.html">よくあるご質問</a>
           <a href="./privacy.html">プライバシーポリシー</a>
           <a href="./about.html">運営者情報</a>
@@ -240,96 +240,91 @@
   <script src="./analytics-events.js"></script>
   <script src="affiliate-config.js"></script>
   <script>
-    // URLパラメータからタイプ名を取得
-    const urlParams =
-      new URLSearchParams(window.location.search);
-    const typeName =
-      urlParams.get('type') || '戦略家タイプ';
+    const urlParams = new URLSearchParams(window.location.search);
+    const typeParam = urlParams.get('type');
 
-    // タイプのキーワードでマッチング
-    const typeKey = Object.keys(TYPE_AD_CONFIG)
-      .find(k => typeName.includes(k)) || '戦略';
-    const config = TYPE_AD_CONFIG[typeKey];
-
-    // ページタイトル・見出し更新
-    document.title = typeName + 'におすすめの転職エージェント・就活サービス | キャリアDNA';
-    document.getElementById('page-title').textContent = typeName + 'に合った転職・就活サービス';
-    const subcopy = document.getElementById('jobs-subcopy');
-    if (subcopy) subcopy.textContent = typeName + 'の強みを活かせる転職エージェント・就活サービスを厳選しました';
-    // バッジカラーマップ
     const badgeColors = {
-      gold: { bg: '#fef3c7', color: '#92400e',
-              border: '#fde68a' },
-      purple: { bg: '#f3f0ff', color: '#5b21b6',
-                border: '#c4b5fd' },
-      green: { bg: '#f0fdf4', color: '#15803d',
-               border: '#bbf7d0' },
-      blue: { bg: '#eff6ff', color: '#1d4ed8',
-              border: '#bfdbfe' },
-      teal: { bg: '#f0fdfa', color: '#0f766e',
-              border: '#99f6e4' }
+      gold:   { bg: '#fef3c7', color: '#92400e', border: '#fde68a' },
+      purple: { bg: '#f3f0ff', color: '#5b21b6', border: '#c4b5fd' },
+      green:  { bg: '#f0fdf4', color: '#15803d', border: '#bbf7d0' },
+      blue:   { bg: '#eff6ff', color: '#1d4ed8', border: '#bfdbfe' },
+      teal:   { bg: '#f0fdfa', color: '#0f766e', border: '#99f6e4' }
     };
 
-    // 広告カードをレンダリング
-    const container =
-      document.getElementById('ad-container');
-    container.innerHTML = config.cards.map(card => {
-      const bc = badgeColors[card.badgeColor] ||
-        badgeColors.blue;
-      return `
-        <div class="ad-card" data-card-id="${card.id}">
-          <div class="ad-card-header">
-            <span class="card-pr-badge">PR</span>
-            <span class="ad-target-badge"
-              style="background:${bc.bg};
-                     color:${bc.color};
-                     border-color:${bc.border}">
-              ${card.badge}
-            </span>
+    function renderCards(cards, eventTypeKey) {
+      const container = document.getElementById('ad-container');
+      container.innerHTML = cards.map(card => {
+        const bc = badgeColors[card.badgeColor] || badgeColors.blue;
+        return `
+          <div class="ad-card" data-card-id="${card.id}">
+            <div class="ad-card-header">
+              <span class="card-pr-badge">PR</span>
+              <span class="ad-target-badge"
+                style="background:${bc.bg};color:${bc.color};border-color:${bc.border}">
+                ${card.badge}
+              </span>
+            </div>
+            <h3 class="ad-card-title">${card.title}</h3>
+            <p class="ad-card-desc">${card.desc}</p>
+            <ul class="ad-card-points">
+              ${card.points.map(p => `<li>${p}</li>`).join('')}
+            </ul>
+            <div class="ad-warning">${card.target}</div>
+            <div class="ad-text-link">${card.text}</div>
+            <div class="ad-banner-wrap">${card.banner}</div>
           </div>
-          <h3 class="ad-card-title">
-            ${card.title}
-          </h3>
-          <p class="ad-card-desc">${card.desc}</p>
-          <ul class="ad-card-points">
-            ${card.points.map(p =>
-              `<li>${p}</li>`).join('')}
-          </ul>
-          <div class="ad-warning">
-            ${card.target}
-          </div>
-          <div class="ad-text-link">
-            ${card.text}
-          </div>
-          <div class="ad-banner-wrap">
-            ${card.banner}
-          </div>
-        </div>
-      `;
-    }).join('');
-
-    // GA4アフィリエイトクリック計測
-    container.addEventListener('click', function(e) {
-      const link = e.target.closest('a');
-      if (!link) return;
-      const card = link.closest('.ad-card');
-      if (!card) return;
-      const serviceId = card.dataset.cardId || '';
-      const linkType = link.closest('.ad-banner-wrap') ? 'banner' : 'text';
-      gtag('event', 'affiliate_click', {
-        service_id: serviceId,
-        career_type: typeKey,
-        link_type: linkType
+        `;
+      }).join('');
+      container.addEventListener('click', function(e) {
+        const link = e.target.closest('a');
+        if (!link) return;
+        const card = link.closest('.ad-card');
+        if (!card) return;
+        gtag('event', 'affiliate_click', {
+          service_id: card.dataset.cardId || '',
+          career_type: eventTypeKey,
+          link_type: link.closest('.ad-banner-wrap') ? 'banner' : 'text'
+        });
       });
-    });
+    }
+
+    if (!typeParam) {
+      // 全サービス一覧表示
+      document.title = 'おすすめ転職・就活サービス全一覧 | キャリアDNA';
+      document.getElementById('page-title').textContent = 'おすすめ転職・就活サービス 全一覧';
+      const subcopy = document.getElementById('jobs-subcopy');
+      if (subcopy) subcopy.textContent = 'キャリアDNAがおすすめする転職エージェント・就活サービスをすべて紹介します';
+      document.querySelector('.back-link').textContent = '← トップへ';
+      document.querySelector('.back-link').href = './index.html';
+
+      const seen = new Set();
+      const allCards = [];
+      for (const cfg of Object.values(TYPE_AD_CONFIG)) {
+        for (const card of cfg.cards) {
+          if (!seen.has(card.id)) {
+            seen.add(card.id);
+            allCards.push(card);
+          }
+        }
+      }
+      renderCards(allCards, 'all');
+    } else {
+      // タイプ別表示
+      const typeName = typeParam;
+      const typeKey = Object.keys(TYPE_AD_CONFIG).find(k => typeName.includes(k)) || '戦略';
+      const config = TYPE_AD_CONFIG[typeKey];
+
+      document.title = typeName + 'におすすめの転職エージェント・就活サービス | キャリアDNA';
+      document.getElementById('page-title').textContent = typeName + 'に合った転職・就活サービス';
+      const subcopy = document.getElementById('jobs-subcopy');
+      if (subcopy) subcopy.textContent = typeName + 'の強みを活かせる転職エージェント・就活サービスを厳選しました';
+
+      renderCards(config.cards, typeKey);
+    }
 
     const scrollTopBtn = document.getElementById('scroll-top-btn');
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 360) {
-        scrollTopBtn.classList.add('is-visible');
-      } else {
-        scrollTopBtn.classList.remove('is-visible');
-      }
+      scrollTopBtn.classList.toggle('is-visible', window.scrollY > 360);
     });
     scrollTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
