@@ -194,27 +194,29 @@
   - 全8タイプページのH1テキストを「[タイプ名]の特徴と向いてる仕事」形式に更新（テキスト変更のみ）
   - sitemap.xml 全タイプページ・about/contact/privacy/disclaimer lastmod → 2026-05-18
 
-- [→] **faq.html 新FAQ追加・11月転職KW対応（CTO_2026-05-19.md タスク1）** `CTO実行中`
-  - 10月〜11月の転職需要期に対応した新FAQを追加（年末転職・内定後キャリア等）
-  - FAQPage JSON-LDも同時更新
+- [x] **faq.html 新FAQ追加・秋〜年末転職KW対応（CTO_2026-05-19.md タスク1）** `CTO完了 2026-05-19`
+  - 年末転職・転職エージェント準備・内定後自己分析・10月11月転職市場・キャリアタイプ診断効果 5問追加
+  - FAQPage JSON-LD・HTML本文両方に追加・各回答に内部リンク付与
+  - sitemap.xml faq.html lastmod → 2026-05-19
 
-- [→] **index.html ページ速度最適化・画像圧縮チェック（CTO_2026-05-19.md タスク2）** `CTO実行中`
-  - Core Web Vitals対応・モバイル表示速度改善
-  - 不要なCSSの確認
+- [x] **index.html ページ速度最適化・画像圧縮チェック（CTO_2026-05-19.md タスク2）** `CTO完了 2026-05-19`
+  - 全画像loading="lazy"設定済み（ロゴのみloading="eager"）を確認・問題なし
+  - style.css重大問題発見：6180行・.top-navが5回定義される等の大量重複ルールあり → エスカレーション事項（報告書参照）
 
-- [→] **about.html Person JSON-LD 追加（CTO_2026-05-19.md タスク3）** `CTO実行中`
-  - 運営者（たくと）のPerson JSON-LD追加でE-E-A-T強化
-  - GoogleのAuthor表示・ナレッジグラフ接続
+- [x] **about.html Person JSON-LD 追加（CTO_2026-05-19.md タスク3）** `CTO完了 2026-05-19`
+  - 幕内拓人（たくと）のPerson JSON-LD追加（name/alternateName/jobTitle/worksFor/sameAs）
+  - sitemap.xml about.html lastmod → 2026-05-19
 
-- [→] **職人・挑戦者タイプページ「転職成功ポイント」コンテンツセクション追加（CTO_2026-05-20.md タスク1）** `CTO実行中`
-  - type-craftsman.html・type-challenger.html にコンテンツ深化セクション追加
-  - ロングテールKW「コツコツできる仕事 転職」「行動力がある人 向いてる仕事」対応
+- [x] **職人・挑戦者タイプページ「転職成功ポイント」コンテンツセクション追加（CTO_2026-05-20.md タスク1）** `CTO完了 2026-05-19`
+  - type-craftsman.html・type-challenger.html にFAQ前セクション追加
+  - ロングテールKW「コツコツできる仕事 転職」「行動力がある人 向いてる仕事」「専門職 向いてる人」「挑戦者 転職 おすすめ」を自然挿入
+  - sitemap.xml 両タイプページ lastmod → 2026-05-19
 
-- [→] **index.html WebSite JSON-LD（SearchAction）追加（CTO_2026-05-20.md タスク2）** `CTO実行中`
-  - Googleサイトリンク検索ボックス促進・エンティティ認識強化
+- [x] **index.html WebSite JSON-LD（SearchAction）追加（CTO_2026-05-20.md タスク2）** `CTO確認済み 2026-05-19`
+  - index.html @graph内にWebSite + potentialAction(SearchAction)がすでに実装済み → 追加不要
 
-- [→] **全タイプページ・主要ページ 画像alt属性SEO最適化チェック（CTO_2026-05-20.md タスク3）** `CTO実行中`
-  - alt属性未設定・不適切な場合に更新
+- [x] **全タイプページ・主要ページ 画像alt属性SEO最適化チェック（CTO_2026-05-20.md タスク3）** `CTO完了 2026-05-19`
+  - 全タイプページ・index.htmlの全画像alt属性を確認 → 全て適切に設定済み（変更不要）
 
 - [→] **守護者・育成者・調整役タイプページ「転職成功ポイント」セクション追加（CTO_2026-05-21.md タスク1）** `CTO`
   - type-guardian.html・type-nurturer.html・type-mediator.html にコンテンツ深化セクション追加
