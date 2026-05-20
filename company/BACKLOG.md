@@ -228,6 +228,13 @@
 - [x] **sitemap.xml lastmod 全ページ最終確認・更新（CTO_2026-05-21.md タスク3）** `CTO完了 2026-05-21`
   - jobs.html・type-guardian.html・type-nurturer.html・type-mediator.html → 2026-05-21 に更新
 
+- [x] **戦略家・分析者・表現者タイプページ「転職成功ポイント」セクション追加（2026-05-20 CTO実装完了）**
+  - type-strategist.html・type-analyst.html・type-creator.html にコンテンツ深化セクション追加
+  - ロングテールKW「論理的思考 向いている仕事」「分析力がある人 向いている仕事」「表現力 向いている仕事 クリエイティブ」対応
+  - Article JSON-LD dateModified → 2026-05-20 に更新（3ページ）
+  - sitemap.xml type-strategist/analyst/creator lastmod → 2026-05-20 に更新
+  - 全8タイプページへの「転職成功ポイント」セクション追加が完全完了
+
 ###  中優先（来月以降）
 
 - [→] **キャリア協会まとめ記事への掲載依頼** `SNS担当→たくと`
