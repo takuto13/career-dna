@@ -236,12 +236,15 @@
   - sitemap.xml type-strategist/analyst/creator lastmod → 2026-05-20 に更新
   - 全8タイプページへの「転職成功ポイント」セクション追加が完全完了
 
-- [→] **faq.html「AI自己分析ツール」関連FAQ 3問追加（CTO_2026-05-22.md タスク1）** `CTO実施予定 2026-05-22`
+- [x] **faq.html「AI自己分析ツール」関連FAQ 3問追加（CTO_2026-05-22.md タスク1）** `CTO完了 2026-05-22`
   - 「AI自己分析ツール おすすめ」「AI自己分析 やり方」「5分で自己分析 転職」KW対応
-  - FAQPage JSON-LD・HTML本文両方に追加
+  - FAQPage JSON-LD・HTML本文両方に追加・各回答に内部リンク付与
+  - sitemap.xml faq.html lastmod → 2026-05-22
 
-- [→] **index.html「キャリアDNAが選ばれる理由」コンテンツセクション追加（CTO_2026-05-22.md タスク2）** `CTO実施予定 2026-05-22`
+- [x] **index.html「キャリアDNAが選ばれる理由」コンテンツセクション追加（CTO_2026-05-22.md タスク2）** `CTO完了 2026-05-22`
   - 「登録不要・5分・8タイプ・一気通貫」の4ポイント訴求・AIO対策コンテンツ追加
+  - 狙いKW「AI診断 登録不要」「キャリア診断 5分 無料」「適職診断 登録不要 転職」をテキスト自然挿入
+  - sitemap.xml index.html lastmod → 2026-05-22
 
 ###  中優先（来月以降）
 
