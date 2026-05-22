@@ -279,6 +279,11 @@
   - アフィリエイト誘導強化・sitemap.xml更新
 
 - [x] **sitemap.xml about.html/faq.html/jobs.html lastmod 最終整合確認（CTO_2026-05-22.md 追加タスク3）** `CTO完了 2026-05-22`
+
+- [x] **faq.html WebPage+BreadcrumbList JSON-LD追加・新FAQ3問追加（2026-05-22 CTO実装完了）**
+  - FAQPage単体から @graph（WebPage+BreadcrumbList+FAQPage）にアップグレード
+  - BreadcrumbList：トップ→よくある質問（Googleリッチスニペット対応）
+  - 新FAQ3問追加（25問→28問）：「第二新卒 転職 自己分析」「30代 転職 自己分析」「自己PR 自己分析 転職」KW対応
   - 本日更新ページのlastmod 2026-05-22整合確認・jobs.html を 2026-05-21→2026-05-22 に更新
 
 ###  中優先（来月以降）
