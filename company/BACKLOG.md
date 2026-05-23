@@ -288,16 +288,45 @@
   - 新FAQ3問追加（25問→28問）：「第二新卒 転職 自己分析」「30代 転職 自己分析」「自己PR 自己分析 転職」KW対応
   - 本日更新ページのlastmod 2026-05-22整合確認・jobs.html を 2026-05-21→2026-05-22 に更新
 
-- [→] **全8タイプページ meta description 転職成功ポイントKW反映（CTO_2026-05-23.md タスク1）** `CTO担当`
-  - 転職成功ポイントセクション（2026-05-19〜05-21追加）のKWをmeta descriptionに追加
-  - 各タイプの属性KW（「コツコツできる仕事 転職」等）を自然挿入・sitemap.xml lastmod → 2026-05-23
+- [x] **llms.txt更新（FAQサマリー追加・FAQ件数28問以上に更新）（2026-05-23・CTO実装完了）**
+  - FAQ件数「23問以上」→「28問以上」に更新
+  - 新FAQサマリー追加：第二新卒転職・30代転職・自己PR自己分析・転職活動開始時期
 
-- [→] **index.html 全8タイプ一覧セクション追加（CTO_2026-05-23.md タスク2）** `CTO担当`
-  - 「診断でわかる8つのキャリアタイプ」テキストリンクグリッドをindex.htmlに追加
+- [x] **index.html HowTo JSON-LD追加・「使い方3ステップ」セクション追加（2026-05-23・CTO実装完了）**
+  - HowTo JSON-LDをheadに追加（AIキャリア診断の使い方3ステップ・totalTime: PT5M）
+  - 狙いKW：「AIキャリア診断 使い方」「キャリア診断 やり方 手順」「AI診断 登録不要 手順」
+  - HTMLセクション追加（「選ばれる理由」と「よくある質問」の間）
+
+- [x] **type-strategist.html FAQ 2問追加（2026-05-23・CTO実装完了）**
+  - JSON-LD + HTML両方に追加（5問→7問）
+  - 「論理的思考が強い人 向いてる職種」「戦略家タイプ おすすめ転職エージェント」KW対応
+  - dateModified → 2026-05-23
+
+- [x] **type-analyst.html FAQ 2問追加（2026-05-23・CTO実装完了）**
+  - JSON-LD + HTML両方に追加（5問→7問）
+  - 「分析力がある人 転職 アピール方法」「分析者タイプ おすすめ転職エージェント」KW対応
+  - dateModified → 2026-05-23
+
+- [x] **type-mediator.html FAQ 2問追加（2026-05-23・CTO実装完了）**
+  - JSON-LD + HTML両方に追加（5問→7問）
+  - 「コミュニケーション力が高い人 向いてる業界」「調整役タイプ おすすめ転職エージェント」KW対応
+  - dateModified → 2026-05-23
+
+- [x] **sitemap.xml lastmod更新（2026-05-23 前半・CTO実装完了）**
+  - index.html・type-strategist.html・type-analyst.html・type-mediator.html → 2026-05-23
+
+- [x] **全8タイプページ meta description 転職成功ポイントKW反映（CTO_2026-05-23.md タスク1）** `CTO完了 2026-05-23`
+  - 全8タイプページのmeta descriptionに転職成功ポイントKWを追加・強化
+  - 「コツコツできる仕事 転職」「行動力がある人 向いてる仕事」「責任感が強い人 向いてる仕事」「人を育てる仕事 転職」「コミュニケーション力 向いている仕事」「論理的思考 向いている仕事」「分析力がある人 向いている仕事」「表現力 向いている仕事」
+  - 全8タイプページ dateModified → 2026-05-23
+  - sitemap.xml 全8タイプページ lastmod → 2026-05-23
+
+- [x] **index.html 全8タイプ一覧セクション追加（CTO_2026-05-23.md タスク2）** `CTO完了 2026-05-23`
+  - 「診断でわかる8つのキャリアタイプ」テキストリンクグリッド追加（「選ばれる理由」の後）
   - index.html → 全8タイプページへの内部リンク確立・PageRank分配強化・LLMO対策
-  - sitemap.xml index.html lastmod → 2026-05-23
+  - sitemap.xml index.html lastmod → 2026-05-23（維持）
 
-- [→] **faq.html 新FAQ 2問追加（CTO_2026-05-23.md タスク3）** `CTO担当`
+- [x] **faq.html 新FAQ 2問追加（CTO_2026-05-23.md タスク3）** `CTO完了 2026-05-23`
   - 「キャリアチェンジ 自己分析 やり方」「転職 タイミング 診断」KW対応（28問→30問）
   - FAQPage JSON-LD・HTML本文追加・内部リンク付与・sitemap.xml lastmod → 2026-05-23
 
