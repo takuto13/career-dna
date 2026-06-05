@@ -793,3 +793,6 @@
 - [x] sitemap.xmlへのタイプページURL追加（2026-05-08 / 2026-05-09更新・CTO実装）
 - [x] 全8タイプ詳細ページ完成：type-craftsman / type-strategist / type-mediator / type-challenger / type-analyst / type-creator / type-guardian / type-nurturer（2026-05-09・CTO実装・デプロイ承認待ち）
 - [x] Xアカウント継続投稿原稿作成：05/21〜05/26分6本完成（2026-05-08・SNS担当）
+- [x] faq.html FAQ 103問体制完成：Q101「転職活動疲れた立て直し」・Q102「転職うまくいかない原因」・Q103「内定後入社前準備」追加・JSON-LD＋HTML＋meta description更新（2026-06-05・CTO実装）
+- [x] 全8タイプ詳細ページ FAQ 29問目追加：「転職後・入社後早期活躍」テーマで各タイプ別アドバイスをJSON-LD＋HTML実装（2026-06-05・CTO実装）
+- [x] llms.txt更新：FAQ件数103問反映・新コンテンツ行追加（転職活動長期化疲れ/内定後準備/全8タイプ入社後早期活躍）・FAQサマリー3件追加（2026-06-05・CTO実装）
