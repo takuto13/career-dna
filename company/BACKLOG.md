@@ -870,3 +870,6 @@
 - [x] faq.html「中小企業・大企業適性・転職成功率向上コツ・転職後期待相違対処」FAQ 3問追加（Q113〜Q115・115問体制）：JSON-LD＋HTML実装・meta description更新（2026-06-06・CTO実装）
 - [x] 全8タイプ詳細ページ FAQ 32問目追加：「中小企業・大企業どちらが向いているか」タイプ別適性をJSON-LD＋HTML実装（strategist/analyst/craftsman/mediator/challenger/creator/guardian/nurturer 全8ページ完了）（2026-06-06・CTO実装）
 - [x] llms.txt整合更新：FAQ件数115問以上反映・全8タイプ別「中小企業・大企業適性」FAQ行追加・転職成功率向上/転職後期待相違FAQガイド行追加（2026-06-06・CTO実装）
+- [x] faq.html「採用担当者評価視点・AI面接対策・転職後3年キャリアアップ」FAQ 3問追加（Q116〜Q118・118問体制）：JSON-LD＋HTML実装・meta description「118問以上」に更新（2026-06-06・CTO実装）
+- [x] 全8タイプ詳細ページ FAQ 33問目追加：「転職後3年でキャリアアップするための戦略」タイプ別（深化→認知→拡張 等）をJSON-LD＋HTML実装（全8ページ完了）（2026-06-06・CTO実装）
+- [x] llms.txt整合更新：FAQ件数118問以上反映・全8タイプ別「転職後3年キャリアアップ戦略」FAQ行追加・採用担当者評価/AI面接対策/転職後3年キャリアアップFAQガイド行追加・FAQサマリー4件追加（2026-06-06・CTO実装）
