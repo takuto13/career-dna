@@ -847,3 +847,6 @@
 - [x] faq.html FAQ 103問体制完成：Q101「転職活動疲れた立て直し」・Q102「転職うまくいかない原因」・Q103「内定後入社前準備」追加・JSON-LD＋HTML＋meta description更新（2026-06-05・CTO実装）
 - [x] 全8タイプ詳細ページ FAQ 29問目追加：「転職後・入社後早期活躍」テーマで各タイプ別アドバイスをJSON-LD＋HTML実装（2026-06-05・CTO実装）
 - [x] llms.txt更新：FAQ件数103問反映・新コンテンツ行追加（転職活動長期化疲れ/内定後準備/全8タイプ入社後早期活躍）・FAQサマリー3件追加（2026-06-05・CTO実装）
+- [x] faq.html「中小企業・大企業適性・転職成功率向上コツ・転職後期待相違対処」FAQ 3問追加（Q113〜Q115・115問体制）：JSON-LD＋HTML実装・meta description更新（2026-06-06・CTO実装）
+- [x] 全8タイプ詳細ページ FAQ 32問目追加：「中小企業・大企業どちらが向いているか」タイプ別適性をJSON-LD＋HTML実装（strategist/analyst/craftsman/mediator/challenger/creator/guardian/nurturer 全8ページ完了）（2026-06-06・CTO実装）
+- [x] llms.txt整合更新：FAQ件数115問以上反映・全8タイプ別「中小企業・大企業適性」FAQ行追加・転職成功率向上/転職後期待相違FAQガイド行追加（2026-06-06・CTO実装）
