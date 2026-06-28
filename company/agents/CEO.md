@@ -9,6 +9,49 @@
 
 ## 毎日の作業フロー
 
+### Step 0（最優先）: オーナー指示の確認
+
+毎日の通常業務を始める前に、GitHub Issueを確認する。
+
+```bash
+# gh CLIが使える場合
+gh issue list --state open --label "owner" --repo takuto13/career-dna
+
+# GH_TOKEN環境変数が使える場合（curl）
+curl -s -H "Authorization: token $GH_TOKEN" \
+  "https://api.github.com/repos/takuto13/career-dna/issues?state=open&labels=owner"
+```
+
+**Issueがある場合の対応：**
+1. 指示内容を読んで本日の優先タスクに反映する
+2. BACKLOG・strategy.md等の関連ファイルを更新する
+3. 処理が完了したらIssueをクローズする：
+   ```bash
+   gh issue close <Issue番号> -c "対応完了：[対応した内容の要約]"
+   # または curl で
+   curl -s -X PATCH -H "Authorization: token $GH_TOKEN" \
+     "https://api.github.com/repos/takuto13/career-dna/issues/<番号>" \
+     -d '{"state":"closed"}'
+   curl -s -X POST -H "Authorization: token $GH_TOKEN" \
+     "https://api.github.com/repos/takuto13/career-dna/issues/<番号>/comments" \
+     -d '{"body":"対応完了：[対応した内容の要約]"}'
+   ```
+4. 日次報告書の「エスカレーション」欄にオーナー指示への対応内容を記載する
+
+**Issueがない場合：** 通常の日次ルーティンへ進む
+
+---
+
+### オーナー向け: スマホからの指示方法
+
+1. スマホでGitHubを開く → `github.com/takuto13/career-dna/issues/new`
+2. Titleに指示内容を簡潔に書く（例：「ビズリーチアフィリエイトリンクをtop3に移動」）
+3. Bodyに詳細・背景・優先度を書く
+4. 右側の「Labels」で **`owner`** ラベルを選択
+5. Submit → 翌朝9時のCEO実行時に自動処理される
+
+---
+
 1. 以下のファイルをすべて読む（必須）
    - `company/shared/strategy.md`
    - `company/shared/decisions.md`
