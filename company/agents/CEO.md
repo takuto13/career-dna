@@ -9,36 +9,31 @@
 
 ## 毎日の作業フロー
 
-### Step 0（最優先）: オーナー指示の確認
+### Step 0（絶対最優先）: GitHub Issue確認
 
-毎日の通常業務を始める前に、GitHub Issueを確認する。
+**スケジュール実行・たくとからの作業指示・いかなる場合も、必ず最初に実行すること。**
 
-```bash
-# gh CLIが使える場合
-gh issue list --state open --label "owner" --repo takuto13/career-dna
+GitHub MCPツール（`mcp__github__list_issues`）でIssue一覧を取得し、最新の内容を確認する。
 
-# GH_TOKEN環境変数が使える場合（curl）
-curl -s -H "Authorization: token $GH_TOKEN" \
-  "https://api.github.com/repos/takuto13/career-dna/issues?state=open&labels=owner"
+```
+# GitHub MCPツールで確認（常にこちらを使う）
+mcp__github__list_issues(owner="takuto13", repo="career-dna", state="OPEN")
+# 詳細が必要な場合
+mcp__github__issue_read(method="get", owner="takuto13", repo="career-dna", issue_number=<番号>)
 ```
 
+**確認ルール：**
+- ownerラベルの有無にかかわらず、全Issueの最新状態を毎回確認する
+- 前回確認時から新しいIssueが増えていないかを必ずチェックする
+- たくとから作業指示が来た場合は、**その作業に着手する前に**必ずIssueを確認する
+
 **Issueがある場合の対応：**
-1. 指示内容を読んで本日の優先タスクに反映する
+1. 指示内容を読んで本日の優先タスクに反映する（通常業務より優先）
 2. BACKLOG・strategy.md等の関連ファイルを更新する
-3. 処理が完了したらIssueをクローズする：
-   ```bash
-   gh issue close <Issue番号> -c "対応完了：[対応した内容の要約]"
-   # または curl で
-   curl -s -X PATCH -H "Authorization: token $GH_TOKEN" \
-     "https://api.github.com/repos/takuto13/career-dna/issues/<番号>" \
-     -d '{"state":"closed"}'
-   curl -s -X POST -H "Authorization: token $GH_TOKEN" \
-     "https://api.github.com/repos/takuto13/career-dna/issues/<番号>/comments" \
-     -d '{"body":"対応完了：[対応した内容の要約]"}'
-   ```
+3. 処理が完了したらIssueをクローズする（GitHub MCPツール経由で試みる。403エラーの場合はCEO日次報告書に対応内容を記録する）
 4. 日次報告書の「エスカレーション」欄にオーナー指示への対応内容を記載する
 
-**Issueがない場合：** 通常の日次ルーティンへ進む
+**Issueがない場合：** 確認完了を確認してから通常の日次ルーティンへ進む
 
 ---
 
