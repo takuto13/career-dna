@@ -1,0 +1,103 @@
+name: CEO緊急指示対応
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  ceo-response:
+    if: github.event.label.name == 'owner'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v4
+
+      - name: Node.jsセットアップ
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Claude Codeインストール
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: gitセットアップ
+        run: |
+          git config user.email "work141003@gmail.com"
+          git config user.name "makuutitakuto"
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+
+      - name: 受信通知コメント
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'CEO処理を開始します。完了後にこのIssueをクローズします。'
+            })
+
+      - name: プロンプトファイル作成
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const issueNumber = context.issue.number;
+            const issueTitle = context.payload.issue.title;
+            const issueBody = context.payload.issue.body || '（本文なし）';
+
+            const prompt = `あなたはキャリアDNAのAI CEO（最高経営責任者）です。
+            GitHubリポジトリ https://github.com/takuto13/career-dna を管理しています。
+
+            オーナー（たくと）からスマホ経由で緊急指示が届きました。
+            通常の定例業務より優先して対応してください。
+
+            ## 指示内容
+            Issue #${issueNumber}
+            タイトル: ${issueTitle}
+
+            ${issueBody}
+
+            ## 実行手順
+            1. company/agents/RULES.md を読む
+            2. company/agents/CEO.md を読む
+            3. 必要に応じて company/shared/strategy.md・company/BACKLOG.md を読む
+            4. 指示内容を理解し、必要なファイルを更新する
+            5. CTO・SNS担当への指示が必要なら company/requests/ に指示書を作成する
+            6. 今日の日付で company/reports/YYYY-MM-DD_CEO_emergency.md に対応報告書を作成する
+            7. 以下のbashコマンドでコミット・プッシュする：
+               git add -A
+               git commit -m "CEO緊急対応 Issue #${issueNumber}: ${issueTitle}"
+               git push origin main
+
+            すべて日本語で記述すること。company/agents/RULES.md のルールに従うこと。`;
+
+            fs.writeFileSync('/tmp/ceo_prompt.txt', prompt);
+
+      - name: CEO実行
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude --dangerously-skip-permissions -p "$(cat /tmp/ceo_prompt.txt)"
+
+      - name: 完了コメントとIssueクローズ
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '対応完了しました。`company/reports/` の最新ファイルをご確認ください。'
+            })
+            await github.rest.issues.update({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed'
+            })
