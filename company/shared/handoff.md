@@ -8,22 +8,43 @@
 
 ## 次セッションへの引継ぎ：あり
 
-### ⚠️ 次CTOセッション注意事項
+### ⚠️ 次CTOセッション最重要注意事項（2026-06-28更新）
+
+**⛔ Issue #9 FAQ STOP ORDER 発動中**
+- GitHub Issue #9コメント（2026-06-28T17:20:20Z）：「FAQは指示するまで絶対増やさないで」
+- faq.html への FAQ追加・タイプページへのFAQ追加は一切禁止
+- 再開条件：たくとから「FAQを追加してよい」と明示的に指示されるまで
+
+**BLOCKED タスク（Issue #9 STOP ORDERにより保留）：**
+- CTO_2026-07-10.md Q320〜Q322・Q99 → BLOCKED
+- CTO_2026-07-11.md Q323〜Q325・Q100 → BLOCKED
+- CTO_2026-07-12.md Q326〜Q328・Q101 → BLOCKED
+- CTO_2026-07-13.md Q329〜Q331・Q102 → BLOCKED
+
+**次回CTOセッションの優先タスク：**
+1. GitHub Issues #5〜#10 のたくとフィードバック確認
+2. Issue #9 STOP ORDER 解除の確認（FAQが再開可能か）
+3. Issue #7 SEOキーワード候補 → たくと承認後、コンテンツ計画に反映
+4. Issue #10 タイプ別記事 → 構成案承認後、実装開始
+5. FAQ STOP ORDER解除後 → Q320〜Q322・Q99から順番に実装再開
+
+### ⚠️ 前CTOセッション注意事項
 CTO_2026-07-10.md に記載の Q317〜Q319・Q98 は当CTO自律定例で別コンテンツとして実装済み。
 次回 CTO_2026-07-10.md 実行時は **Q320〜Q322（退職代行・転職先評判・週4転職）・Q99（初年度ボーナス評価）** として実装すること。
 
-### CTOチェーン（2026-06-28 自律定例完了）
-- faq.html Q317〜Q319追加（316問→319問体制）✅
-- faq.html meta description「319問以上」更新 ✅
-- 全8タイプページ Q98追加（キャリアチェンジ後適応戦略・異業種転職後強み発揮）✅
-- llms.txt更新（319問以上・98問以上・全98テーマ・Q317-Q319・Q98エントリー追加）✅
-- sitemap.xml更新（lastmod 2026-06-28）✅
-- CTO_2026-07-09.md アーカイブ完了 ✅
-- BACKLOG.md更新 ✅
+### CTOチェーン（2026-06-28 CTO定例完了）
+- 11ページ title/meta description SEO最適化（CTO_2026-07-13.md タスク1）✅
+- sitemap.xml lastmod更新（index.html・jobs.html → 2026-06-28）✅
+- company/issues/ フォルダ新設・Issue対応ファイル5本作成 ✅
+- BACKLOG.md更新（FAQ BLOCKED記録・Issue対応完了記録）✅
+- CTO報告書作成（company/reports/2026-06-28_CTO.md）✅
+- タスク2・3（FAQ追加）はIssue #9 STOP ORDERにより未実施
 
-### CTOチェーン（次回実施待ち）
-- **CTO_2026-07-10.md**（2026-07-10実施予定）: Q320〜Q322・Q99追加・llms.txt・sitemap更新 → **未実施・CTO担当待ち**
-- **CTO_2026-07-11.md**（2026-07-11実施予定）: Q323〜Q325・Q100追加・llms.txt・sitemap更新 → **指示書作成済み・CTO担当待ち**
+### CTOチェーン（BLOCKED・たくと解除待ち）
+- **CTO_2026-07-10.md**: Q320〜Q322・Q99追加 → **BLOCKED（Issue #9）**
+- **CTO_2026-07-11.md**: Q323〜Q325・Q100追加 → **BLOCKED（Issue #9）**
+- **CTO_2026-07-12.md**: Q326〜Q328・Q101追加 → **BLOCKED（Issue #9）**
+- **CTO_2026-07-13.md（タスク2・3）**: Q329〜Q331・Q102追加 → **BLOCKED（Issue #9）**
 
 ### SNSチェーン（原稿ファイル作成完了状況）
 - 2026-09-03（水）日次3本：requests/sns_原稿_2026-09-03.md → **完了済み ✅**

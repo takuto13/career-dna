@@ -2278,6 +2278,26 @@
 - [x] **sitemap.xml 更新（faq.html + 全8タイプページ lastmod=2026-06-14）（CTO自律実施）** ✅2026-06-14
   - faq.html + type-strategist/analyst/craftsman/mediator/challenger/creator/guardian/nurturer の lastmod更新
 
+- [x] **CTO_2026-07-13.md タスク1完了：主要11ページ title/meta description SEO最適化（2026-06-28 CTO定例実装完了）**
+  - public/index.html・faq.html・jobs.html・全8タイプページのtitle/meta descriptionを検索KW最適化
+  - 「転職診断 無料」「向いてる仕事 診断」「就活 自己分析」等の高ボリュームKWを全ページに反映
+  - sitemap.xml lastmod更新（index.html 2026-06-28・jobs.html 2026-06-28）✅
+  - **Issue #9「FAQは指示するまで絶対増やさないで」により、FAQ追加タスク（タスク2・3）はBLOCKED**
+
+- [-] **CTO_2026-07-10〜07-13.md FAQ追加タスク全件保留（Issue #9 STOP ORDER）**
+  - CTO_2026-07-10.md Q320〜Q322・Q99：**BLOCKED**（Issue #9 FAQ禁止令）
+  - CTO_2026-07-11.md Q323〜Q325・Q100：**BLOCKED**
+  - CTO_2026-07-12.md Q326〜Q328・Q101：**BLOCKED**
+  - CTO_2026-07-13.md Q329〜Q331・Q102：**BLOCKED**
+  - **再開条件：たくとから「FAQを追加してよい」と明示的に指示されるまで**
+
+- [x] **GitHub Issue対応ファイル作成（company/issues/フォルダ新設）（2026-06-28 CTO定例完了）**
+  - company/issues/issue-05_CV_CTA強化提案.md ✅
+  - company/issues/issue-06_jobsページUI_UX案.md ✅
+  - company/issues/issue-07_SEOキーワード候補.md ✅
+  - company/issues/issue-09_FAQカテゴリ整理案.md ✅
+  - company/issues/issue-10_タイプ別記事構成案.md ✅
+
 ###  中優先（来月以降）
 
 - [→] **キャリア協会まとめ記事への掲載依頼（2件）** `たくと実施待ち`
