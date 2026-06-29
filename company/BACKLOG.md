@@ -2334,6 +2334,15 @@
 - [→] **llms.txt精度確認・更新（2026年6月更新反映）（CTO_2026-07-15.md タスク3）** `CTO 2026-07-15実施予定`
   - FAQ 319問・タイプFAQ 98問・SearchAction JSON-LD追加など2026年6月〜7月の主な更新内容追記
 
+- [→] **主要3ページ title/meta description最適化（CTO_2026-07-15.md タスク4）** `CTO 2026-07-15実施予定`
+  - index.html・faq.html・jobs.html：一般KW（転職 診断 無料・向いてる仕事 診断等）を盛り込んだtitle/metaに変更（Issue #7対応）
+
+- [→] **全8タイプページ title/meta description最適化（CTO_2026-07-15.md タスク5）** `CTO 2026-07-15実施予定`
+  - 各タイプ名＋向いてる仕事＋転職KWを含むtitle・meta descriptionに統一（Issue #7対応）
+
+- [→] **sitemap.xml lastmod更新（CTO_2026-07-15.md タスク6）** `CTO 2026-07-15実施予定`
+  - 全11ページ（index・faq・jobs・全8タイプ）のlastmodを2026-07-15に更新
+
 - [→] **2026-09-16 日次3本作成（SNS_2026-07-14.md タスク1）→ requests/sns_原稿_2026-09-16.md** `SNS担当 2026-07-14実施予定`
   - テーマ：秋採用第3週水曜・書類→面接加速フェーズ・転職活動の追い込み期
 
