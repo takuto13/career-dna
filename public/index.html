@@ -11,8 +11,8 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>無料AI転職・就活診断 | 25問でわかる強みとキャリアタイプ | キャリアDNA</title>
-  <meta name="description" content="25問の無料AI診断で、あなたの強み・価値観・向いている仕事タイプを5分で診断。転職を考える社会人・就活中の学生に最適。登録不要・即結果。8つのキャリアタイプから転職エージェントを紹介。" />
+  <title>AIキャリア診断｜向いてる仕事・転職タイプ診断【無料・登録不要・5分】</title>
+  <meta name="description" content="25問・5分・登録不要。AIキャリア診断で8タイプに分類し、向いてる仕事・転職エージェント・強みを即判定。転職活動中・自己分析に迷う方にぴったりのAI適職診断。" />
   <meta property="og:title" content="キャリアDNA｜AIキャリア診断で仕事タイプがわかる【無料・登録不要】" />
   <meta property="og:description" content="AIキャリア診断で仕事タイプ・強み・適職がすぐわかる。25問に答えるだけで完全無料・登録不要。AI自己分析で転職・就活の方向性を確認しよう。" />
   <meta property="og:type" content="website" />
@@ -33,7 +33,10 @@
           "inLanguage": "ja",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://career-dna.jp/?s={search_term_string}",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://career-dna.jp/faq.html?q={search_term_string}"
+            },
             "query-input": "required name=search_term_string"
           }
         },

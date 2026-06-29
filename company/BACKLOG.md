@@ -2325,23 +2325,25 @@
   - 実装優先順位：守護者・育成者タイプ（看護師・薬剤師転職アフィリエイト・最高単価直結）
   - 承認後CTOが実装
 
-- [→] **jobs.html OGP・メタデータ最適化（CTO_2026-07-15.md タスク1）** `CTO 2026-07-15実施予定`
-  - og:title最適化・og:description追加・og:image確認・canonical確認
+- [x] **jobs.html OGP・メタデータ最適化（CTO_2026-07-15.md タスク1）** `CTO 2026-06-29実装完了`
+  - og:title「向いてる仕事・転職エージェント比較｜キャリアDNA診断」・og:description最適化・canonical確認済み
 
-- [→] **SearchAction JSON-LD追加（index.html）（CTO_2026-07-15.md タスク2）** `CTO 2026-07-15実施予定`
-  - Googleリッチリザルト・サイト検索ボックス対応・LLMO強化
+- [x] **SearchAction JSON-LD更新（index.html）（CTO_2026-07-15.md タスク2）** `CTO 2026-06-29実装完了`
+  - potentialAction.target を EntryPoint/urlTemplate 形式に更新・faq.html?q= に対応
 
-- [→] **llms.txt精度確認・更新（2026年6月更新反映）（CTO_2026-07-15.md タスク3）** `CTO 2026-07-15実施予定`
-  - FAQ 319問・タイプFAQ 98問・SearchAction JSON-LD追加など2026年6月〜7月の主な更新内容追記
+- [x] **llms.txt精度確認・更新（2026年6月更新反映）（CTO_2026-07-15.md タスク3）** `CTO 2026-06-29実装完了`
+  - FAQ 319問・タイプFAQ 98問・「2026年6月の主な更新」セクション追加
 
-- [→] **主要3ページ title/meta description最適化（CTO_2026-07-15.md タスク4）** `CTO 2026-07-15実施予定`
-  - index.html・faq.html・jobs.html：一般KW（転職 診断 無料・向いてる仕事 診断等）を盛り込んだtitle/metaに変更（Issue #7対応）
+- [x] **主要3ページ title/meta description最適化（CTO_2026-07-15.md タスク4）** `CTO 2026-06-29実装完了`
+  - index.html: 「AIキャリア診断｜向いてる仕事・転職タイプ診断【無料・登録不要・5分】」
+  - faq.html: 「転職・就活FAQ【319問以上】タイプ別完全ガイド｜キャリアDNA」
+  - jobs.html: 「タイプ別おすすめ転職エージェント比較｜キャリアDNA診断結果から選ぶ【2026年版】」
 
-- [→] **全8タイプページ title/meta description最適化（CTO_2026-07-15.md タスク5）** `CTO 2026-07-15実施予定`
-  - 各タイプ名＋向いてる仕事＋転職KWを含むtitle・meta descriptionに統一（Issue #7対応）
+- [x] **全8タイプページ title/meta description最適化（CTO_2026-07-15.md タスク5）** `CTO 2026-06-29実装完了`
+  - 各タイプ名＋向いてる仕事＋転職KW（コツコツ・行動力・コミュニケーション力等）を含むtitle・meta descriptionに最適化（Issue #7対応）
 
-- [→] **sitemap.xml lastmod更新（CTO_2026-07-15.md タスク6）** `CTO 2026-07-15実施予定`
-  - 全11ページ（index・faq・jobs・全8タイプ）のlastmodを2026-07-15に更新
+- [x] **sitemap.xml lastmod更新（CTO_2026-07-15.md タスク6）** `CTO 2026-06-29実装完了`
+  - 全11ページ（index・faq・jobs・全8タイプ）のlastmodを2026-06-29に更新
 
 - [x] **2026-09-16 日次3本作成（SNS_2026-07-14.md タスク1）→ requests/sns_原稿_2026-09-16.md** `SNS担当（CEO代行） 2026-06-29完了`
   - テーマ：秋採用第3週水曜・書類→面接加速フェーズ・転職活動の追い込み期

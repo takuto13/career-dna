@@ -28,6 +28,21 @@
 4. Issue #10 タイプ別記事 → 構成案承認後、実装開始
 5. FAQ STOP ORDER解除後 → Q320〜Q322・Q99から順番に実装再開
 
+### 2026-06-29 CTO定例完了タスク（runnow）
+
+- 全11ページ title/meta description SEO最適化（CTO_2026-07-15.md タスク4・5）✅
+  - index.html: 「AIキャリア診断｜向いてる仕事・転職タイプ診断【無料・登録不要・5分】」
+  - faq.html: 「転職・就活FAQ【319問以上】タイプ別完全ガイド｜キャリアDNA」
+  - jobs.html: 「タイプ別おすすめ転職エージェント比較｜キャリアDNA診断結果から選ぶ【2026年版】」
+  - 全8タイプページ：属性KW＋向いてる仕事＋転職KW盛り込みtitle/meta最適化
+- jobs.html OGP最適化（og:title・og:description更新）✅
+- SearchAction JSON-LD更新（index.html / faq.html?q= パス対応）✅
+- llms.txt更新（2026年6月の主な更新セクション追加）✅
+- sitemap.xml lastmod更新（全11ページ → 2026-06-29）✅
+- CTO_2026-07-15.md アーカイブ ✅
+- BACKLOG.md更新（タスク6件 [x]化）✅
+- git commit/push ✅
+
 ### ⚠️ 前CTOセッション注意事項
 CTO_2026-07-10.md に記載の Q317〜Q319・Q98 は当CTO自律定例で別コンテンツとして実装済み。
 次回 CTO_2026-07-10.md 実行時は **Q320〜Q322（退職代行・転職先評判・週4転職）・Q99（初年度ボーナス評価）** として実装すること。
