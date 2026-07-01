@@ -2393,25 +2393,30 @@
   - キャリア診断以外の横展開できるビジネスモデルを調査・提案
   - 例：業界別診断・スキル診断・副業適性診断 等
 
-- [→] **全8タイプページ FAQ構成変更（Issue #9 たくと実装承認済み）** `CTO_2026-07-01.md タスク1`
-  - FAQセクションを広告カードの下に移動
-  - 3問ピックアップ表示 + faq.htmlへの「もっと見る」リンク追加
+- [x] **全8タイプページ FAQ構成変更（Issue #9 たくと実装承認済み）** `CTO_2026-07-01.md タスク1` 2026-07-01 CTO実装完了
+  - FAQセクションをアフィリエイトカードの下に移動
+  - 3問ピックアップ表示 + faq.htmlへの「FAQをもっと見る →」リンク追加
+  - FAQPage JSON-LD 3問に更新・dateModified 2026-07-01
   - 対象：全8タイプページ（type-strategist / type-analyst / type-craftsman / type-mediator / type-challenger / type-creator / type-guardian / type-nurturer）
 
-- [→] **内部リンク三角強化（Issue #10 たくと実装承認済み）** `CTO_2026-07-01.md タスク2`
-  - faq.html → jobs.html / タイプページへのリンク追加
-  - jobs.html → タイプページへの「タイプ詳細を見る」リンク追加
+- [x] **内部リンク三角強化（Issue #10 たくと実装承認済み）** `CTO_2026-07-01.md タスク2` 2026-07-01 CTO実装完了
+  - faq.html Q21/Q28/Q29 → jobs.html 内部リンク追加
+  - jobs.html → 全8タイプページへの「タイプ詳細を見る」リンク追加
 
 - [→] **faq.html 検索機能実装 + カテゴリ別5問+CTA構成（Issue #9）** `CTO_2026-07-02.md 次回実施`
   - JavaScript検索ボックスをfaq.html上部に追加
   - カテゴリ別（8カテゴリ × 5問ピックアップ + もっと見る + CTA）に再構成
   - 各カテゴリ後にjobs.html / 診断ページへのCTAを配置
 
-- [→] **Organization JSON-LD追加（index.html）** `CTO_2026-07-01.md タスク3`
-  - AI検索被参照獲得・Googleナレッジパネル表示を目的としたOrganizationマークアップ
+- [x] **Organization JSON-LD更新（index.html）** `CTO_2026-07-01.md タスク3` 2026-07-01 CTO実装完了
+  - AI検索被参照獲得・Googleナレッジパネル表示を目的としたOrganizationマークアップ更新（@id追加・description更新・sameAs・logo追加）
 
-- [→] **全8タイプページ jobs.htmlアンカーテキスト最適化** `CTO_2026-07-01.md タスク4`
-  - 「転職求人を探す」→「[タイプ名]タイプにおすすめの転職エージェント」等タイプ固有KWに更新
+- [x] **全8タイプページ jobs.htmlアンカーテキスト最適化** `CTO_2026-07-01.md タスク4` 2026-07-01 CTO実装完了
+  - 各タイプページのナビリンクテキストをタイプ固有KW（戦略家タイプにおすすめの転職先を見る 等）に更新
+
+- [x] **sitemap.xml・llms.txt更新** `CTO_2026-07-01.md タスク5` 2026-07-01 CTO実装完了
+  - sitemap.xml: index.html / faq.html / jobs.html / 全8タイプページ lastmod → 2026-07-01
+  - llms.txt: 2026年7月更新内容（FAQ構成変更・内部リンク強化・JSON-LD更新）を反映
 
 - [x] **sns_原稿_2026-09-20.md 作成** `SNS_2026-07-01.md タスク1` ✅2026-07-01
   - 秋採用中盤・書類選考結果待ち×タイプ別待ち時間活用
