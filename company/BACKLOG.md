@@ -2564,3 +2564,14 @@
 - [→] **SNS_2026-07-10.md 作成・実施（10-04・10-05・2029/08/27〜09/02バッチ）** `SNS担当 次回実施`
 - [x] sitemap.xml faq.html lastmod 2026-07-02 に更新（2026-07-02・CTO実装）
 - [x] llms.txt 2026-07-02 更新内容追記（faq.html検索・7カテゴリ構成）（2026-07-02・CTO実装）
+
+- [→] **BreadcrumbList JSON-LD 全11ページ確認・追加（Issue #7 SEO強化）** `CTO_2026-07-03.md タスク1` 2026-07-03 CEO指示
+  - 対象：index.html / faq.html / jobs.html / type-strategist / type-analyst / type-craftsman / type-mediator / type-challenger / type-creator / type-guardian / type-nurturer（全11ページ）
+  - Google検索結果のパンくずリスト表示→クリック率向上→流入増加
+- [→] **jobs.html アフィリエイトリンク整合確認・OGP更新確認（Issue #6 CV向上）** `CTO_2026-07-03.md タスク2` 2026-07-03 CEO指示
+  - 全アフィリエイトリンク動作確認・タイプ別リンク（?type=xxx形式）全8タイプ確認
+  - jobs.html OGP（og:title/og:description/og:image）最新内容との整合確認
+- [→] **sitemap.xml / llms.txt 最終確認・更新（直近CTO実装後の整合確認）** `CTO_2026-07-03.md タスク3` 2026-07-03 CEO指示
+  - sitemap.xml: 全11ページlastmod確認
+  - llms.txt: faq.html 319問・タイプページFAQ 98問記述の最新確認
+  - robots.txt: AIクローラー設定確認
