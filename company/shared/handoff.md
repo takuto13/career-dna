@@ -89,8 +89,9 @@
 ### 2026-07-03 CTO定例完了タスク（runnow・セッション2）
 
 - faq.html カテゴリA 全8タイプ別詳細ページリンク追加（内部リンク強化・Issue #10 承認済み）✅
-  - 戦略家/分析者/職人/調整役/挑戦者/表現者/守護者/育成者 各タイプへのピル形式リンク
-  - BACKLOG.md [x]更新 ✅ / handoff.md更新 ✅ / git commit・push ✅
+  - 戦略家/分析者/職人/調整役/挑戦者/表現者/守護者/育成者 各タイプへのピル形式リンク（faq.html カテゴリAのCTA前に実装）
+  - BACKLOG.md [x]更新 ✅ / handoff.md更新 ✅
+  - git commit/push ✅（rebaseでSNS担当コミットと統合後にpush）
 
 ### 2026-07-03 CTO定例完了タスク（runnow・セッション1）
 
