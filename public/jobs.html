@@ -170,6 +170,26 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "キャリアDNA",
+        "item": "https://career-dna.jp"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "タイプ別おすすめ転職エージェント",
+        "item": "https://career-dna.jp/jobs.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="page-jobs">
   <main class="jobs-page">
@@ -386,6 +406,17 @@
       });
     }
 
+    const typeSlugMap = {
+      'strategist': '戦略',
+      'craftsman': '職人',
+      'analyst': '分析',
+      'mediator': '調整',
+      'challenger': '挑戦',
+      'creator': '表現',
+      'guardian': '守護',
+      'nurturer': '育成'
+    };
+
     if (!typeParam) {
       // 全サービス一覧表示
       document.title = 'おすすめ転職・就活サービス全一覧 | キャリアDNA';
@@ -409,7 +440,7 @@
     } else {
       // タイプ別表示
       const typeName = typeParam;
-      const typeKey = Object.keys(TYPE_AD_CONFIG).find(k => typeName.includes(k)) || '戦略';
+      const typeKey = typeSlugMap[typeParam] || Object.keys(TYPE_AD_CONFIG).find(k => typeName.includes(k)) || '戦略';
       const config = TYPE_AD_CONFIG[typeKey];
 
       document.title = typeName + 'におすすめの転職エージェント・就活サービス | キャリアDNA';

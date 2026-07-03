@@ -658,6 +658,22 @@
 
 - [x] **sitemap.xml更新（faq.html + 全8タイプページ lastmod 2026-06-28）（2026-06-28 CTO自律実装完了）**
 
+- [x] **全11ページ BreadcrumbList JSON-LD実装（Issue #7 SEO対策）（CTO_2026-07-03.md タスク1・2026-07-03 CTO実装完了）**
+  - index.html: 単一アイテムパンくず（ホームページ専用）
+  - faq.html: キャリアDNA → よくある質問（FAQ）
+  - jobs.html: キャリアDNA → タイプ別おすすめ転職エージェント
+  - 全8タイプページ: キャリアDNA → [タイプ名]タイプ
+  - Google検索結果パンくずリスト表示・CTR向上対応完了
+
+- [x] **jobs.html アフィリエイト英語slug→日本語キー変換バグ修正（Issue #6 CV向上）（CTO_2026-07-03.md タスク2・2026-07-03 CTO実装完了）**
+  - typeSlugMap（strategist/craftsman等 英語スラッグ→戦略/職人等 日本語キー）を実装
+  - タイプページの主要CTAリンク（?type=craftsman等）が正しいタイプ別サービスカードを表示するよう修正
+  - jobs.html OGP・全8タイプページCTAリンク整合性確認済み
+
+- [x] **sitemap.xml更新（全11ページ lastmod 2026-07-03）（CTO_2026-07-03.md タスク3・2026-07-03 CTO実装完了）**
+  - llms.txt確認：319問以上・98問以上の記述が正確であることを確認（更新不要）
+  - robots.txt AI crawler設定確認済み（変更不要）
+
 - [x] **2026-09-04 日次3本作成（SNS_2026-07-09.md タスク1）→ requests/sns_原稿_2026-09-04.md** `SNS担当 2026-06-28完了`
   - テーマ：秋採用面接タイプ別準備・試用期間木曜夜チャージ・就活GD突破タイプ別戦略
 
