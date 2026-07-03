@@ -28,6 +28,23 @@
 4. Issue #10 タイプ別記事 → 構成案承認後、実装開始
 5. FAQ STOP ORDER解除後 → Q320〜Q322・Q99から順番に実装再開
 
+### 2026-07-03 CTO定例完了タスク（runnow）
+
+- 全11ページ BreadcrumbList JSON-LD実装（Google検索パンくず対応・Issue #7 SEO対策）✅
+  - index.html: 単一アイテム / faq.html・jobs.html・全8タイプページ: 2アイテムパンくず
+- jobs.html アフィリエイト英語slug→日本語キー変換バグ修正（typeSlugMap追加・Issue #6）✅
+  - 修正前: ?type=craftsman等がデフォルト戦略家に誤ルーティング（7/8タイプ誤表示）
+  - 修正後: 全8英語スラッグが正しいタイプ別サービスカードを表示
+- sitemap.xml lastmod更新（全11ページ → 2026-07-03）✅
+- llms.txt確認（319問以上・98問以上の記述が正確）✅ 変更不要
+- robots.txt確認（AIクローラー許可設定正常）✅ 変更不要
+- BACKLOG.md 本日完了タスク3件[x]記録 ✅
+- CTO報告書作成（company/reports/2026-07-03_CTO.md）✅
+- CTO_2026-07-03.md アーカイブ ✅
+- git commit/push ✅
+
+**⚠️ Search Console クロール申請をたくとにお願い（BreadcrumbList有効化のため）**
+
 ### 2026-06-29 CTO定例完了タスク（runnow）
 
 - 全11ページ title/meta description SEO最適化（CTO_2026-07-15.md タスク4・5）✅
