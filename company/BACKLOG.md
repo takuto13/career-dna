@@ -2665,3 +2665,15 @@
 - [x] **sns_原稿_2026-10-31.md 作成（土曜・ハロウィン×キャリアタイプバイラル×月末転職振り返り×11月行動喚起）** `SNS担当定例 2026-07-04` ✅2026-07-04
 - [x] **sns_原稿_2026-11-01.md 作成（日曜・11月スタート×タイプ別月初行動計画×秋転職黄金期Tips）** `SNS担当定例 2026-07-04` ✅2026-07-04
 - [x] **x-posts/2026-08-10_SNS_バッチ_原稿.md 作成（2029/11/19〜11/25・試用期間終盤×年内キャリアプラン7本）** `SNS担当定例 2026-07-04` ✅2026-07-04
+- [x] **CTO_2026-07-04.md タスク1実施（jobs.html ↔ タイプページ内部リンク強化）** `CTO 2026-07-04実装完了` ✅
+  - jobs.html「あなたのタイプ別おすすめ求人はこちら」セクション追加（全8タイプ → 各type-XXX.htmlへのリンク）
+  - 全8タイプページ affiliate CTAセクションに「全タイプの転職・求人サービスを見る →」jobs.htmlリンク追加
+  - sitemap.xml jobs.html lastmod → 2026-07-04
+- [x] **CTO_2026-07-04.md タスク2実施（index.html メタ情報最適化）** `CTO 2026-07-04実装完了` ✅
+  - title最適化：「AIキャリア診断 - 5分で転職・就活に活かせる8タイプ診断｜キャリアDNA」（主要KW前方配置）
+  - meta description最適化：「AI自己分析」「転職診断」KW自然追加・160字以内維持
+  - WebSite/WebApplication JSON-LD・OGP確認済み（変更不要）
+- [x] **CTO_2026-07-04.md タスク3実施（sitemap.xml・robots.txt 現状確認）** `CTO 2026-07-04確認完了` ✅
+  - sitemap.xml：全8タイプ・index・faq・jobs（lastmod 2026-07-04）確認済み・about/contact/privacy/disclaimer含む15URL登録済み
+  - result.html：noindexのため正しくサイトマップ除外（変更不要）
+  - robots.txt：全主要ページ Allow / AIクローラー許可設定済み / Bytespider Disallow / type-strategy.html Disallow（重複対策）/ Sitemap URL記載済み・異常なし
