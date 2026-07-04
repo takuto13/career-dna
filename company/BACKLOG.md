@@ -2648,8 +2648,16 @@
 - [x] **sns_原稿_2026-10-27.md 作成（火曜・試用期間の不安解消×タイプ別乗り越え方）** `CEO代行 SNS_2026-07-16.md タスク1` ✅2026-07-04
 - [x] **sns_原稿_2026-10-28.md 作成（水曜・転職エージェント担当者変更×タイプ別スクリプト活用）** `CEO代行 SNS_2026-07-16.md タスク2` ✅2026-07-04
 - [x] **x-posts/2026-08-08_SNS_バッチ_原稿.md 作成（2029/11/05〜11/11・内定後1ヶ月目振り返り週7本）** `CEO代行 SNS_2026-07-16.md タスク3` ✅2026-07-04
-- [→] **CTO_2026-07-20.md 実施（faq.html Article JSON-LD・全8タイプOGP最適化・sitemap更新）** `CTO 実施予定`
-- [→] **CTO_2026-07-21.md 作成完了（全8タイプページ Article JSON-LD・jobs.html ItemList確認・sitemap更新）** `CEO定例 2026-07-04` ✅
+- [x] **CTO_2026-07-20.md 実施（faq.html Article JSON-LD・全8タイプOGP最適化・sitemap更新）** `CTO 2026-07-04実装完了` ✅
+  - faq.html: Article JSON-LD追加（mainEntityOfPage・about配列・publisher.logo）
+  - 全8タイプページ og:description最適化（【タイプ名】フォーマット・タイプ固有KW・120字以内）
+  - sitemap.xml faq.html lastmod → 2026-07-04
+- [x] **CTO_2026-07-21.md 実施（全8タイプページ Article JSON-LD・mainEntityOfPage・about追加・sitemap・llms.txt更新）** `CTO 2026-07-04実装完了` ✅
+  - 全8タイプページ Article JSON-LD強化（mainEntityOfPage・about配列・publisher.logo・dateModified→2026-07-04）
+  - type-strategist.html・type-craftsman.html BreadcrumbList JSON-LDのQuestion埋め込みバグ修正
+  - sitemap.xml全8タイプ lastmod確認済み（2026-07-04）
+  - llms.txt 2026-07-04更新セクションに構造化データ強化内容を追記
+  - CTO_2026-07-20.md・CTO_2026-07-21.md → company/archive/へアーカイブ済み
 - [→] **SNS_2026-07-17.md 作成完了（次回SNS指示書：10-29・10-30・2029/11/12〜11/18バッチ）** `CEO定例 2026-07-04` ✅
 - [x] **sns_原稿_2026-10-29.md 作成（木曜・内定条件交渉×タイプ別スクリプト）** `SNS担当 SNS_2026-07-17.md タスク1` ✅2026-07-04
 - [x] **sns_原稿_2026-10-30.md 作成（金曜・入社前の不安×タイプ別準備リスト）** `SNS担当 SNS_2026-07-17.md タスク2` ✅2026-07-04
