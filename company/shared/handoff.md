@@ -8,6 +8,18 @@
 
 ## 次セッションへの引継ぎ：あり
 
+### 2026-07-04 CTO定例完了タスク（runnow）
+
+- robots.txt AIクローラー設定最新化：GoogleExtended Allow / CCBot Allow / Bytespider Disallow 追加 ✅
+- llms.txt更新：2026-07-04実装内容（WebSite JSON-LD・Organization JSON-LD・HowTo JSON-LD・WebPage JSON-LD・ItemList JSON-LD・canonical URL・robots.txt更新）反映 ✅
+- CTO_2026-07-14.md タスク全完了確認（内部リンク・llms.txt・BreadcrumbList） ✅
+- CTO_2026-07-16.md タスク全完了確認（Organization JSON-LD・アンカーテキスト・sitemap） ✅
+- CTO_2026-07-19.md タスク全完了（WebSite JSON-LD・robots.txt・llms.txt・sitemap） ✅
+- 完了ファイルアーカイブ：CTO_2026-07-14.md / CTO_2026-07-16.md / CTO_2026-07-19.md → company/archive/ ✅
+- 重複ファイル削除（requests/ から CTO_2026-06-28, 07-02, 07-03, 07-09 を削除） ✅
+- BACKLOG.md更新（[→]→[x] 6件・新規[x]4件追加） ✅
+- git commit/push ✅（本セッション末尾で実施）
+
 ### 2026-07-04 CEO定例完了タスク（runnow・第3セッション）
 
 - sns_原稿_2026-10-21.md 作成完了（水曜・面接ラッシュ乗り越えフレーム・3本） ✅

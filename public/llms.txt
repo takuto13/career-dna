@@ -445,8 +445,14 @@
 
 ## 2026年7月の主な更新（2026-07-04）
 
-- 全8タイプページ WebPage JSON-LD追加（AI検索参照強化・isPartOf/breadcrumb連携）
+- 全8タイプページ WebPage JSON-LD追加（AI検索参照強化・isPartOf/breadcrumb連携・about・speakable強化）
 - index.html canonical URL追加（重複排除・検索評価統一）
+- HowTo JSON-LD：index.htmlに「5分でキャリア診断を完了する手順」追加（ステップ構造化・AI検索回答最適化）
+- Organization JSON-LD：index.htmlに追加・更新（AI検索被参照獲得・ナレッジパネル対応）
+- WebSite JSON-LD + SiteLinksSearchBox：index.htmlに追加（Googleサイトリンク表示対応・SearchAction連携）
+- jobs.html ItemList JSON-LD：転職エージェント6社の構造化データ追加
+- canonical URL：全11ページのcanonical URL整備・確認完了
+- robots.txt：AIクローラー設定最新化（GoogleExtended / CCBot 許可追加・Bytespider 拒否設定）
 - sitemap.xml lastmod更新（全8タイプページ・index.html → 2026-07-04）
 
 ## 2026年7月の主な更新（2026-07-02）

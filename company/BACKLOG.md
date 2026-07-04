@@ -2319,13 +2319,13 @@
   - company/issues/issue-09_FAQカテゴリ整理案.md ✅
   - company/issues/issue-10_タイプ別記事構成案.md ✅
 
-- [→] **内部リンク強化（CTO_2026-07-14.md タスク1）** `CTO 2026-07-14実施予定`
+- [x] **内部リンク強化（CTO_2026-07-14.md タスク1）** `CTO 2026-07-04実装完了`
   - faq.html回答文中からタイプページ・jobs.htmlへの誘導リンク追加
   - 全8タイプページからfaq.htmlへの双方向リンク整備
   - Issue #7 SEO対策強化（FAQ STOP ORDER中の代替SEO施策）
-- [→] **llms.txt精度確認・更新（CTO_2026-07-14.md タスク2）** `CTO 2026-07-14実施予定`
+- [x] **llms.txt精度確認・更新（CTO_2026-07-14.md タスク2）** `CTO 2026-07-04実装完了`
   - FAQ 319問・タイプFAQ 98問 の数値整合確認
-- [→] **BreadcrumbList JSON-LD 追加確認（CTO_2026-07-14.md タスク3）** `CTO 2026-07-14実施予定`
+- [x] **BreadcrumbList JSON-LD 追加確認（CTO_2026-07-14.md タスク3）** `CTO 2026-07-04実装完了`
   - 各タイプページへのBreadcrumbList実装確認・未実装なら追加
 - [x] **2026-09-14 日次3本作成（SNS_2026-07-13.md タスク1）→ requests/sns_原稿_2026-09-14.md** `SNS担当 2026-06-29完了`
   - テーマ：秋採用本格化・9月第3週月曜スタートダッシュ・書類選考ラッシュ期
@@ -2375,14 +2375,14 @@
 - [x] **2029/06/25〜07/01 バッチ7本作成（SNS_2026-07-14.md タスク3）→ x-posts/2026-07-14_SNS_バッチ_原稿.md** `SNS担当（CEO代行） 2026-06-29完了`
   - テーマ：就活2029年卒 内定後入社直前最終週〜入社式当日・07/01入社2日目まで（06/30 #入社式 最大インプレッション候補）
 
-- [→] **index.html Organization + WebApplication JSON-LD強化（CTO_2026-07-16.md タスク1）** `CTO 2026-07-16実施予定`
+- [x] **index.html Organization + WebApplication JSON-LD強化（CTO_2026-07-16.md タスク1）** `CTO 2026-07-04実装完了`
   - Organization JSON-LDをindex.htmlに追加（AI検索からのサイテーション獲得・ブランド認知強化）
 
-- [→] **全8タイプページ → jobs.html 内部リンクアンカーテキスト最適化（CTO_2026-07-16.md タスク2）** `CTO 2026-07-16実施予定`
+- [x] **全8タイプページ → jobs.html 内部リンクアンカーテキスト最適化（CTO_2026-07-16.md タスク2）** `CTO 2026-07-04実装完了`
   - 各タイプ名＋「おすすめ転職エージェント」「向いている仕事」をアンカーテキストに反映（SEO + CV強化）
 
-- [→] **sitemap.xml lastmod更新（CTO_2026-07-16.md タスク3）** `CTO 2026-07-16実施予定`
-  - タスク1・2実装ページのlastmodを2026-07-16に更新
+- [x] **sitemap.xml lastmod更新（CTO_2026-07-16.md タスク3）** `CTO 2026-07-04実装完了`
+  - タスク1・2実装ページのlastmodを2026-07-04に更新
 
 - [x] **2026-09-18 日次3本作成（SNS_2026-07-15.md タスク1）→ requests/sns_原稿_2026-09-18.md** `SNS担当 2026-06-29完了`
   - テーマ：秋採用第3週末土曜・週末面接準備・書類選考結果待ち
@@ -2633,6 +2633,13 @@
 - [x] **x-posts/2026-08-06_SNS_バッチ_原稿.md 作成完了（2029/10/22〜10/28・秋採用4〜5週目・試用期間前半フェーズ7本・SNS担当CEO代行 2026-07-04）**
 
 - [x] **CTO_2026-07-19.md 作成完了（WebSite JSON-LD+SiteLinksSearchBox・robots.txt AIクローラー最新化・llms.txt同期・CEO定例 2026-07-04）**
+- [x] **WebSite JSON-LD + SiteLinksSearchBox 追加（CTO_2026-07-19.md タスク1）** `CTO 2026-07-04実装完了`
+  - index.htmlに追加（SearchAction/EntryPoint連携・Google検索でのサイトリンク表示対応）
+- [x] **robots.txt AIクローラー設定最新化（CTO_2026-07-19.md タスク2）** `CTO 2026-07-04実装完了`
+  - GoogleExtended Allow / CCBot Allow / Bytespider Disallow 追加
+- [x] **llms.txt 2026-07-17〜19実装内容反映（CTO_2026-07-19.md タスク3）** `CTO 2026-07-04実装完了`
+  - WebPage JSON-LD・HowTo JSON-LD・WebSite JSON-LD・Organization JSON-LD・ItemList JSON-LD・canonical URL・robots.txt更新内容を反映
+- [x] **sitemap.xml lastmod更新 index.html → 2026-07-04（CTO_2026-07-19.md タスク4）** `CTO 2026-07-04確認済み（既に2026-07-04設定済み）`
 - [x] **SNS_2026-07-15.md 作成完了（次回SNS指示書：10-25・10-26・2029/10/29〜11/04バッチ・CEO定例 2026-07-04）**
 
 - [x] **sns_原稿_2026-10-25.md 作成（月曜・最終面接後の過ごし方タイプ別フレーム）** `SNS担当 SNS_2026-07-15.md タスク1` ✅2026-07-04

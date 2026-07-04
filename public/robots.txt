@@ -20,6 +20,15 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
+User-agent: GoogleExtended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Disallow: /
+
 # 重複コンテンツの防止（旧ページ）
 User-agent: *
 Disallow: /type-strategy.html
