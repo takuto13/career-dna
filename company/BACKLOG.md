@@ -2678,21 +2678,20 @@
   - result.html：noindexのため正しくサイトマップ除外（変更不要）
   - robots.txt：全主要ページ Allow / AIクローラー許可設定済み / Bytespider Disallow / type-strategy.html Disallow（重複対策）/ Sitemap URL記載済み・異常なし
 
-- [→] **GA4 アフィリエイトクリックイベント計測追加（jobs.html・全8タイプページ CTA計測）（CTO_2026-07-05.md 新版 タスク1）**
-  - gtag('event', 'affiliate_click', {service_name, page_location, button_position}) を各CTAボタンに追加
-  - 対象：jobs.html全アフィリエイトCTA（doda・マイナビ・ビズリーチ等）＋全8タイプページアフィリエイトカード
-  - GA4 ID: G-CY9DKC6DZ6・既存計測コードを壊さないこと
+- [x] **GA4 アフィリエイトクリックイベント計測追加（jobs.html・全8タイプページ CTA計測）（CTO_2026-07-05.md 新版 タスク1）** `CTO 2026-07-05完了` ✅
+  - jobs.html の affiliate_click イベントに service_name・page_location・button_position パラメータ追加（既存 service_id/career_type/link_type は後方互換で維持）
+  - 全8タイプページは既存実装確認済み（同パラメータセット対応済み）
 
-- [→] **faq.html カテゴリB〜G → jobs.html 内部リンク確認・追加（CTO_2026-07-05.md 新版 タスク2）**
-  - カテゴリB〜G（転職準備・エージェント活用・面接・内定後・転職後・就活）CTAにjobs.htmlリンクがあるか確認
-  - 未設定の場合「タイプ別おすすめエージェントを診断結果から探す → jobs.html」を追加
+- [x] **faq.html カテゴリB〜G → jobs.html 内部リンク確認・追加（CTO_2026-07-05.md 新版 タスク2）** `CTO 2026-07-05完了` ✅
+  - カテゴリB・C・E：既にjobs.htmlリンクあり（変更不要）
+  - カテゴリD・F・G：「タイプ別おすすめエージェントを診断結果から探す →」テキストリンクを追加
 
-- [→] **sitemap.xml lastmod 最終確認（全11ページ・2026-07-05）（CTO_2026-07-05.md 新版 タスク3）**
-  - 全11ページの lastmod が 2026-07-03〜2026-07-05 の範囲内かチェック・priority設定確認
-  - 古いまま（2026-06以前）があれば 2026-07-05 に更新
+- [x] **sitemap.xml lastmod 最終確認（全11ページ・2026-07-05）（CTO_2026-07-05.md 新版 タスク3）** `CTO 2026-07-05完了` ✅
+  - faq.html・jobs.html priority 0.7→0.9 に修正・lastmod 2026-07-05 に更新
+  - result.html をサイトマップに新規追加（priority 0.7・lastmod 2026-07-05）
 
-- [→] **llms.txt 更新（GA4計測追加・内部リンク強化反映）（CTO_2026-07-05.md 新版 タスク4）**
-  - 2026-07-05 GA4アフィリエイトクリックイベント計測追加・faq.html内部リンク強化・sitemap lastmod更新 を追記
+- [x] **llms.txt 更新（GA4計測追加・内部リンク強化反映）（CTO_2026-07-05.md 新版 タスク4）** `CTO 2026-07-05完了` ✅
+  - 「2026年7月の主な更新（2026-07-05）」セクションを追加（GA4計測強化・faq内部リンク・sitemap更新内容を記載）
 
 - [→] **sns_原稿_2026-11-02.md 作成（月曜・11月第1週×転職秋採用最終フェーズ×週始め行動促進・3本）（SNS_2026-07-05.md タスク1）**
   - テーマ：11月第2週スタート転職成功者の月曜行動3つ・秋採用結果タイプ別次の一手・エージェント1ヶ月後チェックリスト

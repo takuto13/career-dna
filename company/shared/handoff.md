@@ -8,6 +8,24 @@
 
 ## 次セッションへの引継ぎ：あり
 
+### 2026-07-05 CTO定例完了タスク（runnow・CTO_2026-07-05.md実行）
+
+- jobs.html GA4 affiliate_click イベント強化：service_name・page_location・button_position パラメータ追加 ✅
+- faq.html カテゴリD・F・G → jobs.html テキストリンク追加（カテゴリB・C・E は既存で対応済み確認） ✅
+- sitemap.xml：faq.html/jobs.html priority 0.9に修正・result.html 新規追加 ✅
+- llms.txt：2026-07-05更新セクション追加 ✅
+- BACKLOG.md：タスク1〜4を [x] に更新 ✅
+- CTO_2026-07-05.md → company/archive/ にアーカイブ ✅
+- git commit/push ✅
+
+**FAQ STOP ORDER継続中：** faq.html 319問体制・タイプページ 98問体制（Issue #9）
+
+**次回競合調査：** 2026-07-15（前回2026-07-08から7日後）
+
+**次回CTO実行待ちタスク：**
+- CTO_2026-07-09.md〜07-13.md：各種SEO施策（順次実行）
+- CTO_2026-07-10.md〜07-13.md のFAQ追加タスクはFAQ STOP ORDER中（BLOCKED）
+
 ### 2026-07-05 CEO定例完了タスク（runnow・定例セッション）
 
 - GitHub Issues確認：6件オープン（全件 `owner` ラベル）・新規指示なし ✅
@@ -18,19 +36,10 @@
 - BACKLOG.md更新（[→]7件追加） ✅
 - git commit/push ✅
 
-**SNSチェーン（本セッション完了後）：**
-- SNS日次：〜2026-11-01完成
-- 2029年バッチ：〜2029/11/25完成
-- 次回作成ターゲット：sns_原稿_2026-11-02.md / sns_原稿_2026-11-03.md / x-posts/2026-08-11_SNS_バッチ_原稿.md
-
-**FAQ STOP ORDER継続中：** faq.html 319問体制・タイプページ 98問体制（Issue #9）
-
-**次回競合調査：** 2026-07-15（前回2026-07-08から7日後）
-
-**次回CTO実行待ちタスク：**
-- CTO_2026-07-05.md 新版：GA4計測追加・faq内部リンク・sitemap確認（最優先）
-- CTO_2026-07-09.md〜07-13.md：各種SEO施策（順次実行）
-- CTO_2026-07-10.md〜07-13.md のFAQ追加タスクはFAQ STOP ORDER中（BLOCKED）
+**SNSチェーン（2026-07-05 SNS担当定例完了後）：**
+- SNS日次：〜2026-11-03完成
+- 2029年バッチ：〜2029/12/02完成
+- 次回作成ターゲット：sns_原稿_2026-11-04.md / sns_原稿_2026-11-05.md / x-posts/2026-08-11_SNS_バッチ_原稿.md（12/03〜12/09）
 
 ---
 
