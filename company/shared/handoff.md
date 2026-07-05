@@ -8,6 +8,26 @@
 
 ## 次セッションへの引継ぎ：あり
 
+### 2026-07-05 CTO定例完了タスク（runnow・CTO_2026-07-22.md前倒し実行）
+
+- index.html：SEOパラグラフ追加（転職タイプ診断・向いてる仕事診断・AI自己分析登録不要 KW） ✅
+- jobs.html：SEOパラグラフ追加（タイプ別転職エージェントおすすめ・転職エージェント比較無料 KW） ✅
+- 全8タイプページ：SEOイントロテキスト追加（type-hero-catch直後・白文字65%透明） ✅
+- sitemap.xml：index.html・全8タイプページ lastmod を2026-07-05に更新 ✅
+- llms.txt：「2026年7月の主な更新（2026-07-05）」セクション追加 ✅
+- BACKLOG.md：CTO_2026-07-22.md タスクを [x] に更新 ✅
+- CTO_2026-07-22.md → company/archive/ にアーカイブ ✅
+- git commit/push ✅
+
+**FAQ STOP ORDER継続中：** faq.html 319問体制・タイプページ 98問体制（Issue #9）
+**BLOCKED：** CTO_2026-07-10〜07-13.md（FAQ追加タスク・STOP ORDER解除まで待機）
+
+**次回競合調査：** 2026-07-15（前回2026-07-08から7日後）
+
+**たくとへのエスカレーション継続：** キャリア協会掲載申請（最優先被リンク施策）
+
+---
+
 ### 2026-07-05 CTO定例完了タスク（runnow・CTO_2026-07-05.md実行）
 
 - jobs.html GA4 affiliate_click イベント強化：service_name・page_location・button_position パラメータ追加 ✅
