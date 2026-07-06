@@ -2761,11 +2761,11 @@
 
 - [x] **CTO_2026-07-06.md タスク5: Search Console クロール申請手順書作成（たくと向け）** `CTO 2026-07-06実装完了` ✅
 
-- [→] **CTO_2026-07-23.md 実施（SoftwareApplication JSON-LD追加・result.html SEO確認・llms.txt検証・sitemap最終確認）** `CTO 2026-07-23実施予定`
-  - タスク1: index.htmlにSoftwareApplication JSON-LD追加
-  - タスク2: result.html SEOメタタグ確認・修正
-  - タスク3: llms.txt統計精度確認（319問・98問）
-  - タスク4: sitemap.xml全ページ確認・lastmod確認
+- [x] **CTO_2026-07-23.md 実施（SoftwareApplication JSON-LD追加・result.html SEO確認・llms.txt検証・sitemap最終確認）** `CTO 2026-07-06前倒し実装完了` ✅
+  - タスク1: index.htmlにSoftwareApplication JSON-LD追加 ✅
+  - タスク2: result.html SEOメタタグ確認（title/description/canonical/OGP 全実装済み・変更なし）✅
+  - タスク3: llms.txt更新（SoftwareApplication追加反映）✅
+  - タスク4: sitemap.xml全ページ確認（12ページ完備・lastmod確認）✅
 
 - [x] **SNS_2026-07-06.md タスク1: sns_原稿_2026-11-15〜11-17（3本作成）** `完了 2026-07-06` ✅
   - 11/15日・11/16月・11/17火のテーマ設定済み

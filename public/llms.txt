@@ -500,6 +500,8 @@
 - 全8タイプページ：秋採用・秋転職シーズンSEOテキスト追加（9月・10月転職活動KW対応）
 - index.html：秋採用SEOパラグラフ追加（秋採用 転職 タイプ診断・10月入社 逆算スケジュール KW先取り）
 - jobs.html：秋採用シーズン特集セクション追加（秋採用 転職エージェント タイプ別・9月転職 エージェント おすすめ KW対応）
+- index.html：SoftwareApplication JSON-LD追加（診断ツールとしての構造化データ強化・Google AI Overview・リッチリザルト対応）
+- result.html：SEOメタタグ（title・meta description・canonical・OGP）確認完了（変更なし・既実装済み）
 - sitemap.xml lastmod 更新（index.html / jobs.html / 全8タイプページ → 2026-07-06）
 
 ## 2026年6月の主な更新
