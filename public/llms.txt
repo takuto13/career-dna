@@ -495,6 +495,13 @@
 - 全8タイプページ → jobs.html アンカーテキスト最適化（タイプ固有KW対応）
 - sitemap.xml lastmod 更新（index.html / faq.html / jobs.html / 全8タイプページ → 2026-07-01）
 
+## 2026年7月6日の主な更新
+
+- 全8タイプページ：秋採用・秋転職シーズンSEOテキスト追加（9月・10月転職活動KW対応）
+- index.html：秋採用SEOパラグラフ追加（秋採用 転職 タイプ診断・10月入社 逆算スケジュール KW先取り）
+- jobs.html：秋採用シーズン特集セクション追加（秋採用 転職エージェント タイプ別・9月転職 エージェント おすすめ KW対応）
+- sitemap.xml lastmod 更新（index.html / jobs.html / 全8タイプページ → 2026-07-06）
+
 ## 2026年6月の主な更新
 
 - 全11ページのtitle・meta description SEO最適化（2026-06-29）
