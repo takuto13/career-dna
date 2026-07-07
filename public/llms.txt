@@ -503,7 +503,9 @@
 - sitemap.xml：faq.html lastmod → 2026-07-07
 - 全11ページ title・meta description SEO最適化（index.html「無料AI転職・就活診断 | 25問でわかる強みとキャリアタイプ」・faq.html「転職活動のよくある質問」・jobs.html「あなたに合うエージェントを診断」・全8タイプページ「向いてる仕事・転職戦略まとめ」format統一）
 - 全8タイプページ：Article JSON-LD dateModified → 2026-07-07（戦略家・分析者・職人・調整役・挑戦者・表現者・守護者・育成者）
-- sitemap.xml：index.html / jobs.html / 全8タイプページ lastmod → 2026-07-07
+- type-strategist.html / type-craftsman.html：Article JSON-LD dateModified → 2026-07-07（旧2026-07-04から修正）
+- result.html：WebPage JSON-LD追加（BreadcrumbList・isPartOf WebSite構造化データ・AI検索エンジン参照強化）
+- sitemap.xml：index.html / jobs.html / 全8タイプページ / result.html lastmod → 2026-07-07
 
 ## 2026年7月6日の主な更新
 
