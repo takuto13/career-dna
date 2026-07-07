@@ -495,6 +495,13 @@
 - 全8タイプページ → jobs.html アンカーテキスト最適化（タイプ固有KW対応）
 - sitemap.xml lastmod 更新（index.html / faq.html / jobs.html / 全8タイプページ → 2026-07-01）
 
+## 2026年7月7日の主な更新
+
+- faq.html：FAQPage JSON-LD確認（既存@graph内に全7カテゴリ・319問以上のFAQPageスキーマ実装済み・Googleリッチリザルト対応）
+- faq.html：内部リンク深化確認（全8タイプページへの文脈リンク既実装済み・各タイプ15〜31リンク）
+- faq.html：Article JSON-LD dateModified → 2026-07-07
+- sitemap.xml：faq.html lastmod → 2026-07-07
+
 ## 2026年7月6日の主な更新
 
 - 全8タイプページ：秋採用・秋転職シーズンSEOテキスト追加（9月・10月転職活動KW対応）
