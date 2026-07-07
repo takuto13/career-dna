@@ -42,7 +42,26 @@
 
 ---
 
-### 2026-07-07 CTO定例完了タスク
+### 2026-07-07 CTO定例完了タスク（第2セッション・CTO_2026-07-08.md前倒し実行）
+
+- 全11ページ title・meta description SEO最適化（CTO_2026-07-08.md タスク1） ✅
+  - index.html：「無料AI転職・就活診断 | 25問でわかる強みとキャリアタイプ | キャリアDNA」
+  - faq.html：「転職・就活FAQ 319問以上 | 転職活動のよくある質問 | キャリアDNA 無料診断」
+  - jobs.html：「タイプ別おすすめ転職エージェント比較 | あなたに合うエージェントを診断 | キャリアDNA」
+  - 全8タイプページ：「[タイプ名]タイプ｜向いてる仕事・転職戦略まとめ | キャリアDNA 無料診断」format統一
+- 全8タイプページ Article JSON-LD dateModified → 2026-07-07 更新 ✅
+- sitemap.xml index.html / jobs.html / 全8タイプページ lastmod → 2026-07-07 更新 ✅
+- llms.txt 2026年7月7日の更新セクションに追記（title/meta最適化・dateModified更新記録） ✅
+- CTO_2026-07-08.md → company/archive/ アーカイブ（正しい版で上書き） ✅
+- canonical URL確認：全ページ非wwwで統一済み（www指定は不採用・一貫性優先） ✅
+- git commit/push ✅
+
+**注意：CTO_2026-07-08.md の「www.career-dna.jp」canonical指定は不採用。全ページ「https://career-dna.jp/」で統一済み。**
+
+**⚠️ たくとへのエスカレーション：**
+- Google Search Console クロール申請（11ページ変更・title/meta変更をGoogleに通知）推奨
+
+### 2026-07-07 CTO定例完了タスク（第1セッション・CTO_2026-07-07.md実行）
 
 - faq.html FAQPage JSON-LD確認（既存@graph内に全7カテゴリ319問以上実装済み・新規追加不要） ✅
 - faq.html 内部リンク深化確認（全8タイプページへの文脈リンク既実装済み・各タイプ15〜31リンク） ✅
