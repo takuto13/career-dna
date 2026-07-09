@@ -499,6 +499,9 @@
 
 - result.html：診断完了後のアフィリエイトCTAボタン「このタイプに合う求人を見る」に GA4 `result_to_jobs_click` イベント追加（career_type・page_location・button_position='result_main_cta' パラメータ）。診断完了→jobs.html遷移ファネルの計測漏れを修正
 - sitemap.xml：result.html lastmod → 2026-07-09
+- index.html：SoftwareApplication JSON-LDにdatePublished・dateModified追加（SEO鮮度シグナル強化・AI検索エンジンへの更新頻度シグナル）
+- index.html：転職エージェント登録前提診断との差別化SEOテキスト追加（新競合対策・「AI診断 登録不要」「転職エージェント 登録不要 AI診断 比較」KW狙い・jobs.html内部リンク強化）
+- sitemap.xml：index.html lastmod → 2026-07-09
 
 ## 2026年7月7日の主な更新
 

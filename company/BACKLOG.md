@@ -2887,3 +2887,10 @@
   - FAQ検索機能・7カテゴリ別ピックアップ5問+もっと見る+CTA → 2026-07-07 CTO実装済み ✅
   - タイプページFAQ 3問+もっと見る（広告下配置） → 2026-07-07 CTO実装済み ✅
   - CTO_2026-07-09.md を正式な指示書として保存（Issue #14との対応記録）
+
+- [x] **CTO 自律業務 2026-07-09（第2セッション）: index.html SEO強化・llms.txt更新** `CTO 2026-07-09 実行完了` ✅
+  - index.html：SoftwareApplication JSON-LDにdatePublished/dateModified追加（SEO鮮度シグナル）
+  - index.html：転職エージェント登録前提診断との差別化SEOテキスト追加（「AI診断 登録不要」KW・jobs.html内部リンク）
+  - sitemap.xml：index.html lastmod → 2026-07-09
+  - llms.txt：2026-07-09セクションに上記変更内容を追記
+  - CTO_2026-07-09.md → company/archive/CTO_2026-07-09_issue14.md にアーカイブ
