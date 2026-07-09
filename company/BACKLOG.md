@@ -645,6 +645,21 @@
 
 - [x] **sitemap.xml更新（faq.html + 全8タイプページ lastmod 2026-07-09）（CTO_2026-07-09.md タスク4）** `2026-07-09 CTO自律実装完了`
 
+- [x] **result.html：アフィリエイトCTA「このタイプに合う求人を見る」GA4計測追加（Issue #15 対応）** `CTO定例 2026-07-09 完了`
+  - `result_to_jobs_click` イベント新設（career_type・page_location・button_position='result_main_cta' パラメータ）
+  - 診断完了→jobs.html遷移のファネル中間ステップが初めて計測可能に（今まで完全に計測漏れだった最重要CVポイント）
+  - GA4 Explore: Events → result_to_jobs_click で career_type別遷移率が確認できる
+  - Issue #15 CVR期待値分析（GitHub API 403のためBACKLOGに記録）：
+    - result.html（最高意図）: jobs.html遷移率 **20〜35%**（診断完了直後の最高関与状態）
+    - jobs.html（CV直前）: アフィリエイトCTR 3〜8%/カード、合計 6〜24%
+    - タイプページ（オーガニック流入）: 直接CTR 1〜3%、jobs.html誘導 3〜8%
+    - faq.html（情報収集）: jobs.html誘導 0.5〜2%
+    - GA4確認指標：affiliate_click（service_name/career_type別）・result_to_jobs_click・scroll_depth
+
+- [x] **sitemap.xml：result.html lastmod → 2026-07-09** `CTO定例 2026-07-09 完了`
+
+- [x] **llms.txt：2026年7月9日の主な更新セクション追加** `CTO定例 2026-07-09 完了`
+
 - [x] **faq.html Q317〜Q319追加（316問→319問体制）（2026-06-28 CTO自律実装完了）**
   - Q317: 転職活動でWantedly・LinkedIn・X（SNS）をタイプ別に最大活用する方法（2026年AI時代版）（KW: 転職 SNS 活用 Wantedly LinkedIn タイプ別 / 転職 SNS スカウト 活用 2026）
   - Q318: 異業種転職・キャリアチェンジに向いているタイプと成功するポータブルスキルの見極め方（KW: 異業種転職 キャリアチェンジ 向いてる タイプ別 / 異業種転職 成功 ポイント タイプ診断）

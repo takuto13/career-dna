@@ -254,6 +254,13 @@
           const typeName =
             document.getElementById("type-name")
             .textContent;
+          if (typeof gtag === 'function') {
+            gtag('event', 'result_to_jobs_click', {
+              career_type: typeName,
+              page_location: window.location.href,
+              button_position: 'result_main_cta'
+            });
+          }
           window.location.href =
             "jobs.html?type=" +
             encodeURIComponent(typeName);
