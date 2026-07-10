@@ -670,7 +670,7 @@
           if (!link) return;
           var card = link.closest('.ad-card');
           if (!card) return;
-          gtag('event', 'affiliate_click', { service_id: card.dataset.cardId || '', career_type: '戦略', link_type: link.closest('.ad-banner-wrap') ? 'banner' : 'text' });
+          gtag('event', 'affiliate_click', { service_id: card.dataset.cardId || '', service_name: card.dataset.cardId || '', career_type: '戦略', link_type: link.closest('.ad-banner-wrap') ? 'banner' : 'text', page_location: window.location.href, button_position: 'type_page' });
         });
       }
     })();

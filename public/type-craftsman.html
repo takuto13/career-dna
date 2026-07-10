@@ -1187,8 +1187,11 @@
           if (!card) return;
           gtag('event', 'affiliate_click', {
             service_id: card.dataset.cardId || '',
+            service_name: card.dataset.cardId || '',
             career_type: '職人',
-            link_type: link.closest('.ad-banner-wrap') ? 'banner' : 'text'
+            link_type: link.closest('.ad-banner-wrap') ? 'banner' : 'text',
+            page_location: window.location.href,
+            button_position: 'type_page'
           });
         });
       }

@@ -36,6 +36,38 @@
 
 ---
 
+## 次セッションへの引継ぎ：あり（2026-07-10 CTO定例完了）
+
+### 2026-07-10 CTO runnow定例 完了タスク（CTO_2026-07-14.md 前倒し実行）
+
+- CTO_2026-07-10.md：FAQ追加タスク → BLOCKED（Issue #9 STOP ORDER継続・アーカイブ済み） ✅
+- GA4 affiliate_click コード監査：全8タイプページに `service_name`・`page_location`・`button_position: 'type_page'` パラメータ追加 ✅
+  - 修正ファイル: type-strategist / type-craftsman / type-mediator / type-challenger / type-analyst / type-creator / type-guardian / type-nurturer（全8件）
+  - jobs.html 実装水準に完全統一完了
+- result.html CTA現状確認レポート作成 → company/reports/2026-07-14_result_CTA_report.md ✅
+  - CTA 1本（フォールド下・button_position: result_main_cta）・GA4実装済み確認
+  - CVR改善アイデア（フォールド上CTA追加等）→ たくとへ報告
+- sitemap.xml：全8タイプページ lastmod → 2026-07-10 更新 ✅
+- llms.txt：2026-07-10 更新セクション追加（GA4パラメータ統一・sitemap更新） ✅
+- BACKLOG.md：CTO_2026-07-14.md タスク1〜4 [x]化 ✅
+- git commit/push ✅
+
+**⚠️ たくとへのエスカレーション（CTO 2026-07-10）：**
+- result.html CTA改善: フォールド上部へのCTA追加・ボタン本数追加（承認要・reports/2026-07-14_result_CTA_report.md 参照）
+- Google Search Console クロール申請（全8タイプページ GA4パラメータ追加・2026-07-10実施分）
+- キャリア協会掲載申請（最高ROI被リンク・継続エスカレーション）
+- GitHub Issues #9・#14・#12 手動クローズ検討
+
+**次回CTO実行待ちタスク：**
+- CTO_2026-07-10.md〜07-13.md：FAQ追加タスク → BLOCKED（Issue #9 STOP ORDER解除待ち）
+- CTO_2026-07-15.md：競合調査（2026-07-15実施予定）
+
+**FAQ STOP ORDER継続中：** faq.html 319問・タイプページ 98問体制
+
+**次回競合調査：** 2026-07-15（前回2026-07-08から7日後・必須実施）
+
+---
+
 ## 次セッションへの引継ぎ：あり（2026-07-09 CTO定例完了）
 
 ### 2026-07-09 CTO runnow定例 完了タスク

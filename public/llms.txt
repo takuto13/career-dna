@@ -495,6 +495,11 @@
 - 全8タイプページ → jobs.html アンカーテキスト最適化（タイプ固有KW対応）
 - sitemap.xml lastmod 更新（index.html / faq.html / jobs.html / 全8タイプページ → 2026-07-01）
 
+## 2026年7月10日の主な更新
+
+- 全8タイプページ（type-strategist / type-craftsman / type-mediator / type-challenger / type-analyst / type-creator / type-guardian / type-nurturer）：GA4 `affiliate_click` イベントに `service_name`・`page_location`・`button_position: 'type_page'` パラメータを追加（jobs.html の実装水準に統一。全ページでアフィリエイトクリック計測が完全一致）
+- sitemap.xml：全8タイプページ lastmod → 2026-07-10
+
 ## 2026年7月9日の主な更新
 
 - result.html：診断完了後のアフィリエイトCTAボタン「このタイプに合う求人を見る」に GA4 `result_to_jobs_click` イベント追加（career_type・page_location・button_position='result_main_cta' パラメータ）。診断完了→jobs.html遷移ファネルの計測漏れを修正
