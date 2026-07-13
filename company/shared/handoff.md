@@ -6,6 +6,35 @@
 
 ---
 
+## 次セッションへの引継ぎ：あり（2026-07-13 CTO定例完了）
+
+### 2026-07-13 CTO runnow定例 完了タスク
+
+- GitHub Issues確認（8件・全件owner・FAQ STOP ORDER #9 継続） ✅
+- CTO_2026-07-13.md タスク1：実施確認（CTO_2026-07-08.md前倒し・2026-07-07完了済み） ✅
+- CTO_2026-07-13.md タスク2（FAQ Q329〜Q331追加）：BLOCKED（Issue #9 FAQ STOP ORDER） ✅
+- CTO_2026-07-13.md タスク3（全8タイプページ Q102追加）：BLOCKED（Issue #9） ✅
+- CTO_2026-07-13.md タスク4（llms.txt・sitemap.xml更新）：BLOCKED（タスク2・3依存） ✅
+- CTO_2026-07-13.md → company/archive/CTO_2026-07-13_archived.md アーカイブ ✅
+- サイト変更なし（FAQ STOP ORDER継続のため）
+
+**⚠️ たくとへのエスカレーション（CTO 2026-07-13・継続中）：**
+- GitHub Issue #9（FAQ STOP ORDER）：解除タイミング要判断 — CTO_2026-07-10〜07-13.md のFAQ追加タスク全BLOCKED中
+- result.html CTA改善：フォールド上部へのCTA追加（承認要・reports/2026-07-14_result_CTA_report.md 参照）
+- Google Search Console クロール申請（全8タイプページ GA4パラメータ追加・2026-07-10実施分）
+- キャリア協会掲載申請（最高ROI被リンク・継続エスカレーション）
+
+**次回CTO実行待ちタスク：**
+- CTO_2026-07-10.md〜07-13.md：FAQ追加タスク → BLOCKED（Issue #9 STOP ORDER解除待ち）
+- CTO_2026-07-14.md：全タスク2026-07-10前倒し実施済み ✅
+- CTO_2026-07-15.md：競合調査（2026-07-15実施予定・必須）
+
+**FAQ STOP ORDER継続中：** faq.html 319問・タイプページ 3問/ページ体制
+
+**次回競合調査：** 2026-07-15（前回2026-07-08から7日後・必須実施）
+
+---
+
 ## 次セッションへの引継ぎ：あり（2026-07-12 CEO定例完了・第3セッション）
 
 ### 2026-07-12 AI CEO定例 第3セッション 完了タスク

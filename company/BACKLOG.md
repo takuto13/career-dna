@@ -2965,3 +2965,11 @@
 
 - [→] **SNS担当定例 2026-07-11: sns_原稿_2026-12-16.md・12-17.md・x-posts/2026-08-24_SNS_バッチ_原稿.md 作成** `SNS_2026-07-11.md 参照`
   - 師走第3週水木・内定後年収交渉・就活12月・2030/03/06〜03/12 バッチ
+
+- [x] **CTO定例 2026-07-13 実施確認** `CTO 2026-07-13` ✅
+  - タスク1（title/meta SEO最適化）：CTO_2026-07-08.md前倒し実施済み確認（2026-07-07完了）
+  - タスク2（FAQ Q329〜Q331追加）：BLOCKED（Issue #9 FAQ STOP ORDER）
+  - タスク3（全8タイプページ FAQ Q102追加）：BLOCKED（Issue #9 FAQ STOP ORDER）
+  - タスク4（llms.txt・sitemap.xml更新）：BLOCKED（タスク2・3依存）
+  - CTO_2026-07-13.md → company/archive/CTO_2026-07-13_archived.md アーカイブ ✅
+  - サイト変更なし（FAQ STOP ORDERのため）
