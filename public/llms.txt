@@ -538,6 +538,12 @@
 - 内部リンク強化（faq.html ↔ タイプページ ↔ jobs.html）
 - BreadcrumbList JSON-LD 全ページ追加確認済み
 
+## 2026年7月15日の主な更新
+
+- jobs.html：10月入社転職逆算スケジュール追加（秋採用 9月 10月入社 逆算 KW）
+- index.html：秋採用SEOパラグラフ追記（9月転職 タイプ別 エージェント KW）
+- 全8タイプページ：秋採用SEO追記（秋採用 10月入社 タイプ別 KW）
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
