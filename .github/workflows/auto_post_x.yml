@@ -1,0 +1,57 @@
+# X（Twitter）自動投稿ワークフロー
+# ステータス: 承認待ち（コメントアウト状態）
+# たくとの X API 申請完了後に有効化する
+#
+# 有効化手順:
+# 1. X Developer Portal でアプリ作成・API Key 取得
+# 2. GitHub Secrets に X_API_KEY / X_API_SECRET / X_ACCESS_TOKEN / X_ACCESS_TOKEN_SECRET を設定
+# 3. このファイルの "# DISABLED:" コメントを外して on: セクションを有効化
+# 4. git push → GitHub Actions で動作確認
+#
+# 設計書: company/reports/x_auto_post_design_2026-07-13.md
+# 投稿ルール: company/shared/x-posting-rules.md
+
+# DISABLED: 承認待ちのため on: セクションをコメントアウト
+# on:
+#   schedule:
+#     # 毎日 23:00 UTC（= 翌朝 8:00 JST）に実行
+#     - cron: '0 23 * * *'
+#   workflow_dispatch:  # 手動実行も可能
+
+# 有効化時はこちらに差し替える:
+on:
+  workflow_dispatch:  # 手動実行のみ（テスト用）
+
+jobs:
+  post_to_x:
+    runs-on: ubuntu-latest
+    # DISABLED: 本番稼働開始まで実際の投稿は行わない
+    # 有効化するには以下の if 行を削除する
+    if: false  # 承認前は実行しない
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存ライブラリのインストール
+        run: pip install tweepy
+
+      - name: X へ投稿
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+        run: python scripts/post_to_x.py
+
+      - name: 投稿ログをコミット
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git add company/x-posts/posted_log.md company/x-posts/auto_post_report_*.md || true
+          git diff --staged --quiet || git commit -m "自動投稿ログ更新 $(date +%Y-%m-%d)"
+          git push || true
