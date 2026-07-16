@@ -17,10 +17,11 @@
 
 ###  最優先（今週中）
 
-- [→] **CTO_2026-07-18.md jobs.html SEO強化・全8タイプtitle最適化** `CTO 担当`
+- [→] **CTO_2026-07-18.md jobs.html SEO強化・全8タイプtitle最適化・X自動投稿スクリプト整備** `CTO 担当`
   - タスク1: jobs.html title/meta description最適化（「タイプ別おすすめ転職エージェント比較」KW追加・Issue #7）
   - タスク2: 全8タイプページ title統一最適化（「転職・向いてる仕事」KW含む統一フォーマット・Issue #7）
-  - タスク3: sitemap.xml lastmod更新 + llms.txt整合確認
+  - タスク3: X自動投稿スクリプト（scripts/post_to_x.py）にガイドライン・バリデーション機能追加（Issue #16）
+  - タスク4: sitemap.xml lastmod更新 + llms.txt整合確認
 
 - [x] **SNS_2026-07-18.md 2026-08-17〜18日次＋2030/04バッチ第4週** `SNS担当 2026-07-16完了`
   - タスク1: sns_原稿_2026-08-17.md（お盆明け月曜×秋採用本格化・3本）✅2026-07-16
