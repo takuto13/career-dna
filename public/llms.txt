@@ -542,7 +542,9 @@
 
 - 全8タイプページ：アフィリエイトセクション直後にjobs.html誘導テキストリンク追加（タイプ別アンカーテキスト・内部リンク強化・jobs.htmlのSEOページランク向上）
 - index.html：meta description / og:description 更新（「AI転職相談」「転職AI」KW対応・新競合「転職AI（tensyokuai.co.jp）」への差別化KW盛り込み）
-- sitemap.xml：index.html・全8タイプページ lastmod → 2026-07-16
+- jobs.html：title / meta description SEO最適化（「タイプ別おすすめ転職エージェント比較【キャリアDNA 無料AI診断】」・AI診断・8タイプ別・ビズリーチ等KW対応）
+- 全8タイプページ：title統一最適化（「[タイプ名]の転職・向いてる仕事【キャリアDNA 8タイプ診断】」形式に変更・「転職」「向いてる仕事」KWを全タイプtitleに明示）
+- sitemap.xml：index.html・全8タイプページ・jobs.html lastmod → 2026-07-16
 
 ## 2026年7月15日の主な更新
 
