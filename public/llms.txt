@@ -538,6 +538,12 @@
 - 内部リンク強化（faq.html ↔ タイプページ ↔ jobs.html）
 - BreadcrumbList JSON-LD 全ページ追加確認済み
 
+## 2026年7月16日の主な更新
+
+- 全8タイプページ：アフィリエイトセクション直後にjobs.html誘導テキストリンク追加（タイプ別アンカーテキスト・内部リンク強化・jobs.htmlのSEOページランク向上）
+- index.html：meta description / og:description 更新（「AI転職相談」「転職AI」KW対応・新競合「転職AI（tensyokuai.co.jp）」への差別化KW盛り込み）
+- sitemap.xml：index.html・全8タイプページ lastmod → 2026-07-16
+
 ## 2026年7月15日の主な更新
 
 - jobs.html：10月入社転職逆算スケジュール追加（秋採用 9月 10月入社 逆算 KW）
