@@ -17,6 +17,17 @@
 
 ###  最優先（今週中）
 
+- [→] **CTO_2026-07-21.md キャリア協会依頼文更新・index.html差別化KW追加** `CTO担当`
+  - タスク1: company/requests/sns_キャリア協会依頼文.md を最新状態（FAQ319問・7カテゴリ・JSON-LD完備・秋採用コンテンツ追加）に更新
+  - タスク2: index.html SEOテキストに「スマホアプリ不要・ブラウザ完結」差別化KWを追加
+  - タスク3: sitemap.xml index.html lastmod → 2026-07-21・llms.txt更新
+
+- [→] **SNS_2026-07-21.md 2027-01-13〜15日次 + 2030/05/22〜05/28バッチ** `SNS担当`
+  - タスク1: sns_原稿_2027-01-13.md（水・連休後2日目・職場違和感再燃・3本）
+  - タスク2: sns_原稿_2027-01-14.md（木・面接準備タイプ別Tips・3本）
+  - タスク3: sns_原稿_2027-01-15.md（金・週末転職活動vs休息タイプ別・3本）
+  - タスク4: x-posts/2026-09-04_SNS_バッチ_原稿.md（2030/05/22〜05/28・内定承諾後フェーズ・7本）
+
 - [x] **CTO_2026-07-20.md index.html JSON-LD追加・diagnosis.html OGP・result.html OGP確認** `CTO 2026-07-17完了`
   - タスク1: index.html WebSite + Organization JSON-LD → 既に @graph 形式で完備確認済み（追加不要）✅ 2026-07-17
   - タスク2: diagnosis.html OGP → diagnosis.htmlは存在しない（診断機能はindex.htmlに統合済み）・実行不可 ⚠️ たくとへ確認要
