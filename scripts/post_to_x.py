@@ -7,6 +7,21 @@ X（Twitter）自動投稿スクリプト
 たくとの X API 申請完了後に有効化する。
 設計書: company/reports/x_auto_post_design_2026-07-13.md
 投稿ルール: company/shared/x-posting-rules.md
+稼働手順書: company/reports/x_auto_post_setup_guide.md
+
+【必須環境変数】
+以下の環境変数を GitHub Secrets に設定すること（コードへの直書き禁止）。
+
+    X_API_KEY             = X Developer Portal の API Key
+    X_API_SECRET          = X Developer Portal の API Key Secret
+    X_ACCESS_TOKEN        = X Developer Portal の Access Token
+    X_ACCESS_TOKEN_SECRET = X Developer Portal の Access Token Secret
+
+スクリプト内での読み込み方法（os.getenv 使用例）:
+    api_key    = os.getenv("X_API_KEY")
+    api_secret = os.getenv("X_API_SECRET")
+    token      = os.getenv("X_ACCESS_TOKEN")
+    token_sec  = os.getenv("X_ACCESS_TOKEN_SECRET")
 """
 
 # ============================================================

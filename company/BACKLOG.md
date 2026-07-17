@@ -17,10 +17,10 @@
 
 ###  最優先（今週中）
 
-- [→] **CTO_2026-07-20.md index.html JSON-LD追加・diagnosis.html OGP・result.html OGP確認** `CEO 2026-07-17指示`
-  - タスク1: index.html WebSite + Organization JSON-LD追加（ブランドエンティティ認識強化）
-  - タスク2: diagnosis.html meta description + OGP最適化（SNSシェア流入強化）
-  - タスク3: result.html OGP確認・dateModified更新（バイラル流入促進）・git push
+- [x] **CTO_2026-07-20.md index.html JSON-LD追加・diagnosis.html OGP・result.html OGP確認** `CTO 2026-07-17完了`
+  - タスク1: index.html WebSite + Organization JSON-LD → 既に @graph 形式で完備確認済み（追加不要）✅ 2026-07-17
+  - タスク2: diagnosis.html OGP → diagnosis.htmlは存在しない（診断機能はindex.htmlに統合済み）・実行不可 ⚠️ たくとへ確認要
+  - タスク3: result.html OGP確認・twitter:title/description追加・WebPage dateModified追加・sitemap lastmod → 2026-07-17 ✅ 2026-07-17
 
 - [x] **SNS_2026-07-20.md 2027-01-10〜12日次＋2030/05バッチ第3週** `SNS担当 2026-07-17 第4セッション完了`
   - タスク1: sns_原稿_2027-01-10.md（成人の日・働く意味×DNA・3本）✅2026-07-17
@@ -29,10 +29,10 @@
   - タスク4: x-posts/2026-09-03_SNS_バッチ_原稿.md（2030/05/15〜05/21・GW後転職加速期・7本）✅2026-07-17
   - SNSカバレッジ：日次〜2027-01-12・2030バッチ〜2030/05/21
 
-- [→] **CTO_2026-07-19.md X自動投稿手順書・jobs.html JSON-LD・llms.txt確認** `CEO 2026-07-17指示`
-  - タスク1: company/reports/x_auto_post_setup_guide.md 作成（API取得〜稼働手順書・Issue #16）
-  - タスク2: jobs.html ItemList + BreadcrumbList JSON-LD追加 + sitemap.xml lastmod更新（Issue #7）
-  - タスク3: llms.txt整合確認・必要に応じ更新（全タイトル変更・meta変更を反映）
+- [x] **CTO_2026-07-19.md X自動投稿手順書・jobs.html JSON-LD・llms.txt確認** `CTO 2026-07-17完了`
+  - タスク1: company/reports/x_auto_post_setup_guide.md 作成・auto_post_x.yml cron 00:00 UTC（09:00 JST）更新・post_to_x.py 環境変数ドキュメント追加 ✅ 2026-07-17
+  - タスク2: jobs.html ItemList（8タイプ）+ 独立BreadcrumbList JSON-LD追加・WebPage JSON-LD名称修正・sitemap.xml lastmod → 2026-07-17 ✅ 2026-07-17
+  - タスク3: llms.txt確認・2026-07-17セクション追加（jobs.html/result.html/sitemap変更反映）✅ 2026-07-17
 
 - [x] **SNS_2026-07-19.md 2027-01-04〜06日次 + 2030/05バッチ第1週** `SNS担当 2026-07-17 第2セッション完了`
   - タスク1: sns_原稿_2027-01-04.md（仕事始め月曜・3本）✅2026-07-17

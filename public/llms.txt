@@ -546,6 +546,12 @@
 - 全8タイプページ：title統一最適化（「[タイプ名]の転職・向いてる仕事【キャリアDNA 8タイプ診断】」形式に変更・「転職」「向いてる仕事」KWを全タイプtitleに明示）
 - sitemap.xml：index.html・全8タイプページ・jobs.html lastmod → 2026-07-16
 
+## 2026年7月17日の主な更新
+
+- jobs.html：WebPage JSON-LD name・description 修正（「転職サービス」→「転職エージェント」に統一）・BreadcrumbList JSON-LD を独立ブロックとして追加・ItemList JSON-LD（8タイプ別ページへのリスト）を追加
+- result.html：Twitter Card タグ（twitter:title・twitter:description）追加・WebPage JSON-LD に dateModified 追加
+- sitemap.xml：index.html・jobs.html・result.html lastmod → 2026-07-17
+
 ## 2026年7月15日の主な更新
 
 - jobs.html：10月入社転職逆算スケジュール追加（秋採用 9月 10月入社 逆算 KW）
