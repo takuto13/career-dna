@@ -17,6 +17,17 @@
 
 ###  最優先（今週中）
 
+- [→] **CTO_2026-07-20.md index.html JSON-LD追加・diagnosis.html OGP・result.html OGP確認** `CEO 2026-07-17指示`
+  - タスク1: index.html WebSite + Organization JSON-LD追加（ブランドエンティティ認識強化）
+  - タスク2: diagnosis.html meta description + OGP最適化（SNSシェア流入強化）
+  - タスク3: result.html OGP確認・dateModified更新（バイラル流入促進）・git push
+
+- [→] **SNS_2026-07-20.md 2027-01-10〜12日次＋2030/05バッチ第3週** `CEO 2026-07-17指示`
+  - タスク1: sns_原稿_2027-01-10.md（成人の日・働く意味×DNA・3本）
+  - タスク2: sns_原稿_2027-01-11.md（成人の日連休最終日・明日から仕事感情転換・3本）
+  - タスク3: sns_原稿_2027-01-12.md（連休明け火曜・仕事しんどい×転職スタート・3本）
+  - タスク4: x-posts/2026-09-03_SNS_バッチ_原稿.md（2030/05/15〜05/21・GW後転職加速期・7本）
+
 - [→] **CTO_2026-07-19.md X自動投稿手順書・jobs.html JSON-LD・llms.txt確認** `CEO 2026-07-17指示`
   - タスク1: company/reports/x_auto_post_setup_guide.md 作成（API取得〜稼働手順書・Issue #16）
   - タスク2: jobs.html ItemList + BreadcrumbList JSON-LD追加 + sitemap.xml lastmod更新（Issue #7）
