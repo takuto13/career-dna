@@ -9,6 +9,20 @@ X（Twitter）自動投稿スクリプト
 投稿ルール: company/shared/x-posting-rules.md
 """
 
+# ============================================================
+# キャリアDNA X（Twitter）自動投稿スクリプト
+# ============================================================
+# 【投稿ガイドライン（Issue #16 たくと指示）】
+# NG: AIらしい言葉遣い（例：「〜ですよね。」「〜しましょう。」等の機械的な表現）
+# NG: 絵文字の多用（目安：1投稿あたり2個以内）
+# NG: 炎上が予想される言葉（政治・宗教・差別語等）
+# NG: 他社名・他サービス名を出す投稿
+# 要確認: 時事ネタを使う場合は事前にたくとへ確認が必要
+# 必須: 予約投稿した際は必ずたくとへ報告する
+# NG: ハッシュタグのつけすぎ（目安：1投稿あたり2個以内）
+# NG: 長文投稿（目安：140文字以内を厳守、最大でも200文字以内）
+# ============================================================
+
 import os
 import re
 import sys
@@ -132,6 +146,49 @@ def check_post(text: str) -> tuple[bool, str]:
             print(f"  ⚠️ AIっぽい表現検出（警告）: 「{expr}」")
 
     return True, ""
+
+
+def validate_post(text: str) -> tuple[bool, list[str]]:
+    """
+    投稿前にガイドライン違反がないかチェックする関数（Issue #16 対応）
+    check_post() の厳格ゲートとは別に、警告ベースでの事前スクリーニングに使用。
+
+    Returns:
+        (bool, list[str]) - (OKかどうか, 警告メッセージリスト)
+    """
+    warnings = []
+
+    # 文字数チェック（140文字以内が目安）
+    if len(text) > 200:
+        warnings.append(f"⚠️ 長文: {len(text)}文字（目安200文字以内）")
+    elif len(text) > 140:
+        warnings.append(f"ℹ️ やや長め: {len(text)}文字（目安140文字以内）")
+
+    # ハッシュタグ数チェック
+    hashtag_count = text.count('#')
+    if hashtag_count > 3:
+        warnings.append(f"⚠️ ハッシュタグ多すぎ: {hashtag_count}個（目安2個以内）")
+
+    # 絵文字数チェック（簡易版）
+    import unicodedata
+    emoji_count = sum(1 for c in text if unicodedata.category(c) == 'So')
+    if emoji_count > 4:
+        warnings.append(f"⚠️ 絵文字多すぎ: {emoji_count}個（目安2個以内）")
+
+    # AI的な言い回し警告（代表的なパターン）
+    ai_patterns = ['〜しましょう', '〜ですね。', '〜ですよね。', 'ぜひ活用', 'お役立て']
+    for pattern in ai_patterns:
+        if pattern in text:
+            warnings.append(f"⚠️ AI的な表現の可能性: 「{pattern}」")
+
+    # 他社名チェック（主要競合を事故防止のためチェック）
+    competitor_keywords = ['リクナビ', 'マイナビ転職', 'doda', 'ビズリーチ', 'Indeed', 'エン転職']
+    for kw in competitor_keywords:
+        if kw in text:
+            warnings.append(f"⚠️ 他社名の可能性: 「{kw}」→ 削除を検討してください")
+
+    is_ok = len([w for w in warnings if w.startswith('⚠️')]) == 0
+    return is_ok, warnings
 
 
 def post_to_x(text: str) -> bool:

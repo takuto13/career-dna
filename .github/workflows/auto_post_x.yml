@@ -2,6 +2,20 @@
 # ステータス: 承認待ち（コメントアウト状態）
 # たくとの X API 申請完了後に有効化する
 #
+# 【Issue #16 対応状況】
+# 投稿ガイドライン（AIっぽさ禁止・絵文字制限・ハッシュタグ制限・140文字以内）は
+# scripts/post_to_x.py の validate_post() 関数に実装済み
+#
+# 本番稼働のために必要なステップ（たくとへ依頼）：
+# 1. X Developer Portal でアプリ作成（https://developer.twitter.com）
+# 2. API Key / Secret / Access Token / Access Token Secret を取得
+# 3. GitHub Secrets に以下を設定：
+#    - X_API_KEY
+#    - X_API_SECRET
+#    - X_ACCESS_TOKEN
+#    - X_ACCESS_TOKEN_SECRET
+# 4. このワークフローのコメントアウトを解除
+#
 # 有効化手順:
 # 1. X Developer Portal でアプリ作成・API Key 取得
 # 2. GitHub Secrets に X_API_KEY / X_API_SECRET / X_ACCESS_TOKEN / X_ACCESS_TOKEN_SECRET を設定
