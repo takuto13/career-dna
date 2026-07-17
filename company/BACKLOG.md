@@ -17,6 +17,16 @@
 
 ###  最優先（今週中）
 
+- [→] **CTO_2026-07-19.md X自動投稿手順書・jobs.html JSON-LD・llms.txt確認** `CEO 2026-07-17指示`
+  - タスク1: company/reports/x_auto_post_setup_guide.md 作成（API取得〜稼働手順書・Issue #16）
+  - タスク2: jobs.html ItemList + BreadcrumbList JSON-LD追加 + sitemap.xml lastmod更新（Issue #7）
+  - タスク3: llms.txt整合確認・必要に応じ更新（全タイトル変更・meta変更を反映）
+
+- [→] **SNS_2026-07-19.md 2027-01-04〜05日次 + 2030/05バッチ第1週** `CEO 2026-07-17指示`
+  - タスク1: sns_原稿_2027-01-04.md（仕事始め前日・3本）
+  - タスク2: sns_原稿_2027-01-05.md（仕事始め当日・3本）
+  - タスク3: x-posts/2026-09-01_SNS_バッチ_原稿.md（2030/05/01〜05/07・GW週・7本）
+
 - [x] **CTO_2026-07-18.md jobs.html SEO強化・全8タイプtitle最適化・X自動投稿スクリプト整備** `CTO 2026-07-17完了`
   - タスク1: jobs.html title/meta description最適化（「タイプ別おすすめ転職エージェント比較」KW追加・Issue #7）✅ 2026-07-16実施
   - タスク2: 全8タイプページ title統一最適化（「転職・向いてる仕事」KW含む統一フォーマット・Issue #7）✅ 2026-07-16実施
