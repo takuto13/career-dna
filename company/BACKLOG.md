@@ -17,10 +17,10 @@
 
 ###  最優先（今週中）
 
-- [→] **CTO_2026-07-23.md canonical tags全12ページ + SEO差別化KW補強 + sitemap/llms.txt更新**
-  - タスク1: 全12ページ `<link rel="canonical">` タグ追加（SEO基礎要件）
-  - タスク2: 全8タイプページ seo-paragraph に「スマホアプリ不要・ブラウザ完結」差別化KW追加
-  - タスク3: sitemap.xml lastmod 2026-07-23更新 + llms.txt 2026-07-23セクション追加
+- [x] **CTO_2026-07-23.md canonical tags全12ページ + SEO差別化KW補強 + sitemap/llms.txt更新** `CTO 2026-07-23実装完了` ✅
+  - タスク1: 全12ページ `<link rel="canonical">` タグ確認・全ページ正常実装済み ✅
+  - タスク2: 全8タイプページ seo-paragraph に「スマホアプリ不要・ブラウザ完結」差別化KW追加 ✅
+  - タスク3: sitemap.xml lastmod 2026-07-23更新 + llms.txt 2026-07-23セクション追加 ✅
 
 - [→] **SNS定例 2026-07-23 2027-01-22〜24日次 + 2030/06/12〜18バッチ**
   - タスク1: sns_原稿_2027-01-22.md（木・書類選考加速期・3本）

@@ -569,6 +569,12 @@
 - index.html：SoftwareApplication JSON-LD を改善（name を「キャリアDNA AIキャリア診断」に更新・description充実・featureList文字列形式に統一・AI診断ツールとしてのエンティティ登録強化）
 - sitemap.xml：index.html・全8タイプページ lastmod → 2026-07-22
 
+## 2026年7月23日の主な更新
+
+- 全12ページ <link rel="canonical"> タグ実装確認・全ページURLが正しく設定済みであることを確認（canonical URL統一・SEO基礎要件）
+- 全8タイプページ seo-paragraph に「スマホアプリ不要・ブラウザ完結」差別化KW追加（キャリア診断 スマホアプリ不要・適職診断 インストール不要 KW対応）
+- sitemap.xml lastmod 2026-07-23 更新（全8タイプページ）
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
