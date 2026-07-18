@@ -53,11 +53,48 @@
 - GitHub Issue #9（FAQ STOP ORDER）：解除タイミング要判断
 - Issue #16 X自動投稿：X Developer Portal API申請・承認フロー設計の方針決定が必要
 
-**次回競合調査：** 2026-07-22頃（前回2026-07-16から7日後・必須実施）
+**次回競合調査：** 2026-07-23（前回2026-07-16から7日後・必須実施）
 
 **次回CTO実行待ちタスク：**
+- CTO_2026-07-22.md：BreadcrumbList全8タイプ + SoftwareApplication JSON-LD（2026-07-22実行予定）
 - FAQ STOP ORDER解除後：CTO_2026-07-10〜07-13.md のFAQ追加タスク群（全BLOCKED）
 - FAQ STOP ORDER解除後：「転職AI」「AI転職相談」KW FAQ追加（faq.html）
+
+---
+
+## 次セッションへの引継ぎ：あり（2026-07-18 AI CEO定例完了）
+
+### 2026-07-18 AI CEO定例 完了タスク
+
+- GitHub Issues確認（9件・全件owner・新規追加なし） ✅
+- 競合調査：前回2026-07-16から2日経過・7日ルール未到達 → スキップ（次回2026-07-23必須） ✅
+- CTO_2026-07-22.md 新規作成（BreadcrumbList全8タイプ + SoftwareApplication JSON-LD） ✅
+- SNS_2026-07-22.md 新規作成（2027-01-19〜21日次 + 2030/06/05〜11バッチ） ✅
+- reports/2026-07-18_CEO.md 作成完了 ✅
+- BACKLOG.md 更新完了（新規タスク[→]追加） ✅
+- handoff.md 更新（本記録） ✅
+- git commit/push ✅
+
+**SNSカバレッジ（2026-07-18 全定例完了時点）：**
+- X日次投稿：〜2027-01-21（木）完成（次回：2027-01-22以降）
+- 2030年バッチ：〜2030/06/11（水）完成（次回：2030/06/12以降）
+
+**⚠️ たくとへのエスカレーション（CEO 2026-07-18定例）：**
+- **Issue #16：X Developer Portal でアプリ作成・API Key取得**（30〜40分）→ 手順書: reports/x_auto_post_setup_guide.md
+- **キャリア協会「適職診断おすすめ12選」掲載依頼**（10分）→ sns_キャリア協会依頼文.md参照
+- **キャリア協会「AI自己分析ツールランキング10選」掲載依頼**（5〜10分）
+- **Issue #12・#14・#15 の手動クローズ**（5分）→ GitHubで「Close issue」
+- **Issue #9（FAQ STOP ORDER）の解除判断** → FAQを増やしてよいか判断
+- **Issue #10（タイプ別記事）の承認** → 実装する場合はIssueにコメント
+- **A8.net ビズリーチ・高単価アフィリエイト提携申請**
+
+**次回CEO定例の優先事項：**
+- **競合調査（2026-07-23 必須実施・前回2026-07-16から7日後）**
+- CTO_2026-07-22.md 実行確認（BreadcrumbList + SoftwareApplication JSON-LD）
+- X自動投稿 API申請進捗確認
+- 次回CTO/SNS指示書作成
+
+**FAQ STOP ORDER継続中**：faq.html 319問・タイプページ固定
 
 ---
 

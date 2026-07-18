@@ -17,6 +17,11 @@
 
 ###  最優先（今週中）
 
+- [→] **CTO_2026-07-22.md BreadcrumbList JSON-LD全8タイプ + SoftwareApplication JSON-LD** `CTO 2026-07-22実行予定`
+  - タスク1: 全8タイプページ BreadcrumbList JSON-LD追加（SERP パンくず表示 → CTR向上）
+  - タスク2: index.html SoftwareApplication JSON-LD追加（AI診断ツールとしてのエンティティ登録）
+  - タスク3: sitemap.xml + llms.txt 2026-07-22更新
+
 - [x] **SNS定例 2026-07-18 2027-01-19〜21日次 + 2030/06/05〜06/11バッチ** `SNS担当 2026-07-18完了`
   - タスク1: sns_原稿_2027-01-19.md（火・転職活動つまずきポイント×行動促進・3本）✅2026-07-18
   - タスク2: sns_原稿_2027-01-20.md（水・書類選考結果期×不採用後再フレーミング・3本）✅2026-07-18
