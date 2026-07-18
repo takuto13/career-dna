@@ -17,6 +17,17 @@
 
 ###  最優先（今週中）
 
+- [→] **CTO_2026-07-23.md canonical tags全12ページ + SEO差別化KW補強 + sitemap/llms.txt更新**
+  - タスク1: 全12ページ `<link rel="canonical">` タグ追加（SEO基礎要件）
+  - タスク2: 全8タイプページ seo-paragraph に「スマホアプリ不要・ブラウザ完結」差別化KW追加
+  - タスク3: sitemap.xml lastmod 2026-07-23更新 + llms.txt 2026-07-23セクション追加
+
+- [→] **SNS定例 2026-07-23 2027-01-22〜24日次 + 2030/06/12〜18バッチ**
+  - タスク1: sns_原稿_2027-01-22.md（木・書類選考加速期・3本）
+  - タスク2: sns_原稿_2027-01-23.md（金・週末前行動促進・3本）
+  - タスク3: sns_原稿_2027-01-24.md（土・週末自己分析Day・3本）
+  - タスク4: x-posts/2026-09-07_SNS_バッチ_原稿.md（2030/06/12〜06/18・内定後入社前準備・7本）
+
 - [x] **CTO_2026-07-22.md BreadcrumbList JSON-LD全8タイプ + SoftwareApplication JSON-LD** `CTO 2026-07-18前倒し実行完了`
   - タスク1: 全8タイプページ BreadcrumbList JSON-LD（ホーム→AIキャリア診断→[タイプ名]の特徴・向いてる仕事・転職）3項目形式に統一更新 ✅ 2026-07-18
   - タスク2: index.html SoftwareApplication JSON-LD更新（name「AIキャリア診断」・description充実・featureList文字列化・dateModified 2026-07-22）✅ 2026-07-18
