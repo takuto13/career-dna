@@ -17,10 +17,10 @@
 
 ###  最優先（今週中）
 
-- [→] **CTO_2026-07-22.md BreadcrumbList JSON-LD全8タイプ + SoftwareApplication JSON-LD** `CTO 2026-07-22実行予定`
-  - タスク1: 全8タイプページ BreadcrumbList JSON-LD追加（SERP パンくず表示 → CTR向上）
-  - タスク2: index.html SoftwareApplication JSON-LD追加（AI診断ツールとしてのエンティティ登録）
-  - タスク3: sitemap.xml + llms.txt 2026-07-22更新
+- [x] **CTO_2026-07-22.md BreadcrumbList JSON-LD全8タイプ + SoftwareApplication JSON-LD** `CTO 2026-07-18前倒し実行完了`
+  - タスク1: 全8タイプページ BreadcrumbList JSON-LD（ホーム→AIキャリア診断→[タイプ名]の特徴・向いてる仕事・転職）3項目形式に統一更新 ✅ 2026-07-18
+  - タスク2: index.html SoftwareApplication JSON-LD更新（name「AIキャリア診断」・description充実・featureList文字列化・dateModified 2026-07-22）✅ 2026-07-18
+  - タスク3: sitemap.xml（全8タイプ・index.html lastmod 2026-07-22）+ llms.txt（2026-07-22セクション追加）✅ 2026-07-18
 
 - [x] **SNS定例 2026-07-18 2027-01-19〜21日次 + 2030/06/05〜06/11バッチ** `SNS担当 2026-07-18完了`
   - タスク1: sns_原稿_2027-01-19.md（火・転職活動つまずきポイント×行動促進・3本）✅2026-07-18

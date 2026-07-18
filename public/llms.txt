@@ -563,6 +563,12 @@
 - index.html：「スマホアプリ不要・ブラウザ完結」差別化SEOテキスト追加（キャリア診断 スマホアプリ不要・適職診断 インストール不要 KW対応）
 - company/requests/sns_キャリア協会依頼文.md：最新版に更新（FAQ319問・7カテゴリ・JSON-LD完備・秋採用コンテンツ・AI自己分析ツール記事向け依頼文②を追加）
 
+## 2026年7月22日の主な更新
+
+- 全8タイプページ：BreadcrumbList JSON-LD を新形式（ホーム → AIキャリア診断 → [タイプ名]の特徴・向いてる仕事・転職）に統一更新（SERP パンくず表示強化・CTR向上）
+- index.html：SoftwareApplication JSON-LD を改善（name を「キャリアDNA AIキャリア診断」に更新・description充実・featureList文字列形式に統一・AI診断ツールとしてのエンティティ登録強化）
+- sitemap.xml：index.html・全8タイプページ lastmod → 2026-07-22
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
