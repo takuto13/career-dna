@@ -17,10 +17,10 @@
 
 ###  最優先（今週中）
 
-- [→] **CTO_2026-07-24.md result.html SEOパラグラフ + faq.html OGP確認 + sitemap/llms.txt更新**
-  - タスク1: result.html seo-paragraph追加（キャリア診断結果活用・AI自己分析ツール・タイプ別向いてる仕事）
-  - タスク2: faq.html OGPタグ確認・補強（og:url/og:description/canonical正規形式）
-  - タスク3: sitemap.xml result.html lastmod → 2026-07-24 + llms.txt 2026-07-24セクション追加
+- [x] **CTO_2026-07-24.md result.html SEOパラグラフ + faq.html OGP確認 + sitemap/llms.txt更新** ✅2026-07-18
+  - タスク1: result.html seo-paragraph追加（キャリア診断結果活用・AI自己分析ツール・タイプ別向いてる仕事）✅
+  - タスク2: faq.html OGPタグ確認・補強（og:description KW追加・twitter:title/twitter:description追加）✅
+  - タスク3: sitemap.xml result.html lastmod → 2026-07-24 + llms.txt 2026-07-24セクション追加 ✅
 
 - [→] **SNS_2026-07-24.md 2027-01-25〜27日次 + 2030/06/19〜25バッチ**
   - タスク1: sns_原稿_2027-01-25.md（土・1月最終土曜・週末自己分析Day後半・3本）

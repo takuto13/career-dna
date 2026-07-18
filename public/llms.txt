@@ -575,6 +575,12 @@
 - 全8タイプページ seo-paragraph に「スマホアプリ不要・ブラウザ完結」差別化KW追加（キャリア診断 スマホアプリ不要・適職診断 インストール不要 KW対応）
 - sitemap.xml lastmod 2026-07-23 更新（全8タイプページ）
 
+## 2026年7月24日の主な更新
+
+- result.html：SEOパラグラフ追加（8タイプ診断結果の活用方法・AI自己分析ツールとしての説明・スマホアプリ不要・ブラウザ完結 KW対応）
+- faq.html：OGP補強（og:description に「転職・就活 319問のQ&A」「AI自己分析ツール FAQ」KWを追加・twitter:title / twitter:description タグを追加してSNSシェア・AI検索参照品質向上）
+- sitemap.xml：result.html lastmod → 2026-07-24 更新
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
