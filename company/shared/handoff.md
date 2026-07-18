@@ -6,6 +6,34 @@
 
 ---
 
+## 次セッションへの引継ぎ：あり（2026-07-18 CTO定例 完了）
+
+### 2026-07-18 CTO定例 完了タスク
+
+- GitHub Issues確認（9件・Issue #9 FAQ STOP ORDER継続・Issue #16 X自動投稿継続） ✅
+- CTO_2026-07-21.md 全タスク確認：CEO 2026-07-17に前倒し完了済みを確認 ✅
+  - タスク1: sns_キャリア協会依頼文.md 最新版更新済み（2026-07-17）✅
+  - タスク2: index.html「スマホアプリ不要・ブラウザ完結」SEOテキスト追加済み（2026-07-17）✅
+  - タスク3: sitemap.xml（index.html lastmod 2026-07-17）・llms.txt更新済み（2026-07-17）✅
+- サイト変更なし（FAQ STOP ORDER継続・UI変更禁止）
+- git commit/push ✅
+
+**FAQ STOP ORDER継続中：** faq.html 319問・タイプページ 3問/ページ体制（Issue #9 解除待ち）
+
+**⚠️ たくとへのエスカレーション（CTO 2026-07-18）：**
+- キャリア協会「適職診断おすすめ12選」「AI自己分析ツールランキング10選」掲載申請（最高ROI被リンク・継続エスカレーション）
+- Google Search Console クロール申請（index.html・jobs.html・全8タイプページ・result.html 直近変更分）
+- GitHub Issue #9（FAQ STOP ORDER）：解除タイミング要判断
+- Issue #16 X自動投稿：X Developer Portal API申請・承認フロー設計の方針決定が必要
+
+**次回競合調査：** 2026-07-22頃（前回2026-07-16から7日後・必須実施）
+
+**次回CTO実行待ちタスク：**
+- FAQ STOP ORDER解除後：CTO_2026-07-10〜07-13.md のFAQ追加タスク群（全BLOCKED）
+- FAQ STOP ORDER解除後：「転職AI」「AI転職相談」KW FAQ追加（faq.html）
+
+---
+
 ## 次セッションへの引継ぎ：あり（2026-07-17 SNS担当 第6セッション完了）
 
 ### 2026-07-17 SNS担当 第6セッション 完了タスク
