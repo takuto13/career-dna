@@ -17,6 +17,17 @@
 
 ###  最優先（今週中）
 
+- [→] **CTO_2026-07-24.md result.html SEOパラグラフ + faq.html OGP確認 + sitemap/llms.txt更新**
+  - タスク1: result.html seo-paragraph追加（キャリア診断結果活用・AI自己分析ツール・タイプ別向いてる仕事）
+  - タスク2: faq.html OGPタグ確認・補強（og:url/og:description/canonical正規形式）
+  - タスク3: sitemap.xml result.html lastmod → 2026-07-24 + llms.txt 2026-07-24セクション追加
+
+- [→] **SNS_2026-07-24.md 2027-01-25〜27日次 + 2030/06/19〜25バッチ**
+  - タスク1: sns_原稿_2027-01-25.md（土・1月最終土曜・週末自己分析Day後半・3本）
+  - タスク2: sns_原稿_2027-01-26.md（日・1月最終日曜・来週から本格始動・3本）
+  - タスク3: sns_原稿_2027-01-27.md（月・1月最終週スタート・転職活動最終局面・3本）
+  - タスク4: x-posts/2026-09-08_SNS_バッチ_原稿.md（2030/06/19〜06/25・入社前ラスト＋夏インターン選考・7本）
+
 - [x] **CTO_2026-07-23.md canonical tags全12ページ + SEO差別化KW補強 + sitemap/llms.txt更新** `CTO 2026-07-23実装完了` ✅
   - タスク1: 全12ページ `<link rel="canonical">` タグ確認・全ページ正常実装済み ✅
   - タスク2: 全8タイプページ seo-paragraph に「スマホアプリ不要・ブラウザ完結」差別化KW追加 ✅
