@@ -17,6 +17,19 @@
 
 ###  最優先（今週中）
 
+- [→] **CTO_2026-07-25.md faq.html BreadcrumbList JSON-LD + result.html WebPage JSON-LD確認**
+  - タスク1: faq.html BreadcrumbList JSON-LD追加（全8タイプページは07-22実装済み・faq.htmlのみ未実装）
+  - タスク2: result.html WebPage JSON-LD確認・追加（BreadcrumbList付きWebPage schema）
+  - タスク3: sitemap.xml faq.html・result.html lastmod → 2026-07-25 + llms.txt 2026-07-25セクション追加
+
+- [→] **SNS_2026-07-25.md 2027-01-28〜30日次 + 2030/06/26〜07/02バッチ**
+  - ⚠️ SNS_2026-07-24.mdが未完了の場合は先に完了させること
+  - タスク1: sns_原稿_2027-01-28.md（火・書類選考結果が来始める時期×立て直しフレーム・3本）
+  - タスク2: sns_原稿_2027-01-29.md（水・面接本番週×タイプ別自己PR・3本）
+  - タスク3: sns_原稿_2027-01-30.md（木・1月最終日×2月加速フレーム・3本）
+  - タスク4: x-posts/2026-09-09_SNS_バッチ_原稿.md（2030/06/26〜07/02・上半期終了×下半期スタート×夏インターン最終局面・7本）
+  - SNSカバレッジ（完了後）：日次〜2027-01-30・2030バッチ〜2030/07/02
+
 - [x] **CTO_2026-07-24.md result.html SEOパラグラフ + faq.html OGP確認 + sitemap/llms.txt更新** ✅2026-07-18
   - タスク1: result.html seo-paragraph追加（キャリア診断結果活用・AI自己分析ツール・タイプ別向いてる仕事）✅
   - タスク2: faq.html OGPタグ確認・補強（og:description KW追加・twitter:title/twitter:description追加）✅
