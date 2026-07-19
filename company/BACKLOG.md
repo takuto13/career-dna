@@ -17,6 +17,19 @@
 
 ###  最優先（今週中）
 
+- [→] **CTO_2026-07-27.md jobs.html FaqPage JSON-LD + 全タイプ再診断リンク確認** `CEO 2026-07-19作成`
+  - タスク1: jobs.html FaqPage JSON-LD追加（転職エージェント選び方FAQ3問・SERPリッチスニペット獲得）
+  - タスク2: 全8タイプページ → index.html 再診断テキストリンク確認・追加（デザイン変更なし）
+  - タスク3: sitemap.xml + llms.txt 2026-07-27更新
+
+- [→] **SNS_2026-07-26.md 2027-01-31〜02-02日次 + 2030/07/03〜09バッチ** `CEO 2026-07-19作成`
+  - ⚠️ SNS_2026-07-24.md・SNS_2026-07-25.mdが未完了の場合は先に完了させること
+  - タスク1: sns_原稿_2027-01-31.md（土・1月最終日×2月転職本格化・3本）
+  - タスク2: sns_原稿_2027-02-01.md（日・2月1日・転職スタート×就活解禁29日前・3本）
+  - タスク3: sns_原稿_2027-02-02.md（月・2月第1週月曜・行動促進・3本）
+  - タスク4: x-posts/2026-09-10_SNS_バッチ_原稿.md（2030/07/03〜07/09・7本）
+  - SNSカバレッジ（完了後）：日次〜2027-02-02・2030バッチ〜2030/07/09
+
 - [x] **CTO_2026-07-25.md faq.html BreadcrumbList JSON-LD + result.html WebPage JSON-LD確認** `CTO前倒し実行完了 2026-07-19` ✅
   - タスク1: faq.html BreadcrumbList JSON-LD position1名を「キャリアDNA」→「ホーム」に統一・Article JSON-LD dateModified → 2026-07-25 ✅
   - タスク2: result.html WebPage JSON-LD dateModified → 2026-07-25 ✅
