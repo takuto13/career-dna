@@ -17,9 +17,9 @@
 
 ###  最優先（今週中）
 
-- [→] **CTO_2026-07-29.md jobs.html OGP twitter card + 全タイプページog:description確認 + sitemap/llms.txt更新** `CTO 2026-07-29実行予定`
-  - タスク1: jobs.html OGP twitter card補強（twitter:card/title/description確認・追加）
-  - タスク2: 全8タイプページ og:description「スマホアプリ不要・登録不要」差別化KW確認・補強（未対応ページのみ）
+- [x] **CTO_2026-07-29.md jobs.html OGP twitter card + 全タイプページog:description確認 + sitemap/llms.txt更新** `CTO 2026-07-19前倒し実行完了`
+  - タスク1: jobs.html OGP twitter card補強（twitter:card/title/description確認・追加）✅
+  - タスク2: 全8タイプページ og:description「スマホアプリ不要・登録不要」差別化KW確認・補強（全8ページ追加）✅
   - タスク3: sitemap.xml + llms.txt 2026-07-29更新
 
 - [x] **SNS_2026-07-29.md 2027-02-09〜11日次 + 2030/07/24〜30バッチ** `SNS担当 2026-07-19前倒し実行完了`
@@ -3264,7 +3264,7 @@
   - SNS_2026-07-29.md → company/archive/SNS_2026-07-29_archived.md アーカイブ ✅
   - SNSカバレッジ: X日次投稿 〜**2027-02-11（木）** / 2030年バッチ 〜**2030/07/30（水）**
 
-- [→] **CTO_2026-07-31.md: index.html / about.html / contact.html twitter:title・description追加 + sitemap/llms.txt更新** `CTO 07-31実行予定`
+- [x] **CTO_2026-07-31.md: index.html / about.html / contact.html twitter:title・description追加 + sitemap/llms.txt更新** `CTO 2026-07-19前倒し実行完了`
 
 - [→] **SNS_2026-07-31.md: sns_原稿_2027-02-12〜14.md 作成 + 2030/07/31〜08/06バッチ作成** `SNS担当 07-31実行予定`
   - 詳細手順: company/requests/request_2026-07-17.md 参照

@@ -598,6 +598,19 @@
 - index.html：meta description / og:description SEOテキスト差別化KW更新（「スマホ完結」→「スマホアプリ不要・ブラウザ完結」に変更・転職AI差別化強化）
 - sitemap.xml：result.html・index.html lastmod → 2026-07-28更新
 
+## 2026年7月29日の主な更新
+
+- jobs.html：twitter:title / twitter:description タグを追加（Xでリンクシェア時の大きいカード表示対応・クリック率向上施策）
+- 全8タイプページ（type-strategist / type-analyst / type-craftsman / type-mediator / type-challenger / type-creator / type-guardian / type-nurturer）：og:description末尾に「登録不要・5分・スマホアプリ不要で無料AI診断」差別化KW追加
+- sitemap.xml：jobs.html・全8タイプページ lastmod → 2026-07-29 更新
+
+## 2026年7月31日の主な更新
+
+- index.html：twitter:title / twitter:description タグを追加（Xシェア時のカードタイトル・説明文表示整備・SNSシェア品質統一）
+- about.html：twitter:title / twitter:description タグを追加（サイト全体のSNSシェア品質統一）
+- contact.html：twitter:title / twitter:description タグを追加（サイト全体のSNSシェア品質統一）
+- sitemap.xml：index.html・about.html・contact.html lastmod → 2026-07-31 更新
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
