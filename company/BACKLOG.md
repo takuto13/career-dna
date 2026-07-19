@@ -17,6 +17,18 @@
 
 ###  最優先（今週中）
 
+- [→] **CTO_2026-07-29.md jobs.html OGP twitter card + 全タイプページog:description確認 + sitemap/llms.txt更新** `CTO 2026-07-29実行予定`
+  - タスク1: jobs.html OGP twitter card補強（twitter:card/title/description確認・追加）
+  - タスク2: 全8タイプページ og:description「スマホアプリ不要・登録不要」差別化KW確認・補強（未対応ページのみ）
+  - タスク3: sitemap.xml + llms.txt 2026-07-29更新
+
+- [→] **SNS_2026-07-29.md 2027-02-09〜11日次 + 2030/07/24〜30バッチ** `SNS担当 2026-07-29実行予定`
+  - タスク1: sns_原稿_2027-02-09.md（火・2月第2週火曜・面接準備・自己PR強化・3本）
+  - タスク2: sns_原稿_2027-02-10.md（水・2月第2週水曜・中だるみ対策・モチベーション維持・3本）
+  - タスク3: sns_原稿_2027-02-11.md（木・建国記念日・祝日活用・転職活動前進・3本）
+  - タスク4: x-posts/2026-09-13_SNS_バッチ_原稿.md（2030/07/24〜07/30・7本）
+  - SNSカバレッジ（完了後）：日次〜2027-02-11・2030バッチ〜2030/07/30
+
 - [x] **CTO_2026-07-28.md result.html HowTo JSON-LD + index.html SEOテキスト差別化KW + sitemap/llms.txt更新** `CTO 2026-07-19前倒し実行完了`
   - タスク1: result.html HowTo JSON-LD追加（診断結果活用3ステップ：タイプ理解→向いてる仕事確認→転職エージェント登録）・WebPage dateModified → 2026-07-28 ✅ 2026-07-19
   - タスク2: index.html meta description / og:description 差別化KW更新（「スマホ完結」→「スマホアプリ不要・ブラウザ完結」）・seo-paragraph確認済み（既に対応済みのためスキップ）✅ 2026-07-19
