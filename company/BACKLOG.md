@@ -17,10 +17,10 @@
 
 ###  最優先（今週中）
 
-- [→] **CTO_2026-07-25.md faq.html BreadcrumbList JSON-LD + result.html WebPage JSON-LD確認**
-  - タスク1: faq.html BreadcrumbList JSON-LD追加（全8タイプページは07-22実装済み・faq.htmlのみ未実装）
-  - タスク2: result.html WebPage JSON-LD確認・追加（BreadcrumbList付きWebPage schema）
-  - タスク3: sitemap.xml faq.html・result.html lastmod → 2026-07-25 + llms.txt 2026-07-25セクション追加
+- [x] **CTO_2026-07-25.md faq.html BreadcrumbList JSON-LD + result.html WebPage JSON-LD確認** `CTO前倒し実行完了 2026-07-19` ✅
+  - タスク1: faq.html BreadcrumbList JSON-LD position1名を「キャリアDNA」→「ホーム」に統一・Article JSON-LD dateModified → 2026-07-25 ✅
+  - タスク2: result.html WebPage JSON-LD dateModified → 2026-07-25 ✅
+  - タスク3: sitemap.xml faq.html・result.html lastmod → 2026-07-25 + llms.txt 2026-07-25セクション追加 ✅
 
 - [→] **SNS_2026-07-25.md 2027-01-28〜30日次 + 2030/06/26〜07/02バッチ**
   - ⚠️ SNS_2026-07-24.mdが未完了の場合は先に完了させること

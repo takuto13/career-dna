@@ -581,6 +581,12 @@
 - faq.html：OGP補強（og:description に「転職・就活 319問のQ&A」「AI自己分析ツール FAQ」KWを追加・twitter:title / twitter:description タグを追加してSNSシェア・AI検索参照品質向上）
 - sitemap.xml：result.html lastmod → 2026-07-24 更新
 
+## 2026年7月25日の主な更新
+
+- faq.html：BreadcrumbList JSON-LD のposition1を「キャリアDNA」→「ホーム」に統一（全タイプページとの表記統一・SERP パンくず表示品質向上）・Article JSON-LD dateModified → 2026-07-25更新
+- result.html：WebPage JSON-LD dateModified → 2026-07-25更新（診断結果ページの構造化データ最新化）
+- sitemap.xml：faq.html・result.html lastmod → 2026-07-25更新
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
