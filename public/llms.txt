@@ -587,6 +587,11 @@
 - result.html：WebPage JSON-LD dateModified → 2026-07-25更新（診断結果ページの構造化データ最新化）
 - sitemap.xml：faq.html・result.html lastmod → 2026-07-25更新
 
+## 2026年7月27日の主な更新
+
+- jobs.html：FaqPage JSON-LD確認（既存実装済みのため追加不要・転職エージェント選び方FAQ3問確認済み）
+- 全8タイプページ（type-strategist.html等）：index.htmlへの再診断CTAリンク確認（全ページ実装済みのため追加不要）
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
