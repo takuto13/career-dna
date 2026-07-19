@@ -17,6 +17,18 @@
 
 ###  最優先（今週中）
 
+- [→] **CTO_2026-08-01.md about.html/contact.html BreadcrumbList JSON-LD追加 + sitemap/llms.txt更新** `CTO 2026-08-01実行予定`
+  - タスク1: about.html BreadcrumbList JSON-LD追加（ホーム→会社概要の2項目形式）
+  - タスク2: contact.html BreadcrumbList JSON-LD追加（ホーム→お問い合わせの2項目形式）
+  - タスク3: sitemap.xml（about.html・contact.html lastmod 2026-08-01）+ llms.txt 2026-08-01セクション追加
+
+- [→] **SNS_2026-08-01.md 2027-02-15〜17日次 + 2030/08/07〜13バッチ** `SNS担当 2026-08-01実行予定`
+  - タスク1: sns_原稿_2027-02-15.md（月・書類選考追い込み期×月曜行動促進・3本）
+  - タスク2: sns_原稿_2027-02-16.md（火・面接調整期×自己PR強化・3本）
+  - タスク3: sns_原稿_2027-02-17.md（水・転職相談タイプ別×エージェント活用・3本）
+  - タスク4: x-posts/2026-09-14_SNS_バッチ_原稿.md（2030/08/07〜08/13・お盆前×秋採用準備最終局面・7本）
+  - SNSカバレッジ（完了後）：日次〜2027-02-17・2030バッチ〜2030/08/13
+
 - [x] **CTO_2026-07-29.md jobs.html OGP twitter card + 全タイプページog:description確認 + sitemap/llms.txt更新** `CTO 2026-07-19前倒し実行完了`
   - タスク1: jobs.html OGP twitter card補強（twitter:card/title/description確認・追加）✅
   - タスク2: 全8タイプページ og:description「スマホアプリ不要・登録不要」差別化KW確認・補強（全8ページ追加）✅
