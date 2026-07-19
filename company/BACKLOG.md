@@ -17,10 +17,10 @@
 
 ###  最優先（今週中）
 
-- [→] **CTO_2026-07-28.md result.html HowTo JSON-LD + index.html SEOテキスト差別化KW + sitemap/llms.txt更新** `CTO 2026-07-28実行予定`
-  - タスク1: result.html HowTo JSON-LD追加（診断結果活用3ステップ：タイプ理解→向いてる仕事確認→転職エージェント登録）
-  - タスク2: index.html meta description / seo-paragraph 差別化KW確認・微調整（スマホアプリ不要・ブラウザ完結）
-  - タスク3: sitemap.xml result.html lastmod → 2026-07-28 + llms.txt 2026-07-28セクション追加
+- [x] **CTO_2026-07-28.md result.html HowTo JSON-LD + index.html SEOテキスト差別化KW + sitemap/llms.txt更新** `CTO 2026-07-19前倒し実行完了`
+  - タスク1: result.html HowTo JSON-LD追加（診断結果活用3ステップ：タイプ理解→向いてる仕事確認→転職エージェント登録）・WebPage dateModified → 2026-07-28 ✅ 2026-07-19
+  - タスク2: index.html meta description / og:description 差別化KW更新（「スマホ完結」→「スマホアプリ不要・ブラウザ完結」）・seo-paragraph確認済み（既に対応済みのためスキップ）✅ 2026-07-19
+  - タスク3: sitemap.xml result.html・index.html lastmod → 2026-07-28 + llms.txt 2026-07-28セクション追加 ✅ 2026-07-19
 
 - [→] **SNS_2026-07-28.md 2027-02-03〜05日次 + 2030/07/10〜16バッチ** `SNS担当 2026-07-28実行予定`
   - タスク1: sns_原稿_2027-02-03.md（水・2月転職第1週水曜・書類選考ピーク期・3本）
