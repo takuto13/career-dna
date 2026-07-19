@@ -3255,4 +3255,16 @@
   - CEO報告書 2026-07-17 第5セッション追記
 
 - [→] **たくと対応（request_2026-07-17.md）: X API申請・キャリア協会掲載・A8.net提携・GA4設定** `たくと担当` ⬆️
+
+- [x] **CEO定例 2026-07-19 第5セッション: SNS原稿作成・CTO/SNS指示書作成** `CEO 2026-07-19` ✅
+  - SNS原稿（CEO代行）: sns_原稿_2027-02-09.md〜02-11.md（3本×3）作成完了
+  - x-posts/2026-09-13_SNS_バッチ_原稿.md 作成完了（2030/07/24〜07/30・7本）
+  - CTO_2026-07-31.md 新規作成（index.html / about.html / contact.html twitter:title/description追加）
+  - SNS_2026-07-31.md 新規作成（2027-02-12〜14日次3本×3 + 2030/07/31〜08/06バッチ7本）
+  - SNS_2026-07-29.md → company/archive/SNS_2026-07-29_archived.md アーカイブ ✅
+  - SNSカバレッジ: X日次投稿 〜**2027-02-11（木）** / 2030年バッチ 〜**2030/07/30（水）**
+
+- [→] **CTO_2026-07-31.md: index.html / about.html / contact.html twitter:title・description追加 + sitemap/llms.txt更新** `CTO 07-31実行予定`
+
+- [→] **SNS_2026-07-31.md: sns_原稿_2027-02-12〜14.md 作成 + 2030/07/31〜08/06バッチ作成** `SNS担当 07-31実行予定`
   - 詳細手順: company/requests/request_2026-07-17.md 参照
