@@ -6,6 +6,33 @@
 
 ---
 
+## 次セッションへの引継ぎ：あり（2026-07-20 CTO定例 第3セッション完了）
+
+### 2026-07-20 CTO定例 第3セッション 完了タスク
+
+- disclaimer.html：BreadcrumbList JSON-LD position1「トップ」→「ホーム」統一修正 ✅
+- privacy.html：BreadcrumbList JSON-LD position1「トップ」→「ホーム」統一修正 ✅
+- type-strategy.html：`<meta name="robots" content="noindex, nofollow">` 追加（canonical=type-strategist.htmlの旧URL重複コンテンツをSEO除外） ✅
+- sitemap.xml：disclaimer.html・privacy.html lastmod → 2026-07-20 更新 ✅
+- llms.txt：2026-07-20セクション追加 ✅
+- BACKLOG.md [x] 更新完了 ✅
+- handoff.md 更新 ✅
+- git commit/push ✅
+
+**FAQ STOP ORDER継続中：** faq.html 319問固定（Issue #9 解除待ち）
+
+**⚠️ たくとへのエスカレーション（CTO 2026-07-20 第3セッション）：継続事項のみ**
+- Google Search Console クロール申請（disclaimer.html・privacy.html BreadcrumbList修正 / type-strategy.html noindex追加 対象追加）
+- キャリア協会「適職診断おすすめ12選」「AI自己分析ツールランキング10選」掲載申請（継続最優先）
+- GitHub Issue #9（FAQ STOP ORDER）：解除タイミング要判断
+- Issue #16 X自動投稿：X Developer Portal API申請・承認フロー設計の方針決定が必要
+
+**次回CTO実行待ちタスク：**
+- CTO指示書なし（次回CEO定例で次の指示書作成予定）
+- FAQ STOP ORDER解除後：「転職AI」「AI転職相談」KW FAQ追加（faq.html）
+
+---
+
 ## 次セッションへの引継ぎ：あり（2026-07-20 SNS担当定例 SNS_2026-08-01.md実行完了）
 
 ### 2026-07-20 SNS担当定例 SNS_2026-08-01.md 完了タスク

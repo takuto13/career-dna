@@ -46,6 +46,12 @@
   - タスク2: about.html AboutPage JSON-LD追加（Organization/BreadcrumbListとの重複なし・isPartOf WebSite連携） ✅ 2026-07-20
   - タスク3: sitemap.xml（contact.html lastmod 2026-08-03・about.html lastmod 2026-08-03）+ llms.txt 2026-08-03セクション追加 ✅ 2026-07-20
 
+- [x] **CTO 自律作業 2026-07-20 BreadcrumbList表記統一 + type-strategy.html noindex + sitemap/llms.txt更新** `CTO 2026-07-20完了`
+  - タスク1: disclaimer.html BreadcrumbList position1「トップ」→「ホーム」統一修正 ✅ 2026-07-20
+  - タスク2: privacy.html BreadcrumbList position1「トップ」→「ホーム」統一修正 ✅ 2026-07-20
+  - タスク3: type-strategy.html `<meta name="robots" content="noindex, nofollow">` 追加（canonical=type-strategist.htmlの重複ページをSEO除外） ✅ 2026-07-20
+  - タスク4: sitemap.xml（disclaimer.html・privacy.html lastmod 2026-07-20）+ llms.txt 2026-07-20セクション追加 ✅ 2026-07-20
+
 - [→] **SNS_2026-08-03.md 2027-02-21〜23日次 + 2030/08/21〜27バッチ** `SNS担当 2026-08-03実行予定`
   - タスク1: sns_原稿_2027-02-21.md（土・2月第3週土曜・週末行動促進・3本）
   - タスク2: sns_原稿_2027-02-22.md（日・自己分析Day×診断誘導・3本）
