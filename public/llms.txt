@@ -642,6 +642,12 @@
 - disclaimer.html：WebPage JSON-LD description強化（E-E-A-T信頼性強化・「AIキャリア診断ツール」KW追加・免責事項ページの構造化データ品質向上）
 - sitemap.xml：privacy.html lastmod → 2026-08-04・disclaimer.html lastmod → 2026-08-04 更新
 
+## 2026年8月5日の主な更新
+
+- 全8タイプページ（戦略家・分析者・守護者・調整役・挑戦者・表現者・職人・育成者）：Article JSON-LD dateModified → 2026-08-05 更新（SEO freshness維持）
+- faq.html：Article JSON-LD dateModified → 2026-08-05 更新（SEO freshness維持）
+- sitemap.xml：全8タイプページ・faq.html lastmod → 2026-08-05 更新
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。

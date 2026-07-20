@@ -59,7 +59,7 @@
   - タスク4: x-posts/2026-09-16_SNS_バッチ_原稿.md（2030/08/21〜08/27・お盆明け後半×秋採用シフト加速・7本）
   - SNSカバレッジ（完了後）：日次〜2027-02-23・2030バッチ〜2030/08/27
 
-- [→] **CTO_2026-08-04.md privacy.html + disclaimer.html WebPage JSON-LD + sitemap/llms.txt更新** `CTO 2026-08-04実行予定`
+- [x] **CTO_2026-08-04.md privacy.html + disclaimer.html WebPage JSON-LD + sitemap/llms.txt更新** `CTO 2026-07-20前倒し実行完了`
   - タスク1: privacy.html WebPage JSON-LD追加（E-E-A-T信頼性強化・isPartOf WebSite連携）
   - タスク2: disclaimer.html WebPage JSON-LD追加（E-E-A-T信頼性強化・isPartOf WebSite連携）
   - タスク3: sitemap.xml（privacy.html・disclaimer.html lastmod 2026-08-04）+ llms.txt 2026-08-04セクション追加
@@ -71,7 +71,7 @@
   - タスク4: x-posts/2026-09-17_SNS_バッチ_原稿.md（2030/08/28〜09/03・9月転職活動スタート×お盆後最終局面・7本）
   - SNSカバレッジ（完了後）：日次〜2027-02-26・2030バッチ〜2030/09/03
 
-- [→] **CTO_2026-08-05.md 全8タイプページ + faq.html JSON-LD dateModified更新 + sitemap/llms.txt更新** `CTO 2026-08-05実行予定`
+- [x] **CTO_2026-08-05.md 全8タイプページ + faq.html JSON-LD dateModified更新 + sitemap/llms.txt更新** `CTO 2026-07-20前倒し実行完了`
   - タスク1: 全8タイプページ WebPage JSON-LD dateModified → 2026-08-05 更新（SEO freshness維持）
   - タスク2: faq.html Article JSON-LD dateModified → 2026-08-05 更新
   - タスク3: sitemap.xml（全8タイプ・faq.html lastmod 2026-08-05）+ llms.txt 2026-08-05セクション追加
