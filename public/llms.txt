@@ -623,6 +623,12 @@
 - result.html：BreadcrumbList JSON-LD 実装済み確認・WebPage JSON-LD dateModified → 2026-08-02 更新
 - sitemap.xml：result.html lastmod → 2026-08-02 更新
 
+## 2026年8月3日の主な更新
+
+- contact.html：ContactPage JSON-LD内のBreadcrumbList「トップ」→「ホーム」に統一修正（全ページ表記統一）
+- about.html：AboutPage JSON-LD追加（E-E-A-T強化・WebSiteエンティティとのisPartOf連携・AIクローラーへの会社概要ページ属性強化）
+- sitemap.xml：contact.html lastmod → 2026-08-03・about.html lastmod → 2026-08-03 更新
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。

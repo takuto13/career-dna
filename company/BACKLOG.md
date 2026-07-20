@@ -41,10 +41,10 @@
   - タスク4: x-posts/2026-09-15_SNS_バッチ_原稿.md（2030/08/14〜08/20・お盆期間×転職決意促進・7本）
   - SNSカバレッジ（完了後）：日次〜2027-02-20・2030バッチ〜2030/08/20
 
-- [→] **CTO_2026-08-03.md contact.html ContactPage JSON-LD + about.html AboutPage JSON-LD + sitemap/llms.txt更新** `CTO 2026-08-03実行予定`
-  - タスク1: contact.html ContactPage JSON-LD追加（E-E-A-T強化・BreadcrumbList包含）
-  - タスク2: about.html AboutPage JSON-LD追加・確認（Organization/BreadcrumbListとの重複なし）
-  - タスク3: sitemap.xml（contact.html・about.html lastmod 2026-08-03）+ llms.txt 2026-08-03セクション追加
+- [x] **CTO_2026-08-03.md contact.html ContactPage JSON-LD + about.html AboutPage JSON-LD + sitemap/llms.txt更新** `CTO 2026-07-20前倒し実行完了`
+  - タスク1: contact.html ContactPage JSON-LD確認済み（実装済み）+ BreadcrumbList内「トップ」→「ホーム」統一修正 ✅ 2026-07-20
+  - タスク2: about.html AboutPage JSON-LD追加（Organization/BreadcrumbListとの重複なし・isPartOf WebSite連携） ✅ 2026-07-20
+  - タスク3: sitemap.xml（contact.html lastmod 2026-08-03・about.html lastmod 2026-08-03）+ llms.txt 2026-08-03セクション追加 ✅ 2026-07-20
 
 - [→] **SNS_2026-08-03.md 2027-02-21〜23日次 + 2030/08/21〜27バッチ** `SNS担当 2026-08-03実行予定`
   - タスク1: sns_原稿_2027-02-21.md（土・2月第3週土曜・週末行動促進・3本）
