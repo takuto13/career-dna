@@ -3326,3 +3326,10 @@
   - タスク3: sns_原稿_2027-02-14.md（日・バレンタイン×「好き」×向いてる仕事×転職軸・3本）✅ 2026-07-19
   - タスク4: x-posts/2026-09-14_SNS_バッチ_原稿.md（2030/07/31〜08/06・夏転職壁×秋採用始動・7本）✅ 2026-07-19
   - SNSカバレッジ（完了後）：日次〜2027-02-14・2030バッチ〜2030/08/06
+
+- [x] **CTO_2026-08-04.md（前倒し実行）: privacy.html / disclaimer.html WebPage JSON-LD description強化 + sitemap.xml / llms.txt更新** `CTO 2026-07-20前倒し実行完了`
+  - タスク1: privacy.html WebPage JSON-LD description強化（E-E-A-T信頼性強化・「AIキャリア診断ツール」KW追加）✅
+  - タスク2: disclaimer.html WebPage JSON-LD description強化（E-E-A-T信頼性強化・「AIキャリア診断ツール」KW追加）✅
+  - タスク3: sitemap.xml privacy.html → 2026-08-04 / disclaimer.html → 2026-08-04 更新 ✅
+  - タスク3: llms.txt 2026-08-04セクション追加（privacy/disclaimer WebPage JSON-LD強化記録）✅
+  - CTO_2026-08-04.md → company/archive/CTO_2026-08-04_completed.md アーカイブ ✅
