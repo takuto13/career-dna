@@ -59,6 +59,18 @@
   - タスク4: x-posts/2026-09-16_SNS_バッチ_原稿.md（2030/08/21〜08/27・お盆明け後半×秋採用シフト加速・7本）
   - SNSカバレッジ（完了後）：日次〜2027-02-23・2030バッチ〜2030/08/27
 
+- [→] **CTO_2026-08-04.md privacy.html + disclaimer.html WebPage JSON-LD + sitemap/llms.txt更新** `CTO 2026-08-04実行予定`
+  - タスク1: privacy.html WebPage JSON-LD追加（E-E-A-T信頼性強化・isPartOf WebSite連携）
+  - タスク2: disclaimer.html WebPage JSON-LD追加（E-E-A-T信頼性強化・isPartOf WebSite連携）
+  - タスク3: sitemap.xml（privacy.html・disclaimer.html lastmod 2026-08-04）+ llms.txt 2026-08-04セクション追加
+
+- [→] **SNS_2026-08-04.md 2027-02-24〜26日次 + 2030/08/28〜09/03バッチ** `SNS担当 2026-08-04実行予定`
+  - タスク1: sns_原稿_2027-02-24.md（火・就活解禁6日前×転職書類選考結果速報期・3本）
+  - タスク2: sns_原稿_2027-02-25.md（水・就活解禁5日前×転職面接本番期×診断誘導・3本）
+  - タスク3: sns_原稿_2027-02-26.md（木・就活解禁4日前×転職内定後比較×就活次フェーズ・3本）
+  - タスク4: x-posts/2026-09-17_SNS_バッチ_原稿.md（2030/08/28〜09/03・9月転職活動スタート×お盆後最終局面・7本）
+  - SNSカバレッジ（完了後）：日次〜2027-02-26・2030バッチ〜2030/09/03
+
 - [x] **CTO_2026-07-29.md jobs.html OGP twitter card + 全タイプページog:description確認 + sitemap/llms.txt更新** `CTO 2026-07-19前倒し実行完了`
   - タスク1: jobs.html OGP twitter card補強（twitter:card/title/description確認・追加）✅
   - タスク2: 全8タイプページ og:description「スマホアプリ不要・登録不要」差別化KW確認・補強（全8ページ追加）✅
