@@ -71,6 +71,18 @@
   - タスク4: x-posts/2026-09-17_SNS_バッチ_原稿.md（2030/08/28〜09/03・9月転職活動スタート×お盆後最終局面・7本）
   - SNSカバレッジ（完了後）：日次〜2027-02-26・2030バッチ〜2030/09/03
 
+- [→] **CTO_2026-08-05.md 全8タイプページ + faq.html JSON-LD dateModified更新 + sitemap/llms.txt更新** `CTO 2026-08-05実行予定`
+  - タスク1: 全8タイプページ WebPage JSON-LD dateModified → 2026-08-05 更新（SEO freshness維持）
+  - タスク2: faq.html Article JSON-LD dateModified → 2026-08-05 更新
+  - タスク3: sitemap.xml（全8タイプ・faq.html lastmod 2026-08-05）+ llms.txt 2026-08-05セクション追加
+
+- [→] **SNS_2026-08-05.md 2027-02-27〜03-01日次 + 2030/09/04〜10バッチ** `SNS担当 2026-08-05実行予定（原稿CEO代行2026-07-20作成済み）`
+  - タスク1: sns_原稿_2027-02-27.md（土・就活解禁2日前×週末転職×2月締め・3本）✅ CEO代行2026-07-20作成済み
+  - タスク2: sns_原稿_2027-02-28.md（日・就活解禁前日×動ける最後の週末×転職者共感・3本）✅ CEO代行2026-07-20作成済み
+  - タスク3: sns_原稿_2027-03-01.md（月・就活解禁日×転職本格スタート年度初・3本）✅ CEO代行2026-07-20作成済み
+  - タスク4: x-posts/2026-09-18_SNS_バッチ_原稿.md（2030/09/04〜09/10・秋採用最終週×内定出始め・7本）✅ CEO代行2026-07-20作成済み
+  - SNSカバレッジ（完了後）：日次〜2027-03-01・2030バッチ〜2030/09/10
+
 - [x] **CTO_2026-07-29.md jobs.html OGP twitter card + 全タイプページog:description確認 + sitemap/llms.txt更新** `CTO 2026-07-19前倒し実行完了`
   - タスク1: jobs.html OGP twitter card補強（twitter:card/title/description確認・追加）✅
   - タスク2: 全8タイプページ og:description「スマホアプリ不要・登録不要」差別化KW確認・補強（全8ページ追加）✅
@@ -3326,3 +3338,10 @@
   - タスク3: sns_原稿_2027-02-14.md（日・バレンタイン×「好き」×向いてる仕事×転職軸・3本）✅ 2026-07-19
   - タスク4: x-posts/2026-09-14_SNS_バッチ_原稿.md（2030/07/31〜08/06・夏転職壁×秋採用始動・7本）✅ 2026-07-19
   - SNSカバレッジ（完了後）：日次〜2027-02-14・2030バッチ〜2030/08/06
+
+- [x] **CTO_2026-08-04.md（前倒し実行）: privacy.html / disclaimer.html WebPage JSON-LD description強化 + sitemap.xml / llms.txt更新** `CTO 2026-07-20前倒し実行完了`
+  - タスク1: privacy.html WebPage JSON-LD description強化（E-E-A-T信頼性強化・「AIキャリア診断ツール」KW追加）✅
+  - タスク2: disclaimer.html WebPage JSON-LD description強化（E-E-A-T信頼性強化・「AIキャリア診断ツール」KW追加）✅
+  - タスク3: sitemap.xml privacy.html → 2026-08-04 / disclaimer.html → 2026-08-04 更新 ✅
+  - タスク3: llms.txt 2026-08-04セクション追加（privacy/disclaimer WebPage JSON-LD強化記録）✅
+  - CTO_2026-08-04.md → company/archive/CTO_2026-08-04_completed.md アーカイブ ✅
