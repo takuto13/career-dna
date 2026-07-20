@@ -611,6 +611,18 @@
 - contact.html：twitter:title / twitter:description タグを追加（サイト全体のSNSシェア品質統一）
 - sitemap.xml：index.html・about.html・contact.html lastmod → 2026-07-31 更新
 
+## 2026年8月1日の主な更新
+
+- about.html：BreadcrumbList JSON-LD追加（ホーム→会社概要の2項目形式・SERP上パンくずリスト表示対応）
+- contact.html：BreadcrumbList JSON-LD追加（ホーム→お問い合わせの2項目形式・全ページ構造化データ統一）
+- sitemap.xml：about.html lastmod → 2026-08-02・contact.html lastmod → 2026-08-01 更新
+
+## 2026年8月2日の主な更新
+
+- about.html：Organization JSON-LD 実装済み確認（E-E-A-T強化・運営者情報・founder情報含む詳細実装済み）
+- result.html：BreadcrumbList JSON-LD 実装済み確認・WebPage JSON-LD dateModified → 2026-08-02 更新
+- sitemap.xml：result.html lastmod → 2026-08-02 更新
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。

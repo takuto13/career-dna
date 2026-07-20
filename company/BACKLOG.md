@@ -17,10 +17,10 @@
 
 ###  最優先（今週中）
 
-- [→] **CTO_2026-08-01.md about.html/contact.html BreadcrumbList JSON-LD追加 + sitemap/llms.txt更新** `CTO 2026-08-01実行予定`
-  - タスク1: about.html BreadcrumbList JSON-LD追加（ホーム→会社概要の2項目形式）
-  - タスク2: contact.html BreadcrumbList JSON-LD追加（ホーム→お問い合わせの2項目形式）
-  - タスク3: sitemap.xml（about.html・contact.html lastmod 2026-08-01）+ llms.txt 2026-08-01セクション追加
+- [x] **CTO_2026-08-01.md about.html/contact.html BreadcrumbList JSON-LD追加 + sitemap/llms.txt更新** `CTO 2026-07-20前倒し実行完了`
+  - タスク1: about.html BreadcrumbList JSON-LD追加（ホーム→会社概要の2項目形式）✅ 2026-07-20
+  - タスク2: contact.html BreadcrumbList JSON-LD追加（ホーム→お問い合わせの2項目形式）✅ 2026-07-20
+  - タスク3: sitemap.xml（about.html lastmod 2026-08-02・contact.html lastmod 2026-08-01）+ llms.txt 2026-08-01セクション追加 ✅ 2026-07-20
 
 - [→] **SNS_2026-08-01.md 2027-02-15〜17日次 + 2030/08/07〜13バッチ** `SNS担当 2026-08-01実行予定`
   - タスク1: sns_原稿_2027-02-15.md（月・書類選考追い込み期×月曜行動促進・3本）
@@ -29,10 +29,10 @@
   - タスク4: x-posts/2026-09-14_SNS_バッチ_原稿.md（2030/08/07〜08/13・お盆前×秋採用準備最終局面・7本）
   - SNSカバレッジ（完了後）：日次〜2027-02-17・2030バッチ〜2030/08/13
 
-- [→] **CTO_2026-08-02.md about.html Organization JSON-LD + result.html BreadcrumbList JSON-LD + sitemap/llms.txt更新** `CTO 2026-08-02実行予定`
-  - タスク1: about.html Organization JSON-LD追加（E-E-A-T強化）+ WebPage dateModified 2026-08-02更新
-  - タスク2: result.html BreadcrumbList JSON-LD追加（ホーム→診断結果の2項目形式）+ dateModified 2026-08-02更新
-  - タスク3: sitemap.xml（about.html・result.html lastmod 2026-08-02）+ llms.txt 2026-08-02セクション追加
+- [x] **CTO_2026-08-02.md about.html Organization JSON-LD + result.html BreadcrumbList JSON-LD + sitemap/llms.txt更新** `CTO 2026-07-20前倒し実行完了`
+  - タスク1: about.html Organization JSON-LD確認（E-E-A-T強化・実装済みのためスキップ）✅ 2026-07-20
+  - タスク2: result.html BreadcrumbList JSON-LD確認（実装済みのためスキップ）・WebPage dateModified → 2026-08-02更新 ✅ 2026-07-20
+  - タスク3: sitemap.xml（about.html・result.html lastmod 2026-08-02）+ llms.txt 2026-08-02セクション追加 ✅ 2026-07-20
 
 - [→] **SNS_2026-08-02.md 2027-02-18〜20日次 + 2030/08/14〜20バッチ** `SNS担当 2026-08-02実行予定`
   - タスク1: sns_原稿_2027-02-18.md（木・面接中盤×結果待ち期間の過ごし方・3本）

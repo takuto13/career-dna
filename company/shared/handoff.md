@@ -6,6 +6,40 @@
 
 ---
 
+## 次セッションへの引継ぎ：あり（2026-07-20 CTO定例完了）
+
+### 2026-07-20 CTO定例 完了タスク
+
+- GitHub Issues確認（9件・新規なし・前回から変化なし・#9 FAQ STOP ORDER継続・#16 X自動投稿継続） ✅
+- CTO_2026-08-01.md 前倒し実行完了 ✅
+  - タスク1: about.html BreadcrumbList JSON-LD追加（ホーム→会社概要の2項目形式）✅
+  - タスク2: contact.html BreadcrumbList JSON-LD追加（ホーム→お問い合わせの2項目形式・独立ブロック追加）✅
+  - タスク3: sitemap.xml（about.html lastmod 2026-08-02・contact.html lastmod 2026-08-01）+ llms.txt 2026-08-01セクション追加 ✅
+  - CTO_2026-08-01.md → company/archive/CTO_2026-08-01_completed.md アーカイブ ✅
+- CTO_2026-08-02.md 前倒し実行完了 ✅
+  - タスク1: about.html Organization JSON-LD 実装済み確認（E-E-A-T強化済み・追加不要）✅
+  - タスク2: result.html BreadcrumbList JSON-LD 実装済み確認・WebPage dateModified → 2026-08-02更新 ✅
+  - タスク3: sitemap.xml（result.html lastmod 2026-08-02）+ llms.txt 2026-08-02セクション追加 ✅
+  - CTO_2026-08-02.md → company/archive/CTO_2026-08-02_completed.md アーカイブ ✅
+- BACKLOG.md [x] 更新完了 ✅
+- git commit/push ✅
+
+**FAQ STOP ORDER継続中：** faq.html 319問固定（Issue #9 解除待ち）
+
+**⚠️ たくとへのエスカレーション（CTO 2026-07-20定例）：継続事項のみ**
+- Google Search Console クロール申請（about.html・contact.html：BreadcrumbList JSON-LD追加 / result.html：WebPage dateModified更新 対象）
+- キャリア協会「適職診断おすすめ12選」「AI自己分析ツールランキング10選」掲載申請（継続最優先）
+- GitHub Issue #9（FAQ STOP ORDER）：解除タイミング要判断
+- Issue #16 X自動投稿：X Developer Portal API申請・承認フロー設計の方針決定が必要
+
+**次回CTO実行待ちタスク：**
+- CTO指示書なし（次回CEO定例で次の指示書作成予定）
+- FAQ STOP ORDER解除後：「転職AI」「AI転職相談」KW FAQ追加（faq.html）
+
+**次回競合調査：** 2026-07-23（前回2026-07-16から7日後・必須実施・次回CEO定例で実施）
+
+---
+
 ## 次セッションへの引継ぎ：あり（2026-07-19 CEO定例 第7セッション完了）
 
 ### 2026-07-19 CEO定例 第7セッション 完了タスク
