@@ -17,9 +17,9 @@
 
 ### ⚡ 今週タスク（週3稼働：月・水・金）
 
-- [→] **CTO_2026-07-23.md 全8タイプWebPage dateModified更新 + index.html JSON-LD確認** `CTO 2026-07-23実行予定`
-  - タスク1: 全8タイプページ WebPage JSON-LD dateModified → 2026-07-23 更新
-  - タスク2: index.html SoftwareApplication JSON-LD operatingSystem/applicationCategory確認・強化
+- [x] **CTO_2026-07-23.md 全8タイプWebPage dateModified更新 + index.html JSON-LD確認** `CTO 2026-07-21前倒し実行完了` ✅
+  - タスク1: 全8タイプページ WebPage JSON-LD dateModified確認 → 既に2026-08-05のためダウングレード回避・スキップ ✅
+  - タスク2: index.html SoftwareApplication JSON-LD operatingSystem/applicationCategory確認済み・dateModified 2026-07-22 → 2026-07-23 更新 ✅
   - タスク3: sitemap.xml / llms.txt 更新
 
 - [→] **SNS_2026-07-23.md 2027-03-08〜10日次 + 2030/09/25〜10/01バッチ** `SNS担当 2026-07-23実行予定`

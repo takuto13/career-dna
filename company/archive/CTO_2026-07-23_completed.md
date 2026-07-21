@@ -1,106 +1,60 @@
-# CTO指示書 2026-07-23
+# CTO指示書 2026-07-23（水）
 
 作成者：AI CEO  
-作成日：2026-07-18  
-対象：AI CTO
+作成日：2026-07-21  
+実行予定日：2026-07-23（月・水・金の週3稼働・水曜分）
 
 ---
 
-## ⚠️ 前提確認（作業前に必ずチェック）
+## 本日の優先タスク（2〜3件に絞る）
 
-- **FAQ STOP ORDER継続中**：faq.html（319問）・全タイプページへのFAQ追加は一切禁止
-- **UI・デザイン変更禁止**：見た目・遷移・レイアウト変更は行わない
-- **Google Search Console クロール申請**（たくと担当）：BreadcrumbList JSON-LD・SoftwareApplication JSON-LD 追加済みページを申請してもらうようエスカレーション記録
+### タスク1：全8タイプページ WebPage JSON-LD dateModified 更新（SEO freshness維持）
 
----
+**背景：**
+- 全8タイプページのWebPage JSON-LDのdateModifiedを最新日付に更新することで、Googleのfreshness評価を維持する
+- 秋採用シーズン（8〜9月）に向けてコンテンツが最新であることをクローラーに示す
 
-## 本日のタスク（優先順）
+**作業内容：**
+- 全8タイプページ（type-strategist.html / type-analyst.html / type-craftsman.html / type-coordinator.html / type-challenger.html / type-creator.html / type-guardian.html / type-mentor.html）の WebPage JSON-LD 内 `"dateModified"` を `"2026-07-23"` に更新
+- sitemap.xml 内の全8タイプページの `<lastmod>` を `2026-07-23` に更新
+- llms.txt に 2026-07-23 セクション追加（「全8タイプページ WebPage dateModified更新・秋採用シーズン向けfreshness維持」）
 
-### タスク1：全12ページ `<link rel="canonical">` タグ追加（SEO基礎要件）
-
-**対象ページ：**
-- `public/index.html`
-- `public/faq.html`
-- `public/jobs.html`
-- `public/result.html`
-- `public/type-strategist.html`
-- `public/type-analyst.html`
-- `public/type-craftsman.html`
-- `public/type-mediator.html`
-- `public/type-challenger.html`
-- `public/type-creator.html`
-- `public/type-guardian.html`
-- `public/type-nurturer.html`
-
-**実装方法：** 各ページの `<head>` 内（`<title>` タグの直後推奨）に以下を追加：
-```html
-<link rel="canonical" href="https://career-dna.jp/[ページパス]">
-```
-
-各ページのURL：
-- index.html → `https://career-dna.jp/`
-- faq.html → `https://career-dna.jp/faq.html`
-- jobs.html → `https://career-dna.jp/jobs.html`
-- result.html → `https://career-dna.jp/result.html`
-- type-strategist.html → `https://career-dna.jp/type-strategist.html`
-- type-analyst.html → `https://career-dna.jp/type-analyst.html`
-- type-craftsman.html → `https://career-dna.jp/type-craftsman.html`
-- type-mediator.html → `https://career-dna.jp/type-mediator.html`
-- type-challenger.html → `https://career-dna.jp/type-challenger.html`
-- type-creator.html → `https://career-dna.jp/type-creator.html`
-- type-guardian.html → `https://career-dna.jp/type-guardian.html`
-- type-nurturer.html → `https://career-dna.jp/type-nurturer.html`
-
-**すでに canonical が実装済みのページがある場合** は内容を確認して正しいURLになっているか検証すること。
-
-**期待効果：** 重複コンテンツ問題の防止・クローラビリティ向上・SEOランキング安定化
+**成果物：**
+- 全8タイプページ HTML更新
+- sitemap.xml 更新
+- llms.txt 更新
 
 ---
 
-### タスク2：全8タイプページ seo-paragraph に差別化KW補強
+### タスク2：index.html SoftwareApplication JSON-LD の operatingSystem / applicationCategory 確認・強化
 
-**目的：** index.html で追加済みの「スマホアプリ不要・ブラウザ完結」差別化KWをタイプページにも展開し、AI診断ツール検索での差別化を強化する。
+**背景：**
+- 競合「転職AI」「ASSIGN」などがAI診断ツールとしてStructured Dataを強化中
+- キャリアDNAのindex.html SoftwareApplication JSON-LDにoperatingSystem・applicationCategoryを明示することでAI診断ツールとしての検索認識を強化
 
-**対象：** 全8タイプページの `.seo-paragraph` セクション（または同等のSEO非表示テキストエリア）
+**作業内容：**
+- index.html の SoftwareApplication JSON-LD を確認
+- `"operatingSystem": "Web"` `"applicationCategory": "BusinessApplication"` が未設定の場合は追加
+- `"dateModified": "2026-07-23"` に更新
+- sitemap.xml の index.html lastmod を `2026-07-23` に更新（既に2026-08-06より新しい日付がある場合はスキップ）
 
-**追加する1文の例（タイプに合わせて自然に調整）：**
-```
-キャリアDNAは登録不要・スマホアプリ不要でブラウザのみで診断が完結するAIキャリア診断ツールです。
-```
-
-**注意事項：**
-- 既存テキストを上書きしないこと（末尾に追加）
-- 各タイプページで文意が自然になるよう1文を調整してよい（「[タイプ名]タイプの方は」など書き出しを変えてもよい）
-- UIや見た目の変更は行わない（seo-paragraphは検索エンジン向けの非表示/薄色テキスト）
-
----
-
-### タスク3：sitemap.xml lastmod更新 + llms.txt 2026-07-23 セクション追加
-
-**sitemap.xml 更新対象ページ（lastmod → 2026-07-23）：**
-- タスク1でcanonical追加した全12ページ（変更あり）
-- タスク2でseo-paragraph更新した全8タイプページ
-
-**llms.txt 追加内容（2026年7月23日セクション）：**
-```
-## 2026年7月23日の主な更新
-- 全12ページ <link rel="canonical"> タグ追加（canonical URL統一・SEO基礎要件）
-- 全8タイプページ seo-paragraph に「スマホアプリ不要・ブラウザ完結」差別化KW追加
-- sitemap.xml lastmod 2026-07-23 更新
-```
+**成果物：**
+- index.html JSON-LD更新（確認のみの場合は確認結果をBACKLOGに記録）
+- 必要な場合のみ sitemap.xml 更新
 
 ---
 
-## 完了後の作業
+## 注意事項
 
-1. BACKLOG.md の本指示書タスクを `[x]` に更新
-2. `company/requests/CTO_2026-07-23.md` → `company/archive/` にアーカイブ
-3. git commit（"CTO定例 canonical tags + SEO差別化KW補強 2026-07-23"）& push
-4. handoff.md に完了記録を追加
+- **FAQ STOP ORDER継続中**：faq.html の319問は変更しないこと（Issue #9 解除待ち）
+- **デザイン・UI変更禁止**：見た目・遷移・レイアウト変更は実施しないこと
+- 完了後は BACKLOG の本タスクを `[x]` に更新すること
+- git commit & push まで実施すること
 
 ---
 
-## エスカレーション（たくとへ報告）
+## 参考情報
 
-- **Google Search Console クロール申請**：今回変更した全12ページのURL申請をお願いします（特にcanonical追加・seo-paragraph追加ページ）
-- **FAQ STOP ORDER（Issue #9）**：解除していただいた場合、CTO_2026-07-10〜07-13.md のFAQ追加タスク群が即実行可能です
+- 次回競合調査：**2026-07-23 必須実施**（前回2026-07-16から7日・CEO定例で実施）
+- SNSカバレッジ（現状）：日次〜2027-03-07 / 2030バッチ〜2030/09/24
+- エスカレーション継続：キャリア協会掲載申請・Issue #16 X自動投稿API申請
