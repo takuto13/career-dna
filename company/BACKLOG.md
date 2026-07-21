@@ -43,6 +43,10 @@
 - [x] **SNS_2026-08-06.md 経由で SNS_2026-07-21.md の原稿作成完了** ✅ 2026-07-21
   - sns_原稿_2027-03-02.md / 03-03.md / 03-04.md → x-posts/に移動済み
 
+- [x] **CTO 自律作業 2026-07-21 jobs.html WebPage JSON-LD修正** `CTO 2026-07-21自律実行完了` ✅
+  - jobs.html WebPage JSON-LD BreadcrumbList position1「トップ」→「ホーム」統一修正（他ページと表記統一）✅
+  - jobs.html WebPage JSON-LD dateModified: "2026-08-06" 追加（sitemap.xmlのlastmodと整合）✅
+
 ---
 
 ### ✅ Issue #17/#18/#12 対応完了（2026-07-21）
