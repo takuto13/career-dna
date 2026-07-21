@@ -570,6 +570,12 @@
 - type-strategy.html：`<meta name="robots" content="noindex, nofollow">` 追加（canonical が type-strategist.html を指す旧URLの重複コンテンツを明示的に除外）
 - sitemap.xml：privacy.html・disclaimer.html lastmod → 2026-07-20 更新
 
+## 2026年7月21日の主な更新
+
+- 週3稼働（月・水・金）に運用変更（Issue #17 対応・使用量3割残しルール導入）
+- SNS投稿原稿の保存先を x-posts/ フォルダに統一（Issue #18 対応）
+- SEO継続更新中。
+
 ## 2026年7月22日の主な更新
 
 - 全8タイプページ：BreadcrumbList JSON-LD を新形式（ホーム → AIキャリア診断 → [タイプ名]の特徴・向いてる仕事・転職）に統一更新（SERP パンくず表示強化・CTR向上）

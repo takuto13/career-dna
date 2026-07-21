@@ -6,6 +6,34 @@
 
 ---
 
+## 次セッションへの引継ぎ：あり（2026-07-21 CTO定例 CTO_2026-07-21.md完了）
+
+### 2026-07-21 CTO定例 完了タスク
+
+- GitHub Issues確認（11件・#17/#18継続・変化なし）✅
+- CTO_2026-07-21.md タスク実行完了 ✅
+  - タスク1: llms.txt 2026-07-21セクション追加（週3稼働移行・Issue #17/#18対応記録）✅
+  - タスク2: sitemap.xml スキップ（index.html・jobs.htmlが既に2026-08-06でより新しい日付のためダウングレード回避）✅
+  - タスク3: CEO実行済み確認 ✅
+  - CTO_2026-07-21.md → company/archive/CTO_2026-07-21_completed.md アーカイブ ✅
+- BACKLOG.md [→] → [x] 更新完了 ✅
+- git commit/push ✅
+
+**FAQ STOP ORDER継続中：** faq.html 319問固定（Issue #9 解除待ち）
+
+**⚠️ たくとへのエスカレーション（CTO 2026-07-21定例）：**
+- Google Search Console クロール申請（index.html・jobs.html：2026-08-06更新分）
+- キャリア協会「適職診断おすすめ12選」「AI自己分析ツールランキング10選」掲載申請（継続最優先）
+- GitHub Issue #9（FAQ STOP ORDER）：解除タイミング要判断
+- GitHub Issue #17（週3稼働変更）・Issue #18（タスク整理）：decisions.md記録済み・運用変更移行中
+- Issue #16 X自動投稿：X Developer Portal API申請待ち
+
+**次回CTO実行待ちタスク：**
+- CTO指示書なし（次回CEO定例で次の指示書作成予定）
+- FAQ STOP ORDER解除後：「転職AI」「AI転職相談」KW FAQ追加（faq.html）
+
+---
+
 ## 次セッションへの引継ぎ：あり（2026-07-21 SNS担当定例 SNS_2026-07-21.md実行確認完了）
 
 ### 2026-07-21 SNS担当定例 SNS_2026-07-21.md 完了タスク（スケジュール実行）
