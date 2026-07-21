@@ -83,10 +83,10 @@
   - タスク4: x-posts/2026-09-18_SNS_バッチ_原稿.md（2030/09/04〜09/10・秋採用最終週×内定出始め・7本）✅
   - SNSカバレッジ（完了後）：日次〜2027-03-01・2030バッチ〜2030/09/10
 
-- [→] **CTO_2026-08-06.md index.html/jobs.html 転職AI差別化KW + llms.txt/sitemap更新** `CTO 2026-08-06実行予定`
-  - タスク1: index.html seo-paragraph更新（5分自己分析・スマホアプリ不要・転職AI差別化KW）
-  - タスク2: jobs.html 秋採用×転職エージェント複数登録SEOテキスト追加
-  - タスク3: llms.txt 2026-08-06セクション追加 + sitemap.xml lastmod更新
+- [x] **CTO_2026-08-06.md index.html/jobs.html 転職AI差別化KW + llms.txt/sitemap更新** `CTO 2026-07-21実行済み（前倒し）`
+  - タスク1: index.html seo-paragraph更新（5分自己分析・スマホアプリ不要・転職AI差別化KW）✅
+  - タスク2: jobs.html 秋採用×転職エージェント複数登録SEOテキスト追加 ✅
+  - タスク3: llms.txt 2026-08-06セクション追加 + sitemap.xml lastmod更新 ✅
 
 - [→] **SNS_2026-08-06.md 2027-03-02〜03-04日次 + 2030/09/11〜09/17バッチ** `SNS担当 2026-08-06実行予定`
   - タスク1: sns_原稿_2027-03-02.md（火・就活解禁2日後×転職者3月キャリアピーク・3本）

@@ -648,6 +648,11 @@
 - faq.html：Article JSON-LD dateModified → 2026-08-05 更新（SEO freshness維持）
 - sitemap.xml：全8タイプページ・faq.html lastmod → 2026-08-05 更新
 
+## 2026年8月6日の主な更新
+
+- index.html: seo-paragraph更新（5分自己分析・スマホアプリ不要・転職AI差別化KW追加）
+- jobs.html: 秋採用×転職エージェント複数登録KW追加
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。

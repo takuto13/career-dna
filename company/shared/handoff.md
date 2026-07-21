@@ -6,6 +6,34 @@
 
 ---
 
+## 次セッションへの引継ぎ：あり（2026-07-21 CTO定例完了）
+
+### 2026-07-21 CTO定例 完了タスク
+
+- GitHub Issues確認（10件・Issue #17「週3稼働への変更依頼」新規確認）✅
+- CTO_2026-08-06.md 前倒し実行完了 ✅
+  - タスク1: index.html seo-paragraph追加（5分自己分析・スマホアプリ不要・転職AI差別化KW）✅
+  - タスク2: jobs.html 秋採用×転職エージェント複数登録KWテキスト追加 ✅
+  - タスク3: llms.txt 2026-08-06セクション追加 + sitemap.xml（index.html→2026-08-06・jobs.html→2026-08-06）更新 ✅
+  - CTO_2026-08-06.md → company/archive/CTO_2026-08-06_completed.md アーカイブ ✅
+- BACKLOG.md [x] 更新完了 ✅
+- git commit/push ✅
+
+**FAQ STOP ORDER継続中：** faq.html 319問固定（Issue #9 解除待ち）
+
+**⚠️ たくとへのエスカレーション（CTO 2026-07-21定例）：**
+- **【重要】Issue #17（週3稼働変更依頼）：** 毎日定例→週3稼働への変更・使用量3割残し。CEOが次回定例で対応方針を検討してたくとに確認する必要あり
+- Google Search Console クロール申請（index.html・jobs.html：SEOテキスト追加 対象）
+- キャリア協会「適職診断おすすめ12選」「AI自己分析ツールランキング10選」掲載申請（継続最優先）
+- GitHub Issue #9（FAQ STOP ORDER）：解除タイミング要判断
+- Issue #16 X自動投稿：X Developer Portal API申請・承認フロー設計の方針決定が必要
+
+**次回CTO実行待ちタスク：**
+- CTO指示書なし（次回CEO定例で次の指示書作成予定）
+- FAQ STOP ORDER解除後：「転職AI」「AI転職相談」KW FAQ追加（faq.html）
+
+---
+
 ## 次セッションへの引継ぎ：あり（2026-07-20 SNS担当定例 SNS_2026-08-05.md実行完了）
 
 ### 2026-07-20 SNS担当定例 SNS_2026-08-05.md 完了タスク
