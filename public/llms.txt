@@ -668,6 +668,12 @@
 - index.html: seo-paragraph更新（5分自己分析・スマホアプリ不要・転職AI差別化KW追加）
 - jobs.html: 秋採用×転職エージェント複数登録KW追加
 
+## 2026年8月7日の主な更新
+
+- type-challenger.html: 挑戦者タイプ転職エージェント活用法SEOパラグラフ追加（KW: 挑戦者タイプ 転職エージェント / 行動力がある人 向いてる仕事 / スタートアップ転職 向いてる人 診断）
+- type-creator.html: 表現者タイプ転職エージェント活用法SEOパラグラフ追加（KW: 表現者タイプ 転職エージェント / クリエイティブ 向いてる仕事 転職 / 表現力 向いてる仕事 クリエイティブ）
+- sitemap.xml: type-challenger.html・type-creator.html lastmod → 2026-08-07 更新
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
