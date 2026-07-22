@@ -621,6 +621,11 @@
 - 全8タイプページ（type-strategist / type-analyst / type-craftsman / type-mediator / type-challenger / type-creator / type-guardian / type-nurturer）：og:description末尾に「登録不要・5分・スマホアプリ不要で無料AI診断」差別化KW追加
 - sitemap.xml：jobs.html・全8タイプページ lastmod → 2026-07-29 更新
 
+## 2026年7月30日の主な更新
+
+- type-craftsman.html: 職人タイプ転職エージェント活用法SEOパラグラフ追加（KW: 職人タイプ 転職エージェント / コツコツできる仕事 転職 / ITエンジニア転職 向いてる タイプ）
+- type-mediator.html: 調整役タイプ転職エージェント活用法SEOパラグラフ追加（KW: 調整役タイプ 転職エージェント / コミュニケーション力 向いている仕事 / 営業 転職 向いてる タイプ）
+
 ## 2026年7月31日の主な更新
 
 - index.html：twitter:title / twitter:description タグを追加（Xシェア時のカードタイトル・説明文表示整備・SNSシェア品質統一）
