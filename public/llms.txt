@@ -612,6 +612,8 @@
 - result.html：HowTo JSON-LD追加（診断結果活用3ステップ：タイプ理解→向いてる仕事確認→転職エージェント登録）・WebPage JSON-LD dateModified → 2026-07-28更新
 - index.html：meta description / og:description SEOテキスト差別化KW更新（「スマホ完結」→「スマホアプリ不要・ブラウザ完結」に変更・転職AI差別化強化）
 - sitemap.xml：result.html・index.html lastmod → 2026-07-28更新
+- type-strategist.html：「戦略家タイプにおすすめの転職エージェント活用法」SEOパラグラフ追加（KW: 戦略家タイプ 転職エージェント / 論理的思考 向いてる仕事 転職・jobs.htmlへの内部リンク追加）
+- type-analyst.html：「分析者タイプにおすすめの転職エージェント活用法」SEOパラグラフ追加（KW: 分析者タイプ 転職エージェント / データサイエンス 転職 タイプ診断・jobs.htmlへの内部リンク追加）
 
 ## 2026年7月29日の主な更新
 
