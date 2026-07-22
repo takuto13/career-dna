@@ -599,6 +599,8 @@
 - faq.html：BreadcrumbList JSON-LD のposition1を「キャリアDNA」→「ホーム」に統一（全タイプページとの表記統一・SERP パンくず表示品質向上）・Article JSON-LD dateModified → 2026-07-25更新
 - result.html：WebPage JSON-LD dateModified → 2026-07-25更新（診断結果ページの構造化データ最新化）
 - sitemap.xml：faq.html・result.html lastmod → 2026-07-25更新
+- jobs.html：SEOテキスト「転職エージェント比較・タイプ別選び方」追加（転職エージェント 比較 タイプ別・転職エージェント 選び方 自分に合う・転職 タイプ別 エージェントKW対応）
+- index.html：SoftwareApplication JSON-LD品質向上（applicationCategory配列化["CareerDevelopment","SelfImprovement"]・offers.availability OnlineOnly追加・dateModified 2026-07-25更新）
 
 ## 2026年7月27日の主な更新
 

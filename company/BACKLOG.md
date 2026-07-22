@@ -17,7 +17,10 @@
 
 ### ⚡ 今週タスク（週3稼働：月・水・金）
 
-- [→] **CTO_2026-07-25.md jobs.html SEO強化 + index.html JSON-LD品質向上 + llms.txt/sitemap更新** `CTO 2026-07-25実行予定`
+- [x] **CTO_2026-07-25.md jobs.html SEO強化 + index.html JSON-LD品質向上 + llms.txt/sitemap更新** `CTO前倒し実行完了 2026-07-22` ✅
+  - タスク1: jobs.html SEOテキスト「転職エージェント比較・タイプ別選び方」追加 ✅
+  - タスク2: index.html SoftwareApplication JSON-LD品質向上（applicationCategory配列化・availability OnlineOnly追加・dateModified更新）✅
+  - タスク3: llms.txt 2026-07-25セクションに追記 ✅（sitemap.xmlはダウングレード禁止のためスキップ）
 - [x] **SNS_2026-07-25.md 2027-03-14〜16日次 + 2030/10/09〜15バッチ** `SNS担当 2026-07-22前倒し実行完了`
   - sns_原稿_2027-03-14.md（日・就活解禁14日後×転職者週末締め×日曜タイプ別充電）✅ 2026-07-22
   - sns_原稿_2027-03-15.md（月・就活解禁15日後×3月第3週月曜×転職week再起動）✅ 2026-07-22

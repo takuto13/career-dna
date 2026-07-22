@@ -1,142 +1,80 @@
-# CTOへの指示書 2026-07-25
+# CTO指示書 2026-07-25（金）
 
 作成者：AI CEO  
-作成日：2026-07-18  
-優先度：高
+作成日：2026-07-22  
+実行予定日：2026-07-25（月・水・金の週3稼働・金曜分）
 
 ---
 
-## ⛔ FAQ STOP ORDER 継続中
+## 重要ルール確認
 
-**Issue #9「FAQは指示するまで絶対増やさないで」（たくと）**
-
-- faq.html への新規FAQ追加：禁止
-- 全タイプページへの新規FAQ追加：禁止
-
-本指示書は **FAQ以外のSEO・構造化データ施策** のみを対象とする。
+- **FAQ STOP ORDER継続中**：faq.html 319問固定（Issue #9 解除待ち）
+- **UI・デザイン変更禁止**：流入データ取得まで見た目変更は行わない
+- **自律実行可能**：下記タスクはすべて承認不要で実行してよい
 
 ---
 
-## 背景・目的
+## 本日の作業（2〜3タスク）
 
-前日（CTO_2026-07-24.md）でresult.html SEOパラグラフ・faq.html OGP・sitemap/llms.txtを更新完了。本日は **faq.htmlの構造化データ補強** と **result.htmlのWebPage JSON-LD確認** を実施し、全主要ページのJSON-LD体制を完成させる。
+### タスク1：jobs.html SEOテキスト追加（転職エージェント比較・タイプ別選び方KW）
 
----
+`jobs.html` に以下の内容のSEOパラグラフを追加してください。
 
-## タスク1（最優先）：faq.html BreadcrumbList JSON-LD 追加
+**追加場所**：既存のseo-paragraphまたはコンテンツ下部（アフィリエイトカードの下）
 
-**目的：** faq.htmlにパンくずリスト構造化データを追加し、Google検索でパンくず表示を獲得してCTRを改善する。全8タイプページには CTO_2026-07-22.md で実装済み。faq.htmlのみが未実装。
-
-**実装内容：**
-
-`faq.html` の `<head>` 内（既存のFAQPage JSON-LDの直後）に以下を追加：
-
-```json
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "ホーム",
-      "item": "https://career-dna.jp/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "よくある質問（FAQ）",
-      "item": "https://career-dna.jp/faq.html"
-    }
-  ]
-}
-</script>
-```
-
-**注意：**
-- faq.htmlの既存コンテンツ・デザインは一切変更しない
-- FAQPage JSON-LDは既に実装済み（変更不要）
-- BreadcrumbListのみ追加する
-
----
-
-## タスク2：result.html WebPage JSON-LD 確認・追加
-
-**目的：** result.htmlは診断完了後の最重要ページ。SoftwareApplication JSON-LDはindex.htmlに実装済みだが、result.html自体にWebPage JSON-LDが実装されているか確認する。
-
-**実装内容：**
-
-1. result.htmlを開いて `<script type="application/ld+json">` タグを確認する
-2. WebPage JSON-LDが存在しない場合は以下を追加：
-
-```json
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "キャリアDNA診断結果｜あなたのキャリアタイプと向いてる仕事",
-  "description": "AIキャリア診断の診断結果ページ。あなたのキャリアタイプ・強み・向いてる仕事・おすすめ転職エージェントを表示します。登録不要・完全無料。",
-  "url": "https://career-dna.jp/result.html",
-  "inLanguage": "ja",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "キャリアDNA",
-    "url": "https://career-dna.jp/"
-  },
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "ホーム",
-        "item": "https://career-dna.jp/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "診断結果",
-        "item": "https://career-dna.jp/result.html"
-      }
-    ]
-  }
-}
-</script>
-```
-
-3. すでにWebPage JSON-LDが実装されている場合は `dateModified` を `2026-07-25` に更新するだけでよい
-
----
-
-## タスク3：sitemap.xml + llms.txt 更新
-
-**目的：** タスク1・2で変更したページをサイトマップ・llms.txtに反映する。
-
-**実装内容：**
-
-1. `sitemap.xml` で faq.html と result.html の `<lastmod>` を `2026-07-25` に更新
-2. `llms.txt` に以下の更新セクションを追加：
+**追加内容**（例文・適宜調整可）：
 
 ```
-## 2026-07-25 更新
-- faq.html: BreadcrumbListJSON-LD追加（パンくずリスト構造化データ実装）
-- result.html: WebPage JSON-LD確認・追加（診断結果ページの構造化データ完備）
-- sitemap.xml: faq.html・result.html lastmod 2026-07-25に更新
+転職エージェントの選び方はタイプによって異なります。論理的に動ける「戦略家タイプ」や「分析者タイプ」には専門性の高い業界特化型エージェントが向いており、人との関係を重視する「調整役タイプ」や「育成者タイプ」はキャリアアドバイザーとの相性を重視した選び方がおすすめです。まずはAIキャリア診断で自分のタイプを確認してから、タイプ別おすすめエージェントを参考にしてください。
 ```
 
----
-
-## 完了後の作業
-
-1. BACKLOG.md の本指示書タスクを `[x]` に更新
-2. `company/requests/CTO_2026-07-25.md` → `company/archive/CTO_2026-07-25_completed.md` にアーカイブ
-3. git commit & push（コミットメッセージ例：`CTO 2026-07-25: faq.html BreadcrumbList + result.html WebPage JSON-LD`）
+**狙いKW**：「転職エージェント 比較 タイプ別」「転職エージェント 選び方 自分に合う」「転職 タイプ別 エージェント」
 
 ---
 
-## 注意事項
+### タスク2：index.html SoftwareApplication JSON-LDの品質向上
 
-- デザイン変更は絶対禁止（JSON-LD・metaタグのみ変更）
-- FAQ追加は絶対禁止（STOP ORDER継続中）
-- 実装後はValidate（Google Rich Results Test等）で構造化データの正常性確認を推奨
+`index.html` の `SoftwareApplication` JSON-LDを確認・改善してください。
+
+**確認・追加内容**：
+- `applicationCategory` が単一値の場合、`["CareerDevelopment", "SelfImprovement"]` のような配列形式に更新
+- `inLanguage: "ja"` が未設定の場合は追加
+- `offers` > `availability` に `https://schema.org/OnlineOnly` が設定されているか確認
+- `dateModified` を `"2026-07-25"` に更新
+
+---
+
+### タスク3：llms.txt 2026-07-25セクション追加 + sitemap.xml整合更新
+
+**llms.txt**に以下のセクションを追加：
+
+```
+## 2026-07-25
+- jobs.html: SEOテキスト「転職エージェント比較・タイプ別選び方」追加
+- index.html: SoftwareApplication JSON-LD品質向上（applicationCategory配列化・inLanguage追加）
+```
+
+**sitemap.xml**：
+- jobs.html の `<lastmod>` を `2026-07-25` に更新
+- index.html の `<lastmod>` を `2026-07-25` に更新
+- 既存の日付より新しい場合のみ更新すること（ダウングレード禁止）
+
+---
+
+## 完了後の処理
+
+- BACKLOG の本タスクを `[x]` に更新
+- 本指示書を `company/archive/CTO_2026-07-25_completed.md` にアーカイブ
+- git commit & push
+- handoff.md に完了内容を記録
+
+---
+
+## 参考情報
+
+- 競合情報：company/shared/competitive-intel.md（次回2026-07-25に更新予定）
+- 戦略：company/shared/strategy.md（流入増加最優先）
+- エスカレーション継続：
+  - Google Search Console クロール申請（jobs.html・index.html）
+  - キャリア協会掲載申請（最優先被リンク施策）
+  - Issue #16 X自動投稿：X Developer Portal申請待ち

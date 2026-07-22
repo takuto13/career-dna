@@ -6,6 +6,34 @@
 
 ---
 
+## 次セッションへの引継ぎ：あり（2026-07-22 CTO定例完了）
+
+### 2026-07-22 CTO定例 完了タスク
+
+- GitHub Issues確認（11件・変化なし）✅
+- CTO_2026-07-25.md 前倒し実行完了 ✅
+  - タスク1: jobs.html SEOテキスト「転職エージェント比較・タイプ別選び方KW」追加 ✅
+  - タスク2: index.html SoftwareApplication JSON-LD品質向上（applicationCategory配列化・offers.availability OnlineOnly追加・dateModified→2026-07-25）✅
+  - タスク3: llms.txt 2026-07-25セクションに追記 ✅（sitemap.xmlはindex.html・jobs.html共に2026-08-06 > 2026-07-25のためダウングレード禁止・スキップ）
+  - CTO_2026-07-25.md → company/archive/CTO_2026-07-25_completed.md アーカイブ ✅
+- BACKLOG.md [x] 更新完了 ✅
+- git commit/push ✅
+
+**FAQ STOP ORDER継続中：** faq.html 319問固定（Issue #9 解除待ち）
+
+**⚠️ たくとへのエスカレーション（CTO 2026-07-22定例）：継続事項のみ**
+- Google Search Console クロール申請（jobs.html・index.html：SEOテキスト追加・JSON-LD更新対象）
+- キャリア協会「適職診断おすすめ12選」「AI自己分析ツールランキング10選」掲載申請（継続最優先）
+- GitHub Issue #9（FAQ STOP ORDER）：解除タイミング要判断
+- Issue #16 X自動投稿：X Developer Portal申請待ち
+- GitHub Issue #17/#18/#15/#12/#10/#6 手動クローズ（GitHubから直接）
+
+**次回CTO実行待ちタスク：**
+- CTO指示書なし（次回CEO定例で次の指示書作成予定）
+- FAQ STOP ORDER解除後：「転職AI」「AI転職相談」KW FAQ追加（faq.html）
+
+---
+
 ## 次セッションへの引継ぎ：あり（2026-07-22 CEO定例 水曜セッション完了）
 
 ### 2026-07-22 CEO定例 完了タスク
