@@ -29,6 +29,13 @@
   - タスク4: 2026-09-27_SNS_バッチ_原稿.md（2030/10/30〜11/05・試用期間1ヶ月超え×ハロウィン×11月スタート）✅
   - SNSカバレッジ：日次〜2027-03-28・2030バッチ〜2030/11/12（5th sessionで超過達成）
 
+- [x] **CTO自律実行 2026-07-23 構造化データ整合性メンテナンス** `CTO実行完了 2026-07-23` ✅
+  - タスク1: type-guardian.html Article JSON-LD dateModified 2026-08-05 → 2026-08-10 修正（sitemap.xml lastmodとの不一致を解消）✅
+  - タスク2: type-nurturer.html Article JSON-LD dateModified 2026-08-05 → 2026-08-10 修正（sitemap.xml lastmodとの不一致を解消）✅
+  - タスク3: type-guardian.html about配列に「看護師転職」「薬剤師転職」追加（LLMO強化・SEOパラグラフカバーKWを構造化データに反映）✅
+  - タスク4: type-nurturer.html about配列に「教育転職」「人を育てる仕事」追加（LLMO強化）✅
+  - タスク5: llms.txt 2026-08-13セクション追加（メンテナンス記録）✅
+
 - [x] **CTO_2026-08-10.md 守護者/育成者タイプページ SEOテキスト追加 + llms.txt/sitemap更新** `CTO実行完了 2026-07-23` ✅
   - タスク1: type-guardian.html「守護者タイプにおすすめの転職エージェント活用法」SEOパラグラフ追加（KW: 守護者タイプ 転職エージェント / 責任感が強い人 向いてる仕事 / 看護師 薬剤師転職 タイプ診断）✅
   - タスク2: type-nurturer.html「育成者タイプにおすすめの転職エージェント活用法」SEOパラグラフ追加（KW: 育成者タイプ 転職エージェント / 人を育てる仕事 向いてる職種）✅
