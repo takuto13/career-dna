@@ -684,6 +684,11 @@
 - type-nurturer.html: Article JSON-LD dateModified → 2026-08-10 修正（sitemap.xml lastmodと整合）・about配列に「教育転職」「人を育てる仕事」追加（LLMO強化）
 - 全8タイプページSEOパラグラフ追加完了後の構造化データ整合性メンテナンス
 
+## 2026-08-14 更新内容（内部リンク強化・meta description最適化）
+- 全8タイプページ（type-strategist/analyst/craftsman/mediator/challenger/creator/guardian/nurturer）に「他のタイプも見る」内部リンクブロック追加（タイプ間回遊率・滞在時間向上・SEO評価強化）
+- 全8タイプページ meta description 最適化（転職エージェント活用法KW・タイプ別専門キーワードを自然に追加：戦略家タイプ転職エージェント活用法・データサイエンス転職・ITエンジニア転職・コミュニケーション力向いている仕事・スタートアップ転職・クリエイティブ向いてる仕事・看護師薬剤師転職・人を育てる仕事）
+- 各タイプページからjobs.html（転職サービス比較ページ）へのCTAリンクを内部リンクブロックに追加
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
