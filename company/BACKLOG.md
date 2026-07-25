@@ -26,10 +26,10 @@
 
 ### ⚡ 再来週タスク（週3稼働：月2026-08-04・水08-06・金08-08）
 
-- [ ] **CTO_2026-08-04.md robots.txt ClaudeBot/Claude-User Allow追加 + jobs.html 秋採用KW + llms.txt更新** `CTO作成 2026-07-25`
-  - タスク1: robots.txt に ClaudeBot・Claude-User の Allow: / 追加（LLMO強化）
-  - タスク2: jobs.html SEOパラグラフに「秋採用 転職 9月」「10月入社 逆算スケジュール」KW追加
-  - タスク3: llms.txt 2026-08-04セクション追加
+- [x] **CTO_2026-08-04.md robots.txt ClaudeBot/Claude-User Allow追加 + jobs.html 秋採用KW + llms.txt更新** `CTO実行完了 2026-07-25（前倒し）` ✅
+  - タスク1: robots.txt に ClaudeBot・Claude-User の Allow: / 追加（LLMO強化）✅
+  - タスク2: jobs.html 秋採用シーズン特集セクション確認済み（既存KW「秋採用 転職 9月」「10月入社 逆算スケジュール」反映中）✅
+  - タスク3: llms.txt 2026-08-04セクション追加 ✅
 
 - [ ] **SNS_2026-08-04.md 2027-04-16〜18日次 + 2030/12/25〜31バッチ** `SNS作成 2026-07-25`
   - タスク1: sns_原稿_2027-04-16.md（水・入社2週目後半×就活3週目後半・3本）

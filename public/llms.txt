@@ -700,6 +700,10 @@
 - company/reports/issue14_FAQ再設計提案.md：Issue #14 FAQ再設計の実装提案書作成（faq.html検索機能・カテゴリ5問ピックアップ構成・タイプページFAQ縮小・Phase1/2実装順序・SEOリスク整理）
 - sitemap.xml：about.html・contact.html の lastmod は 2026-08-03（現在値）を維持（2026-07-28 < 2026-08-03 のためダウングレード禁止ルール適用・変更なし）
 
+## 2026-08-04 更新内容（LLMO強化・秋採用SEO強化）
+- robots.txt：`ClaudeBot` / `Claude-User` 追加（Claude / Anthropic クローラーへの明示的許可・LLMO強化）
+- jobs.html：秋採用シーズン特集セクション（「秋採用 転職 9月」「10月入社 逆算スケジュール」KW）確認済み・既存コンテンツとして機能中
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
