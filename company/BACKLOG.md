@@ -15,6 +15,15 @@
 
 ## 優先タスク
 
+### ⚡ 再来週タスク（週3稼働：月2026-08-18・水08-20・金08-22）
+
+- [ ] **CTO_2026-08-18.md index.html AI適職診断・秋採用KW強化 + llms.txt/sitemap更新** `CTO作成 2026-07-25`
+  - タスク1: index.html hero-seo-desc「AI適職診断」「2026年秋採用」KW追加 + SoftwareApplication JSON-LD dateModified → 2026-08-18
+  - タスク2: llms.txt 2026-08-18セクション追加
+  - タスク3: sitemap.xml index.html lastmod → 2026-08-18
+
+---
+
 ### ⚡ 来週タスク（週3稼働：月2026-07-28・水07-30・金08-01）
 
 - [x] **CTO_2026-07-28.md about.html/contact.html SEOテキスト追加 + Issue#14提案書 + llms.txt更新** `CTO 2026-07-25前倒し実行完了`
