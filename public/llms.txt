@@ -689,6 +689,11 @@
 - 全8タイプページ meta description 最適化（転職エージェント活用法KW・タイプ別専門キーワードを自然に追加：戦略家タイプ転職エージェント活用法・データサイエンス転職・ITエンジニア転職・コミュニケーション力向いている仕事・スタートアップ転職・クリエイティブ向いてる仕事・看護師薬剤師転職・人を育てる仕事）
 - 各タイプページからjobs.html（転職サービス比較ページ）へのCTAリンクを内部リンクブロックに追加
 
+## 2026-07-25 更新内容（LLMO強化・構造化データ整合性修正）
+- robots.txt：`GoogleExtended` → `Google-Extended`（正しいuser-agent名に修正・Google AI訓練ボットの許可設定を正確化）
+- robots.txt：`Applebot` / `Applebot-Extended` 追加（Apple Intelligence / Siriクローラーへの明示的許可・LLMO対応強化）
+- index.html：SoftwareApplication JSON-LD `dateModified` 2026-07-25 → 2026-08-06 に修正（sitemap.xml lastmodとの整合性確保）
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。

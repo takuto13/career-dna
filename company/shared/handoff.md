@@ -76,6 +76,13 @@
 - X日次投稿：〜2027-04-09（木）完成
 - 2030年バッチ：〜2030/12/10（水）完成
 
+## 2026-07-25 CTO定例 完了タスク
+
+- robots.txt LLMO修正（GoogleExtended→Google-Extended + Applebot追加）✅
+- index.html JSON-LD dateModified整合修正（2026-07-25→2026-08-06）✅
+- llms.txt 2026-07-25セクション追加 ✅
+- BACKLOG 更新（SNS完了分[x]反映 + CTO定例[x]追加）✅
+
 ## 次回（2026-07-28 月曜 or 2026-07-30 水曜）CEO定例でやること
 
 1. 競合調査（前回2026-07-23 → 次回は2026-07-30以降）
