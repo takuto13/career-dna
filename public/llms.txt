@@ -694,6 +694,12 @@
 - robots.txt：`Applebot` / `Applebot-Extended` 追加（Apple Intelligence / Siriクローラーへの明示的許可・LLMO対応強化）
 - index.html：SoftwareApplication JSON-LD `dateModified` 2026-07-25 → 2026-08-06 に修正（sitemap.xml lastmodとの整合性確保）
 
+## 2026-07-28 更新内容（about.html・contact.html SEOテキスト追加・Issue#14提案書作成）
+- about.html：サービス概要SEOテキスト段落を h1 直下に追加（KW: AIキャリア診断 運営 / 適職診断 無料 会社概要 / career-dna.jp サービス概要）
+- contact.html：フォーム上部にSEOテキスト段落追加（KW: AIキャリア診断 お問い合わせ / 適職診断 お問い合わせ）
+- company/reports/issue14_FAQ再設計提案.md：Issue #14 FAQ再設計の実装提案書作成（faq.html検索機能・カテゴリ5問ピックアップ構成・タイプページFAQ縮小・Phase1/2実装順序・SEOリスク整理）
+- sitemap.xml：about.html・contact.html の lastmod は 2026-08-03（現在値）を維持（2026-07-28 < 2026-08-03 のためダウングレード禁止ルール適用・変更なし）
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。

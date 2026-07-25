@@ -17,10 +17,12 @@
 
 ### ⚡ 来週タスク（週3稼働：月2026-07-28・水07-30・金08-01）
 
-- [ ] **CTO_2026-07-28.md about.html/contact.html SEOテキスト追加 + Issue#14提案書 + llms.txt更新**
-  - タスク1: about.html・contact.html SEOテキスト段落追加（KW: AIキャリア診断 運営 / 適職診断 無料 / career-dna.jp）
-  - タスク2: Issue #14 FAQ再設計の実装提案書作成（company/reports/issue14_FAQ再設計提案.md）
-  - タスク3: llms.txt 2026-07-28セクション追加・sitemap.xml lastmod更新
+- [x] **CTO_2026-07-28.md about.html/contact.html SEOテキスト追加 + Issue#14提案書 + llms.txt更新** `CTO 2026-07-25前倒し実行完了`
+  - タスク1: about.html h1直下にSEOテキスト段落追加（KW: AIキャリア診断 運営 / 適職診断 無料 / career-dna.jp） ✅ 2026-07-25
+  - タスク2: contact.html フォーム上部にSEOテキスト段落追加（KW: AIキャリア診断 お問い合わせ） ✅ 2026-07-25
+  - タスク3: Issue #14 FAQ再設計の実装提案書作成（company/reports/issue14_FAQ再設計提案.md） ✅ 2026-07-25
+  - タスク4: llms.txt 2026-07-28セクション追加 ✅ 2026-07-25
+  - タスク5: sitemap.xml：2026-07-28 < 現在値 2026-08-03 のためダウングレード禁止・変更なし ✅
 
 - [ ] **SNS_2026-07-28.md 2027-04-10〜12日次 + 2030/12/11〜17バッチ**
   - タスク1: sns_原稿_2027-04-10〜12.md（新年度2週目×OJT適応×職場なじみ方・各3本）
