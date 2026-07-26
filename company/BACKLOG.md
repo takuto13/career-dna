@@ -15,6 +15,20 @@
 
 ## 優先タスク
 
+### ⚡ 4週後タスク（週3稼働：月2026-08-25・水08-27・金08-29）
+
+- [ ] **CTO_2026-08-25.md 全8タイプページ WebPage JSON-LD dateModified + sitemap.xml lastmod → 2026-08-25 + llms.txt更新**
+  - タスク1: 全8タイプページ WebPage JSON-LD dateModified → 2026-08-25（SEO freshness維持）
+  - タスク2: sitemap.xml 全8タイプページ lastmod → 2026-08-25
+  - タスク3: llms.txt 2026-08-25セクション追加
+
+- [ ] **CTO_2026-08-27.md faq.html/result.html dateModified + sitemap.xml lastmod → 2026-08-27 + llms.txt更新**
+  - タスク1: faq.html Article JSON-LD dateModified → 2026-08-27（SEO freshness維持）
+  - タスク2: result.html WebPage JSON-LD dateModified → 2026-08-27 + sitemap.xml faq.html/result.html lastmod → 2026-08-27
+  - タスク3: llms.txt 2026-08-27セクション追加
+
+---
+
 ### ⚡ 3週後タスク（週3稼働：月2026-08-18・水08-20・金08-22）
 
 - [x] **CTO自律実行 2026-07-26 faq.html OGP/TwitterメタSEO最適化 + llms.txt/sitemap更新** `CTO実行完了 2026-07-26` ✅
