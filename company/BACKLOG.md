@@ -17,6 +17,13 @@
 
 ### ⚡ 3週後タスク（週3稼働：月2026-08-18・水08-20・金08-22）
 
+- [x] **CTO自律実行 2026-07-26 faq.html OGP/TwitterメタSEO最適化 + llms.txt/sitemap更新** `CTO実行完了 2026-07-26` ✅
+  - タスク1: faq.html og:title / twitter:title 改善（転職KW・AI診断・無料KW追加）✅
+  - タスク2: faq.html og:description / twitter:description に秋採用・AI自己分析KW追加 ✅
+  - タスク3: faq.html Article JSON-LD dateModified → 2026-08-20 ✅
+  - タスク4: sitemap.xml faq.html lastmod → 2026-08-20 ✅
+  - タスク5: llms.txt 2026-08-20セクション追加 ✅
+
 - [x] **CTO_2026-08-18.md index.html AI適職診断・秋採用KW強化 + llms.txt/sitemap更新** `CTO実行完了 2026-07-26（前倒し）` ✅
   - タスク1: index.html hero-seo-desc「AI適職診断」「2026年秋採用」KW追加 + SoftwareApplication JSON-LD dateModified → 2026-08-18 ✅
   - タスク2: llms.txt 2026-08-18セクション追加 ✅

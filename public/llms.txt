@@ -709,6 +709,12 @@
 - index.html：SoftwareApplication JSON-LD dateModified → 2026-08-18（コンテンツ更新に合わせた鮮度更新）
 - sitemap.xml：index.html lastmod → 2026-08-18 更新
 
+## 2026-08-20 更新内容（faq.html OGP/TwitterメタSEO最適化）
+- faq.html：og:title / twitter:title を「転職・就活FAQ 319問｜タイプ別転職・就活Q&A｜キャリアDNA 無料AI診断」に改善（転職KW・AI診断・無料を明示）
+- faq.html：og:description / twitter:description に「2026年秋採用」「AI自己分析ツール活用法」KWを追加
+- faq.html：Article JSON-LD dateModified → 2026-08-20（メタ情報更新に合わせた鮮度更新）
+- sitemap.xml：faq.html lastmod → 2026-08-20 更新
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。

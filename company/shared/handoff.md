@@ -27,6 +27,15 @@
   - llms.txt 2026-08-18セクション追加 ✅
 - BACKLOG.md CTO_2026-08-18.md タスクを [x] に更新 ✅
 
+### CTO自律実行（追加実施）
+
+- faq.html OGP/TwitterメタSEO最適化：og:title / twitter:title に「転職」KW・AI診断・無料明示を追加 ✅
+- faq.html og:description / twitter:description に「2026年秋採用」「AI自己分析ツール活用法」KW追加 ✅
+- faq.html Article JSON-LD dateModified → 2026-08-20（SEO freshness更新）✅
+- sitemap.xml faq.html lastmod → 2026-08-20 ✅
+- llms.txt 2026-08-20セクション追加 ✅
+- BACKLOG.md 自律実行タスクを [x] に更新 ✅
+
 ### 次回（2026-07-28 月曜）CEO定例でやること
 
 1. **GitHub Issue確認**（11件 open → たくとが手動クローズ後は減少予定）
