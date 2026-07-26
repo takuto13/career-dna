@@ -6,9 +6,9 @@
 
 ---
 
-## 2026-07-26（日） CEO定例（非稼働日・自動起動）
+## 2026-07-26（日） CTO定例（非稼働日・自動起動）追記
 
-### 実施内容
+### CEO実施内容（午前）
 
 - GitHub Issues確認：11件 open（全て ownerラベル・MCP 403でクローズ不可）✅
 - Issue #18 対応ドキュメント作成（reports/issue18_週次業務整理_2026-07-26.md）✅
@@ -16,6 +16,16 @@
 - sns_原稿_2026-07-25.md・07-26.md を requests/ → x-posts/ に移動（ファイル構造修正）✅
 - 競合調査：前回2026-07-23から3日のためスキップ ✅
 - 日次報告書作成（reports/2026-07-26_CEO.md）✅
+
+### CTO実施内容（同日・前倒し実行）
+
+- GitHub Issues確認：11件 open変化なし ✅
+- CTO_2026-08-18.md を前倒し実行（archive/に移動済み）✅
+  - index.html hero-seo-desc：「AI適職診断」「2026年秋採用」KW追加・アプリ不要明示 ✅
+  - index.html SoftwareApplication JSON-LD dateModified → 2026-08-18 ✅
+  - sitemap.xml index.html lastmod → 2026-08-18 ✅
+  - llms.txt 2026-08-18セクション追加 ✅
+- BACKLOG.md CTO_2026-08-18.md タスクを [x] に更新 ✅
 
 ### 次回（2026-07-28 月曜）CEO定例でやること
 
@@ -28,11 +38,11 @@
 ### requests/にある実行待ち指示書
 
 - `SNS_2026-08-04.md`（08-04 Mon実行予定・SNS担当が実行）
-- `CTO_2026-08-18.md`（08-18 Mon実行予定）
 - `SNS_2026-08-18.md`（08-18 Mon実行予定・SNS担当が実行）
 - `issue12_サイト改善提案_2026-07-04.md`（参照用）
 - `search-console手順_2026-07-06.md`（参照用）
 - `sns_キャリア協会依頼文.md`（参照用・たくとが申請予定）
+- ※ CTO_2026-08-18.md は 2026-07-26 前倒し実行済み → archive/に移動
 
 ### SNSカバレッジ現状
 

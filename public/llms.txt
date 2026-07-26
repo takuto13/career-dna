@@ -704,6 +704,11 @@
 - robots.txt：`ClaudeBot` / `Claude-User` 追加（Claude / Anthropic クローラーへの明示的許可・LLMO強化）
 - jobs.html：秋採用シーズン特集セクション（「秋採用 転職 9月」「10月入社 逆算スケジュール」KW）確認済み・既存コンテンツとして機能中
 
+## 2026-08-18 更新内容（index.html AI適職診断・秋採用KW強化）
+- index.html：hero-seo-desc テキスト更新（「AI適職診断」「2026年秋採用」KW追加・スマホアプリ不要を明示）
+- index.html：SoftwareApplication JSON-LD dateModified → 2026-08-18（コンテンツ更新に合わせた鮮度更新）
+- sitemap.xml：index.html lastmod → 2026-08-18 更新
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。

@@ -17,10 +17,10 @@
 
 ### ⚡ 3週後タスク（週3稼働：月2026-08-18・水08-20・金08-22）
 
-- [ ] **CTO_2026-08-18.md index.html AI適職診断・秋採用KW強化 + llms.txt/sitemap更新** `CTO作成 2026-07-25`
-  - タスク1: index.html hero-seo-desc「AI適職診断」「2026年秋採用」KW追加 + SoftwareApplication JSON-LD dateModified → 2026-08-18
-  - タスク2: llms.txt 2026-08-18セクション追加
-  - タスク3: sitemap.xml index.html lastmod → 2026-08-18
+- [x] **CTO_2026-08-18.md index.html AI適職診断・秋採用KW強化 + llms.txt/sitemap更新** `CTO実行完了 2026-07-26（前倒し）` ✅
+  - タスク1: index.html hero-seo-desc「AI適職診断」「2026年秋採用」KW追加 + SoftwareApplication JSON-LD dateModified → 2026-08-18 ✅
+  - タスク2: llms.txt 2026-08-18セクション追加 ✅
+  - タスク3: sitemap.xml index.html lastmod → 2026-08-18 ✅
 
 - [ ] **SNS_2026-08-18.md 2027-04-19〜21日次 + 2031/01/01〜07バッチ** `SNS作成 2026-07-25`
   - タスク1: sns_原稿_2027-04-19.md（土・入社3週目最初の週末×就活3週目最終日・3本）
