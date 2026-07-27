@@ -103,9 +103,9 @@
   - タスク2: 2026-10-02_SNS_バッチ_原稿.md（2030/12/11〜17・入社9.5ヶ月×クリスマス前×年末転職意識最高潮・7本）✅
   - SNSカバレッジ完了後：日次〜2027-04-12・2030バッチ〜2030/12/17
 
-- [ ] **CTO_2026-07-28.md (追加) result.html SEO最適化 + GA4アフィリエイト計測確認（Issue #15対応）**
-  - タスク1: result.html meta description転職KW追加 + WebPage JSON-LD dateModified → 2026-08-13 + sitemap/llms.txt更新
-  - タスク2: GA4アフィリエイトリンク計測コード確認（未実装なら `onclick` イベント追加）
+- [x] **CTO_2026-07-28.md (追加) result.html SEO最適化 + GA4アフィリエイト計測確認（Issue #15対応）** `CTO実行完了 2026-07-27（前倒し）` ✅
+  - タスク1: result.html meta description転職KW追加 + WebPage JSON-LD dateModified → 2026-08-13 + sitemap/llms.txt更新 ✅
+  - タスク2: GA4アフィリエイトリンク計測コード確認 → 全タイプページ（8ページ）・jobs.html に affiliate_click イベント実装済みを確認（追加実装不要）✅
 
 - [ ] **SNS_2026-07-28.md (追加) 2027-04-26〜28日次 + 2031/01/08〜14バッチ**
   - タスク1: sns_原稿_2027-04-26.md（土・入社4週目最終土曜×就活5週目前日・3本）

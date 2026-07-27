@@ -6,6 +6,50 @@
 
 ---
 
+## 2026-07-27（日）CTO定例スケジュール実行
+
+### 実施内容
+
+- GitHub Issues確認：11件 open（変化なし）✅
+- `CTO_2026-07-28_追加.md` を前倒し実行完了 → archive/ に移動 ✅
+  - タスク1: result.html meta description / og:description / twitter:description に「AI適職診断 結果」「向いてる仕事」「転職エージェント選び」KW追加 ✅
+  - タスク1: result.html WebPage JSON-LD dateModified → 2026-08-13 ✅
+  - タスク1: sitemap.xml result.html lastmod → 2026-08-13 ✅
+  - タスク1: llms.txt 2026-07-28セクション追加 ✅
+  - タスク2: GA4 affiliate_click 計測確認 → 全タイプページ（8ページ）・jobs.html に実装済み（追加不要）✅
+- BACKLOG.md 上記タスクを [x] に更新 ✅
+
+### たくとへのエスカレーション事項（継続）
+
+| 優先度 | 内容 |
+|--------|------|
+| 最高 | キャリア協会への掲載申請（sns_キャリア協会依頼文.md参照） |
+| 高 | GitHub Issues の手動クローズ依頼（#5/#6/#7/#9/#10/#12/#14/#15/#16/#17/#18）MCP 403エラーのため自動クローズ不可 |
+| 高 | X Developer Portal API登録（自動投稿実装完了・APIキー待ち） |
+| 高 | Issue #14 FAQ再設計提案書の確認・承認（reports/issue14_FAQ再設計提案.md） |
+| 中 | GA4アクセス確認（reports/issue15_GA4確認_2026-07-16.md 手順参照） |
+
+### 次回（2026-07-28 月曜）CEO定例でやること
+
+1. **GitHub Issue確認**
+2. **競合調査スキップ**（前回2026-07-23 → 7日到達は2026-07-30）
+3. **Issue #14 FAQ再設計フォローアップ**
+4. **CTO_2026-07-28_追加.md** → 前倒し実行完了のため不要
+5. **SNS_2026-07-28_追加.md** の実行（2027-04-26〜28日次 + 2031/01/08〜14バッチ）
+
+### requests/にある実行待ち指示書
+
+- `CTO_2026-08-25.md`（全8タイプページ dateModified+sitemap+llms.txt → 2026-08-25実行予定）
+- `CTO_2026-08-27.md`（faq.html/result.html dateModified+sitemap+llms.txt → 2026-08-27実行予定）
+- `CTO_2026-09-01.md`（index.html・jobs.html dateModified+sitemap+llms.txt → 2026-09-01実行予定）
+- `CTO_2026-09-03.md`（about.html・contact.html dateModified追加+sitemap+llms.txt → 2026-09-03実行予定）
+- `SNS_2026-07-28_追加.md`（2027-04-26〜28日次 + 2031/01/08〜14バッチ → 2026-07-28月実行予定）
+- `issue12_サイト改善提案_2026-07-04.md`（参照用）
+- `search-console手順_2026-07-06.md`（参照用）
+- `sns_キャリア協会依頼文.md`（参照用・たくとが申請予定）
+
+---
+
 ## 2026-07-26（日）CEO定例スケジュール実行（第5セッション）
 
 ### 実施内容

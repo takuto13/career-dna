@@ -715,6 +715,12 @@
 - faq.html：Article JSON-LD dateModified → 2026-08-20（メタ情報更新に合わせた鮮度更新）
 - sitemap.xml：faq.html lastmod → 2026-08-20 更新
 
+## 2026-07-28 更新内容（result.html SEO最適化・GA4計測確認）
+- result.html：meta description / og:description / twitter:description に「AI適職診断 結果」「向いてる仕事」「転職エージェント選び」KWを追加（転職・就活検索からのインデックス強化）
+- result.html：WebPage JSON-LD dateModified → 2026-08-13（鮮度更新）
+- sitemap.xml：result.html lastmod → 2026-08-13 更新
+- GA4 affiliate_click 計測：全タイプページ（8ページ）・jobs.html に実装済みを確認（追加実装不要）
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
