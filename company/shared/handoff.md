@@ -8,6 +8,16 @@
 
 ## 2026-07-27（日）本日の全実施内容（複数セッション統合）
 
+### 第6セッション（CTO定例 第3弾・スケジュール実行）
+- GitHub Issues確認：11件 open（変化なし）✅
+- jobs.html og:description 改善（秋採用・doda・ビズリーチKW追加）✅
+- CTO_2026-09-08.md 新規作成（4タイプページ twitter:description個別最適化）✅
+- CTO_2026-09-10.md 新規作成（残り4タイプ twitter:description最適化 + faq.html dateModified）✅
+- BACKLOG.md 6週後セクション追加 ✅
+- コミット・プッシュ ✅
+
+---
+
 ### 第1セッション（CTO定例）
 - CTO_2026-08-25.md 前倒し実行完了 ✅
 - CTO_2026-08-27.md 前倒し実行完了 ✅
@@ -78,10 +88,12 @@
 
 ### requests/にある実行待ち指示書
 
-- CTO_2026-09-01.md（index.html・jobs.html dateModified → 2026-09-01実行予定）
-- CTO_2026-09-03.md（about.html・contact.html dateModified → 2026-09-03実行予定）
+- CTO_2026-09-08.md（4タイプページ twitter:description最適化・2026-09-08実行予定）🆕
+- CTO_2026-09-10.md（残り4タイプ twitter:description最適化 + faq.html dateModified・2026-09-10実行予定）🆕
 - issue12_サイト改善提案_2026-07-04.md（参照用）
 - search-console手順_2026-07-06.md（参照用）
 - sns_キャリア協会依頼文.md（参照用・たくとが申請予定）
 
+※ CTO_2026-09-01.md / CTO_2026-09-03.md は2026-07-27第4セッションで前倒し実行・archive/に移動済み
 ※ SNS_2026-09-05.md は2026-07-27第4セッションで前倒し実行・archive/に移動済み
+※ SNS_2026-09-12.md はCEO/SNS担当が2026-07-30 CEO定例時に作成予定
