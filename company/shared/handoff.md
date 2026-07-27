@@ -8,6 +8,26 @@
 
 ## 2026-07-27（日）本日の全実施内容（複数セッション統合）
 
+### 第8セッション（CTO定例 第4弾・スケジュール実行）
+- GitHub Issues確認：11件 open（変化なし）✅
+- CTO_2026-09-08.md 前倒し実行完了 ✅（全8タイプページ前半4ページ twitter:description 個別最適化）
+  - type-strategist.html：「コンサル転職・論理的思考力」KW追加
+  - type-analyst.html：「ITエンジニア転職・データ分析力」KW追加
+  - type-craftsman.html：「専門職転職・コツコツできる仕事」KW追加
+  - type-mediator.html：「PM転職・HR転職・コミュニケーション力」KW追加
+- CTO_2026-09-10.md 前倒し実行完了 ✅（全8タイプページ後半4ページ twitter:description 個別最適化 + faq.html dateModified更新）
+  - type-challenger.html：「スタートアップ転職・行動力」KW追加
+  - type-creator.html：「クリエイター転職・表現力」KW追加
+  - type-guardian.html：「看護師転職・薬剤師転職・責任感」KW追加
+  - type-nurturer.html：「教育職転職・人を育てる仕事」KW追加
+  - faq.html dateModified → 2026-09-10
+- sitemap.xml：全8タイプ lastmod 更新（09-08/09-10）+ faq.html lastmod → 2026-09-10 ✅
+- llms.txt：2026-09-08・2026-09-10 セクション追加 ✅
+- BACKLOG.md：両タスクを [x] に更新 ✅
+- handoff.md 更新 ✅
+- CTO_2026-09-08.md / CTO_2026-09-10.md → archive/ アーカイブ ✅
+- コミット・プッシュ ✅
+
 ### 第7セッション（SNS担当スケジュール自動起動・本セッション）
 - GitHub Issues確認：11件 open（変化なし）✅
 - SNS_本日指示書（SNS_2026-07-27.md）：なし → ローテーション判断で3本作成 ✅
@@ -89,21 +109,20 @@
 
 1. GitHub Issue確認（新規Issueの有無・#17/#18/#12が手動クローズされたか確認）
 2. 競合調査実施（7日ルール到達：前回2026-07-23 → 07-30で7日）
-   - VCAP AI適職診断の詳細確認
    - 新ロングテールKW発掘（2026年8月の転職市場動向）
    - competitive-intel.md更新
 3. Issue #14 FAQ再設計フォローアップ
-4. 次週（2026-08-03〜08-08）のCTO/SNS指示書確認
+4. SNS_2026-09-12.md 作成（2027-05-08〜10日次 + 2031/01/22〜28バッチ）
+5. 次の実装タスク計画（6週後以降の新規CTO指示書作成）
 
 ### requests/にある実行待ち指示書
 
-- CTO_2026-09-08.md（4タイプページ twitter:description最適化・2026-09-08実行予定）
-- CTO_2026-09-10.md（残り4タイプ twitter:description最適化 + faq.html dateModified・2026-09-10実行予定）
 - issue12_サイト改善提案_2026-07-04.md（参照用）
 - search-console手順_2026-07-06.md（参照用）
 - sns_キャリア協会依頼文.md（参照用・たくとが申請予定）
 - sns_原稿_2026-07-27.md（本日SNS担当作成・たくと確認後に投稿）
 
+※ CTO_2026-09-08.md / CTO_2026-09-10.md は2026-07-27第8セッションで前倒し実行・archive/に移動済み
 ※ CTO_2026-09-01.md / CTO_2026-09-03.md は2026-07-27第4セッションで前倒し実行・archive/に移動済み
 ※ SNS_2026-09-05.md は2026-07-27第5セッションで前倒し実行・archive/に移動済み
 ※ SNS_2026-09-12.md はCEO/SNS担当が2026-07-30 CEO定例時に作成予定

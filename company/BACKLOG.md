@@ -17,20 +17,20 @@
 
 ### ⚡ 6週後タスク（週3稼働：月2026-09-08・水09-10・金09-12）
 
-- [ ] **CTO_2026-09-08.md 全8タイプページ前半4ページ twitter:description 個別最適化 + sitemap/llms.txt更新**
-  - タスク1: type-strategist.html twitter:description → 「コンサル転職・論理的思考力」KW追加
-  - タスク2: type-analyst.html twitter:description → 「ITエンジニア転職・データ分析力」KW追加
-  - タスク3: type-craftsman.html twitter:description → 「専門職転職・コツコツできる仕事」KW追加
-  - タスク4: type-mediator.html twitter:description → 「PM転職・HR転職・コミュニケーション力」KW追加
-  - タスク5: llms.txt 2026-09-08セクション追加 + sitemap.xml 4タイプ lastmod → 2026-09-08
+- [x] **CTO_2026-09-08.md 全8タイプページ前半4ページ twitter:description 個別最適化 + sitemap/llms.txt更新** `CTO実行完了 2026-07-27（前倒し）` ✅
+  - タスク1: type-strategist.html twitter:description → 「コンサル転職・論理的思考力」KW追加 ✅
+  - タスク2: type-analyst.html twitter:description → 「ITエンジニア転職・データ分析力」KW追加 ✅
+  - タスク3: type-craftsman.html twitter:description → 「専門職転職・コツコツできる仕事」KW追加 ✅
+  - タスク4: type-mediator.html twitter:description → 「PM転職・HR転職・コミュニケーション力」KW追加 ✅
+  - タスク5: llms.txt 2026-09-08セクション追加 + sitemap.xml 4タイプ lastmod → 2026-09-08 ✅
 
-- [ ] **CTO_2026-09-10.md 全8タイプページ後半4ページ twitter:description 個別最適化 + faq.html dateModified更新 + sitemap/llms.txt更新**
-  - タスク1: type-challenger.html twitter:description → 「スタートアップ転職・行動力」KW追加
-  - タスク2: type-creator.html twitter:description → 「クリエイター転職・表現力」KW追加
-  - タスク3: type-guardian.html twitter:description → 「看護師転職・薬剤師転職・責任感」KW追加
-  - タスク4: type-nurturer.html twitter:description → 「教育職転職・人を育てる仕事」KW追加
-  - タスク5: faq.html Article JSON-LD dateModified → 2026-09-10（SEO freshness維持）
-  - タスク6: llms.txt 2026-09-10セクション追加 + sitemap.xml 4タイプ+faq lastmod → 2026-09-10
+- [x] **CTO_2026-09-10.md 全8タイプページ後半4ページ twitter:description 個別最適化 + faq.html dateModified更新 + sitemap/llms.txt更新** `CTO実行完了 2026-07-27（前倒し）` ✅
+  - タスク1: type-challenger.html twitter:description → 「スタートアップ転職・行動力」KW追加 ✅
+  - タスク2: type-creator.html twitter:description → 「クリエイター転職・表現力」KW追加 ✅
+  - タスク3: type-guardian.html twitter:description → 「看護師転職・薬剤師転職・責任感」KW追加 ✅
+  - タスク4: type-nurturer.html twitter:description → 「教育職転職・人を育てる仕事」KW追加 ✅
+  - タスク5: faq.html Article JSON-LD dateModified → 2026-09-10（SEO freshness維持）✅
+  - タスク6: llms.txt 2026-09-10セクション追加 + sitemap.xml 4タイプ+faq lastmod → 2026-09-10 ✅
 
 - [ ] **SNS_2026-09-12.md 2027-05-08〜10日次 + 2031/01/22〜28バッチ** `CEO/SNS担当が作成予定`
 

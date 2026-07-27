@@ -740,6 +740,19 @@
 - contact.html：ContactPage JSON-LD に dateModified 2026-09-03 追加（お問い合わせページ鮮度維持）
 - sitemap.xml：about.html・contact.html lastmod → 2026-09-03 更新
 
+## 2026-09-08 更新
+- type-strategist.html：twitter:description を「コンサル転職・論理的思考力」KW追加で個別最適化
+- type-analyst.html：twitter:description を「ITエンジニア転職・データ分析力」KW追加で個別最適化
+- type-craftsman.html：twitter:description を「専門職転職・コツコツできる仕事」KW追加で個別最適化
+- type-mediator.html：twitter:description を「PM転職・HR転職・コミュニケーション力」KW追加で個別最適化
+
+## 2026-09-10 更新
+- type-challenger.html：twitter:description を「スタートアップ転職・行動力」KW追加で個別最適化
+- type-creator.html：twitter:description を「クリエイター転職・表現力」KW追加で個別最適化
+- type-guardian.html：twitter:description を「看護師転職・薬剤師転職・責任感」KW追加で個別最適化
+- type-nurturer.html：twitter:description を「教育職転職・人を育てる仕事」KW追加で個別最適化
+- faq.html：Article JSON-LD dateModified → 2026-09-10（SEO freshness維持）
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
