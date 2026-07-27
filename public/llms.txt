@@ -730,6 +730,16 @@
 - result.html WebPage JSON-LD dateModified を 2026-08-27 に更新
 - sitemap.xml faq.html / result.html lastmod 2026-08-27 更新
 
+## 2026-09-01 更新内容（index.html・jobs.html SEO freshness維持）
+- index.html：SoftwareApplication JSON-LD dateModified → 2026-09-01（3週間周期更新）
+- jobs.html：WebPage JSON-LD dateModified → 2026-09-01（タイプ別転職エージェントページ鮮度維持）
+- sitemap.xml：index.html・jobs.html lastmod → 2026-09-01 更新
+
+## 2026-09-03 更新内容（about.html・contact.html SEO freshness維持）
+- about.html：AboutPage JSON-LD に dateModified 2026-09-03 追加（サービス概要ページ鮮度維持）
+- contact.html：ContactPage JSON-LD に dateModified 2026-09-03 追加（お問い合わせページ鮮度維持）
+- sitemap.xml：about.html・contact.html lastmod → 2026-09-03 更新
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。

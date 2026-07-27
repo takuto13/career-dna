@@ -17,15 +17,15 @@
 
 ### ⚡ 5週後タスク（週3稼働：月2026-09-01・水09-03・金09-05）
 
-- [ ] **CTO_2026-09-01.md index.html・jobs.html dateModified + sitemap.xml lastmod → 2026-09-01 + llms.txt更新**
-  - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2026-09-01（SEO freshness維持・3週間周期）
-  - タスク2: jobs.html WebPage JSON-LD dateModified → 2026-09-01 + sitemap.xml lastmod → 2026-09-01
-  - タスク3: llms.txt 2026-09-01セクション追加
+- [x] **CTO_2026-09-01.md index.html・jobs.html dateModified + sitemap.xml lastmod → 2026-09-01 + llms.txt更新** `CTO実行完了 2026-07-27（前倒し）` ✅
+  - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2026-09-01（SEO freshness維持・3週間周期）✅
+  - タスク2: jobs.html WebPage JSON-LD dateModified → 2026-09-01 + sitemap.xml lastmod → 2026-09-01 ✅
+  - タスク3: llms.txt 2026-09-01セクション追加 ✅
 
-- [ ] **CTO_2026-09-03.md about.html・contact.html dateModified追加 + sitemap.xml lastmod → 2026-09-03 + llms.txt更新**
-  - タスク1: about.html AboutPage JSON-LD に dateModified "2026-09-03" 追加 + sitemap.xml lastmod → 2026-09-03
-  - タスク2: contact.html ContactPage JSON-LD に dateModified "2026-09-03" 追加 + sitemap.xml lastmod → 2026-09-03
-  - タスク3: llms.txt 2026-09-03セクション追加
+- [x] **CTO_2026-09-03.md about.html・contact.html dateModified追加 + sitemap.xml lastmod → 2026-09-03 + llms.txt更新** `CTO実行完了 2026-07-27（前倒し）` ✅
+  - タスク1: about.html AboutPage JSON-LD に dateModified "2026-09-03" 追加 + sitemap.xml lastmod → 2026-09-03 ✅
+  - タスク2: contact.html ContactPage JSON-LD に dateModified "2026-09-03" 追加 + sitemap.xml lastmod → 2026-09-03 ✅
+  - タスク3: llms.txt 2026-09-03セクション追加 ✅
 
 - [ ] **SNS_2026-09-05.md 2027-05-05〜07日次 + 2031/01/15〜21バッチ**
   - タスク1: sns_原稿_2027-05-05.md（水・こどもの日×GW最終日×転職者GW締め・3本）
