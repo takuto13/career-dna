@@ -6,9 +6,23 @@
 
 ---
 
-## 2026-07-27（日）CEO定例スケジュール実行 + SNS定例
+## 2026-07-27（日）CTO定例 + CEO定例スケジュール実行 + SNS定例
 
-### 実施内容
+### 実施内容（CTO 2026-07-27追加）
+
+- GitHub Issues確認：11件 open（変化なし）✅ ← CTO確認
+- CTO_2026-08-25.md 前倒し実行完了 ✅
+  - 全8タイプページ dateModified → 2026-08-25
+  - sitemap.xml 全8タイプページ lastmod → 2026-08-25
+  - llms.txt 2026-08-25セクション追加
+- CTO_2026-08-27.md 前倒し実行完了 ✅
+  - faq.html Article JSON-LD dateModified → 2026-08-27
+  - result.html WebPage JSON-LD dateModified → 2026-08-27
+  - sitemap.xml faq.html / result.html lastmod → 2026-08-27
+  - llms.txt 2026-08-27セクション追加
+- BACKLOG.md 両タスクを [x] に更新 ✅
+
+### 実施内容（CEO + SNS 2026-07-27）
 
 - GitHub Issues確認：11件 open（変化なし）✅
 - SNS_2026-07-28_追加.md 実行完了（16本作成）✅ ← CEO定例

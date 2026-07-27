@@ -721,6 +721,15 @@
 - sitemap.xml：result.html lastmod → 2026-08-13 更新
 - GA4 affiliate_click 計測：全タイプページ（8ページ）・jobs.html に実装済みを確認（追加実装不要）
 
+## 2026-08-25 更新
+- 全8タイプページ WebPage JSON-LD dateModified を 2026-08-25 に更新（SEO freshness維持・3週間周期更新）
+- sitemap.xml 全8タイプページ lastmod 2026-08-25 更新
+
+## 2026-08-27 更新
+- faq.html Article JSON-LD dateModified を 2026-08-27 に更新（SEO freshness維持）
+- result.html WebPage JSON-LD dateModified を 2026-08-27 に更新
+- sitemap.xml faq.html / result.html lastmod 2026-08-27 更新
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
