@@ -34,9 +34,9 @@
 
 ---
 
-## 2026-07-28（月）CTO定例実施内容
+## 2026-07-28（火）CTO定例実施内容（第1弾）
 
-### CTO定例 2026-07-28
+### CTO定例 2026-07-28（第1弾）
 - GitHub Issues確認：11件 open（変化なし）✅
 - index.html meta description / twitter:description：秋採用（9月・10月入社）KW追加 ✅
 - index.html SoftwareApplication JSON-LD dateModified → 2026-09-15 ✅
@@ -47,6 +47,25 @@
 - sitemap.xml：index.html/jobs.html → 2026-09-15、全タイプ/faq.html → 2026-10-01 更新 ✅
 - llms.txt：2026-09-15・2026-10-01 セクション追加 ✅
 - BACKLOG.md 更新 ✅
+- コミット・プッシュ ✅
+
+## 2026-07-28（火）CTO定例実施内容（第2弾・スケジュール自動起動）
+
+### CTO定例 2026-07-28（第2弾）
+- GitHub Issues確認：11件 open（変化なし）✅
+- CTO_2026-09-15.md 前倒し実行完了 ✅
+  - result.html：og:description / twitter:description 秋採用KW追加
+  - result.html：WebPage JSON-LD dateModified → 2026-09-15
+  - disclaimer.html：WebPage JSON-LD dateModified → 2026-09-15 追加
+  - privacy.html：WebPage JSON-LD dateModified → 2026-09-15 追加
+  - sitemap.xml：result.html / disclaimer.html / privacy.html lastmod → 2026-09-15 更新
+  - llms.txt：2026-09-15セクションに result/disclaimer/privacy 更新内容を追記
+- CTO_2026-09-17.md 前倒し実行完了 ✅
+  - jobs.html：秋採用タイプ別転職スタートタイミングSEOテキスト追加（p.seo-text）
+  - sitemap.xml：jobs.html lastmod → 2026-09-17 更新
+  - llms.txt：2026-09-17セクション新規追加
+- CTO_2026-09-15.md / CTO_2026-09-17.md → archive/ アーカイブ ✅
+- BACKLOG.md：両タスクを [x] に更新 ✅
 - コミット・プッシュ ✅
 
 ---

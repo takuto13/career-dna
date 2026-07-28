@@ -17,13 +17,13 @@
 
 ### ⚡ 7週後タスク（週3稼働：月2026-09-15・水09-17・金09-19）
 
-- [ ] **CTO_2026-09-15.md result.html/disclaimer.html/privacy.html dateModified → 2026-09-15 + result.html twitter:description秋採用KW追加 + sitemap/llms.txt更新**
+- [x] **CTO_2026-09-15.md result.html/disclaimer.html/privacy.html dateModified → 2026-09-15 + result.html twitter:description秋採用KW追加 + sitemap/llms.txt更新**
   - タスク1: result.html WebPage JSON-LD dateModified → 2026-09-15 + sitemap.xml lastmod更新
   - タスク2: disclaimer.html / privacy.html WebPage JSON-LD dateModified → 2026-09-15 + sitemap.xml lastmod更新
   - タスク3: result.html twitter:description 秋採用KW追加（秋採用 9月転職 AI診断）
   - タスク4: llms.txt 2026-09-15 エントリに追記
 
-- [ ] **CTO_2026-09-17.md jobs.html 秋採用タイプ別コンテンツ追加 + sitemap/llms.txt更新**
+- [x] **CTO_2026-09-17.md jobs.html 秋採用タイプ別コンテンツ追加 + sitemap/llms.txt更新**
   - タスク1: jobs.html 秋採用タイプ別スタートタイミングSEOテキスト追加（KW: 秋採用 転職 9月 タイプ別）
   - タスク2: sitemap.xml jobs.html lastmod → 2026-09-17
   - タスク3: llms.txt 2026-09-17セクション追加
