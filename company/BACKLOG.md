@@ -15,6 +15,21 @@
 
 ## 優先タスク
 
+### ⚡ 9週後タスク（週3稼働：月2026-09-29・水10-01・金10-03）
+
+- [x] **CTO_2026-09-29.md index.html og:description 冬採用逆算KW追加 + result.html SEO freshness → 2026-09-29 + sitemap/llms.txt更新** `CTO実行完了 2026-07-28（前倒し）` ✅
+  - タスク1: index.html og:description → 「秋採用（9・10月）・冬採用（11・12月入社）逆算スケジュール対応」KW追加 ✅
+  - タスク2: index.html SoftwareApplication JSON-LD dateModified → 2026-09-29 ✅
+  - タスク3: result.html og:description / twitter:description → 冬採用逆算KW追加 ✅
+  - タスク4: result.html WebPage JSON-LD dateModified → 2026-09-29 ✅
+  - タスク5: sitemap.xml index.html / result.html lastmod → 2026-09-29 ✅
+  - タスク6: llms.txt 2026-09-29セクション追加 ✅
+
+- [ ] **CTO_2026-10-01.md SEO freshness更新（対象ページ未定）** `次回CEO定例（2026-07-30）で計画`
+- [ ] **SNS_2026-10-03.md 2027-05-17〜19日次 + 2031/02/12〜18バッチ** `次回CEO定例（2026-07-30）で計画`
+
+---
+
 ### ⚡ 8週後タスク（週3稼働：月2026-09-22・水09-24・金09-26）
 
 - [x] **CTO_2026-09-22.md index.html 冬採用KW追加 + SEO freshness → 2026-09-22 + sitemap/llms.txt更新** `CTO実行完了 2026-07-28（前倒し）` ✅

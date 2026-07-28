@@ -71,6 +71,23 @@
 
 ---
 
+## 2026-07-28（火）CTO定例実施内容（第4弾・スケジュール自動起動）
+
+### CTO定例 2026-07-28（第4弾）
+- GitHub Issues確認：11件 open（変化なし）✅
+- CTO_2026-09-29.md 前倒し実行完了 ✅
+  - index.html：og:description に秋採用（9・10月）・冬採用（11・12月入社）逆算スケジュールKW追加
+  - index.html：SoftwareApplication JSON-LD dateModified → 2026-09-29
+  - result.html：og:description / twitter:description に冬採用逆算KW追加
+  - result.html：WebPage JSON-LD dateModified → 2026-09-29
+  - sitemap.xml：index.html / result.html lastmod → 2026-09-29 更新
+  - llms.txt：2026-09-29セクション追加
+- CTO_2026-09-29.md → archive/ アーカイブ ✅
+- BACKLOG.md：9週後タスクセクション追加・CTO_2026-09-29.md を [x] に更新 ✅
+- コミット・プッシュ（本セッション末尾で実行）
+
+---
+
 ## 2026-07-28（火）CTO定例実施内容（第1弾）
 
 ### CTO定例 2026-07-28（第1弾）
