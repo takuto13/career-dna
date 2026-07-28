@@ -25,8 +25,20 @@
   - タスク5: sitemap.xml index.html / result.html lastmod → 2026-09-29 ✅
   - タスク6: llms.txt 2026-09-29セクション追加 ✅
 
-- [ ] **CTO_2026-10-01.md SEO freshness更新（対象ページ未定）** `次回CEO定例（2026-07-30）で計画`
-- [ ] **SNS_2026-10-03.md 2027-05-17〜19日次 + 2031/02/12〜18バッチ** `次回CEO定例（2026-07-30）で計画`
+- [ ] **CTO_2026-10-01.md 全8タイプページ + faq.html 月次freshness → 2026-10-29 + disclaimer/privacy/jobs SEO freshness → 2026-09-29 + sitemap/llms.txt更新**
+  - タスク1: 全8タイプページ Article JSON-LD dateModified → 2026-10-29
+  - タスク2: faq.html Article JSON-LD dateModified → 2026-10-29
+  - タスク3: disclaimer.html / privacy.html WebPage JSON-LD dateModified → 2026-09-29（CTO_2026-09-29で未実施分）
+  - タスク4: jobs.html WebPage JSON-LD dateModified → 2026-09-29（CTO_2026-09-29で未実施分）
+  - タスク5: sitemap.xml 全タイプ/faq/disclaimer/privacy/jobs lastmod更新
+  - タスク6: llms.txt 2026-10-29セクション追加
+
+- [ ] **SNS_2026-10-03.md 2027-05-17〜19日次 + 2031/02/12〜18バッチ**
+  - タスク1: sns_原稿_2027-05-17.md（日・GW明け3週目週末×自己分析再起動・3本）
+  - タスク2: sns_原稿_2027-05-18.md（月・5月第3週月曜行動促進・3本）
+  - タスク3: sns_原稿_2027-05-19.md（火・書類選考結果待ち×面接準備・3本）
+  - タスク4: 2026-10-11_SNS_バッチ_原稿.md（2031/02/12〜18・バレンタイン週×春採用活発化・7本）
+  - SNSカバレッジ完了後目標：日次〜2027-05-19・2031バッチ〜2031/02/18
 
 ---
 
