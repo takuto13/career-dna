@@ -3645,3 +3645,14 @@
   - タスク3: sitemap.xml privacy.html → 2026-08-04 / disclaimer.html → 2026-08-04 更新 ✅
   - タスク3: llms.txt 2026-08-04セクション追加（privacy/disclaimer WebPage JSON-LD強化記録）✅
   - CTO_2026-08-04.md → company/archive/CTO_2026-08-04_completed.md アーカイブ ✅
+
+- [x] **CTO定例 2026-07-28: 秋採用SEOキーワード追加・全10ページ鮮度シグナル更新** `CTO 2026-07-28実行完了` ✅
+  - タスク1: index.html meta description / twitter:description に「秋採用（9月・10月入社）」KW追加（秋転職シーズン検索流入対応）✅
+  - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2026-09-15 更新 ✅
+  - タスク2: jobs.html meta description に「秋採用（9月・10月入社）対応」KW追加 ✅
+  - タスク2: jobs.html WebPage JSON-LD dateModified → 2026-09-15 更新 ✅
+  - タスク3: 全8タイプページ Article JSON-LD dateModified → 2026-10-01（3週間サイクル更新） ✅
+  - タスク3: faq.html Article JSON-LD dateModified → 2026-10-01 ✅
+  - タスク3: sitemap.xml index.html/jobs.html lastmod → 2026-09-15・全タイプページ/faq.html lastmod → 2026-10-01 更新 ✅
+  - タスク3: llms.txt 2026-09-15・2026-10-01セクション追加 ✅
+  - GitHub Issues確認：11件 open（変化なし）✅

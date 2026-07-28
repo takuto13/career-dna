@@ -753,6 +753,19 @@
 - type-nurturer.html：twitter:description を「教育職転職・人を育てる仕事」KW追加で個別最適化
 - faq.html：Article JSON-LD dateModified → 2026-09-10（SEO freshness維持）
 
+## 2026-09-15 更新内容（index.html・jobs.html 秋採用KW追加・SEO freshness強化）
+- index.html：meta description / twitter:description に「秋採用（9月・10月入社）」KWを追加（秋転職シーズン対応）
+- index.html：SoftwareApplication JSON-LD dateModified → 2026-09-15（3週間サイクル更新）
+- jobs.html：meta description に「秋採用（9月・10月入社）対応」KWを追加（メイン meta に反映）
+- jobs.html：WebPage JSON-LD dateModified → 2026-09-15（SEO freshness維持）
+- sitemap.xml：index.html / jobs.html lastmod → 2026-09-15 更新
+
+## 2026-10-01 更新内容（全8タイプページ・faq.html SEO freshness更新）
+- 全8タイプページ（type-strategist / type-analyst / type-craftsman / type-mediator / type-challenger / type-creator / type-guardian / type-nurturer）：Article JSON-LD dateModified → 2026-10-01（3週間サイクル更新・秋採用シーズン対応）
+- faq.html：Article JSON-LD dateModified → 2026-10-01（SEO freshness維持）
+- sitemap.xml：全8タイプページ lastmod → 2026-10-01 更新（秋採用シーズン最大化）
+- sitemap.xml：faq.html lastmod → 2026-10-01 更新
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。

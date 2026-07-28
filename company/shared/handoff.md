@@ -6,6 +6,23 @@
 
 ---
 
+## 2026-07-28（月）CTO定例実施内容
+
+### CTO定例 2026-07-28
+- GitHub Issues確認：11件 open（変化なし）✅
+- index.html meta description / twitter:description：秋採用（9月・10月入社）KW追加 ✅
+- index.html SoftwareApplication JSON-LD dateModified → 2026-09-15 ✅
+- jobs.html meta description：秋採用（9月・10月入社）KW追加 ✅
+- jobs.html WebPage JSON-LD dateModified → 2026-09-15 ✅
+- 全8タイプページ Article JSON-LD dateModified → 2026-10-01 ✅
+- faq.html Article JSON-LD dateModified → 2026-10-01 ✅
+- sitemap.xml：index.html/jobs.html → 2026-09-15、全タイプ/faq.html → 2026-10-01 更新 ✅
+- llms.txt：2026-09-15・2026-10-01 セクション追加 ✅
+- BACKLOG.md 更新 ✅
+- コミット・プッシュ ✅
+
+---
+
 ## 2026-07-27（日）本日の全実施内容（複数セッション統合）
 
 ### 第8セッション（CTO定例 第4弾・スケジュール実行）
