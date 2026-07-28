@@ -775,6 +775,17 @@
 - sitemap.xml：全8タイプページ lastmod → 2026-10-01 更新（秋採用シーズン最大化）
 - sitemap.xml：faq.html lastmod → 2026-10-01 更新
 
+## 2026-09-22 更新内容（index.html SEO freshness + 冬採用KW追加）
+- index.html：SoftwareApplication JSON-LD dateModified → 2026-09-22（SEO freshness維持）
+- index.html：meta description / twitter:description に「冬採用（11月・12月）」KW追加（秋冬採用シーズン通年対応）
+- sitemap.xml：index.html lastmod → 2026-09-22 更新
+
+## 2026-09-24 更新内容（jobs.html・about.html・contact.html SEO freshness維持）
+- jobs.html：WebPage JSON-LD dateModified → 2026-09-24（SEO freshness維持）
+- about.html：AboutPage JSON-LD dateModified → 2026-09-24（SEO freshness維持）
+- contact.html：ContactPage JSON-LD dateModified → 2026-09-24（SEO freshness維持）
+- sitemap.xml：jobs.html / about.html / contact.html lastmod → 2026-09-24 更新
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。

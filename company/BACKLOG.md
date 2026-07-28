@@ -15,6 +15,30 @@
 
 ## 優先タスク
 
+### ⚡ 8週後タスク（週3稼働：月2026-09-22・水09-24・金09-26）
+
+- [x] **CTO_2026-09-22.md index.html 冬採用KW追加 + SEO freshness → 2026-09-22 + sitemap/llms.txt更新** `CTO実行完了 2026-07-28（前倒し）` ✅
+  - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2026-09-22 ✅
+  - タスク2: index.html meta description / twitter:description 冬採用（11月・12月）KW追加 ✅
+  - タスク3: sitemap.xml index.html lastmod → 2026-09-22 ✅
+  - タスク4: llms.txt 2026-09-22セクション追加 ✅
+
+- [x] **CTO_2026-09-24.md jobs.html/about.html/contact.html SEO freshness → 2026-09-24 + sitemap/llms.txt更新** `CTO実行完了 2026-07-28（前倒し）` ✅
+  - タスク1: jobs.html WebPage JSON-LD dateModified → 2026-09-24 ✅
+  - タスク2: about.html AboutPage JSON-LD dateModified → 2026-09-24 ✅
+  - タスク3: contact.html ContactPage JSON-LD dateModified → 2026-09-24 ✅
+  - タスク4: sitemap.xml jobs.html/about.html/contact.html lastmod → 2026-09-24 ✅
+  - タスク5: llms.txt 2026-09-24セクション追加 ✅
+
+- [ ] **SNS_2026-09-26.md 2027-05-14〜16日次 + 2031/02/05〜11バッチ**
+  - タスク1: sns_原稿_2027-05-14.md（木・GW明け2週目後半×就活2ヶ月目・3本）
+  - タスク2: sns_原稿_2027-05-15.md（金・週末前ラストスパート×面接結果待ち・3本）
+  - タスク3: sns_原稿_2027-05-16.md（土・週末自己分析×タイプ別あるある・3本）
+  - タスク4: 2026-10-10_SNS_バッチ_原稿.md（2031/02/05〜11・立春週×春採用直前×転職市場再起動・7本）
+  - SNSカバレッジ完了後：日次〜2027-05-16・2031バッチ〜2031/02/11
+
+---
+
 ### ⚡ 7週後タスク（週3稼働：月2026-09-15・水09-17・金09-19）
 
 - [x] **CTO_2026-09-15.md result.html/disclaimer.html/privacy.html dateModified → 2026-09-15 + result.html twitter:description秋採用KW追加 + sitemap/llms.txt更新**
