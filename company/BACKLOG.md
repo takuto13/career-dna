@@ -15,6 +15,28 @@
 
 ## 優先タスク
 
+### ⚡ 7週後タスク（週3稼働：月2026-09-15・水09-17・金09-19）
+
+- [ ] **CTO_2026-09-15.md result.html/disclaimer.html/privacy.html dateModified → 2026-09-15 + result.html twitter:description秋採用KW追加 + sitemap/llms.txt更新**
+  - タスク1: result.html WebPage JSON-LD dateModified → 2026-09-15 + sitemap.xml lastmod更新
+  - タスク2: disclaimer.html / privacy.html WebPage JSON-LD dateModified → 2026-09-15 + sitemap.xml lastmod更新
+  - タスク3: result.html twitter:description 秋採用KW追加（秋採用 9月転職 AI診断）
+  - タスク4: llms.txt 2026-09-15 エントリに追記
+
+- [ ] **CTO_2026-09-17.md jobs.html 秋採用タイプ別コンテンツ追加 + sitemap/llms.txt更新**
+  - タスク1: jobs.html 秋採用タイプ別スタートタイミングSEOテキスト追加（KW: 秋採用 転職 9月 タイプ別）
+  - タスク2: sitemap.xml jobs.html lastmod → 2026-09-17
+  - タスク3: llms.txt 2026-09-17セクション追加
+
+- [ ] **SNS_2026-09-19.md 2027-05-11〜13日次 + 2031/01/29〜02/04バッチ**
+  - タスク1: sns_原稿_2027-05-11.md（月・GW明け2週目×入社5週目×就活2ヶ月目スタート・3本）
+  - タスク2: sns_原稿_2027-05-12.md（火・書類選考ラッシュ期×ES作成中・3本）
+  - タスク3: sns_原稿_2027-05-13.md（水・GW明け中だるみ対策×診断誘導・3本）
+  - タスク4: 2026-10-09_SNS_バッチ_原稿.md（2031/01/29〜02/04・節分〜立春・7本）
+  - SNSカバレッジ完了後：日次〜2027-05-13・2031バッチ〜2031/02/04
+
+---
+
 ### ⚡ 6週後タスク（週3稼働：月2026-09-08・水09-10・金09-12）
 
 - [x] **CTO_2026-09-08.md 全8タイプページ前半4ページ twitter:description 個別最適化 + sitemap/llms.txt更新** `CTO実行完了 2026-07-27（前倒し）` ✅
