@@ -6,7 +6,7 @@
 
 ---
 
-## 2026-07-29（水）CEO定例 完了
+## 2026-07-29（水）CEO定例 完了 / CTO定例 完了
 
 ### 完了済み（2026-07-29 CEO定例）
 
@@ -16,6 +16,16 @@
 - BACKLOG SNS_2026-10-03.md → [x] 更新
 - 2026-07-29_CEO.md 作成
 - 競合調査：前回07-23から6日のため7日ルール未到達→スキップ
+
+**CTO実行分（2026-07-29）：**
+- GitHub Issues確認：11件 open（全てownerラベル・変化なし）✅
+- jobs.html meta/og/twitter description に冬採用（11月・12月入社）KW追加 ✅
+- jobs.html WebPage JSON-LD dateModified → 2026-10-29（全タイプページと統一）✅
+- result.html meta description に秋冬採用KW追加（og/twitterとの一貫性確保）✅
+- result.html WebPage JSON-LD dateModified → 2026-10-29 ✅
+- sitemap.xml jobs.html / result.html lastmod → 2026-10-29 ✅
+- llms.txt 2026-10-29更新セクション追加 ✅
+- git commit・push 完了（fe9f6b8）✅
 
 **次回（2026-08-01 月曜）でやること：**
 1. 競合調査（前回07-23 → 08-01で9日・7日ルール超過・必須）
