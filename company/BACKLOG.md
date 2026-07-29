@@ -3729,3 +3729,13 @@
   - タスク3: sitemap.xml index.html/jobs.html lastmod → 2026-09-15・全タイプページ/faq.html lastmod → 2026-10-01 更新 ✅
   - タスク3: llms.txt 2026-09-15・2026-10-01セクション追加 ✅
   - GitHub Issues確認：11件 open（変化なし）✅
+
+- [x] **CTO定例 2026-07-29: jobs.html・result.html 冬採用KW追加・SEO freshness統一** `CTO 2026-07-29実行完了` ✅
+  - GitHub Issues確認：11件 open（全てownerラベル・変化なし）✅
+  - タスク1: jobs.html meta description / og:description / twitter:description に「冬採用（11月・12月入社）」KW追加（秋冬採用シーズン通年SEO対応）✅
+  - タスク2: jobs.html WebPage JSON-LD dateModified → 2026-10-29（全タイプページと統一）✅
+  - タスク3: result.html meta description に「秋採用（9・10月）・冬採用（11・12月入社）」KW追加（og/twitter:descriptionとの一貫性確保）✅
+  - タスク4: result.html WebPage JSON-LD dateModified → 2026-10-29（SEO freshness統一）✅
+  - タスク5: sitemap.xml jobs.html / result.html lastmod → 2026-10-29 更新 ✅
+  - タスク6: llms.txt 2026-10-29更新セクション追加 ✅
+  - KW対応：転職エージェント 冬採用 / 11月入社 転職 / 12月入社 おすすめエージェント

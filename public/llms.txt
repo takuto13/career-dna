@@ -803,6 +803,15 @@
 - sitemap.xml：faq.html lastmod → 2026-10-29 更新
 - sitemap.xml：disclaimer.html / privacy.html / jobs.html lastmod → 2026-09-29 更新（補完）
 
+## 2026-10-29 更新内容（jobs.html・result.html 冬採用KW追加・SEO freshness統一）
+- jobs.html：meta description / og:description / twitter:description に「冬採用（11月・12月入社）」KWを追加（秋冬採用シーズン通年対応・競合jobs.html対策強化）
+- jobs.html：WebPage JSON-LD dateModified → 2026-10-29（全タイプページ・faq.htmlと統一）
+- result.html：meta description に「秋採用（9・10月）・冬採用（11・12月入社）」KW追加（og/twitter:descriptionとの一貫性確保）
+- result.html：WebPage JSON-LD dateModified → 2026-10-29（全タイプページ・faq.htmlと統一）
+- sitemap.xml：jobs.html lastmod → 2026-10-29 更新（コンテンツ追加に合わせて更新）
+- sitemap.xml：result.html lastmod → 2026-10-29 更新（コンテンツ追加に合わせて更新）
+- KW対応：転職エージェント 冬採用 / 11月入社 転職 エージェント / 転職 12月 入社 おすすめ
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
