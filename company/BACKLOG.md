@@ -15,6 +15,39 @@
 
 ## 優先タスク
 
+### ⚡ 10週後タスク（週3稼働：月2026-10-06・水10-08・金10-10）
+
+- [ ] **CTO_2026-10-06.md index.html dateModified → 2026-10-06 + sitemap/llms.txt更新**
+  - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2026-10-06（SEO freshness維持・月次）
+  - タスク2: sitemap.xml index.html lastmod → 2026-10-06
+  - タスク3: llms.txt 2026-10-06セクション追加
+
+- [ ] **CTO_2026-10-08.md jobs.html 冬採用SEOテキスト追加 + about.html/contact.html dateModified → 2026-10-08 + sitemap/llms.txt更新**
+  - タスク1: jobs.html 冬採用（11〜12月入社）SEOテキスト追加 + WebPage JSON-LD dateModified → 2026-10-08
+  - タスク2: about.html / contact.html dateModified → 2026-10-08
+  - タスク3: sitemap.xml jobs.html/about.html/contact.html lastmod → 2026-10-08 + llms.txt 2026-10-08セクション追加
+
+- [ ] **SNS_2026-10-10.md 2027-05-20〜22日次 + 2031/02/19〜25バッチ**
+  - タスク1: sns_原稿_2027-05-20.md（水・GW明け3週目水曜×書類選考ラッシュ継続・3本）
+  - タスク2: sns_原稿_2027-05-21.md（木・面接ラッシュ中盤×内定結果待ち・3本）
+  - タスク3: sns_原稿_2027-05-22.md（金・週末前ラストスパート×5月後半行動促進・3本）
+  - タスク4: 2026-10-10_SNS_バッチ_原稿.md（2031/02/19〜25・バレンタイン後半〜2月下旬×春採用活発期・7本）
+  - SNSカバレッジ完了後：日次〜2027-05-22・2031バッチ〜2031/02/25
+
+---
+
+### ✅ Issue #10 対応（2026-07-20 記事案作成・フェーズ1内部リンク実装済み）
+
+- [x] **Issue #10 フェーズ0: 記事案作成** → `reports/issue10_タイプ別記事案_2026-07-20.md` 完了 ✅
+- [x] **Issue #10 フェーズ1: 全8タイプページ内部リンク強化** → `CTO_2026-08-14.md`で実装済み（関連タイプリンクブロック追加）✅
+- [-] **Issue #10 フェーズ2: タイプ別詳細記事8本新規作成（type-*-detail.html）** → **たくとの承認待ち**（GA4流入データ確認後に実装判断）
+  - 8タイプ×1ページ（SEO記事・アフィリエイトCTA付き）
+  - 主要KW: 「[タイプ名] 向いてる仕事」「[タイプ名] 転職 エージェント」
+  - 期待収益効果：大（新規SEO流入 × アフィリエイトCTA各3〜5本）
+- [-] **Issue #10 フェーズ3: タイプ比較記事6本新規作成（compare-*.html）** → フェーズ2完了後に実施
+
+---
+
 ### ⚡ 9週後タスク（週3稼働：月2026-09-29・水10-01・金10-03）
 
 - [x] **CTO_2026-09-29.md index.html og:description 冬採用逆算KW追加 + result.html SEO freshness → 2026-09-29 + sitemap/llms.txt更新** `CTO実行完了 2026-07-28（前倒し）` ✅
