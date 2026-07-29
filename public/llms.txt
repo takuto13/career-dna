@@ -793,6 +793,16 @@
 - result.html：WebPage JSON-LD dateModified → 2026-09-29（SEO freshness維持）
 - sitemap.xml：index.html / result.html lastmod → 2026-09-29 更新
 
+## 2026-10-01 更新内容（全8タイプページ・faq.html SEO freshness → 2026-10-29 + disclaimer/privacy/jobs SEO freshness → 2026-09-29）
+- 全8タイプページ（type-strategist / type-analyst / type-craftsman / type-mediator / type-challenger / type-creator / type-guardian / type-nurturer）：Article JSON-LD dateModified → 2026-10-29（月次サイクル更新・秋採用→冬採用移行シーズン対応）
+- faq.html：Article JSON-LD dateModified → 2026-10-29（SEO freshness維持・冬採用シーズン対応）
+- disclaimer.html：WebPage JSON-LD dateModified → 2026-09-29（SEO freshness補完・CTO_2026-09-29未実施分）
+- privacy.html：WebPage JSON-LD dateModified → 2026-09-29（SEO freshness補完・CTO_2026-09-29未実施分）
+- jobs.html：WebPage JSON-LD dateModified → 2026-09-29（SEO freshness補完・CTO_2026-09-29未実施分）
+- sitemap.xml：全8タイプページ lastmod → 2026-10-29 更新（冬採用シーズン対応）
+- sitemap.xml：faq.html lastmod → 2026-10-29 更新
+- sitemap.xml：disclaimer.html / privacy.html / jobs.html lastmod → 2026-09-29 更新（補完）
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。

@@ -25,11 +25,11 @@
   - タスク5: sitemap.xml index.html / result.html lastmod → 2026-09-29 ✅
   - タスク6: llms.txt 2026-09-29セクション追加 ✅
 
-- [ ] **CTO_2026-10-01.md 全8タイプページ + faq.html 月次freshness → 2026-10-29 + disclaimer/privacy/jobs SEO freshness → 2026-09-29 + sitemap/llms.txt更新**
-  - タスク1: 全8タイプページ Article JSON-LD dateModified → 2026-10-29
-  - タスク2: faq.html Article JSON-LD dateModified → 2026-10-29
-  - タスク3: disclaimer.html / privacy.html WebPage JSON-LD dateModified → 2026-09-29（CTO_2026-09-29で未実施分）
-  - タスク4: jobs.html WebPage JSON-LD dateModified → 2026-09-29（CTO_2026-09-29で未実施分）
+- [x] **CTO_2026-10-01.md 全8タイプページ + faq.html 月次freshness → 2026-10-29 + disclaimer/privacy/jobs SEO freshness → 2026-09-29 + sitemap/llms.txt更新** ✅ 2026-07-29実行
+  - タスク1: 全8タイプページ Article JSON-LD dateModified → 2026-10-29 ✅
+  - タスク2: faq.html Article JSON-LD dateModified → 2026-10-29 ✅
+  - タスク3: disclaimer.html / privacy.html WebPage JSON-LD dateModified → 2026-09-29（CTO_2026-09-29で未実施分）✅
+  - タスク4: jobs.html WebPage JSON-LD dateModified → 2026-09-29（CTO_2026-09-29で未実施分）✅
   - タスク5: sitemap.xml 全タイプ/faq/disclaimer/privacy/jobs lastmod更新
   - タスク6: llms.txt 2026-10-29セクション追加
 

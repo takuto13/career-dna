@@ -70,7 +70,7 @@
 
 ## requests/にある実行待ち指示書
 
-- `CTO_2026-10-01.md` → 全8タイプ/faq月次freshness + disclaimer/privacy/jobs SEO freshness
+- `CTO_2026-10-01.md` → ✅ 2026-07-29 前倒し実行完了
 - `SNS_2026-10-03.md` → 2027-05-17〜19日次 + 2031/02/12〜18バッチ
 - `issue12_サイト改善提案_2026-07-04.md` → 参考資料（実施判断はたくとと相談）
 - `search-console手順_2026-07-06.md` → たくとが実施予定
