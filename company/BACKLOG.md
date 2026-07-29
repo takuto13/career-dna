@@ -22,10 +22,10 @@
   - タスク2: sitemap.xml index.html lastmod → 2026-10-06 ✅
   - タスク3: llms.txt 2026-10-06セクション追加 ✅
 
-- [ ] **CTO_2026-10-08.md jobs.html 冬採用SEOテキスト追加 + about.html/contact.html dateModified → 2026-10-08 + sitemap/llms.txt更新**
-  - タスク1: jobs.html 冬採用（11〜12月入社）SEOテキスト追加 + WebPage JSON-LD dateModified → 2026-10-08
-  - タスク2: about.html / contact.html dateModified → 2026-10-08
-  - タスク3: sitemap.xml jobs.html/about.html/contact.html lastmod → 2026-10-08 + llms.txt 2026-10-08セクション追加
+- [x] **CTO_2026-10-08.md jobs.html 冬採用SEOテキスト追加 + about.html/contact.html dateModified → 2026-10-08 + sitemap/llms.txt更新** `CEO前倒し実行完了 2026-07-29` ✅
+  - タスク1: jobs.html 冬採用（11〜12月入社）SEOテキスト追加（「冬採用 転職 12月入社」「11月 転職 タイプ別 逆算」「年末 転職活動 本格化」KW対応）・dateModifiedは2026-10-29で既に更新済みのためダウングレード禁止によりスキップ ✅
+  - タスク2: about.html / contact.html dateModified → 2026-10-08 ✅
+  - タスク3: sitemap.xml about.html / contact.html lastmod → 2026-10-08（jobs.htmlは2026-10-29で上位・ダウングレード禁止） + llms.txt 2026-10-08セクション追加 ✅
 
 - [x] **SNS_2026-10-10.md 2027-05-20〜22日次 + 2031/02/19〜25バッチ**（2026-07-29 前倒し実行済み）
   - タスク1: sns_原稿_2027-05-20.md（水・GW明け3週目水曜×書類選考ラッシュ継続・3本）

@@ -807,6 +807,11 @@
 - index.html：SoftwareApplication JSON-LD dateModified → 2026-10-06（月次SEO freshness維持）
 - sitemap.xml：index.html lastmod → 2026-10-06 更新
 
+## 2026-10-08 更新
+- jobs.html: 冬採用（11〜12月入社）SEOテキスト追加（「冬採用 転職 12月入社」「11月 転職 タイプ別 逆算」「年末 転職活動 本格化」KW対応）
+- about.html / contact.html: dateModified → 2026-10-08（月次freshness）
+- sitemap.xml: about.html / contact.html lastmod → 2026-10-08
+
 ## 2026-10-29 更新内容（jobs.html・result.html 冬採用KW追加・SEO freshness統一）
 - jobs.html：meta description / og:description / twitter:description に「冬採用（11月・12月入社）」KWを追加（秋冬採用シーズン通年対応・競合jobs.html対策強化）
 - jobs.html：WebPage JSON-LD dateModified → 2026-10-29（全タイプページ・faq.htmlと統一）
