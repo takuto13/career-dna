@@ -803,6 +803,10 @@
 - sitemap.xml：faq.html lastmod → 2026-10-29 更新
 - sitemap.xml：disclaimer.html / privacy.html / jobs.html lastmod → 2026-09-29 更新（補完）
 
+## 2026-10-06 更新内容（index.html SEO freshness維持）
+- index.html：SoftwareApplication JSON-LD dateModified → 2026-10-06（月次SEO freshness維持）
+- sitemap.xml：index.html lastmod → 2026-10-06 更新
+
 ## 2026-10-29 更新内容（jobs.html・result.html 冬採用KW追加・SEO freshness統一）
 - jobs.html：meta description / og:description / twitter:description に「冬採用（11月・12月入社）」KWを追加（秋冬採用シーズン通年対応・競合jobs.html対策強化）
 - jobs.html：WebPage JSON-LD dateModified → 2026-10-29（全タイプページ・faq.htmlと統一）

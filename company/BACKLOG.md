@@ -17,10 +17,10 @@
 
 ### ⚡ 10週後タスク（週3稼働：月2026-10-06・水10-08・金10-10）
 
-- [ ] **CTO_2026-10-06.md index.html dateModified → 2026-10-06 + sitemap/llms.txt更新**
-  - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2026-10-06（SEO freshness維持・月次）
-  - タスク2: sitemap.xml index.html lastmod → 2026-10-06
-  - タスク3: llms.txt 2026-10-06セクション追加
+- [x] **CTO_2026-10-06.md index.html dateModified → 2026-10-06 + sitemap/llms.txt更新** `CTO実行完了 2026-07-29（前倒し）` ✅
+  - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2026-10-06（SEO freshness維持・月次）✅
+  - タスク2: sitemap.xml index.html lastmod → 2026-10-06 ✅
+  - タスク3: llms.txt 2026-10-06セクション追加 ✅
 
 - [ ] **CTO_2026-10-08.md jobs.html 冬採用SEOテキスト追加 + about.html/contact.html dateModified → 2026-10-08 + sitemap/llms.txt更新**
   - タスク1: jobs.html 冬採用（11〜12月入社）SEOテキスト追加 + WebPage JSON-LD dateModified → 2026-10-08
