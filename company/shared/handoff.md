@@ -6,6 +6,36 @@
 
 ---
 
+## 2026-07-30（木）CTO定例 完了
+
+### 完了済み（2026-07-30 CTO定例）
+
+**CTO実行分（2026-07-30）：**
+- GitHub Issues確認：11件 open（全てownerラベル・変化なし）✅
+- CTO_2026-10-13.md 前倒し実行完了 ✅
+  - index.html SoftwareApplication JSON-LD dateModified → 2026-10-13 ✅
+  - disclaimer.html WebPage JSON-LD dateModified → 2026-10-13 ✅
+  - privacy.html WebPage JSON-LD dateModified → 2026-10-13 ✅
+  - sitemap.xml index.html/disclaimer.html/privacy.html lastmod → 2026-10-13 ✅
+  - llms.txt 2026-10-13セクション追加 ✅
+- CTO_2026-10-15.md 前倒し実行完了 ✅
+  - about.html AboutPage JSON-LD dateModified → 2026-10-15 ✅
+  - contact.html ContactPage JSON-LD dateModified → 2026-10-15 ✅
+  - sitemap.xml about.html/contact.html lastmod → 2026-10-15 ✅
+  - llms.txt 2026-10-15セクション追加 ✅
+- BACKLOG CTO_2026-10-13/10-15 → [x] 更新済み ✅
+- 指示書を company/archive/ へ移動 ✅
+- git commit・push 完了 ✅
+
+**次回（2026-08-01 月曜 CEO定例）でやること：**
+1. 競合調査（7日ルール：前回07-23 → 08-01で9日・必須実施）
+   - VCAP AI適職診断詳細確認
+   - 2026年8月転職市場動向
+   - competitive-intel.md更新
+2. GitHub Issue確認（#17/#18等クローズ確認）
+
+---
+
 ## 2026-07-29（水）CEO定例 完了 / CTO定例 完了
 
 ### 完了済み（2026-07-29 CEO定例 全セッション）
