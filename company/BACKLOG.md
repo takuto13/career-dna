@@ -17,8 +17,18 @@
 
 ### ⚡ 13週後タスク（週3稼働：月2026-10-27・水10-29・金10-31）
 
-- [ ] **CTO_2026-10-27.md index.html dateModified → 2026-10-27 + result.html（ダウングレード禁止） + sitemap/llms.txt更新** `CTO実行待ち`
-- [ ] **CTO_2026-10-29.md disclaimer.html / privacy.html / about.html / contact.html dateModified → 2026-10-29 + sitemap/llms.txt更新** `CTO実行待ち`
+- [x] **CTO_2026-10-27.md index.html dateModified → 2026-10-27 + result.html（ダウングレード禁止） + sitemap/llms.txt更新** `CTO実行完了 2026-07-30（前倒し）` ✅
+  - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2026-10-27 ✅
+  - タスク2: result.html → スキップ（既に2026-10-29・ダウングレード禁止）✅
+  - タスク3: sitemap.xml / lastmod → 2026-10-27 ✅
+  - タスク4: llms.txt 2026-10-27セクション追加 ✅
+- [x] **CTO_2026-10-29.md disclaimer.html / privacy.html / about.html / contact.html dateModified → 2026-10-29 + sitemap/llms.txt更新** `CTO実行完了 2026-07-30（前倒し）` ✅
+  - タスク1: disclaimer.html WebPage JSON-LD dateModified → 2026-10-29 ✅
+  - タスク2: privacy.html WebPage JSON-LD dateModified → 2026-10-29 ✅
+  - タスク3: about.html AboutPage JSON-LD dateModified → 2026-10-29 ✅
+  - タスク4: contact.html ContactPage JSON-LD dateModified → 2026-10-29 ✅
+  - タスク5: sitemap.xml disclaimer.html / privacy.html / about.html / contact.html lastmod → 2026-10-29 ✅
+  - タスク6: llms.txt 2026-10-29セクション更新（追記） ✅
 - [x] **SNS_2026-10-31.md 2027-06-08〜10日次（3本×3） + 2031/03/19〜25バッチ（7本）**（2026-07-30 SNS定例第2セッション前倒し実行完了）✅
   - タスク1: sns_原稿_2027-06-08.md（火・自己PR対策/書類選考Tips/診断誘導・3本）✅
   - タスク2: sns_原稿_2027-06-09.md（水・面接前夜Tips/緊張あるある/職場ミスマッチ診断誘導・3本）✅

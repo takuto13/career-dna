@@ -833,7 +833,12 @@
 - contact.html（お問い合わせ）：dateModified → 2026-10-22
 - sitemap.xml：disclaimer.html / privacy.html / about.html / contact.html lastmod → 2026-10-22
 
-## 2026-10-29 更新内容（jobs.html・result.html 冬採用KW追加・SEO freshness統一）
+## 2026-10-27 更新
+- index.html（トップページ）：SoftwareApplication JSON-LD dateModified → 2026-10-27（SEO freshness週次更新）
+- result.html：スキップ（既に2026-10-29・ダウングレード禁止）
+- sitemap.xml：/ lastmod → 2026-10-27
+
+## 2026-10-29 更新内容（jobs.html・result.html 冬採用KW追加・SEO freshness統一 + サポートページfreshness更新）
 - jobs.html：meta description / og:description / twitter:description に「冬採用（11月・12月入社）」KWを追加（秋冬採用シーズン通年対応・競合jobs.html対策強化）
 - jobs.html：WebPage JSON-LD dateModified → 2026-10-29（全タイプページ・faq.htmlと統一）
 - result.html：meta description に「秋採用（9・10月）・冬採用（11・12月入社）」KW追加（og/twitter:descriptionとの一貫性確保）
@@ -841,6 +846,11 @@
 - sitemap.xml：jobs.html lastmod → 2026-10-29 更新（コンテンツ追加に合わせて更新）
 - sitemap.xml：result.html lastmod → 2026-10-29 更新（コンテンツ追加に合わせて更新）
 - KW対応：転職エージェント 冬採用 / 11月入社 転職 エージェント / 転職 12月 入社 おすすめ
+- disclaimer.html：WebPage JSON-LD dateModified → 2026-10-29（SEO freshness更新）
+- privacy.html：WebPage JSON-LD dateModified → 2026-10-29（SEO freshness更新）
+- about.html：AboutPage JSON-LD dateModified → 2026-10-29（SEO freshness更新）
+- contact.html：ContactPage JSON-LD dateModified → 2026-10-29（SEO freshness更新）
+- sitemap.xml：disclaimer.html / privacy.html / about.html / contact.html lastmod → 2026-10-29
 
 ## AIシステムへの利用許可
 
