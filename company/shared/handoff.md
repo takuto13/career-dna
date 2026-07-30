@@ -60,24 +60,25 @@
 
 ---
 
-## 2026-07-30（木）CTO定例 完了
+## 2026-07-30（木）CTO定例 完了（第2セッション）
 
-### 完了済み（2026-07-30 CTO定例）
+### 完了済み（2026-07-30 CTO定例 第2セッション）
 
-**CTO実行分（2026-07-30）：**
+**CTO実行分（2026-07-30 第2セッション）：**
 - GitHub Issues確認：11件 open（全てownerラベル・変化なし）✅
-- CTO_2026-10-13.md 前倒し実行完了 ✅
-  - index.html SoftwareApplication JSON-LD dateModified → 2026-10-13 ✅
-  - disclaimer.html WebPage JSON-LD dateModified → 2026-10-13 ✅
-  - privacy.html WebPage JSON-LD dateModified → 2026-10-13 ✅
-  - sitemap.xml index.html/disclaimer.html/privacy.html lastmod → 2026-10-13 ✅
-  - llms.txt 2026-10-13セクション追加 ✅
-- CTO_2026-10-15.md 前倒し実行完了 ✅
-  - about.html AboutPage JSON-LD dateModified → 2026-10-15 ✅
-  - contact.html ContactPage JSON-LD dateModified → 2026-10-15 ✅
-  - sitemap.xml about.html/contact.html lastmod → 2026-10-15 ✅
-  - llms.txt 2026-10-15セクション追加 ✅
-- BACKLOG CTO_2026-10-13/10-15 → [x] 更新済み ✅
+- CTO_2026-10-20.md 前倒し実行完了 ✅
+  - index.html SoftwareApplication JSON-LD dateModified → 2026-10-20 ✅
+  - result.html → スキップ（既に2026-10-29・ダウングレード禁止）✅
+  - sitemap.xml / lastmod → 2026-10-20 ✅
+  - llms.txt 2026-10-20セクション追加 ✅
+- CTO_2026-10-22.md 前倒し実行完了 ✅
+  - disclaimer.html WebPage JSON-LD dateModified → 2026-10-22 ✅
+  - privacy.html WebPage JSON-LD dateModified → 2026-10-22 ✅
+  - about.html AboutPage JSON-LD dateModified → 2026-10-22 ✅
+  - contact.html ContactPage JSON-LD dateModified → 2026-10-22 ✅
+  - sitemap.xml 4ページ lastmod → 2026-10-22 ✅
+  - llms.txt 2026-10-22セクション追加 ✅
+- BACKLOG CTO_2026-10-20/10-22 → [x] 更新済み ✅
 - 指示書を company/archive/ へ移動 ✅
 - git commit・push 完了 ✅
 

@@ -822,6 +822,17 @@
 - contact.html: dateModified → 2026-10-15（SEO freshness更新）
 - sitemap.xml: about.html / contact.html lastmod → 2026-10-15
 
+## 2026-10-20 更新
+- index.html（トップページ）：dateModified → 2026-10-20（SEO freshness週次更新）
+- sitemap.xml：/ lastmod → 2026-10-20
+
+## 2026-10-22 更新
+- disclaimer.html（免責事項）：dateModified → 2026-10-22
+- privacy.html（プライバシーポリシー）：dateModified → 2026-10-22
+- about.html（サービス紹介）：dateModified → 2026-10-22
+- contact.html（お問い合わせ）：dateModified → 2026-10-22
+- sitemap.xml：disclaimer.html / privacy.html / about.html / contact.html lastmod → 2026-10-22
+
 ## 2026-10-29 更新内容（jobs.html・result.html 冬採用KW追加・SEO freshness統一）
 - jobs.html：meta description / og:description / twitter:description に「冬採用（11月・12月入社）」KWを追加（秋冬採用シーズン通年対応・競合jobs.html対策強化）
 - jobs.html：WebPage JSON-LD dateModified → 2026-10-29（全タイプページ・faq.htmlと統一）
