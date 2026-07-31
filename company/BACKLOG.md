@@ -15,6 +15,31 @@
 
 ## 優先タスク
 
+### ⚡ 16週後タスク（週3稼働：月2026-11-17・水11-19・金11-21）
+
+- [ ] **CTO_2026-11-17.md index.html dateModified → 2026-11-17 + result.html dateModified → 2026-11-17 + sitemap/llms.txt更新**
+  - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2026-11-17（現在2026-11-10・更新可）
+  - タスク2: result.html WebPage JSON-LD dateModified → 2026-11-17（現在2026-11-10・更新可）
+  - タスク3: sitemap.xml index.html / result.html lastmod → 2026-11-17
+  - タスク4: llms.txt 2026-11-17セクション追加
+
+- [ ] **CTO_2026-11-19.md disclaimer.html / privacy.html / about.html / contact.html dateModified → 2026-11-19 + sitemap/llms.txt更新**
+  - タスク1: disclaimer.html WebPage JSON-LD dateModified → 2026-11-19（現在2026-11-12・更新可）
+  - タスク2: privacy.html WebPage JSON-LD dateModified → 2026-11-19
+  - タスク3: about.html AboutPage JSON-LD dateModified → 2026-11-19
+  - タスク4: contact.html ContactPage JSON-LD dateModified → 2026-11-19
+  - タスク5: sitemap.xml 4ページ lastmod → 2026-11-19
+  - タスク6: llms.txt 2026-11-19セクション追加
+
+- [ ] **SNS_2026-11-21.md 2027-06-17〜19日次 + 2031/04/09〜15バッチ**
+  - タスク1: sns_原稿_2027-06-17.md（火・6月第3週火曜×面接継続期×転職者実践Tips・3本）
+  - タスク2: sns_原稿_2027-06-18.md（水・6月第3週水曜×内定結果待ち×就活生メンタルケア・3本）
+  - タスク3: sns_原稿_2027-06-19.md（木・6月第3週木曜×行動促進×診断誘導・3本）
+  - タスク4: 2026-11-21_SNS_バッチ_原稿.md（2031/04/09〜15・4月入社後2〜3週目・7本）
+  - SNSカバレッジ完了後：日次〜2027-06-19・2031バッチ〜2031/04/15
+
+---
+
 ### ⚡ 15週後タスク（週3稼働：月2026-11-10・水11-12・金11-14）
 
 - [x] **CTO_2026-11-10.md index.html dateModified → 2026-11-10 + result.html dateModified → 2026-11-10 + sitemap/llms.txt更新** ✅ 2026-07-31前倒し実行
