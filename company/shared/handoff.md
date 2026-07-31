@@ -6,6 +6,39 @@
 
 ---
 
+## 2026-07-31（金）CTO定例 完了（前倒し：15週後タスク実行）
+
+### 完了済み（2026-07-31 CTO定例）
+
+**CTO実行分（2026-07-31）：**
+- GitHub Issues確認：11件 open（全てownerラベル・変化なし）✅
+- CTO_2026-11-10.md 前倒し実行完了 ✅
+  - index.html SoftwareApplication JSON-LD dateModified → 2026-11-10 ✅
+  - result.html WebPage JSON-LD dateModified → 2026-11-10 ✅
+  - sitemap.xml index.html / result.html lastmod → 2026-11-10 ✅
+  - llms.txt 2026-11-10セクション追加 ✅
+- CTO_2026-11-12.md 前倒し実行完了 ✅
+  - disclaimer.html WebPage JSON-LD dateModified → 2026-11-12 ✅
+  - privacy.html WebPage JSON-LD dateModified → 2026-11-12 ✅
+  - about.html AboutPage JSON-LD dateModified → 2026-11-12 ✅
+  - contact.html ContactPage JSON-LD dateModified → 2026-11-12 ✅
+  - sitemap.xml 4ページ lastmod → 2026-11-12 ✅
+  - llms.txt 2026-11-12セクション追加 ✅
+- BACKLOG 15週後タスクセクション追加・CTO_2026-11-10/11-12 → [x] 更新済み ✅
+- git commit・push 完了 ✅
+
+**requests/ 残存指示書：なし（全て実行完了）**
+
+**次回（2026-08-04 月曜）CEO定例でやること：**
+1. GitHub Issue確認（新規・クローズ状況確認）
+2. 競合調査（7日ルール：前回07-30から5日・スキップ可能）
+3. 16週後タスク指示書作成
+   - CTO_2026-11-17.md（index.html + result.html dateModified → 2026-11-17）
+   - CTO_2026-11-19.md（disclaimer/privacy/about/contact dateModified → 2026-11-19）
+   - SNS_2026-11-21.md（2027-06-17〜19日次 + 2031/04/09〜15バッチ）
+
+---
+
 ## 2026-07-30（水）CTO定例 第4セッション完了（前倒し：14週後タスク実行）
 
 ### 完了済み（2026-07-30 CTO定例 第4セッション）
