@@ -17,13 +17,13 @@
 
 ### ⚡ 16週後タスク（週3稼働：月2026-11-17・水11-19・金11-21）
 
-- [ ] **CTO_2026-11-17.md index.html dateModified → 2026-11-17 + result.html dateModified → 2026-11-17 + sitemap/llms.txt更新**
+- [x] **CTO_2026-11-17.md index.html dateModified → 2026-11-17 + result.html dateModified → 2026-11-17 + sitemap/llms.txt更新**（2026-07-31 前倒し実行済み）
   - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2026-11-17（現在2026-11-10・更新可）
   - タスク2: result.html WebPage JSON-LD dateModified → 2026-11-17（現在2026-11-10・更新可）
   - タスク3: sitemap.xml index.html / result.html lastmod → 2026-11-17
   - タスク4: llms.txt 2026-11-17セクション追加
 
-- [ ] **CTO_2026-11-19.md disclaimer.html / privacy.html / about.html / contact.html dateModified → 2026-11-19 + sitemap/llms.txt更新**
+- [x] **CTO_2026-11-19.md disclaimer.html / privacy.html / about.html / contact.html dateModified → 2026-11-19 + sitemap/llms.txt更新**（2026-07-31 前倒し実行済み）
   - タスク1: disclaimer.html WebPage JSON-LD dateModified → 2026-11-19（現在2026-11-12・更新可）
   - タスク2: privacy.html WebPage JSON-LD dateModified → 2026-11-19
   - タスク3: about.html AboutPage JSON-LD dateModified → 2026-11-19
