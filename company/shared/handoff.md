@@ -6,40 +6,41 @@
 
 ---
 
-## 2026-08-01（金）CTO定例 完了（前倒し：18週後タスク実行）
+## 2026-08-01（土）CEO・CTO定例 完了
 
-### 完了済み（2026-08-01 CTO定例）
+### CTO実行内容（2026-08-01 前倒し実行）
 
-**CTO実行分（2026-08-01）：**
 - GitHub Issues確認：11件 open（全てownerラベル・変化なし）✅
 - CTO_2026-12-01.md 前倒し実行完了 ✅
   - index.html SoftwareApplication JSON-LD dateModified → 2026-12-01 ✅
   - result.html WebPage JSON-LD dateModified → 2026-12-01 ✅
-  - sitemap.xml / lastmod → 2026-12-01、result.html lastmod → 2026-12-01 ✅
+  - sitemap.xml lastmod → 2026-12-01 ✅
   - llms.txt 2026-12-01セクション追加 ✅
 - CTO_2026-12-03.md 前倒し実行完了 ✅
-  - disclaimer.html WebPage JSON-LD dateModified → 2026-12-03 ✅
-  - privacy.html WebPage JSON-LD dateModified → 2026-12-03 ✅
-  - about.html AboutPage JSON-LD dateModified → 2026-12-03 ✅
-  - contact.html ContactPage JSON-LD dateModified → 2026-12-03 ✅
+  - disclaimer/privacy/about/contact dateModified → 2026-12-03 ✅
   - sitemap.xml 4ページ lastmod → 2026-12-03 ✅
   - llms.txt 2026-12-03セクション追加 ✅
-- BACKLOG 18週後タスクセクション追加・CTO_2026-12-01/12-03 → [x] 更新済み ✅
-- git commit・push 完了 ✅
 
-**requests/ 実行待ち指示書（更新後）：**
-- `SNS_2026-11-21.md` → 2026-11-21実行予定（16週後・金）
-- `SNS_2026-11-28.md` → 2026-11-28実行予定（17週後・金）※未作成（CEO_08-04で作成予定）
-- `SNS_2026-12-05.md` → 2026-12-05実行予定（18週後・金）※未作成（CEO_08-04で作成予定）
+### CEO実行内容（2026-08-01）
 
-**次回（2026-08-04 月曜）CEO定例でやること：**
-1. GitHub Issue確認（新規・クローズ状況確認）
-2. 競合調査：前回07-30から5日・7日ルール未到達 → スキップ可能（08-06以降に実施）
-3. 18週後SNS指示書作成（SNS_2026-12-05.md：2027-06-23〜25日次 + 2031/04/23〜29バッチ）
-4. 19週後タスク指示書作成
+- GitHub Issues確認：11件オープン（変化なし・Issue #17・#18クローズ試み→403継続）
+- 競合調査：スキップ（前回07-30から2日・7日ルール未到達）
+- SNS_2026-11-28.md 指示書作成・x-posts代行作成完了 ✅
+  - sns_原稿_2027-06-20〜22.md（3ファイル・9本）✅
+  - 2026-11-28_SNS_バッチ_原稿.md（2031/04/16〜22・7本）✅
+- BACKLOG更新：SNS_2026-11-28 [x]化 + 18週後タスク追加（CTO分は実行済みのため[x]更新要）✅
+- 2026-08-01_CEO.md 作成 ✅
+
+### 次回（2026-08-04 月曜）でやること
+
+1. BACKLOG確認：CTO_2026-12-01・CTO_2026-12-03 → [x] に更新（本日CTO実行済み）
+2. GitHub Issue確認（新規確認・#17/#18クローズ済みか確認）
+3. 競合調査：前回07-30から5日・7日ルール未到達 → スキップ（08-06以降に実施）
+4. 19週後タスク指示書作成（SNS_2026-12-05.mdはCEO本日作成済み）
    - CTO_2026-12-08.md（index.html + result.html dateModified → 2026-12-08）
    - CTO_2026-12-10.md（disclaimer/privacy/about/contact dateModified → 2026-12-10）
    - SNS_2026-12-12.md（2027-06-26〜28日次 + 2031/04/30〜05/06バッチ）
+5. SNSカバレッジ現状：日次〜2027-06-22・2031バッチ〜2031/04/22
 
 ---
 
