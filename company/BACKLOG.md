@@ -15,6 +15,26 @@
 
 ## 優先タスク
 
+### ⚡ 18週後タスク（週3稼働：月2026-12-01・水12-03・金12-05）
+
+- [x] **CTO_2026-12-01.md index.html dateModified → 2026-12-01 + result.html dateModified → 2026-12-01 + sitemap/llms.txt更新**（2026-08-01 前倒し実行済み）
+  - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2026-12-01（旧2026-11-24）
+  - タスク2: result.html WebPage JSON-LD dateModified → 2026-12-01（旧2026-11-24）
+  - タスク3: sitemap.xml index.html / result.html lastmod → 2026-12-01
+  - タスク4: llms.txt 2026-12-01セクション追加
+
+- [x] **CTO_2026-12-03.md disclaimer.html / privacy.html / about.html / contact.html dateModified → 2026-12-03 + sitemap/llms.txt更新**（2026-08-01 前倒し実行済み）
+  - タスク1: disclaimer.html WebPage JSON-LD dateModified → 2026-12-03（旧2026-11-26）
+  - タスク2: privacy.html WebPage JSON-LD dateModified → 2026-12-03
+  - タスク3: about.html AboutPage JSON-LD dateModified → 2026-12-03
+  - タスク4: contact.html ContactPage JSON-LD dateModified → 2026-12-03
+  - タスク5: sitemap.xml about/disclaimer/privacy/contact lastmod → 2026-12-03
+  - タスク6: llms.txt 2026-12-03セクション追加
+
+- [ ] **SNS_2026-12-05.md** SNS担当定例（2027-06-23〜25日次 + 2031/04/23〜29バッチ）※CEO_08-04で作成予定
+
+---
+
 ### ⚡ 17週後タスク（週3稼働：月2026-11-24・水11-26・金11-28）
 
 - [x] **CTO_2026-11-24.md index.html dateModified → 2026-11-24 + result.html dateModified → 2026-11-24 + sitemap/llms.txt更新**（2026-07-31 前倒し実行済み）
