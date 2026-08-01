@@ -56,7 +56,25 @@
   - タスク5: sitemap.xml about/disclaimer/privacy/contact lastmod → 2026-12-24 ✅
   - タスク6: llms.txt 2026-12-24セクション追加 ✅
 
-- [ ] **SNS_2026-12-26.md** SNS担当定例（2027-07-02〜04日次 + 2031/05/14〜20バッチ）
+- [→] **SNS_2026-12-26.md** SNS担当定例（2027-07-02〜04日次 + 2031/05/14〜20バッチ）`指示書作成完了 2026-08-01・SNS担当実行待ち`
+
+---
+
+### ⚡ 22週後タスク（週3稼働：月2026-12-29・水12-31）
+
+- [ ] **CTO_2026-12-29.md index.html dateModified → 2026-12-29 + result.html dateModified → 2026-12-29 + sitemap/llms.txt更新**（指示書作成済み 2026-08-01）
+  - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2026-12-29
+  - タスク2: result.html WebPage JSON-LD dateModified → 2026-12-29
+  - タスク3: sitemap.xml index.html / result.html lastmod → 2026-12-29
+  - タスク4: llms.txt 2026-12-29セクション追加
+
+- [ ] **CTO_2026-12-31.md disclaimer.html / privacy.html / about.html / contact.html dateModified → 2026-12-31 + sitemap/llms.txt更新**（指示書作成済み 2026-08-01）
+  - タスク1: disclaimer.html WebPage JSON-LD dateModified → 2026-12-31
+  - タスク2: privacy.html WebPage JSON-LD dateModified → 2026-12-31
+  - タスク3: about.html AboutPage JSON-LD dateModified → 2026-12-31
+  - タスク4: contact.html ContactPage JSON-LD dateModified → 2026-12-31
+  - タスク5: sitemap.xml about/disclaimer/privacy/contact lastmod → 2026-12-31
+  - タスク6: llms.txt 2026-12-31セクション追加
 
 ---
 
