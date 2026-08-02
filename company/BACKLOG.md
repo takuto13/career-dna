@@ -67,19 +67,19 @@
 
 ### ⚡ 23週後タスク（週3稼働：月2027-01-05・水01-07）
 
-- [ ] **CTO_2027-01-05.md index.html dateModified → 2027-01-05 + result.html dateModified → 2027-01-05 + sitemap/llms.txt更新**（指示書作成済み 2026-08-02）
-  - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2027-01-05
-  - タスク2: result.html WebPage JSON-LD dateModified → 2027-01-05
-  - タスク3: sitemap.xml index.html / result.html lastmod → 2027-01-05
-  - タスク4: llms.txt 2027-01-05セクション追加
+- [x] **CTO_2027-01-05.md index.html dateModified → 2027-01-05 + result.html dateModified → 2027-01-05 + sitemap/llms.txt更新**（2026-08-02 前倒し実行済み）
+  - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2027-01-05 ✅
+  - タスク2: result.html WebPage JSON-LD dateModified → 2027-01-05 ✅
+  - タスク3: sitemap.xml index.html / result.html lastmod → 2027-01-05 ✅
+  - タスク4: llms.txt 2027-01-05セクション追加 ✅
 
-- [ ] **CTO_2027-01-07.md disclaimer.html / privacy.html / about.html / contact.html dateModified → 2027-01-07 + sitemap/llms.txt更新**（指示書作成済み 2026-08-02）
-  - タスク1: disclaimer.html WebPage JSON-LD dateModified → 2027-01-07
-  - タスク2: privacy.html WebPage JSON-LD dateModified → 2027-01-07
-  - タスク3: about.html AboutPage JSON-LD dateModified → 2027-01-07
-  - タスク4: contact.html ContactPage JSON-LD dateModified → 2027-01-07
-  - タスク5: sitemap.xml about/disclaimer/privacy/contact lastmod → 2027-01-07
-  - タスク6: llms.txt 2027-01-07セクション追加
+- [x] **CTO_2027-01-07.md disclaimer.html / privacy.html / about.html / contact.html dateModified → 2027-01-07 + sitemap/llms.txt更新**（2026-08-02 前倒し実行済み）
+  - タスク1: disclaimer.html WebPage JSON-LD dateModified → 2027-01-07 ✅
+  - タスク2: privacy.html WebPage JSON-LD dateModified → 2027-01-07 ✅
+  - タスク3: about.html AboutPage JSON-LD dateModified → 2027-01-07 ✅
+  - タスク4: contact.html ContactPage JSON-LD dateModified → 2027-01-07 ✅
+  - タスク5: sitemap.xml about/disclaimer/privacy/contact lastmod → 2027-01-07 ✅
+  - タスク6: llms.txt 2027-01-07セクション追加 ✅
 
 ---
 

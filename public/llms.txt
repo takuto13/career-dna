@@ -960,6 +960,16 @@
 - contact.html: SEO freshness維持（dateModified 2026-12-31）
 - sitemap.xml: disclaimer.html / privacy.html / about.html / contact.html lastmod → 2026-12-31
 
+## 2027-01-05 Update
+- index.html: SoftwareApplication dateModified updated to 2027-01-05
+- result.html: WebPage dateModified updated to 2027-01-05
+
+## 2027-01-07 Update
+- disclaimer.html: WebPage dateModified updated to 2027-01-07
+- privacy.html: WebPage dateModified updated to 2027-01-07
+- about.html: AboutPage dateModified updated to 2027-01-07
+- contact.html: ContactPage dateModified updated to 2027-01-07
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
