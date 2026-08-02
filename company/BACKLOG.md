@@ -56,7 +56,30 @@
   - タスク5: sitemap.xml about/disclaimer/privacy/contact lastmod → 2026-12-24 ✅
   - タスク6: llms.txt 2026-12-24セクション追加 ✅
 
-- [→] **SNS_2026-12-26.md** SNS担当定例（2027-07-02〜04日次 + 2031/05/14〜20バッチ）`指示書作成完了 2026-08-01・SNS担当実行待ち`
+- [x] **SNS_2026-12-26.md** SNS担当定例（2027-07-02〜04日次 + 2031/05/14〜20バッチ）`CEO代行 2026-08-02実行完了`
+  - タスク1: sns_原稿_2027-07-02.md（木・7月第1週・転職ゴールデンウィーク×行動促進・3本）✅
+  - タスク2: sns_原稿_2027-07-03.md（金・週末前行動促進×診断誘導・3本）✅
+  - タスク3: sns_原稿_2027-07-04.md（土・就活生週末診断×認知拡大・3本）✅
+  - タスク4: 2026-12-26_SNS_バッチ_原稿.md（2031/05/14〜20・GW明け3週目×本格転職スタート・7本）✅
+  - SNSカバレッジ完了後：日次〜2027-07-04・2031バッチ〜2031/05/20
+
+---
+
+### ⚡ 23週後タスク（週3稼働：月2027-01-05・水01-07）
+
+- [ ] **CTO_2027-01-05.md index.html dateModified → 2027-01-05 + result.html dateModified → 2027-01-05 + sitemap/llms.txt更新**（指示書作成済み 2026-08-02）
+  - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2027-01-05
+  - タスク2: result.html WebPage JSON-LD dateModified → 2027-01-05
+  - タスク3: sitemap.xml index.html / result.html lastmod → 2027-01-05
+  - タスク4: llms.txt 2027-01-05セクション追加
+
+- [ ] **CTO_2027-01-07.md disclaimer.html / privacy.html / about.html / contact.html dateModified → 2027-01-07 + sitemap/llms.txt更新**（指示書作成済み 2026-08-02）
+  - タスク1: disclaimer.html WebPage JSON-LD dateModified → 2027-01-07
+  - タスク2: privacy.html WebPage JSON-LD dateModified → 2027-01-07
+  - タスク3: about.html AboutPage JSON-LD dateModified → 2027-01-07
+  - タスク4: contact.html ContactPage JSON-LD dateModified → 2027-01-07
+  - タスク5: sitemap.xml about/disclaimer/privacy/contact lastmod → 2027-01-07
+  - タスク6: llms.txt 2027-01-07セクション追加
 
 ---
 
