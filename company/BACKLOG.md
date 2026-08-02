@@ -92,13 +92,13 @@
 
 ### ⚡ 24週後タスク（週3稼働：月2027-01-12・水01-14・金01-16）
 
-- [ ] **CTO_2027-01-12.md index.html dateModified → 2027-01-12 + result.html dateModified → 2027-01-12 + sitemap/llms.txt更新**（指示書作成済み 2026-08-02）
+- [x] **CTO_2027-01-12.md index.html dateModified → 2027-01-12 + result.html dateModified → 2027-01-12 + sitemap/llms.txt更新**（指示書作成済み 2026-08-02）✅2026-08-02前倒し実行
   - タスク1: index.html SoftwareApplication JSON-LD dateModified → 2027-01-12
   - タスク2: result.html WebPage JSON-LD dateModified → 2027-01-12
   - タスク3: sitemap.xml index.html / result.html lastmod → 2027-01-12
   - タスク4: llms.txt 2027-01-12セクション追加
 
-- [ ] **CTO_2027-01-14.md disclaimer.html / privacy.html / about.html / contact.html dateModified → 2027-01-14 + sitemap/llms.txt更新**（指示書作成済み 2026-08-02）
+- [x] **CTO_2027-01-14.md disclaimer.html / privacy.html / about.html / contact.html dateModified → 2027-01-14 + sitemap/llms.txt更新**（指示書作成済み 2026-08-02）✅2026-08-02前倒し実行
   - タスク1: disclaimer.html WebPage JSON-LD dateModified → 2027-01-14
   - タスク2: privacy.html WebPage JSON-LD dateModified → 2027-01-14
   - タスク3: about.html AboutPage JSON-LD dateModified → 2027-01-14
