@@ -6,6 +6,35 @@
 
 ---
 
+## 2026-08-02（日）CTO定例 第4セッション（25週後タスク前倒し実行）✅ 完了
+
+### 実行内容（2026-08-02 CTO定例 第4セッション）
+
+- GitHub Issues確認：11件 open（全てownerラベル・変化なし）✅
+- 競合調査：スキップ（前回2026-07-30から3日・7日ルール未到達）✅
+- CTO_2027-01-19.md 前倒し実行完了 ✅
+  - index.html SoftwareApplication JSON-LD dateModified → 2027-01-19 ✅
+  - result.html WebPage JSON-LD dateModified → 2027-01-19 ✅
+  - sitemap.xml index.html / result.html lastmod → 2027-01-19 ✅
+  - llms.txt 2027-01-19セクション追加 ✅
+- CTO_2027-01-21.md 前倒し実行完了 ✅
+  - disclaimer.html WebPage JSON-LD dateModified → 2027-01-21 ✅
+  - privacy.html WebPage JSON-LD dateModified → 2027-01-21 ✅
+  - about.html AboutPage JSON-LD dateModified → 2027-01-21 ✅
+  - contact.html ContactPage JSON-LD dateModified → 2027-01-21 ✅
+  - sitemap.xml about/disclaimer/privacy/contact lastmod → 2027-01-21 ✅
+  - llms.txt 2027-01-21セクション追加 ✅
+- BACKLOG 25週後タスクセクション追加・CTO_2027-01-19/01-21 → [x] 更新済み ✅
+- git commit・push 完了 ✅
+
+### 次回（2026-08-04 月曜）でやること（CTO）
+
+1. GitHub Issue確認（新規・クローズ状況確認）
+2. 競合調査：前回2026-07-30から7日到達は2026-08-06 → スキップ可（08-06に実施）
+3. requestsフォルダ確認（SNS_2027-01-16.md のみ残存・既に完了済み → archive/移動確認）
+
+---
+
 ## 2026-08-02（日）CEO第9セッション（SNS_2027-01-16.md代行実行）✅ 完了
 
 ### 実行内容
