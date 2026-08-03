@@ -15,6 +15,14 @@
 
 ## 優先タスク
 
+### ⚡ 28週後タスク（週3稼働：月2027-02-09・水02-11・金02-13）
+
+- [ ] **CTO_2027-02-09.md** index.html dateModified → 2027-02-09 + result.html dateModified → 2027-02-09 + sitemap/llms.txt更新
+- [ ] **CTO_2027-02-11.md** disclaimer.html / privacy.html / about.html / contact.html dateModified → 2027-02-11 + sitemap/llms.txt更新
+- [ ] **SNS_2027-02-13.md** SNS担当定例（2027-07-20〜22日次 + 2031/06/25〜07/01バッチ）
+
+---
+
 ### ⚡ 27週後タスク（週3稼働：月2027-02-02・水02-04・金02-06）
 
 - [x] **CTO_2027-02-02.md** index.html dateModified → 2027-02-02 + result.html dateModified → 2027-02-02 + sitemap/llms.txt更新
