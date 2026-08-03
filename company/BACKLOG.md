@@ -33,6 +33,19 @@
 - [x] **CTO_2027-02-16.md** index.html dateModified → 2027-02-16 + result.html dateModified → 2027-02-16 + sitemap/llms.txt更新（2026-08-03 前倒し実行済み）
 - [x] **CTO_2027-02-18.md** disclaimer.html / privacy.html / about.html / contact.html dateModified → 2027-02-18 + sitemap/llms.txt更新（2026-08-03 前倒し実行済み）
 - [x] **SNS_2027-02-20.md** SNS担当定例（2027-07-23〜25日次 + 2031/07/02〜08バッチ）`SNS担当 2026-08-03前倒し実行完了`
+  - タスク1: sns_原稿_2027-07-23.md（木・7月第4週木曜×転職活動ラスト×内定決断促進・3本）✅
+  - タスク2: sns_原稿_2027-07-24.md（金・夏の転職シーズン締め×週末前行動促進・3本）✅
+  - タスク3: sns_原稿_2027-07-25.md（土・週末自己分析×夏の転職まとめ・3本）✅
+  - タスク4: 2027-02-20_SNS_バッチ_原稿.md（2031/07/02〜08・新社会人1週間経過×仕事の現実×自己理解でリカバリー・7本）✅
+  - SNSカバレッジ完了後：日次〜2027-07-25・2031バッチ〜2031/07/08
+
+---
+
+### ⚡ 30週後タスク（週3稼働：月2027-02-23・水02-25・金02-27）
+
+- [ ] **CTO_2027-02-23.md** index.html dateModified → 2027-02-23 + result.html dateModified → 2027-02-23 + sitemap/llms.txt更新
+- [ ] **CTO_2027-02-25.md** disclaimer.html / privacy.html / about.html / contact.html dateModified → 2027-02-25 + sitemap/llms.txt更新
+- [ ] **SNS_2027-02-27.md** SNS担当定例（2027-07-26〜28日次 + 2031/07/09〜15バッチ）
 
 ---
 
