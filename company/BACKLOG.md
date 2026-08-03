@@ -17,8 +17,8 @@
 
 ### ⚡ 27週後タスク（週3稼働：月2027-02-02・水02-04・金02-06）
 
-- [ ] **CTO_2027-02-02.md** index.html dateModified → 2027-02-02 + result.html dateModified → 2027-02-02 + sitemap/llms.txt更新
-- [ ] **CTO_2027-02-04.md** disclaimer.html / privacy.html / about.html / contact.html dateModified → 2027-02-04 + sitemap/llms.txt更新
+- [x] **CTO_2027-02-02.md** index.html dateModified → 2027-02-02 + result.html dateModified → 2027-02-02 + sitemap/llms.txt更新
+- [x] **CTO_2027-02-04.md** disclaimer.html / privacy.html / about.html / contact.html dateModified → 2027-02-04 + sitemap/llms.txt更新
 - [ ] **SNS_2027-02-06.md** SNS担当定例（2027-07-17〜19日次 + 2031/06/18〜24バッチ）
 
 ---
