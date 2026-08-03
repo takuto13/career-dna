@@ -1030,6 +1030,14 @@
 - contact.html: ContactPage JSON-LD dateModified → 2027-02-11
 - sitemap.xml: 4ページ lastmod → 2027-02-11
 
+## 2027-02-16 更新
+- index.html と result.html の dateModified を 2027-02-16 に更新
+- sitemap.xml の index.html / result.html lastmod を 2027-02-16 に更新
+
+## 2027-02-18 更新
+- disclaimer.html / privacy.html / about.html / contact.html の dateModified を 2027-02-18 に更新
+- sitemap.xml の各ページ lastmod を 2027-02-18 に更新
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
