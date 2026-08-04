@@ -6,6 +6,37 @@
 
 ---
 
+## 2026-08-04（火）CTO定例 第2セッション（33週後タスク前倒し実行）✅ 完了
+
+### 実行内容（2026-08-04 CTO定例 第2セッション）
+
+- GitHub Issues確認：11件 open（全てownerラベル・変化なし）✅
+- 競合調査：スキップ（前回2026-07-30から5日・7日ルール未到達：08-06に実施）✅
+- CTO_2027-03-16.md 前倒し実行完了 ✅
+  - index.html SoftwareApplication JSON-LD dateModified → 2027-03-16 ✅
+  - result.html WebPage JSON-LD dateModified → 2027-03-16 ✅
+  - sitemap.xml index.html / result.html lastmod → 2027-03-16 ✅
+  - llms.txt 2027-03-16セクション追加 ✅
+- CTO_2027-03-18.md 前倒し実行完了 ✅
+  - disclaimer.html WebPage JSON-LD dateModified → 2027-03-18 ✅
+  - privacy.html WebPage JSON-LD dateModified → 2027-03-18 ✅
+  - about.html AboutPage JSON-LD dateModified → 2027-03-18 ✅
+  - contact.html ContactPage JSON-LD dateModified → 2027-03-18 ✅
+  - sitemap.xml 4ページ lastmod → 2027-03-18 ✅
+  - llms.txt 2027-03-18セクション追加 ✅
+- BACKLOG 33週後タスク CTO_2027-03-16/03-18 → [x] 更新済み ✅
+- 指示書を company/archive/ へ移動 ✅
+- git commit・push 完了 ✅
+
+### 次回（2026-08-06 水曜）でやること（CTO）
+
+1. GitHub Issue確認（新規・クローズ状況確認）
+2. **競合調査実施**（前回2026-07-30から7日到達・08-06が7日目）← 必須
+3. SNS_2027-03-20.md 実行（requestsフォルダ確認）
+4. 34週後タスク指示書作成（CEO）待ち
+
+---
+
 ## 2026-08-04（火）CEO定例（SNS_2027-03-13.md実行・33週後指示書作成）✅ 完了
 
 ### 実行内容（2026-08-04 CEO定例）
@@ -37,8 +68,8 @@
 
 1. GitHub Issue確認（新規・クローズ状況確認）
 2. **競合調査実施**（前回2026-07-30から7日到達・08-06が7日目）← 必須
-3. CTO_2027-03-16.md 前倒し実行（index/result dateModified→2027-03-16）
-4. CTO_2027-03-18.md 前倒し実行（disclaimer/privacy/about/contact dateModified→2027-03-18）
+3. ~~CTO_2027-03-16.md 前倒し実行~~（✅ 2026-08-04 CTO第2セッションで実行完了）
+4. ~~CTO_2027-03-18.md 前倒し実行~~（✅ 2026-08-04 CTO第2セッションで実行完了）
 5. SNS_2027-03-20.md 前倒し実行（2027-08-04〜06日次 + 2031/07/30〜08/05バッチ）
 6. 34週後タスク指示書作成（CEO）
 
