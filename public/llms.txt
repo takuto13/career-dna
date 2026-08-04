@@ -1108,6 +1108,16 @@
 - about.html: コンテンツ鮮度更新（dateModified: 2027-04-01）
 - contact.html: コンテンツ鮮度更新（dateModified: 2027-04-01）
 
+## 2027-04-06 更新
+- index.html: コンテンツ鮮度更新（dateModified: 2027-04-06）
+- result.html: コンテンツ鮮度更新（dateModified: 2027-04-06）
+
+## 2027-04-08 更新
+- disclaimer.html: コンテンツ鮮度更新（dateModified: 2027-04-08）
+- privacy.html: コンテンツ鮮度更新（dateModified: 2027-04-08）
+- about.html: コンテンツ鮮度更新（dateModified: 2027-04-08）
+- contact.html: コンテンツ鮮度更新（dateModified: 2027-04-08）
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
