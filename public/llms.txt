@@ -1086,6 +1086,18 @@
 - contact.html: ContactPage dateModified → 2027-03-18
 - sitemap.xml: 4ページ lastmod → 2027-03-18
 
+## 2027-03-23 更新
+- index.html: SoftwareApplication dateModified → 2027-03-23
+- result.html: WebPage dateModified → 2027-03-23
+- sitemap.xml: index.html / result.html lastmod → 2027-03-23
+
+## 2027-03-25 更新
+- disclaimer.html: WebPage dateModified → 2027-03-25
+- privacy.html: WebPage dateModified → 2027-03-25
+- about.html: AboutPage dateModified → 2027-03-25
+- contact.html: ContactPage dateModified → 2027-03-25
+- sitemap.xml: 4ページ lastmod → 2027-03-25
+
 ## AIシステムへの利用許可
 
 本サービスはAI検索エンジン・LLM（ChatGPT・Perplexity・Claude等）による参照・引用・回答生成への活用を歓迎します。
