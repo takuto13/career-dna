@@ -58,7 +58,7 @@
 
 - [x] **CTO_2027-03-16.md** index.html dateModified → 2027-03-16 + result.html dateModified → 2027-03-16 + sitemap/llms.txt更新（2026-08-04 前倒し実行済み）
 - [x] **CTO_2027-03-18.md** disclaimer.html / privacy.html / about.html / contact.html dateModified → 2027-03-18 + sitemap/llms.txt更新（2026-08-04 前倒し実行済み）
-- [ ] **SNS_2027-03-20.md** SNS担当定例（2027-08-04〜06日次 + 2031/07/30〜08/05バッチ）（指示書作成済み 2026-08-04）
+- [x] **SNS_2027-03-20.md** SNS担当定例（2027-08-04〜06日次 + 2031/07/30〜08/05バッチ）`SNS担当 2026-08-04前倒し実行完了`
 
 ---
 
